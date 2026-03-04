@@ -1,0 +1,80 @@
+/* MPL-specific color overrides */
+:root {
+    --color-primary: #980000;      /* MPL Red/Burgundy */
+    --color-primary-dark: #7a0000; /* Darker MPL Red */
+    --color-accent: #C9A227;       /* Gold accent */
+    --color-text: #212121;         /* Dark gray text */
+
+}
+
+/* Make footer darker and closer to the page background (less "red block") */
+.site-footer {
+    background: var(--color-white);
+    color: var(--color-text);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.site-footer p,
+.footer-grid p,
+.footer-grid li {
+    opacity: 0.92;
+}
+
+.site-footer a {
+    color: var(--color-primary);
+}
+
+.footer-grid h4 {
+    color: var(--color-primary-dark);
+}
+
+/* Header layout: keep header/nav on one line, truncate long site title with ellipsis */
+.site-header .container {
+    gap: 0.75rem;
+}
+
+.logo {
+    min-width: 0; /* allow truncation */
+    max-width: 30%; /* 50% more than 20% for left text space */
+}
+
+.logo-text {
+    display: block;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.2rem; /* slightly larger for desktop */
+}
+
+.main-nav {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0.55rem;
+    font-size: clamp(0.85rem, 1vw, 1.05rem); /* bigger nav text */
+    overflow: visible; /* do not clip dropdowns */
+}
+
+/* Desktop: bigger lang switcher text */
+@media (min-width: 901px) {
+    .lang-switch a {
+        font-size: 1rem;
+    }
+    .lang-switch-label,
+    .lang-switch-select {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Burger menu: logo + burger on one line, main-nav hidden (in overlay) */
+    .site-header .container { flex-wrap: nowrap; height: auto; padding: 0.75rem 0; align-items: center; }
+    .logo { flex: 1; min-width: 0; max-width: none; align-items: center; }
+    .logo-text {
+        font-size: clamp(0.7rem, 3.5vw, 0.9rem);
+        white-space: normal;
+        overflow: visible;
+        text-overflow: unset;
+        line-height: 1.25;
+    }
+}
