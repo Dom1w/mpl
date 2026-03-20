@@ -28,53 +28,6 @@
     color: var(--color-primary-dark);
 }
 
-/* Header layout: keep header/nav on one line, truncate long site title with ellipsis */
-.site-header .container {
-    gap: 0.75rem;
-}
-
-.logo {
-    min-width: 0; /* allow truncation */
-    max-width: 30%; /* 50% more than 20% for left text space */
-}
-
-.logo-text {
-    display: block;
-    min-width: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.2rem; /* slightly larger for desktop */
-}
-
-.main-nav {
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    gap: 0.55rem;
-    font-size: clamp(0.85rem, 1vw, 1.05rem); /* bigger nav text */
-    overflow: visible; /* do not clip dropdowns */
-}
-
-/* Desktop: bigger lang switcher text */
-@media (min-width: 901px) {
-    .lang-switch a {
-        font-size: 1rem;
-    }
-    .lang-switch-label,
-    .lang-switch-select {
-        font-size: 1rem;
-    }
-}
-
 @media (max-width: 900px) {
-    /* Burger menu: logo + burger on one line, main-nav hidden (in overlay) */
-    .site-header .container { flex-wrap: nowrap; height: auto; padding: 0.75rem 0; align-items: center; }
-    .logo { flex: 1; min-width: 0; max-width: none; align-items: center; }
-    .logo-text {
-        font-size: clamp(0.7rem, 3.5vw, 0.9rem);
-        white-space: normal;
-        overflow: visible;
-        text-overflow: unset;
-        line-height: 1.25;
-    }
+    .site-header .container { padding: 0.75rem 0; }
 }
