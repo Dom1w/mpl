@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Идём к святому Иосифу!">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Идём к святому Иосифу!">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/lasst-uns-zu-st-josef-gehn.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ru/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ru/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>Св. Иосиф так охотно помогает</strong></h3><p>Бесчисленным людям, которым св. Иосиф уже помог в самых разных нуждах, св. Людовик Мария Гриньон де Монфор говорит от всего сердца, приглашая нас: <strong>Идите к Иосифу!</strong>, ибо:</p><ol><li><p><strong>Он — распорядитель Божественного Промысла;</strong><strong><br></strong> он позаботится о ваших земных нуждах и сделает так, чтобы они разрешились успешно.</p></li><li><p><strong>Он — глава Святого Семейства,</strong><strong><br></strong> а потому и предводитель всей христианской церковной семьи;<br> он укажет вам ваше призвание и поможет достичь счастливого состояния жизни.</p></li><li><p><strong>Он — образец сокровенной внутренней жизни;</strong><strong><br></strong> он будет направлять и наставлять вас в духовной жизни и в совершенстве.</p></li><li><p><strong>Он — защитник чистоты Непорочной Девы Марии;</strong><strong><br></strong> он поможет вам сохранить великое сокровище чистоты.</p></li><li><p><strong>Он — покровитель благой смерти;</strong><strong><br></strong> он также поможет вам в тот тревожный час и испросит для вас блаженную кончину.</p></li><li><p><strong>Он — приемный отец Иисуса и обручник Марии,</strong><strong><br></strong> и в этом качестве он может испросить для вас все благодати;<br> <strong>ибо нельзя предположить</strong>,<br> говорит св. Бернардин Сиенский, <strong>чтобы Иисус и Мария могли в чем-то отказать на небесах тому св. Иосифу, которому они оба были послушны на земле</strong>.</p></li></ol><p>(Из Золотой Книги, стр. 485)</p>
 
@@ -956,22 +998,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -983,6 +1030,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Любящий святой Иосиф, могущественный защитник святой Церкви, воззри на великое бедствие Невесты Иисуса Христа и ужасную нужду столь многих душ.<br> О, приди им на помощь с Иисусом и Марией, святыми ангелами и святыми. Расстрой планы нечестивцев и воспламени сердца верующих жаром Святого Духа, чтобы они свободно и открыто исповедовали Иисуса, сражались за дело Царства Божьего и побеждали. Аминь.</p><p><strong>«Дитя, скажи всем, чтобы они больше почитали и призывали моего обручника Иосифа. Ведь он был нашим защитником и так по-отцовски заботился о моем Иисусе и обо мне. Он — особый защитник святой Церкви».</strong><strong><br></strong> (Богоматерь матери Фогль — 6.3.1938)</p><p><strong>«Он — особый защитник священников... как он защищал Меня от врагов, так и священники будут защищены им. Я не отказываю ему ни в какой просьбе. Его слишком мало призывают за священников».</strong><strong><br></strong> (Иисус матери Фогль — 4.6.1938)</p><p><strong>«О, если бы все священники почитали моего обручника Иосифа должным образом! Он — особый защитник целомудрия. Поскольку сейчас искушения больше, чем раньше, подступают и к священникам, они получат от него эту великую благодать. Нужно также призывать моего обручника о святых священниках».</strong><strong><br></strong> (Богоматерь матери Фогль — в субботу священников 1943 г.)</p>
 
@@ -992,22 +1040,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1019,6 +1072,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>О святой Иосиф, ты дал нам столь славный пример как глава Святого Семейства. Мы благодарим тебя за это и почитаем тебя вместе со святой Церковью как опору семей.<br> Взирай милостиво на христианские семьи, которые мы вверяем твоему особому попечению.<br> Пусть они будут оплотом веры и благочестия, обителью согласия, мира и любви. Помоги им всё больше уподобляться Святому Семейству, о котором ты так любовно заботился.<br> Святой Иосиф, молись о нас и защищай наши семьи. Аминь.</p><p><strong>«Дитя, проси Моего дорогого приемного отца искренне о святых семьях, чтобы из них снова выходили святые священники».</strong><strong><br></strong> (Иисус матери Фогль — 29.3.1930)</p><p><strong>«Мой приемный отец и воспитатель испытывает величайшую радость, когда может представить Мне какую-либо просьбу. Никто не будет призывать его помощь напрасно. Если человек не получит того, о чем просит, он получит гораздо большую благодать через его заступничество».</strong><strong><br></strong> (Иисус матери Фогль — 7.3.1938)</p>
 
@@ -1028,22 +1082,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,6 +1114,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Великий святой Иосиф, испроси мне благодать распознать, к какому состоянию предназначил меня Божественный Промысл.<br> Не допусти, чтобы я ошибся в этом столь важном решении, от которого зависит мое счастье и, возможно, мое вечное спасение. Помоги мне, чтобы я, просвещенный о Божественной воле, верно следовал ей и шел по пути, который определил мне Господь и который должен привести меня к вечному блаженству. Аминь.</p><p>Рана нарастающего распада религиозных и нравственных ценностей затрудняет многим молодым людям принятие ясного и ориентированного на волю Божью жизненного решения.<br> Св. Иосиф помогает распознать определенное Богом состояние жизни и верно следовать ему. С этим мужественным и решительным <strong>«да» благодати призвания</strong> Бог связывает спасение многих душ.<br> Также для супругов и монашеских общин, обеспокоенных <strong>отсутствием преемственности</strong>, св. Иосиф является могущественным заступником.</p>
 <p><em>В 1833 году в иезуитском колледже в Сьоне (Швейцария) умирал молодой монах, отличавшийся талантом и добродетелью. Его звали Иосиф Харниш. Когда ректор колледжа совершал над ним таинства перед смертью, его скорбь была велика, ибо незадолго перед тем он уже потерял смертью двух других членов своей общины. Поэтому настоятель, силою своей отеческой власти, поручил умирающему: как только тот войдёт в вечное блаженство, пусть попросит своего небесного покровителя, святого Иосифа, чтобы он привёл ордену достойного «заменителя». Умирающий обещал. Он умер 6 июля. Уже осенью того же года в орден вступили двенадцать новициев. Восемь из них носили имя Иосиф, и ещё трое с именем Иосиф последовали в течение года. (Stimmen aus Maria Laach, Bd. 25, S. 509)</em></p>
@@ -1065,22 +1125,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1092,6 +1157,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Дорогой святой Иосиф, тебе я хочу посвятить себя. Прими милостиво мое посвящение! Я отдаю себя тебе полностью.<br> Будь всегда моим отцом, моим защитником, моим водителем на пути спасения.<br> Испроси мне великую чистоту сердца и сильную склонность к внутренней жизни!<br> Даруй, чтобы, как и у тебя, все мои действия имели целью большую славу Божью, чтобы я оставался соединенным с Божественным Сердцем Иисуса, с Непорочным Сердцем Марии и с тобой, святой Иосиф!<br> Наконец, молись о мне, чтобы и я когда-нибудь смог вкусить мир и радость, которыми ты наслаждался при своем блаженном преставлении. Аминь.<br> (Лев XIII)</p>
 
@@ -1101,22 +1167,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1128,6 +1199,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>На обычном розарии молятся следующие тайны:</p><ol><li><p>Иисус, Который избрал святого Иосифа обручником пречистой Девы Марии.</p></li><li><p>Иисус, Который любил святого Иосифа как приемного отца.</p></li><li><p>Иисус, Который был послушен святому Иосифу.</p></li><li><p>Иисус, Который молился и трудился со святым Иосифом.</p></li><li><p>Иисус, Который дал нам святого Иосифа покровителем Церкви.</p></li></ol>
 
@@ -1137,22 +1209,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1164,6 +1241,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Св. Иосиф, приемный отец Иисуса Христа и истинный обручник преблагословенной Девы Марии, молись о нас и об умирающих в этот день/в эту ночь!</strong><strong><br></strong> (Молитва об индульгенции)</p><p>Эта молитва читается членами распространенного по всему миру <strong>Братства св. Иосифа</strong> утром и вечером.</p><p>Св. Тереза Младенца Иисуса сказала однажды:</p><p><strong>Иисус хочет, чтобы спасение душ зависело от наших жертв и нашей любви.</strong><strong><br></strong> И незадолго до своей смерти она произнесла:<br> <strong>Как я теперь понимаю, что нужно много молиться за умирающих.</strong></p><p>Через наши молитвы и жертвы мы можем помогать испрашивать благодать благой смерти для более чем 500 000 человек, которые умирают ежедневно. Особенно тем, кто через тяжкую вину отделил себя от Бога, всем неверующим и всем некрещеным, кто не находится в состоянии освящающей благодати, благодаря этому часто еще в последнюю минуту может быть явлено милосердие Божье.<br> Эта возвышенная форма любви к ближнему, с которой мы приходим на помощь нашим братьям и сестрам в высшей «опасности для жизни» (речь идет о вечной жизни!), станет для нас самих преизобильным благословением.</p><p>Иисус, Мария и Иосиф,<br> Вам отдаю я мое сердце и мою душу!</p><p>Иисус, Мария и Иосиф,<br> помогите мне в смертной агонии!</p><p>Иисус, Мария и Иосиф,<br> да преставится душа моя с Вами в мире!<br> Аминь.<br> (Молитва об индульгенции)</p>
 
@@ -1173,12 +1251,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1264,6 +1348,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1318,6 +1437,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1353,12 +1483,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

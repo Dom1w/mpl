@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fatima">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Fatima">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/fatima.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -95,7 +102,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../de/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -410,6 +417,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Suche öffnen" title="Suche">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Suchbegriff</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Mit Google auf dieser Seite suchen" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Suchen</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -829,6 +853,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Suchbegriff</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Mit Google auf dieser Seite suchen" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Suchen</button>
+            </form>
+            
             <a href="../de/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -837,6 +868,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Website als App installieren</span>
+            </button>
         </nav>
     </div>
 
@@ -900,6 +939,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -918,19 +960,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg" 
-                 alt="" 
+            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -940,6 +981,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Am 12. und 13. jeden Monats trägt Unsere Liebe Frau diese Krone </p><h1>Die Versöhnungsbotschaft von Fátima</h1><p>„Könnte ich doch in jedes Herz das Feuer werfen, das mir in der Brust brennt und mich das Herz Jesu und Mariens so sehr lieben lässt!“ (Hl. Jacinta Marto) </p><p> „Ich möchte den Heiland trösten und dann die Sünder bekehren, damit sie Ihn nicht mehr  beleidigen!“ (Hl. Francisco Marto)</p><p>Opfert euch auf für die Sünder und sagt oft zu Jesus, besonders wenn ihr ein Opfer bringt: <br>O mein Jesus, es ist aus Liebe zu Dir, für die Bekehrung der Sünder, für den Heiligen Vater und zur Sühne für die Sünden gegen das Unbefleckte Herz Mariens. <br>(Maria in Fátima am 13. Juli 1917)</p><p>Erinnerungen der Schwester Lúcia aus der portugiesischen Originalschrift</p>
             </div>
@@ -948,13 +990,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg" 
-                 alt="" 
+            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg"
+                 alt=""
                  class="section-image">
             
             
@@ -964,16 +1011,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -985,11 +1032,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Wenn Gott gedrängt von Seiner barmherzigen Liebe, Maria mit einer Botschaft zu den Kindern der Erde sendet, so verbirgt sich dahinter jene Sehnsucht Gottes, die will, dass alle Menschen gerettet werden. (1 Tim 2,4) </p><p>Maria kommt gleichsam als die Mutter des Guten Hirten, um die Schäflein ihres Sohnes an die Heils wahrheiten des Evange liums zu erinnern.</p><p>Wenn einer von euch hundert Schafe hat und eins verliert, lässt er dann nicht die neunundneunzig in der Steppe zurück und geht dem verlorenen nach, bis er es findet? Und wenn er es gefunden hat, nimmt er es voll Freude auf die Schultern … <br>Ich sage euch: Ebenso wird auch im Himmel Freude sein über einen einzigen Sünder, der umkehrt. (Lk 15,4)</p><p>„Das Licht, das ihre hehre Gestalt an allen Erscheinungsorten umfließt, ist eine Angriffsfront gegen die Finsternis, in der die sündige Welt zu versinken droht. […] Sie bittet, fleht und weint. Sie weint in der Rue du Bac in Paris, am 18. Juli 1830. Sie weint in La Salette, im Jahre 1846, und León Bloy schreibt über ihre Tränen, sie seien der erschütterndste Seufzer gewesen, der jemals in der Welt seit dem Consummatum est – Es ist voll bracht am Kreuze gehört worden sei. Sie weint am 21. Februar 1858 in Lourdes, und wer wäre nicht ergriffen, wenn er das unschuldige Kind Bernadette sagen hört, sie weine, weil die Dame weine. Diese Tränen sind gewiss Zeichen der himmlischen Trauer über die Verstocktheit der Sünder. Sie sind aber auch der letzte Versuch, den nur ein Mutterherz ersinnen und unterneh men kann, um ihre Kinder zu Tränen des Mitleids und der Reue zu bewegen.“ [A. J. Fuhs – Fátima und der Friede, S. 46.]</p><p>Und in Fátima, einem bis zum 13. Mai 1917 völlig unbekanntem kleinen Ort in Portugal, setzt Maria ihr gigantisches Rettungswerk fort. Eindringlich bittet sie ihre Erdenkinder, sich mit Gott zu versöhnen und „Ihn nicht mehr zu beleidigen“. Das zweite, was sie von ihren Kindern so sehr erbittet, ist die Mithilfe an ihrem großen Rettungswerk durch Gebet und Opfer: „Betet, betet viel und bringt Opfer für die Sünder.“ Und sie eilt mit den dargebrachten Sühnegebeten und Opfern ihrer Schäflein zu ihrem göttlichen Sohn und fleht um Erbarmen und Langmut. </p><p>Im Buch &quot;Schwester Lúcia Spricht Über Fátima – Erinnerungen der Schwester Lúcia I&quot; wird außer den Erscheinungen des Engels und der Gottesmutter, auch das Leben der drei Hirtenkinder beschrieben, die in vorbildlicher Weise die Bitten Unserer Lieben Frau erfüllt haben. Ihr unermüdliches Beten und Opfern für die Rettung der Seelen, verleiht der Botschaft von Fátima eine ganz besondere Anziehungskraft. Am 13. Mai 2000 wurden Francisco und Jacinta Marto von Papst Johannes Paul II. seliggesprochen. Und am 13. Mai 2017 erfolgte durch Papst Franziskus ihre Heiligsprechung. </p><p>Gott hat diese reinen Kinderseelen erwählt, Seine Schäflein auf die saftige Weide und zur sprudelnden Quelle des Evangeliums zu führen. So wurden die kleinen Schafhirten unter der Führung Unserer Lieben Frau zu Seelenhirten nach dem Herzen Jesu. Allen Gläubigen, vor allem den Kindern, leuchten sie voran auf dem Weg der Heiligkeit. Sie sind Boten des Friedens, jenes unaussprechlichen Friedens, nach dem die Menschheit so sehr dürstet. Die Frohbot schaft von Bethlehem hallt in Fátima wider:</p><p>Fürchtet euch nicht; ich bin der Engel des Friedens!</p><p>Unter den letzten Päpsten, die allesamt große Fátima-Verehrer waren, ragt in besonderer Weise der hl. Papst Johannes Paul II. hervor. Das Attentat auf sein Leben am 13. Mai 1981, hat ihn noch wacher für die Botschaft von Fátima gemacht. Immer wieder betonte der Papst, dass die Muttergottes sein Leben gerettet und die Kugel gegen ihn so gelenkt habe, dass er das Attentat überlebte. Deshalb schenkte er die Kugel, die seinen Leib durchbohrte, Unserer Lieben Frau von Fátima. Am 13. Mai 1982 betete er in Fátima: <br>O Unbeflecktes Herz! Hilf uns die Gefahr des Bösen zu überwinden… Möge sich noch einmal in der Geschichte der Welt die unendliche Macht der Erlösung zeigen: die Macht der barmherzigen Liebe! Möge sie dem Bösen Einhalt gebieten und die Gewissen verwandeln! In Deinem Unbefleckten Herzen offenbare sich allen das Licht der Hoffnung!</p><p>Einmal kamen zwei Priester, um uns zu befragen. Sie empfahlen uns, für den Heiligen Vater zu beten. Jacinta fragte, wer der Heilige Vater sei, und die Priester erklärten uns, wer er ist, und wie sehr er der Gebete bedürfe. Jacinta behielt eine so große Liebe zum Heiligen Vater, dass sie immer, wenn sie Jesus ihre Opfer anbot, hinzufügte und für den Heiligen Vater. Am Ende des Rosenkranzes betete sie immer drei Gegrüßet seist du Maria für den Heiligen Vater. [1 E I. 11] </p><p>Ich bin der Gute Hirte! (Joh 10,14)</p><p>Jacinta packte auch sehr gerne die weißen Lämmchen, umarmte und küsste sie und trug sie abends auf dem Arm nach Hause, damit sie nicht müde wurden. Eines Tages stellte sie sich auf dem Heimweg in die Mitte der Herde.<br>– Jacinta – fragte ich, warum gehst du dort mitten unter den Schafen?<br>– Um es wie Unser Heiland zu machen, der auf einem Bildchen, das man mir gab, auch so in der Mitte von vielen Schafen steht und eines auf dem Arm hält. [1 E I. 6]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -999,16 +1052,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1020,11 +1073,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>Die erste Erscheinung 1916 </h3><p>Wir hatten ein Weilchen schon gespielt, als plötzlich, obwohl es sonst ein ruhiger Tag war, ein starker Wind die Bäume schüttelte. Wir blickten nach oben und sahen […] einen Jüngling von 14 bis 15 Jahren, weißer als der Schnee. […], er war von großer Schönheit. Als er vor uns stand, sagte er: <br>– Habt keine Angst! Ich bin der Engel des Friedens! Betet mit mir! Auf die Erde niederkniend beugte er seine Stirn bis zum Boden und ließ uns dreimal diese Worte wiederholen:<br>– Mein Gott, ich glaube an Dich, ich bete Dich an, ich hoffe auf Dich, ich liebe Dich. Ich bitte Dich um Verzeihung für jene, die nicht an Dich glauben, Dich nicht anbeten, auf Dich nicht hoffen und Dich nicht lieben. </p><p>Danach sagte er sich erhebend:<br>– So sollt ihr beten. Die Herzen Jesu und Mariens erwarten eure flehentlichen Bitten. </p><p>Seine Worte prägten sich so tief in unser Gedächtnis, dass wir sie niemals mehr vergaßen. Von da an verbrachten wir viel Zeit damit, sie so tief gebeugt zu wiederholen, bis wir manch mal vor Müdigkeit umfielen. [2 E II. 2]</p><h3>Die zweite Erscheinung 1916</h3><p>Längere Zeit danach spielten wir an einem Sommertag […] an einem Brunnen. […] Plötzlich sahen wir vor uns die gleiche Gestalt, den Engel, wie mir schien. Er sagte:<br>– Was macht ihr? Betet, betet viel! Die Herzen Jesu und Mariens haben mit euch Pläne der Barmherzigkeit. Bringt dem Allerhöchsten unaufhörlich Gebete und Opfer dar.<br>– Wie sollen wir Opfer bringen? – fragte ich.<br>– Macht aus allem, was ihr könnt, ein Opfer, um die Sünden gutzumachen, durch die Er beleidigt wird und um die Bekehrung der Sünder zu erflehen. […] Vor allem nehmt das Leid an und ertragt in Ergebung, was der Herr euch schicken wird. [2 E II. 2]</p><p>Diese Worte des Engels prägten sich in unseren Geist ein wie ein Licht, das uns erkennen ließ, wer Gott ist, wie sehr Er uns liebt und von uns wiedergeliebt sein will. Wir erkannten den Wert des Opfers und wie es ihm wohlgefällig ist; und wie Er um des Opfers willen Sünder bekehrt. Von dieser Zeit an begannen wir, dem Herrn alles aufzuopfern, was uns kränkte, doch suchten wir keine anderen Abtötungen oder Bußübungen, als stundenlang auf die Erde niedergeworfen das Gebet des Engels zu wiederholen. [4 E II. 1]</p><h3>Die dritte Erscheinung 1916</h3><p>So verging einige Zeit und wir waren mit unseren Herden auf dem Weg zu einem Grundstück meiner Eltern. […] Als wir dort ankamen, begannen wir auf den Knien, die Gesichter am Boden, das Gebet des Engels zu wiederholen:<br>– Mein Gott, ich glaube an Dich … </p><p>Ich weiß nicht, wie viele Male wir dieses Gebet wiederholt hatten, als wir über uns ein unbekanntes Licht erstrahlen sahen. Wir richteten uns auf, um zu sehen, was vor sich ging und sahen den Engel. In der linken Hand hielt er einen Kelch; darüber schwebte eine Hostie, aus der einige Blutstropfen in den Kelch fielen. Der Engel ließ den Kelch in der Luft schweben, kniete sich zu uns nieder und ließ uns dreimal wiederholen: </p><p>Heiligste Dreifaltigkeit, Vater, Sohn und Heiliger Geist, in tiefster Ehrfurcht bete ich Dich an und opfere Dir auf den kostbaren Leib, das Blut, die Seele und die Gottheit Jesu Christi, der in allen Tabernakeln der Welt zugegen ist, zur Sühne für alle Schmähungen, Sakrilegien und Gleichgültigkeiten, durch die Er selbst beleidigt wird. Durch die unendlichen Verdienste Seines Heiligsten Herzens und des Unbefleckten Herzens Mariens, bitte ich Dich um die Bekehrung der armen Sünder. </p><p>Danach erhob er sich, ergriff den Kelch und die Hostie, reichte mir die heilige Hostie, und teilte das Blut im Kelch zwischen Jacinta und Francisco auf, wobei er sprach:<br>– Empfangt den Leib und trinkt das Blut Jesu Christi, der durch die undankbaren Menschen so furchtbar beleidigt wird. Sühnt ihre Sünden und tröstet euren Gott! Er kniete sich von neuem auf die Erde, wiederholte mit uns noch dreimal das gleiche Gebet: <br>Heiligste Dreifaltigkeit … <br>und verschwand. Wir verharrten in dieser Haltung und wiederholten immer die gleichen Worte. [2 E II. 2] </p><p>Verweilen wir lange auf den Knien vor dem in der Eucharistie gegenwärtigen Herrn, indem wir mit unserem Glauben und unserer Liebe die Nachlässigkeit, die Vergessenheit und sogar die Beleidigungen wiedergutmachen, die unser Erlöser in vielen Teilen der Welt erleiden muss. (Hl. Johannes Paul II., Mane nobiscum Domine, 18) </p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1034,16 +1093,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,11 +1114,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>Der 13. Mai 1917</h3><p>Ich spielte mit Francisco und Jacinta auf dem Gipfel des Abhanges der Cova da Iria. […] da sahen wir plötzlich etwas wie einen Blitz. […] <br>Wir begannen den Abhang hinabzusteigen und trieben die Schafe in Richtung auf die Straße. Als wir ungefähr in der Mitte des Abhangs waren, […] sahen wir über einer Steineiche eine Dame, ganz in Weiß gekleidet, strahlender als die Sonne. […] Überrascht durch diese Erscheinung blieben wir stehen. […] Dann sagte Unsere Liebe Frau:<br>– Habt keine Angst! Ich tue euch nichts Böses!<br>– Woher kommen Sie? – fragte ich sie.<br>– Ich bin vom Himmel!<br>– Und was wollen Sie von mir?<br>– Ich bin gekommen, euch zu bitten, dass ihr in den folgenden sechs Monaten, jeweils am Dreizehnten zur selben Stunde hierherkommt. Dann werde ich euch sagen, wer ich bin und was ich will. […]<br>– Komme ich auch in den Himmel?<br>– Ja, du wirst!<br>– Und Jacinta?<br>– Auch!<br>– Und Francisco?<br>– Auch, aber er muss noch viele Rosenkränze beten. […] <br>– Wollt ihr euch Gott anbieten, um alle Leiden zu ertragen, die Er euch schicken wird, zur Sühne für die Sünden, durch die Er beleidigt wird und als Bitte um die Bekehrung der Sünder?<br>– Ja, wir wollen es!<br>– Ihr werdet also viel leiden müssen, aber die Gnade Gottes wird euer Trost sein! </p><p>Bei den Erscheinungen vom 13. Mai bis zum 13. Oktober 1917 waren die „Grade der Kommunikation“ Unserer Lieben Frau mit den drei Kindern unterschiedlich: Jacinta sah und hörte die Jungfrau; Lúcia sah, hörte und war die einzige, die mit ihr sprach; Francisco sah alles, konnte aber nie hören, was Unsere Liebe Frau sagte. </p><p>Als sie diese letzten Worte sagte, öffnete sie zum ersten Mal die Hände und übermittelte uns ein so starkes Licht, das wie ein Widerschein von ihren Händen ausging. Es drang uns in die Brust und bis in die tiefste Tiefe der Seele und wir erkannten uns selber in Gott, der dieses Licht war, viel klarer, als wir uns im besten Spiegel sehen konnten. Durch eine innere Anregung, die uns ebenfalls mitgeteilt wurde, fielen wir nun auf die Knie und wiederholten ganz innerlich:</p><p>– O Heiligste Dreifaltigkeit, ich bete Dich an. Mein Gott, mein Gott, ich liebe Dich im Heiligsten Sakrament. </p><p>Nach einigen Augenblicken fügte Unsere Liebe Frau hinzu:<br>– <strong>Betet täglich den Rosenkranz</strong>, um den Frieden der Welt und um das Ende des Krieges zu erlangen! Daraufhin begann sie sich langsam zu erheben und in Richtung des Sonnenaufgangs aufzusteigen, bis sie in der Unendlichkeit der Ferne verschwand. [4 E II. 3] </p><p>Jene Dame sagte uns, wir sollten den Rosenkranz beten und Opfer bringen für die Bekehrung der Sünder. Wenn wir jetzt den Rosenkranz beten, müssen wir das Gegrüßet seist Du Maria und das Vater Unser ganz beten. Und die Opfer, wie sollen wir die bringen?<br> Francisco entdeckte schnell ein gutes Opfer.<br>– Lasst uns unser Mittagsbrot den Schafen geben – bringen wir das Opfer nichts zu essen. In wenigen Minuten war unser Vorrat an die Herde verteilt. [1 E I. 8]</p><p>„Man hatte uns empfohlen, nach dem Vesperbrot den Rosenkranz zu beten, aber weil uns die Zeit zum Spielen zu kurz vorkam, hatten wir eine gute Art herausgefunden, schnell fertig zu werden: Wir ließen die Perlen gleiten, indem wir nur sagten: Ave Maria, Ave Maria, Ave Maria! Wenn wir am Ende des Geheimnisses angekommen waren, sagten wir mit einer großen Pause die einfachen Worte: Vater Unser. Und so hatten wir im Nu unseren Rosenkranz gebetet.“ [1 E I. 6] </p><h3>Der 13. Juni 1917</h3><p>Nachdem ich, Jacinta und Francisco und noch einige Anwesenden den Rosenkranz gebetet hatten, sahen wir von neuem den Lichtschein, der sich näherte (den wir Blitz nannten), und dann Unsere Liebe Frau über der Steineiche, genau wie im Mai.</p><p><strong>– Was wünschen Sie von mir?</strong><strong><br></strong>– fragte ich.<br><strong>– Ich möchte, dass ihr alle Tage den Rosenkranz betet und lesen lernt. […]</strong></p><p><strong>– Ich bat um die Heilung eines Kranken.</strong><strong><br></strong><strong>– Wenn er sich bekehrt, wird er innerhalb des Jahres gesund werden.</strong></p><p><strong>– Ich möchte Sie bitten, uns in den Himmel mitzunehmen.</strong><strong><br></strong><strong>– Ja! Jacinta und Francisco werde ich bald holen. Du aber bleibst noch einige Zeit hier. Jesus möchte sich deiner bedienen, damit die Menschen mich erkennen und lieben. Er möchte auf Erden die Verehrung meines Unbefleckten Herzens begründen.</strong></p><p><em>(Hier lässt Lúcia aus Eile das Ende des Absatzes aus, das in anderen Dokumenten so lautet: „Wer sie annimmt, dem verspreche ich das Heil, und diese Seelen werden von Gott geliebt wie Blumen, die von mir hingestellt sind, um seinen Thron zu schmücken.“ [4 E II. 4])</em></p><p><strong>– Bleibe ich hier allein?</strong><strong><br></strong>– fragte ich traurig.<br><strong>– Nein, meine Tochter! Leidest du sehr? Lass dich nicht entmutigen. Niemals werde ich dich verlassen. Mein Unbeflecktes Herz wird deine Zuflucht sein und der Weg, der dich zu Gott führen wird.</strong></p><p>In dem Augenblick, als sie diese letzten Worte sagte, öffnete sie die Hände und übermittelte uns zum zweiten Male den Widerschein dieses unermesslichen Lichtes. Darin sahen wir uns wie in Gott versenkt. Jacinta und Francisco schienen in dem Teil des Lichtes zu stehen, der sich zum Himmel erhob, und ich in dem Teil, der sich über die Erde ergoss. Vor der rechten Handfläche Unserer Lieben Frau befand sich ein Herz, umgeben von Dornen, die es zu durchbohren schienen. Wir verstanden, dass dies das Unbefleckte Herz Mariä war, verletzt durch die Sünden der Menschheit, das Sühne wünscht. <em>(Quelle: [4 E II. 4])</em></p><p>Von diesem Tage an fühlten wir im Herzen eine noch stärkere Liebe zum Unbefleckten Herzen Mariens. Jacinta sagte mir zuweilen:<br><strong>– Jene Dame sagte, ihr Unbeflecktes Herz werde deine Zuflucht sein und der Weg, der dich zu Gott führt. Liebst du sie sehr? Ich liebe ihr Herz so sehr! Es ist so gut!</strong> <em>(Quelle: [3 E 5])</em></p><h3>Der 13. Juli 1917</h3><p>Kurz nachdem wir in der Cova da Iria bei der Steineiche angekommen waren und mit einer großen Volksmenge den Rosenkranz beteten, sahen wir den gewohnten Lichtschein und bald darauf Unsere Liebe Frau über der Steineiche.</p><p><strong>– Was wünschen Sie von mir?</strong><strong><br></strong>– fragte ich.<br><strong>– Ich möchte, dass ihr am Dreizehnten des kommenden Monats wieder hierherkommt, dass ihr weiterhin jeden Tag den Rosenkranz zu Ehren Unserer Lieben Frau vom Rosenkranz betet, um den Frieden für die Welt und das Ende des Krieges zu erlangen. […]</strong></p><p><strong>– Ich möchte Sie bitten, uns zu sagen, wer Sie sind, und ein Wunder zu tun, damit alle glauben, dass sie uns erscheinen.</strong><strong><br></strong><strong>– Kommt weiterhin jeden Monat hierher! Im Oktober werde ich euch sagen, wer ich bin, was ich wünsche und werde ein Wunder tun, damit alle glauben.</strong></p><p>Dann fuhr sie fort:<br><strong>– Opfert euch auf für die Sünder und sagt oft zu Jesus, besonders wenn ihr ein Opfer bringt: O mein Jesus, es ist aus Liebe zu Dir, für die Bekehrung der Sünder, für den Heiligen Vater und zur Sühne für die Sünden gegen das Unbefleckte Herz Mariens.</strong></p><p>Bei diesen letzten Worten öffnete sie aufs Neue die Hände wie in den zwei vorhergegangenen Monaten. Der Strahl schien die Erde zu durchdringen, und wir sahen gleichsam ein Feuermeer und eingetaucht in dieses Feuer die Teufel und die Seelen, als ob sie durchscheinend, schwarz und bronzefarbig glühende Kohlen in menschlicher Gestalt waren, die in diesem Feuer schwammen. […]</p><p>Erschrocken und wie um Hilfe bittend erhoben wir den Blick zu Unserer Lieben Frau, die voll Güte und Traurigkeit zu uns sprach:<br><strong>– Ihr habt die Hölle gesehen, wohin die Seelen der armen Sünder kommen. Um sie zu retten, will Gott die Andacht zu meinem Unbefleckten Herzen in der Welt begründen. Wenn man tut, was ich euch sage, werden viele Seelen gerettet werden, und es wird Friede sein. Der Krieg geht seinem Ende entgegen. Wenn man aber nicht aufhört, Gott zu beleidigen, wird unter dem Pontifikat von Pius XI. ein anderer, schlimmerer Krieg beginnen. Wenn ihr eine Nacht erhellt seht durch ein unbekanntes Licht, dann wisst, dass dies das große Zeichen ist, das Gott euch gibt, dass er nun die Welt für ihre Missetaten mit Krieg, Hungersnot, Verfolgung der Kirche und des Heiligen Vaters strafen wird.</strong></p><p><strong>– Um das zu verhüten, werde ich kommen und um die Weihe Russlands an mein Unbeflecktes Herz und die Sühnekommunion an den ersten Samstagen bitten.</strong> <em>(Dieses Versprechen erfüllte sie einige Jahre später, als sie Lúcia 1925 und 1926 in Pontevedra, Spanien [siehe Seite 39], und 1929 in Tuy, Spanien [siehe Seite 41] erschien.)</em></p><p><strong>– Wenn man auf meine Wünsche hört, wird Russland sich bekehren, und es wird Friede sein. Wenn nicht, dann wird es seine Irrlehren über die Welt verbreiten, wird Kriege und Verfolgungen der Kirche heraufbeschwören. Die Guten werden gemartert werden, und der Heilige Vater wird viel zu leiden haben. Verschiedene Nationen werden vernichtet werden. Am Ende aber wird mein Unbeflecktes Herz triumphieren. Der Heilige Vater wird mir Russland weihen, das sich bekehren wird, und eine Zeit des Friedens wird der Welt geschenkt werden. In Portugal wird sich immer das Dogma des Glaubens erhalten.</strong> […]</p><p><strong>– Wenn ihr den Rosenkranz betet, dann sagt nach jedem Gesetz: O mein Jesus, verzeihe uns unsere Sünden, bewahre uns vor dem Feuer der Hölle, führe alle Seelen in den Himmel, besonders jene, die Deiner Barmherzigkeit am meisten bedürfen.</strong> […]</p><p>In gewohnter Weise erhob sie sich in Richtung Osten, bis sie in der unendlichen Ferne des Firmamentes entschwand. <em>(Quelle: [4 E II. 5])</em></p><p>Wir machten damals zum ersten Mal eine Betrachtung über die Hölle und die Ewigkeit. Was Jacinta am meisten beeindruckte, war die Ewigkeit. Selbst beim Spiel fragte sie ab und zu:<br><strong>– Aber sieh mal, nach vielen, vielen Jahren hört dann die Hölle immer noch nicht auf?</strong> […]</p><p>Danach fügte sie hinzu:<br><strong>– Wie gut jene Dame ist! Sie hat uns schon versprochen, uns in den Himmel mitzunehmen.</strong> <em>(Quelle: [1 E I. 8])</em></p><p>Jacinta konnte zeit ihres kurzen Lebens die Höllenvision vom 13. Juli 1917 nicht mehr vergessen. Noch kurz vor ihrem Tode rief sie in Gegenwart der Oberin des Krankenhauses von Lissabon, wohin man sie gebracht hatte, aus:</p><p><strong>„Wenn die Menschen wüssten, was die Ewigkeit bedeutet! Wie würden sie dann alles tun, was in ihrer Kraft liegt, um ihr Leben zu ändern! Liebe Patin (so nannte sie die Oberin), die Abtötung und die Opfer machen Unserem Herrn viel Freude. Flieht den Luxus! Flieht die Reichtümer! Liebt die Armut! Übt die Liebe, selbst den bösen Menschen gegenüber! Sagt niemals etwas Schlechtes über jemand, und meidet diejenigen, die andere verachten! Übt stets die Geduld; denn die Geduld führt zum Himmel! Die Priester dürfen sich nur mit den Angelegenheiten der Kirche befassen. Sie müssen rein sein, ganz rein! Der Ungehorsam der Priester und der Ordensleute ihren Oberen und dem Heiligen Vater gegenüber beleidigt Unseren Herrn gar sehr.“</strong> <em>(Quelle: Fátima und der Friede, S. 99)</em> </p><h3>Die Lampen der Engel</h3><p>Wir stritten uns darüber, wer fähig sei, die Sterne zu zählen, die, wie wir sagten, die Lampen der Engel seien. Der Mond war die Laterne Unserer Lieben Frau und die Sonne die Unseres Heilands. Darum sagte Jacinta manchmal:<br><strong>– Ich habe die Lampe Unserer Lieben Frau lieber, da sie uns weder brennt noch blendet, wie es die Unseres Heilands tut.</strong> <em>(Quelle: [1 E I. 4])</em></p><p>Dann gingen wir zur Tenne, sprangen ein wenig herum, warteten darauf, dass Unsere Liebe Frau und die Engel ihre Lampen anzündeten und sie ins Fenster stellten, um uns zu leuchten. War kein Mond da, dann meinten wir, die Lampe Unserer Lieben Frau habe kein Öl mehr. <em>(Quelle: [1 E I. 6])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1069,16 +1134,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1090,11 +1155,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Inzwischen dämmerte der Morgen des 13. August. […]<br> Alle wollten uns sehen, uns ausfragen und uns ihre Bitten anvertrauen, damit wir sie der Heiligsten Jungfrau vortrugen. […]</p><p>Inmitten all dieses Gedränges wurde mein Vater aufgefordert, mich zum Hause meiner Tante zu bringen, wo uns der Verwalter erwartete. […]</p><p>Als ich ankam, war der Verwalter im Zimmer mit Jacinta und Francisco. Dort fragte er uns und versuchte von neuem uns das Versprechen abzuringen, dass wir nicht mehr zur Cova da Iria gehen würden. <em>(Quelle: [2 E II. 11])</em></p><p>Als wir später gefangengenommen wurden, war es die Abwesenheit der Eltern, die Jacinta am schwersten bedrückte. […]<br> <strong>– Weine nicht</strong> – sagte Francisco zu ihr, – <strong>opfern wir es Jesus für die Sünder auf.</strong></p><p>Und die Augen und Hände zum Himmel erhebend, sprach er das Aufopferungsgebet:<br> <strong>– O mein Jesus, es ist aus Liebe zu Dir und für die Bekehrung der Sünder.</strong> […]</p><p>Als wir nach der Trennung voneinander wieder in einem Gefängnissaal zusammengeführt wurden, erklärten sie, sie würden uns in Kürze holen, um uns zu verbrennen. Da zog sich Jacinta an ein Fenster zurück. Anfangs dachte ich, sie wolle sich durch den Ausblick zerstreuen, aber dann bemerkte ich, dass sie weinte.</p><p>Ich nahm sie zu mir und fragte, warum sie weine:<br> <strong>– Weil wir sterben werden, ohne unsere Väter und Mütter wiedergesehen zu haben,</strong> antwortete sie.</p><p>Und mit tränenüberströmtem Gesicht:<br> <strong>– Ich möchte wenigstens meine Mutter sehen!</strong></p><p><strong>– Du möchtest also dieses Opfer nicht für die Bekehrung der Sünder bringen?</strong></p><p><strong>– Ich will, ich will.</strong></p><p>Und während die Tränen ihr übers Gesicht liefen, erhob sie Hände und Augen zum Himmel und verrichtete das Aufopferungsgebet:<br> <strong>– O mein Jesus! Es ist aus Liebe zu Dir, für die Bekehrung der Sünder, für den Heiligen Vater und zur Sühne für die Sünden, die gegen das Unbefleckte Herz Mariens begangen werden.</strong> <em>(Quelle: [1 E I. 12])</em></p><p>Dann beschlossen wir, unseren Rosenkranz zu beten. Jacinta zog eine Medaille hervor, die sie um den Hals trug, und bat einen Gefangenen, sie an einem Nagel an der Wand aufzuhängen. Vor dieser Medaille kniend begannen wir zu beten.</p><p>Die Gefangenen beteten mit uns, so gut sie konnten. […]</p><p>Da die Heiligste Jungfrau uns gesagt hatte, dass wir auch unsere Gebete und Opfer zur Sühne für die Sünden gegen das Unbefleckte Herz Mariens darbringen sollten, wollten wir vereinbaren, dass jeder für seine eigene Intention opfern sollte. Einer sollte für die Sünder opfern, der andere für den Heiligen Vater und der dritte als Sühne für die Sünden gegen das Unbefleckte Herz Mariens.</p><p>Nachdem wir diese Vereinbarung getroffen hatten, bat ich Jacinta, auszuwählen, für welche Intention sie opfern wollte:<br> <strong>– Ich opfere für alle, weil ich alle gerne habe.</strong> <em>(Quelle: [1 E I. 13])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1104,16 +1175,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1125,11 +1196,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>Der 19. August 1917</h3><p>Als ich mit Francisco und seinem Bruder Johannes die Schafe an einen Ort trieb, der Valinhos heißt und etwas Übernatürliches verspürte, das sich näherte und uns umhüllte, ahnte ich, dass Unsere Liebe Frau uns erscheinen würde. […]</p><p>Nach Jacintas Ankunft erblickten wir kurz darauf Unsere Liebe Frau über einer Steineiche.</p><p><strong>– Was wünschen Sie von mir?</strong><strong><br></strong> <strong>– Ich will, dass ihr am Dreizehnten zur Cova da Iria kommt und weiterhin täglich den Rosenkranz betet. […]</strong></p><p><strong>Betet, betet viel und bringt Opfer für die Sünder, denn viele Seelen kommen in die Hölle, weil sich niemand für sie opfert und für sie betet.</strong></p><p>Und wieder erhob sie sich wie gewöhnlich in Richtung Osten. <em>(Quelle: [4 E II. 6])</em></p><p><em>Seitdem Unsere Liebe Frau uns gelehrt hatte, Jesus unsere Opfer darzubringen, fragte Jacinta immer, wenn wir eines bringen wollten, oder wenn wir irgendeine Prüfung erdulden mussten:</em><em><br></em><em> </em><strong>– Hast du Jesus schon gesagt, dass es aus Liebe zu Ihm ist?</strong></p><p>Wenn ich ihr mit nein antwortete:<br> <strong>– Dann sage ich es Ihm.</strong></p><p>Und sie faltete die kleinen Hände, erhob die Augen zum Himmel und sagte:<br> <strong>– O Jesus, es ist aus Liebe zu Dir und für die Bekehrung der Sünder.</strong> <em>(Quelle: [1 E I. 10])</em></p><h3>Der 13. September 1917</h3><p>Als die erwartete Stunde sich näherte, ging ich mit Jacinta und Francisco zwischen zahlreichen Personen hindurch. […]</p><p>Wir kamen schließlich in der Cova da Iria bei der Steineiche an und begannen mit dem Volk den Rosenkranz zu beten. Kurz darauf sahen wir den Lichtschein und danach Unsere Liebe Frau über der Steineiche.</p><p><strong>– Betet weiterhin den Rosenkranz, um das Ende des Krieges zu erlangen. Im Oktober wird auch Unser Herr kommen, Unsere Liebe Frau von den Schmerzen und vom Berge Karmel,</strong> <em>(Sie wollte damit ihren Wunsch zum Ausdruck bringen, jedermann solle das Skapulier tragen […] Rosenkranz und Skapulier gehören untrennbar zusammen. [Sr. Lúcia in: Fátima und der Friede, S. 147])</em> <strong>der heilige Josef mit dem Jesuskind, um die Welt zu segnen. Gott hat Freude mit euren Opfern, aber Er will nicht, dass ihr mit dem Strick schlaft. Tragt ihn nur tagsüber.</strong></p><p><strong>– Man hat mich gebeten, vieles von Ihnen zu erflehen: die Heilung einiger Kranker und die eines Taubstummen.</strong><strong><br></strong><strong>– Ja, einige werde ich heilen, andere nicht. Im Oktober werde ich ein Wunder wirken, damit alle glauben.</strong></p><p>Und sie begann sich zu erheben und entschwand wie gewöhnlich. <em>(Quelle: [4 E II. 7])</em></p><p><em>Manchmal trafen mich Francisco und Jacinta traurig an. Da ich vor Schluchzen nicht sprechen konnte, litten sie mit mir und weinten ebenfalls. Dann verrichtete Jacinta mit lauter Stimme unser Aufopferungsgebet:</em><em><br></em><strong>– Mein Gott, wir bieten Dir all diese Leiden und Opfer als Akt der Wiedergutmachung und für die Bekehrung der Sünder an.</strong> <em>(Quelle: [2 E II. 3])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1139,20 +1216,20 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg" 
-                 alt="Der 13. Oktober 1917" 
+            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg"
+                 alt="Der 13. Oktober 1917"
                  class="section-image">
             
         </div>
@@ -1167,11 +1244,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Wir verließen schon ziemlich früh das Haus, da wir mit Verzögerungen auf dem Weg rechneten. Das Volk kam in Massen. Es regnete in Strömen. […] Nicht einmal der Schlamm auf den Wegen konnte diese Leute aufhalten, sich in demütiger und bittender Haltung niederzuknien. […]</p><p>Kurz darauf sahen wir den Lichtschein und dann Unsere Liebe Frau über der Steineiche.</p><p><strong>– Was wünschen Sie von mir?</strong><strong><br></strong> <strong>– Ich möchte dir sagen, dass hier eine Kapelle zu meiner Ehre gebaut werden soll. Ich bin Unsere Liebe Frau vom Rosenkranz. Man soll weiterhin täglich den Rosenkranz beten. […]</strong></p><p><strong>– Ich wollte Sie um vieles bitten: ob Sie einige Kranke heilen und einige Sünder bekehren möchten, und vieles mehr.</strong></p><p><strong>– Einige ja, andere nicht. Sie müssen sich bessern und um Vergebung ihrer Sünden bitten.</strong></p><p>Und noch trauriger sagte sie:<br> <strong>– Man soll Gott, Unseren Herrn, nicht mehr beleidigen, der schon so sehr beleidigt worden ist.</strong> <em>(Quelle: [8])</em></p><p>Sie öffnete die Hände und ließ sie im Sonnenschein erstrahlen. Während sie sich erhob, strahlte ihr eigenes Licht in der Sonne wider. <em>(Quelle: [4 E II. 8])</em></p><p><em>Es waren die letzten Worte Marias, der Kern der Botschaft von Fátima. Darauf geschah das Sonnenwunder vor ca. 60.000 bis 70.000 Anwesenden. Dieses Naturereignis wurde von einzelnen Personen in einem Umkreis bis zu 40 Kilometer wahrgenommen. Die Sonne kreiste dreimal nacheinander. Dabei fielen Strahlenbündel in Regenbogenfarben auf die Mulde und alle dort Anwesenden.</em></p><p><em>Die Kinder sahen dabei die Gottesmutter, dann den heiligen Josef mit dem Jesuskind auf dem Arm, den Heiland, der das Volk segnete, und schließlich Maria als Schmerzensmutter und dann als Unsere Liebe Frau vom Berge Karmel.</em></p><p><em>Nach dem dritten Kreisen verfärbte sich die Sonne blutrot und schien im Zickzack auf die Menge herunterzustürzen. Gläubige und Ungläubige sanken vor Angst in die Knie, beteten und bekannten sich als Sünder und flehten um Barmherzigkeit. Viele Kranke, darunter auch Lahme und Blinde, wurden schlagartig geheilt.</em></p><p><em>Als das Ereignis vorbei war, bemerkten die Menschen, dass ihre völlig durchnässten Kleider plötzlich trocken waren.</em></p><p>Jacinta nahm die Opfer für die Bekehrung der Sünder so ernst, dass sie sich auch nicht eine Gelegenheit dafür entgehen ließ. Da waren einige Kinder aus Moita, die an den Türen betteln gingen. Wir trafen sie eines Tages, als wir mit unseren Schafen unterwegs waren. Als Jacinta sie sah, sagte sie uns:<br> <strong>– Lasst uns unser Mittagsbrot jenen Armen geben für die Bekehrung der Sünder.</strong> <em>(Quelle: [1 E I. 9])</em></p><p>Andere Male sagte sie zu mir:<br> <strong>– Ich weiß nicht, wie das ist. Ich fühle den Heiland in meinem Inneren. Ich verstehe, was Er mir sagen will, ohne dass ich Ihn sehe oder höre; aber es ist so schön, bei Ihm zu sein.</strong></p><p>Wieder ein andermal:<br> <strong>– Hör zu, weißt du was? Unser Heiland ist traurig. Unsere Liebe Frau hat uns gesagt, man soll Ihn nicht mehr beleidigen, da Er schon so sehr beleidigt wurde, aber niemand richtet sich danach. Sie begehen weiterhin dieselben Sünden.</strong> <em>(Quelle: [3 E 9])</em></p><p>Wenn sie aus Abtötung nichts essen wollte, sagte ich:<br> <strong>– Jacinta, los iss doch!</strong><strong><br></strong> <strong>– Nein, ich will dieses Opfer für jene Sünder bringen, die zu viel essen.</strong></p><p>Als sie schon krank war, wollte sie eines Tages zur Hl. Messe gehen. Ich bat sie:<br> <strong>– Jacinta, geh nicht, du kannst ja nicht. Heute ist doch kein Sonntag!</strong><strong><br></strong> <strong>– Das macht nichts! Ich gehe für die Sünder, die nicht einmal am Sonntag gehen.</strong> <em>(Quelle: [3 E 3])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1181,16 +1264,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1202,11 +1285,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Am 10. Dezember 1925 erschien Schwester Lúcia die Heiligste Jungfrau in Pontevedra und seitlich, in einer leuchtenden Wolke, ein Kind. Die Heiligste Jungfrau legte ihr die Hand auf die Schulter und zeigte ein von Dornen umgebenes Herz, das sie in der anderen Hand hielt. Das Kind sagte:<br> <strong>– Habe Mitleid mit dem Herzen deiner Heiligsten Mutter, umgeben von Dornen, mit denen die undankbaren Menschen es ständig durchbohren, ohne dass jemand einen Sühneakt machen würde, um sie herauszuziehen.</strong></p><p>Darauf sagte die Heiligste Jungfrau:<br> <strong>– Meine Tochter, sieh mein Herz umgeben von Dornen, mit denen es die undankbaren Menschen durch ihre Lästerungen und Undankbarkeiten ständig durchbohren. Bemühe wenigstens du dich, mich zu trösten und teile mit, dass ich verspreche, all jenen in der Todesstunde mit allen Gnaden, die für das Heil dieser Seelen notwendig sind, beizustehen, die fünf Monate lang jeweils am ersten Samstag beichten, die heilige Kommunion empfangen, einen Rosenkranz beten und mir während 15 Minuten durch Betrachtung der 15 Rosenkranzgeheimnisse Gesellschaft leisten in der Absicht, mir dadurch Sühne zu leisten.</strong></p><p><strong>Am 15. Februar 1926 erschien ihr von neuem das Jesuskind. Es fragte sie, ob sie schon die Andacht zu Seiner Mutter verbreitet hätte. Sie legte Ihm die Schwierigkeiten dar, die der Beichtvater hatte, und sagte Ihm, die Mutter Oberin sei bereit, sie zu verbreiten, doch habe der Beichtvater erklärt, dass sie allein nichts vermag. Jesus antwortete:</strong><strong><br></strong><strong> – Es ist wahr, dass deine Oberin allein nichts vermag, aber mit Meiner Gnade kann sie alles.</strong></p><p>Sie legte Jesus die Schwierigkeiten dar, die einige Seelen hatten, am Samstag zu beichten, und bat darum, dass die Beichte acht Tage lang gültig sein möge. Jesus antwortete:<br> <strong>– Ja, es kann sogar viel länger sein, vorausgesetzt, dass sie im Stande der Gnade sind, wenn sie Mich empfangen, und dass sie die Absicht haben, dem Unbefleckten Herzen Mariens Sühne zu leisten.</strong></p><p><strong>– Mein Jesus, und wenn jemand vergisst, diese Meinung zu erwecken?</strong></p><p>Jesus antwortete:<br> <strong>– Das können sie bei der nächsten Beichte tun, sofern sie die erste Gelegenheit wahrnehmen, die sie zur Beichte haben.</strong> <em>(Quelle: [A I])</em></p><p><em>(Dieser Text ist eine Niederschrift von Schwester Lúcia aus dem Jahre 1927 auf Anordnung ihres Seelenführers Pater Aparício, S.J. Hier finden wir die notwendigen Bedingungen zur Erfüllung des Versprechens der fünf Ersten Samstage zur Wiedergutmachung für die Schmähungen gegen das Herz Mariä. Niemals sollte man dabei die eigentliche Absicht vergessen: dem Herzen Mariens Sühne zu leisten.)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1216,16 +1305,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1237,11 +1326,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Ich hatte von meinen Oberinnen und meinem Beichtvater die Erlaubnis erbeten und erhalten, jeweils in der Nacht vom Donnerstag auf Freitag von elf Uhr bis Mitternacht Heilige Stunde zu halten.</p><p>Eines Nachts war ich allein. Ich kniete mich an das Geländer in der Mitte der Kapelle, um die Gebete des Engels zu beten. Da ich mich müde fühlte, richtete ich mich auf und betete weiter mit ausgebreiteten Armen. […]</p><p>Plötzlich erhellte sich die Kapelle durch ein übernatürliches Licht, und auf dem Altar erschien ein Kreuz aus Licht, das bis zur Decke reichte. In einem klaren Licht sah man im oberen Teil des Kreuzes das Antlitz und den Oberkörper eines Menschen, über der Brust eine Taube, ebenfalls aus Licht, und an das Kreuz genagelt den Körper eines anderen Menschen.</p><p>Ein wenig unterhalb der Taille, in der Luft schwebend, sah man den Kelch und eine große Hostie, auf die einige Tropfen Blut fielen, die vom Angesicht des Gekreuzigten und aus einer Brustwunde herabliefen. Von der Hostie herabgleitend fielen diese Tropfen in den Kelch.</p><p>Unter dem rechten Arm des Kreuzes stand Unsere Liebe Frau. Es war Unsere Liebe Frau von Fátima mit ihrem Unbefleckten Herzen in der linken Hand ohne Schwert und Rosen, jedoch mit einer Dornenkrone und Flammen. Unter dem linken Arm des Kreuzes bildeten einige große Buchstaben, die auf den Altar zuliefen, gleichsam als wären sie aus kristallklarem Wasser, die Worte: <strong>Gnade und Barmherzigkeit.</strong></p><p><strong>(</strong><a href="https://i0.wp.com/catholicism.org/wp-content/blogs.dir/1/files/2008/01/Tuy_Vision.jpg?fit=868%2C1200&amp;ssl=1" target="_blank" rel="noopener noreferrer"><strong>Bild</strong></a><strong>)</strong></p><p>Ich verstand, dass mir das Geheimnis der Heiligsten Dreifaltigkeit gezeigt worden war. […] Anschließend sagte mir Unsere Liebe Frau:<br> <strong>– Es ist der Augenblick gekommen, in dem Gott den Heiligen Vater auffordert, in Vereinigung mit allen Bischöfen der Welt die Weihe Russlands an mein Unbeflecktes Herz zu vollziehen. Er verspricht, es durch dieses Mittel zu retten. So viele Seelen werden von der Gerechtigkeit Gottes wegen der Sünden verdammt, die gegen mich begangen werden, so dass ich um Sühne bitte: Opfere dich in dieser Meinung auf und bete.</strong></p><p>Ich berichtete das meinem Beichtvater, der mir auftrug, niederzuschreiben, was Unsere Liebe Frau wünschte. <em>(Quelle: [A II])</em></p><p><em>(Fast 55 Jahre musste Unsere Liebe Frau auf die Erfüllung ihrer Bitte warten. Erstmals am 25. März 1984 vollzog Papst Johannes Paul II. in Gemeinschaft mit mehr als 2600 katholischen Bischöfen der Welt und vielen Bischöfen der Russisch- und Griechisch-Orthodoxen Kirche die Weihe der Welt und jener Nationen „die der Barmherzigkeit Gottes am meisten bedürfen.“ Obwohl der Weihetext kein Land speziell aufführte, erwähnte der Papst die Namen von Russland und seinem Vaterland Polen. Es war die von Unserer Lieben Frau verlangte gemeinsame Weihe zum Trost und zur Sühne für die Beleidigungen, die ihrem Unbefleckten Herzen zugefügt werden. Wenige Monate später wurde Michail Gorbatschow Generalsekretär der KPdSU und führte Russland aus der kommunistischen Diktatur heraus.)</em> <em>(Quelle: [3 E 2])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1251,16 +1346,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1272,11 +1367,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Das „Geheimnis“ von Fátima bezieht sich auf einen Ausschnitt der Botschaft vom 13. Juli 1917, welche die Hirtenkinder nach der Weisung Unserer Lieben Frau geheim halten sollten.</p><p>Am 13. August 1917 ließ der Bezirksvorsteher von Fátima die drei Hirtenkinder ins Gefängnis werfen. Durch zermürbende Verhöre und die Androhung eines qualvollen Todes wurde versucht, die Kinder zu zwingen, das Geheimnis zu verraten. Doch diese blieben standhaft. Nach zwei Tagen wurden sie aus der Haft entlassen.</p><p><a href="https://c8.alamy.com/compde/2wah5m1/das-gemalde-uber-dem-hauptaltar-in-der-basilika-unserer-lieben-frau-vom-rosenkranz-in-fatima-portugal-das-gemalde-erzahlt-die-geschichte-der-fatima-ereignisse-2wah5m1.jpg" target="_blank" rel="noopener noreferrer"><strong>Hochaltarbild in der Rosenkranzbasilika</strong></a><strong>:</strong> Christus kommt in der hl. Eucharistie zu uns Menschen – versinnbildlicht durch drei Kinder, denen der Engel die hl. Kommunion spendet. Aber nicht der Engel, sondern die Gottesmutter ist es, die zwischen Gott und den Menschen steht.</p><h3>Die ersten beiden Teile des Geheimnisses</h3><p>Die beiden ersten Teile des Geheimnisses wurden durch Schwester Lúcia, auf Bitten von D. José Alves Correia da Silva, Bischof von Leiria, 1941 aufgeschrieben:<br> <strong>„Das Geheimnis besteht aus drei verschiedenen Teilen, von denen ich zwei offenbaren will. Der erste Teil war die Vision der Hölle …“</strong> <em>(Quelle: [A III])</em></p><p>Der zweite Teil bezieht sich auf die Verehrung des Unbefleckten Herzens Mariens. <em>(Quelle: [3 E 5])</em></p><p>Den dritten Teil des Geheimnisses schrieb Schwester Lúcia ebenfalls im Auftrag des Bischofs am 3. Januar 1944 in Tuy nieder. <em>(Quelle: [A III])</em></p><p>Papst Johannes Paul II. ließ am 26. Juni 2000 den dritten Teil des Geheimnisses veröffentlichen.</p><p><strong>„Wie wir als Schlüsselwort des ersten und zweiten Geheimnisses salvare le anime (die Seelen retten) erkannten, so ist das Schlüsselwort dieses Geheimnisses der dreimalige Ruf: Penitenza, Penitenza, Penitenza (Buße, Buße, Buße)! Wir werden an den Anfang des Evangeliums erinnert: Tut Buße und glaubt an das Evangelium (Mk 1,15). Die Zeichen der Zeit verstehen heißt: Die Dringlichkeit von Buße – Umkehr – Glaube begreifen. Das ist die richtige Antwort auf den historischen Augenblick, der von großen Gefahren umstellt ist. Ich darf hier eine persönliche Erinnerung einflechten: In einem Gespräch mit mir hat Schwester Lúcia gesagt, ihr werde immer mehr deutlich, dass das Ziel der ganzen Erscheinungen gewesen sei, mehr in Glaube, Hoffnung und Liebe einzuüben – alles andere sei nur Hinführung dazu.“</strong><strong><br></strong> <em>(Aus dem Kommentar von Kardinal Joseph Ratzinger über das Geheimnis von Fátima)</em> <em>(Quelle: [A III])</em></p><h3>Dritter Teil des Geheimnisses</h3><p><strong>„J. M. J. Der dritte Teil des Geheimnisses, das am 13. Juli 1917 in der Cova da Iria, Fátima, offenbart wurde. Ich schreibe aus Gehorsam gegenüber Euch, meinem Gott, der es mir aufträgt, durch seine Exzellenz, den Hochwürdigsten Herrn Bischof von Leiria, und durch Eure und meine Allerheiligste Mutter.</strong></p><p>Nach den zwei Teilen, die ich schon dargestellt habe, haben wir links von Unsere Lieben Frau etwas oberhalb einen Engel gesehen, der ein Feuerschwert in der linken Hand hielt; es sprühte Funken und Flammen gingen von ihm aus, als sollten sie die Welt anzünden; doch die Flammen verlöschten, als sie mit dem Glanz in Berührung kamen, den Unsere Liebe Frau von ihrer rechten Hand auf ihn ausströmte: der Engel, der mit der rechten Hand auf die Erde zeigte und mit lauter Stimme rief: <strong>„Buße, Buße, Buße!“</strong></p><p>Und wir sahen in einem ungeheuren Licht, das Gott ist: „etwas, das aussieht wie Personen in einem Spiegel, wenn sie davor vorübergehen“ einen in Weiß gekleideten Bischof – wir hatten die Ahnung, dass es der Heilige Vater war. Wir sahen verschiedene andere Bischöfe, Priester, Ordensmänner und Ordensfrauen einen steilen Berg hinaufsteigen, auf dessen Gipfel sich ein großes Kreuz befand aus rohen Stämmen wie aus Korkeiche mit Rinde.</p><p>Bevor er dort ankam, ging der Heilige Vater durch eine große Stadt, die halb zerstört war und halb zitternd mit wankendem Schritt, von Schmerz und Sorge gedrückt, betete er für die Seelen der Leichen, denen er auf seinem Weg begegnete. Am Berg angekommen, kniete er zu Füßen des großen Kreuzes nieder.</p><p>Da wurde er von einer Gruppe von Soldaten getötet, die mit Feuerwaffen und Pfeilen auf ihn schossen. Genauso starben nach und nach die Bischöfe, Priester, Ordensleute und verschiedene weltliche Personen, Männer und Frauen unterschiedlicher Klassen und Positionen.</p><p>Unter den beiden Armen des Kreuzes waren zwei Engel, ein jeder hatte eine Gießkanne aus Kristall in der Hand. Darin sammelten sie das Blut der Märtyrer auf und tränkten damit die Seelen, die sich Gott näherten.“</p><p><em>Tuy, 3. Januar 1944</em><em><br></em> <strong>[A III.]</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1286,16 +1387,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1307,11 +1408,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>„Ich preise Dich, Vater …, weil Du all das den Weisen und Klugen verborgen, den Unmündigen aber offenbart hast.“</strong> (Mt 11,25)</p><p>Nach dem göttlichen Plan ist eine Frau, mit der Sonne bekleidet (Offb 12,1), vom Himmel auf diese Erde herabgekommen, um die vom Vater bevorzugten Unmündigen aufzusuchen. Sie spricht mit der Stimme und dem Herzen einer Mutter zu ihnen: Sie lädt sie ein, sich als Sühneopfer darzubringen, und erklärt sich bereit, sie sicher vor Gott zu führen. Und siehe, sie sehen ein Licht von ihren Mutterhänden ausgehen, das sie bis ins Innerste durchdringt, sodass sie sich in Gott eingetaucht fühlen – wie wenn jemand sich im Spiegel betrachtet, so beschreiben sie es.</p><p>Später erklärte Francisco, einer der drei Bevorzugten:<br> „Wir brannten in jenem Licht, das Gott ist, aber wir verbrannten nicht. Wie ist Gott? Das kann man nicht sagen. Ja, das ist etwas, das wir Menschen nicht sagen können.“<br> Gott: ein Licht, das brennt, aber nicht verbrennt. Alle, die diese göttliche Gegenwart in sich aufnehmen, werden zur Wohnstatt und folglich zum „brennenden Dornbusch“ des Allerhöchsten.</p><p>Was den hl. Francisco am meisten wunderte und ganz in Anspruch nahm, war Gott in jenem immensen Licht, das sie alle drei bis in ihr Innerstes durchdrungen hatte. Nur ihm jedoch zeigte sich Gott „so traurig“, wie er es ausdrückte. Eines Nachts hörte sein Vater ihn schluchzen und fragte ihn, warum er weinte; der Sohn antwortete: „Ich dachte an Jesus, der so traurig ist wegen der Sünden, die gegen ihn begangen werden.“ Ein einziger [...] Wunsch bewegt von nun an Francisco, und es ist der, „Jesus zu trösten und froh zu machen.“ [...]</p><p>Er gibt sich einem intensiven geistlichen Leben hin, [...] sodass er zu einer wahren Form mystischer Vereinigung mit dem Herrn gelangt. Und gerade das bringt ihn zu einer fortschreitenden Läuterung des Geistes durch vielerlei Verzicht auf Angenehmes, selbst auf unschuldige Kinderspiele. Francisco ertrug die großen Leiden, welche die Krankheit verursachte, die zu seinem Tod führte, ohne jede Klage. Alles schien ihm wenig, um Jesus zu trösten; er starb mit einem Lächeln auf seinen Lippen. [...]</p><p>Die Botschaft von Fátima ist ein Aufruf zur Umkehr, eine Warnung an die Menschheit, nicht das Spiel des „Drachens“ mitzuspielen, der mit seinem Schwanz ein Drittel der Sterne vom Himmel (fegte) (Offb 12,4). Das letzte Ziel des Menschen ist der Himmel, seine wahre Wohnung, wo der himmlische Vater in seiner barmherzigen Liebe auf alle wartet. Gott will, dass niemand verloren geht; deshalb hat er vor zweitausend Jahren Seinen Sohn auf die Erde gesandt, um zu suchen und zu retten, was verloren ist (Lk 19,10).</p><p>In ihrer mütterlichen Fürsorge ist die Heiligste Jungfrau hierher, nach Fátima, gekommen, um die Menschen aufzufordern, dass sie „Gott, Unseren Herrn, nicht mehr beleidigen, der schon so viel beleidigt wird.“ Der Schmerz der Mutter veranlasst sie, zu sprechen; auf dem Spiel steht das Schicksal ihrer Kinder. Deshalb sagt sie zu den Hirtenkindern: „Betet, betet viel, und bringt Opfer für die Sünder; denn viele Seelen kommen in die Hölle, weil niemand da ist, der sich für sie opfert und für sie betet.“</p><p>Die kleine Jacinta fühlte und lebte diese Sorge der Mutter Gottes als ihre eigene, und sie brachte sich heldenmütig als Opfer für die Sünder dar. [...] Und als für Francisco der Augenblick des Abschiednehmens gekommen ist, trägt Jacinta ihm auf: „Bringe Unserem Herrn und Unserer Herrin viele Grüße von mir, und sage ihnen, dass ich alles leide, was sie verlangen, um die Sünder zu bekehren.“</p><p>Die Schau der Hölle bei der Erscheinung am 13. Juli hatte in Jacinta einen solchen Eindruck hinterlassen, dass ihr keine Abtötung und Buße zu viel war, um die Sünder zu retten. [...]</p><p>Mein letztes Wort gilt den Kindern: Liebe Jungen und Mädchen, in der Tat braucht die Mutter Gottes euch alle sehr, um Jesus zu trösten, der traurig ist über die Dummheiten, die begangen werden; sie braucht eure Gebete und Opfer für die Sünder.</p><p>Bittet eure Eltern und Erzieher, dass sie euch in die „Schule“ der Mutter Gottes schicken, damit sie euch lehre, wie die Hirtenkinder zu sein, die alles zu tun bestrebt waren, was sie von ihnen verlangte. Ich sage euch: „In kurzer Zeit der Unterwürfigkeit unter Maria und der Abhängigkeit von ihr macht man größere Fortschritte als in langen Jahren des Eigenwillens und Selbstvertrauens.“ (hl. Ludwig Maria Grignion de Montfort, „Abhandlung über die vollkommene Andacht zu Maria“, Freiburg/Schweiz 1925, Nr. 155).</p><p>Auf diese Weise wurden die Hirtenkinder schnell heilig. Indem sie sich mit völliger Ergebenheit von einer so guten Lehrerin anleiten ließen, haben Jacinta und Francisco in kurzer Zeit die Gipfel der Vollkommenheit erreicht. [...]</p><p>Möge die Botschaft ihres Lebens stets lebendig bleiben, um den Weg der Menschheit zu erleuchten!</p><p><strong>(Aus der Predigt von Johannes Paul II. bei der Seligsprechung der Hirtenkinder Francisco und Jacinta am 13. Mai 2000 in Fátima, in „Osservatore Romano“, 19. Mai 2000)</strong><strong><br></strong> <strong>„Lasst die Kinder zu Mir kommen …“ (Mk 10,14)</strong><strong><br></strong> <strong>„… über sie ergieße Ich ganze Ströme von Gnaden.“</strong> (Jesus zur hl. Sr. Faustyna)</p><h3>Lúcia dos Santos</h3><p>Lúcia dos Santos wurde am 22. März 1907 in Aljustrel geboren. Sie war das älteste der drei Seherkinder.</p><p>Mit 14 Jahren kam Lúcia nach Porto in das Kolleg der Schwestern der hl. Dorothea in Vilar. 1925 entschied sie sich mit 18 Jahren für das Ordensleben und trat in das Institut der hl. Dorothea in Tuy und Pontevedra (Spanien) ein.</p><p>Weil sie sich nach einem Leben mit mehr Stille, Gebet und Buße sehnte, trat sie 1948 in den Karmel der hl. Theresia in Coimbra über. Hier fuhr sie fort, die Sendung zu erfüllen, die Unsere Liebe Frau ihr anvertraut hatte: die Andacht zum Unbefleckten Herzen Mariens zu verbreiten.</p><p>Unsere Liebe Frau kam am 13. Februar 2005, um sie heimzuholen. Seit dem 19. Februar 2006 ruht ihr sterblicher Leib, neben dem ihrer beiden Gefährten, in der Basilika von Fátima.</p><p>„Wir vermischten unsere Tränen mit dem Wasser, um es dann aus derselben Quelle zu trinken, in die wir sie vergossen hatten. Sollte nicht diese Zisterne das Bild Mariens darstellen, in deren Herz wir unsere Tränen trockneten und Trost schöpften?“ [1 E I. 3]</p><p><strong>„Ich rufe immer nach Deiner Zuflucht, Deinem Namen, Deinem Herzen, o Maria!“</strong><strong><br></strong> (Sr. Maria Lúcia von Jesus und dem Unbefleckten Herzen)</p><p><strong>Anmerkung:</strong> An diesem Brunnen hinter Lúcias Elternhaus fand 1917 die zweite Erscheinung des Engels statt. Es war auch der Ort, an dem sich die Hirtenkinder gerne aufhielten, um gemeinsam zu beten und ihre Freuden und Leiden miteinander zu teilen.</p><h3>Hl. Francisco Marto</h3><p>Der Hl. Francisco Marto wurde am 11. Juni 1908 in Aljustrel geboren. Zusammen mit seiner Schwester Jacinta und seiner Cousine Lúcia durfte er dreimal einen Engel und sechsmal die Gottesmutter sehen. Von dieser Zeit an war sein einziges Lebensideal, Jesus Freude und Trost zu bereiten.</p><p>Er selbst wollte sich darum ängstlich vor jeder Sünde hüten und sie möglichst auch bei anderen verhindern, damit der Herr nicht traurig sein müsse. Freudig brachte er alle nur möglichen Opfer, um Jesus zu trösten. Viele Stunden verbrachte er allein vor dem Tabernakel oder begab sich an einen abgelegenen Ort, um dem Herrn Trost zu bringen. Mit nahezu 11 Jahren, am 4. April 1919, hat Gott seinen kleinen „Trostengel“ zu sich geholt.</p><p>Eines Tages sagte er zu mir:</p><p><strong>„Ich habe mich sehr gefreut, den Engel zu sehen. Noch mehr Freude empfand ich beim Anblick Unserer Lieben Frau. Am schönsten aber fand ich den Heiland in jenem Licht, das Unsere Liebe Frau in unsere Brust strahlen ließ. Ich liebe Gott so sehr. Aber Er ist so traurig wegen der vielen Sünden, wir dürfen nie mehr eine begehen.“</strong><strong><br></strong> (aus seinen Worten, [4 E I. 4])</p><p>Als ich einmal meinen Kummer über die Verfolgung äußerte, die sich innerhalb und außerhalb unserer Familie gegen mich zu erheben begann, wollte er mich aufmuntern und sagte:</p><p><strong>„Lass doch! Hat nicht Unsere Liebe Frau vorausgesagt, dass wir viel zu leiden haben würden, um Unserem Herrn und ihrem Unbefleckten Herzen Sühne zu leisten für die Sünden, durch die sie beleidigt werden? Sie sind so traurig! Wenn wir sie durch diese Leiden trösten können, sollten wir uns freuen.“</strong><strong><br></strong> (aus seinen Worten, [4 E I. 4])</p><p>Eines Tages fragte ich ihn:</p><p><strong>„Geht es dir besser?“</strong><strong><br></strong><strong> „Nein, ich fühle mich schlechter. Aber es geht nicht mehr lange, dann komme ich in den Himmel. Dort werde ich den Heiland und die Gottesmutter sehr trösten.“</strong><strong><br></strong> (aus seinen Worten, [4 E I. 12])</p><p>Während Jacinta nur mit dem Gedanken beschäftigt zu sein schien, Sünder zu bekehren und Seelen vor der Hölle zu bewahren, dachte er nur daran, Unseren Herrn und Unsere Liebe Frau zu trösten, die ihm so traurig zu sein schienen. [4 E I. 12]</p><p>Am Tag vor seinem Tod sagte er mir:</p><p><strong>„Nur noch kurze Zeit, und ich komme in den Himmel!“</strong><strong><br></strong> (am Tag vor seinem Tod, [4 E I. 16])</p><p>Es war schon Nacht, als ich mich von ihm ver abschiedete:</p><p><strong>„Francisco, auf Wiedersehen! Wenn du diese Nacht in den Himmel kommst, vergiss mich dort nicht, hörst du?“</strong><strong><br></strong><strong> „Ich werde dich nicht vergessen. Sei beruhigt!“</strong><strong><br></strong><strong> &quot;Dann auf Wiedersehen, Francisco! […] Auf Wiedersehen im Himmel!&quot;</strong><strong><br></strong><strong> Und der Himmel näherte sich. Dorthin flog er am nächsten Tag in die Arme seiner himmlischen Mutter. </strong><strong><br></strong> (aus seinen letzten Worten, [4 E I. 17])</p><h3>Hl. Jacinta Marto</h3><p>Die Hl. Jacinta Marto wurde am 11. März 1910 in Aljustrel geboren. Sie war das jüngste der drei Seherkinder. Zusätzlich wurde sie noch andere Erscheinungen der Gottesmutter gewürdigt und sah auch wiederholt den Heiligen Vater. Ihr weiteres Leben war von unermüdlichem Beten und hochherzigem Opfern geprägt, um die Sünder zu bekehren und dem Unbefleckten Herzen Mariens Sühne zu leisten. Früh vollendet, im Alter von fast 10 Jahren, hat Gott am 20. Februar 1920 seine kleine „Sühne-Engel“ zu sich geholt.</p><p>Manchmal küsste und umarmte sie ein Kreuz und sagte:</p><p><strong>„O mein Jesus, ich liebe Dich und möchte viel aus Liebe zu Dir leiden.“</strong><strong><br></strong>([1 E III. 5])</p><p>Eines Tages während ihrer Krankheit, sagte sie zu mir:</p><p><strong>„Ich sage Jesus so gerne, dass ich Ihn liebe. Wenn ich es Ihm viele Male sage, scheint mir, dass ich eine Flamme in der Brust habe, aber ich verbrenne mich nicht dabei.“</strong></p><p>Ein anderes Mal sagte sie:</p><p><strong>„Ich habe Unseren Herrn und Unsere Liebe Frau so gerne, dass ich niemals müde werde, ihnen zu sagen, dass ich sie liebe.“</strong><strong><br></strong>([1 E II. 3])</p><p>Kurz bevor sie ins Krankenhaus musste, sagte sie:</p><p><strong>„Es dauert nicht mehr lange, bis ich in den Himmel gehe. Du bleibst hier, um den Menschen zu sagen, dass Gott die Andacht zum Unbefleckten Herzen Mariens in der Welt fest begründen will. […] Sage es allen, dass Gott uns die Gnaden durch das Unbefleckte Herz Mariens schenkt, dass die Menschen sie erbitten müssen, dass das Herz Jesu will, dass an Seiner Seite auch das Herz unserer himmlischen Mutter verehrt wird. Man soll den Frieden von unserer himmlischen Mutter erbitten, da Gott ihn ihr anvertraut hat.“</strong><strong><br></strong>([3 E 9])</p><p>Schließlich kam der Tag ihrer Abreise nach Lissabon. Der Abschied war herzzerreißend. Lange hielt sie mich umschlungen und sagte weinend:</p><p><strong>„Niemals mehr werden wir uns wiedersehen! Bete viel für mich bis ich in den Himmel komme. Danach werde ich dort oben für dich bitten. Liebe Jesus und das Unbefleckte Herz Mariens sehr und bringe viele Opfer für die Sünder.“</strong></p><p>Von Lissabon aus ließ sie mir noch sagen, dass Unsere Liebe Frau sie dort schon besucht hätte. Sie hätte ihr Stunde und Tag ihres Todes geoffenbart, und sie legte mir ans Herz, sehr gut zu sein.<br>([1 E III. 6])</p><p>Am 20. Februar 1920 starb Jacinta im Krankenhaus in Lissabon.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1321,16 +1428,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1342,11 +1449,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Die Botschaft von Fátima wird auch die von Unserer Lieben Frau formulierte Zusammenfassung des Evangeliums genannt und beinhaltet folgende Schwerpunkte:</p><ul><li><p><strong>Die entschlossene Umkehr</strong></p></li><li><p><strong>Die treue Erfüllung der Gebote Gottes und der persönlichen Standespflichten</strong><strong><br></strong> <em>(„Die Königin des heiligen Rosenkranzes will nichts anderes als die Heiligkeit. Unsere Liebe Frau von Fátima verlangt die vollkommene Erfüllung der Standespflichten … Es gibt Seelen, die glauben, es handele sich dabei um große und außerordentliche Abtötungen und Kasteiungen, zu denen sie sich unfähig halten und daher den Mut verlieren, während die liebe Gottesmutter von der Erfüllung der Standespflichten spricht, wenn sie die Buße fordert. Darin besteht die Heiligkeit.“)</em><em><br></em> <em>(Sr. Lúcia in: Fátima und der Friede, S. 98)</em></p></li><li><p><strong>Der regelmäßige Empfang der Sakramente</strong></p></li><li><p><strong>Die Verehrung des Unbefleckten Herzens Mariä</strong></p><ul><li><p>durch die persönliche Weihe an Maria</p></li><li><p>durch das meditative Gebet, vor allem des Rosenkranzgebetes und der Sühnegebete</p></li><li><p>durch die Übung der Herz-Mariä-Sühnesamstage<br> <em>(„Zur Beschleunigung und Unterstützung des Triumphes ihres Unbefleckten Herzens wünschte Maria, dass die Übung der Sühnesamstage in der ganzen Kirche praktiziert werde.“)</em><em><br></em> <em>(Vgl. A I.)</em></p></li><li><p>durch das Tragen des Braunen Skapuliers</p></li></ul></li><li><p><strong>Das standesgemäße Apostolat, besonders das stellvertretende Beten und Opfern</strong></p></li></ul><p><em>(„Es ist anzunehmen, dass die Gottesmutter den Zeitpunkt ihres großen und aller Welt offenkundigen Triumphes von der Zahl jener abhängig macht, die ihre Forderungen erfüllen. Bis zur Stunde des Sieges kann es deshalb nur unsere Aufgabe bleiben, die Botschaft zu verkünden und die Menschen zu ihrer Verwirklichung aufzurufen.“)</em><em><br></em> <em>(Fátima und der Friede, S. 122)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1356,16 +1469,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1377,11 +1490,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>„Mein Gott, ich glaube an Dich, ich bete Dich an, ich hoffe auf Dich, ich liebe Dich. Ich bitte Dich um Verzeihung für jene, die nicht an Dich glauben, Dich nicht anbeten, auf Dich nicht hoffen und Dich nicht lieben.“</strong></p><p><strong>„Heiligste Dreifaltigkeit, Vater, Sohn und Heiliger Geist, in tiefster Ehrfurcht bete ich Dich an und opfere Dir auf den kostbaren Leib, das Blut, die Seele und die Gottheit Jesu Christi, der in allen Tabernakeln der Welt zugegen ist, zur Sühne für alle Schmähungen, Sakrilegien und Gleichgültigkeiten, durch die Er selbst beleidigt wird. Durch die unendlichen Verdienste Seines Heiligsten Herzens und des Unbefleckten Herzens Mariens bitte ich Dich um die Bekehrung der armen Sünder.“</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1391,16 +1510,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1412,11 +1531,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>„Göttliches Herz Jesu, durch das Unbefleckte Herz Mariens opfere ich Dir alles auf, was ich heute bete, arbeite, opfere und leide im Namen aller und für alle Seelen der dreifachen hl. Kirche, in jener Meinung, mit der Du selbst unablässig betest und Dich auf unseren Altären opferst für die Rettung der Seelen. Amen.“</strong></p><br><p><strong>„Der Mensch ist nie größer als dort, wo er kniet.“</strong><strong><br></strong> <em>(Hl. Papst Johannes XXIII.)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1426,16 +1551,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1447,11 +1572,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>„Auch ist es mit dem Himmelreich wie mit einem Kaufmann, der schöne Perlen suchte. Als er eine besonders wertvolle Perle fand, verkaufte er alles, was er besaß, und kaufte sie.“</strong><strong><br></strong> <em>(Mt 13,45-46)</em></p><p>Wenn uns Maria immer wieder ans Herz legt: <strong>„Betet täglich den Rosenkranz!“</strong>, so reicht sie uns gleichsam die Kostbare Perle des Evangeliums, die sich in den Geheimnissen des Rosenkranzes verbirgt.</p><p>Und wer von uns ist nicht auf der Suche nach dem Kostbarsten im Leben? Doch so oft greifen wir nach den Perlen, die nur nach außen glänzen, für die Ewigkeit aber wertlos sind. Daher bittet uns Maria so eindringlich, alle eitlen und trügerischen Perlen dieses Lebens zu „verkaufen“, um die eine Kostbare Perle zu erwerben.</p><p>Indem wir die Geheimnisse des Rosenkranzes meditierend betrachten und mit dem Faden unseres täglichen Lebens fest verbinden, erschließt sich uns immer mehr das Himmelreich – und mit ihm Gott selbst.</p><h3>Die Verheißungen der Rosenkranzkönigin</h3><p>Der sel. Alanus de Rupe (1428–1475), ein Rosenkranzprediger aus dem Dominikanerorden, berichtet von einer Erscheinung der Gottesmutter. Sie gab ihm den Auftrag, für das Rosenkranzgebet einzutreten und es zu verbreiten. Unzählige Gnaden hat Maria denen versprochen, die sie durch dieses Gebet voll Vertrauen anrufen.</p><p>Von den insgesamt 15 Verheißungen werden hier fünf genannt:</p><ul><li><p><strong>„Ich verspreche allen, die andächtig den Psalter meines Rosenkranzes beten, meinen besonderen Schutz und große Hulderweise.“</strong><strong><br></strong> <em>(Vgl. das Gebetswunder von Hiroshima: Bei dem schrecklichen Atombombenabwurf auf Hiroshima am 6. August 1945 wurden vier Jesuitenpater auf unerklärliche Weise vor den grauenhaften Folgen der Atomstrahlung beschützt. In einem Umkreis von 1,5 Kilometern waren sie unter Hunderttausenden die einzigen Überlebenden. Selbst ihr Pfarrhaus, das nur acht Häuserblocks vom Zentrum der Explosion entfernt war, stand noch, obwohl alle Gebäude ringsum völlig zerstört waren. Staunend hörten die rund 200 Ärzte und Wissenschaftler immer wieder die gleiche Antwort auf ihre vielen Fragen: „Als Missionare wollten wir in unserem Leben einfach nur die Botschaft der Gottesmutter von Fátima leben und deshalb beteten wir jeden Tag den Rosenkranz.“ Das ist die hoffnungsbringende Botschaft von Hiroshima: Das Rosenkranzgebet ist mächtiger als die Atombombe. Heute befindet sich im Zentrum der wiederaufgebauten Stadt eine Mariengedenkkirche, in der Tag und Nacht der Rosenkranz gebetet wird. [Quelle:</em><a href="http://www.gnadenquelle.de/hiroshima.htm" target="_blank" rel="noopener noreferrer"><em> </em><em>http://www.gnadenquelle.de/hiroshima.htm</em></a><em>])</em></p></li><li><p><strong>„Der Rosenkranz bewirkt das Wiederaufblühen der Tugend und der Werke der Gottseligkeit. Durch ihn wird den Seelen die Fülle der göttlichen Erbarmungen zuteil.“</strong><strong><br></strong> Er wird die Herzen umkehren, und sie werden anfangen, das Irdische zu verachten, das Himmlische zu lieben und rasche Fortschritte zu machen. Viele Seelen werden durch den Rosenkranz gerettet.</p></li><li><p><strong>„Alle, die andächtig den Rosenkranz beten und dabei die Geheimnisse betrachten, werden vom Unglück nicht niedergebeugt und vor einem unvorhergesehenen Tod bewahrt bleiben. Sind sie in Sünden, so werden sie die Gnade der Bekehrung erlangen; die Gnade der Beharrlichkeit aber, wenn sie gerecht sind, und sie werden des ewigen Lebens teilhaftig werden.“</strong></p></li><li><p><strong>„Sehr bald werde ich die Seelen aus dem Fegefeuer befreien, die in ihrem Leben meinen Rosenkranz geliebt haben.“</strong></p></li><li><p><strong>„Die treuen Kinder meines Rosenkranzes werden sich im Himmel großer Herrlichkeit erfreuen.“</strong></p></li></ul><p><em>(Aus: Perlen und Rosen)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1461,16 +1592,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1482,11 +1613,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>Die Eröffnung:</strong></h3><ul><li><p><strong>Im Namen des Vaters …</strong> <em>(Kreuzzeichen)</em></p></li><li><p><strong>Ich glaube an Gott …</strong> <em>(Apostolisches Glaubensbekenntnis)</em></p></li></ul><p>Danach folgt:</p><ul><li><p>1 Vater Unser</p></li><li><p>3 Gegrüßet seist Du Maria <em>(Ave Maria)</em>, in die jeweils nach dem Namen „Jesus“ die drei göttlichen Tugenden eingefügt werden:</p><ul><li><p><strong>… der in uns den Glauben vermehre</strong></p></li><li><p><strong>… der in uns die Hoffnung stärke</strong></p></li><li><p><strong>… der in uns die Liebe entzünde</strong></p></li></ul></li></ul><p>Diese Eröffnung wird mit einem <strong>Ehre sei dem Vater</strong> abgeschlossen.</p><h3><strong>Ablauf der Rosenkranzgeheimnisse:</strong></h3><p>Bei den einzelnen Rosenkranzgeheimnissen wird zuerst:</p><ul><li><p><strong>1 Vater Unser</strong> gebetet.<br> Darauf folgen:</p></li><li><p><strong>10 Ave Maria</strong> mit dem jeweiligen Meditationstext*, der nach dem Namen „Jesus“ eingefügt wird.<br> Am Schluss jedes Geheimnisses:</p></li><li><p><strong>Ehre sei dem Vater</strong></p></li><li><p><strong>Das sogenannte Fátimagebet:</strong><strong><br></strong> <strong>„O mein Jesus, verzeih’ uns unsere Sünden, bewahre uns vor dem Feuer der Hölle, führe alle Seelen in den Himmel, besonders jene, die Deiner Barmherzigkeit am meisten bedürfen.“</strong></p></li></ul><p><em>(„Die Worte, die wir betend sprechen, sind Worte des Engels, Worte des Heiligen Geistes … Das Neue am Rosenkranz ist eigentlich nur, dass wir bei diesen Worten verweilen; dass wir sie wiederholen, weil die großen Dinge durch Wiederholen nicht langweilig werden. Nur das Belanglose braucht die Abwechslung … Das Große wird größer, indem wir es wiederholen, und wir selbst werden reicher dabei …“)</em><em><br></em> <em>(Kardinal Joseph Ratzinger, am Deutschen Katholikentag 1984)</em></p><h3><strong>Die Geheimnisse des Rosenkranzes:</strong></h3><p><strong><em>Die freudenreichen Geheimnisse</em></strong></p><ol><li><p><strong>… den Du, o Jungfrau, vom Heiligen Geist empfangen hast.</strong></p></li><li><p><strong>… den Du, o Jungfrau, zu Elisabeth getragen hast.</strong></p></li><li><p><strong>… den Du, o Jungfrau, zu Betlehem geboren hast.</strong></p></li><li><p><strong>… den Du, o Jungfrau, im Tempel aufgeopfert hast.</strong></p></li><li><p><strong>… den Du, o Jungfrau, im Tempel wiedergefunden hast.</strong></p></li></ol><p><strong><em>Die lichtreichen Geheimnisse</em></strong></p><ol><li><p><strong>… der von Johannes getauft worden ist.</strong></p></li><li><p><strong>… der sich bei der Hochzeit in Kana offenbart hat.</strong></p></li><li><p><strong>… der uns das Reich Gottes verkündet hat.</strong></p></li><li><p><strong>… der auf dem Berg verklärt worden ist.</strong></p></li><li><p><strong>… der uns die Eucharistie geschenkt hat.</strong></p></li></ol><p><strong><em>Die schmerzhaften Geheimnisse</em></strong></p><ol><li><p><strong>… der für uns Blut geschwitzt hat.</strong></p></li><li><p><strong>… der für uns gegeißelt worden ist.</strong></p></li><li><p><strong>… der für uns mit Dornen gekrönt worden ist.</strong></p></li><li><p><strong>… der für uns das schwere Kreuz getragen hat.</strong></p></li><li><p><strong>… der für uns gekreuzigt worden ist.</strong></p></li></ol><p><strong><em>Die glorreichen Geheimnisse</em></strong></p><ol><li><p><strong>… der von den Toten auferstanden ist.</strong></p></li><li><p><strong>… der in den Himmel aufgefahren ist.</strong></p></li><li><p><strong>… der uns den Heiligen Geist gesandt hat.</strong></p></li><li><p><strong>… der Dich, o Jungfrau, in den Himmel aufgenommen hat.</strong></p></li><li><p><strong>… der Dich, o Jungfrau, im Himmel gekrönt hat.</strong></p></li></ol><br><p><strong>„Die allerseligste Jungfrau gab dem Rosenkranzgebet eine solche Wirksamkeit, dass es kein Problem in unserem Leben gibt, welches nicht durch dieses Gebet gelöst werden könnte.“</strong> <em>(Lúcia dos Santos)</em></p><p><strong>„Wenn wir beten, werden wir zu einem Strahl der Liebe Gottes: bei uns zu Hause, dort, wo wir leben, und schließlich für die ganze große Welt.“</strong> <em>(Hl. Mutter Teresa)</em></p><p><strong>„Der Rosenkranz ist mein Lieblingsgebet. Er ist ein wunderbares Gebet, wunderbar in seiner Schlichtheit und seiner Tiefe.“</strong> <em>(Hl. Papst Johannes Paul II.)</em></p><p>Auch <strong>Josefinchen</strong> hat die „Kostbare Perle“ entdeckt:<br> <strong>„Ave, Maria …“</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1496,16 +1633,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1517,11 +1654,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Heiligste Jungfrau Maria! Mutter Gottes und meine Mutter! Deinem Unbefleckten Herzen weihe ich mich mit allem, was ich bin und habe. Nimm mich unter Deinen mütterlichen Schutz! Bewahre mich vor allen Gefahren. Hilf mir, die Versuchungen zu überwinden, die mich zum Bösen verleiten, damit ich die Reinheit meines Leibes und meiner Seele bewahre. Dein Unbeflecktes Herz sei meine Zuflucht und der Weg, der mich zu Gott führt.</p><p>Erwirke mir die Gnade, aus Liebe zu Jesus oft zu beten und zu opfern für die Bekehrung der Sünder und zur Wiedergutmachung der Sünden, die gegen Dein Unbeflecktes Herz begangen werden. In Vereinigung mit Dir und dem Herzen Deines göttlichen Sohnes möchte ich in vollkommener Hingabe an die Heiligste Dreifaltigkeit leben, an die ich glaube, die ich anbete, auf die ich hoffe und die ich liebe. Amen.<strong><br></strong> <em>(Sr. M. Lúcia von Fátima)</em></p><p><strong>Imprimatur:</strong> Fátima, 1. Juli 2006, Antonio, Ep. Leir.-Fatimensis</p><br><p>Wenn wir uns der Gottesmutter weihen, um alles mit Maria, in Maria, durch Maria und für Maria zu tun, führt sie uns zielsicher zur vollkommenen Hingabe an Jesus. Gleichzeitig legen wir durch diese Weihe unseren inneren und äußeren Besitz, ja selbst den Wert all unserer guten Werke in die Hände Mariens, damit sie dieselben bewahre, vermehre und verschönere. Was wir so Maria übergeben, kann uns weder durch einen Menschen, noch durch den bösen Feind oder durch unsere eigene Gebrechlichkeit geraubt werden. Außerdem üben wir dadurch in hohem Maße die christliche Nächstenliebe, weil wir Maria erlauben, zugunsten der Lebenden und Verstorbenen, über unsere geistlichen Güter zu verfügen.<br> <em>(Vgl. hl. L. M. Grignion v. Montfort, Das Goldene Buch, S. 233–238)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1531,16 +1674,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1552,11 +1695,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Barmherziger Jesus, Deine Güte ist unendlich, und die Schätze Deiner Gnaden sind unerschöpflich.</p><p>Ich vertraue grenzenlos auf Deine Barmherzigkeit, die alle Deine Werke übertrifft.<br> Ich weihe mich Dir gänzlich, um in den Strahlen Deiner Gnade und Liebe zu leben, die aus Deinem Herzen am Kreuze hervorgegangen sind.</p><p>Ich will Deine Barmherzigkeit verbreiten und besonders Deinen Rosenkranz beten, um Dein Erbarmen für uns, für die Bekehrung der Sünder, für die ganze Welt und für die Armen Seelen im Fegefeuer zu erflehen.</p><p>Du aber wirst mich beschützen wie Dein Eigentum und Deine Ehre, denn ich befürchte alles von meiner Schwäche und erhoffe alles von Deiner Barmherzigkeit.</p><p>Möge die ganze Menschheit die unbegreifliche Tiefe Deiner Barmherzigkeit erkennen, auf sie all ihre Hoffnung setzen und sie in Ewigkeit lobpreisen. Amen.</p><p><strong>Jesus, ich vertraue auf Dich,</strong><strong><br></strong><strong> denn Du bist meine Zuversicht!</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1566,16 +1715,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1587,11 +1736,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>Herzenstausch mit Maria</strong></h3><p>Setze, o wunderbare Mutter, an die Stelle meines sündigen Herzens Dein Unbeflecktes Herz, damit der Heilige Geist in mir wirken und Dein göttlicher Sohn in mir wachsen kann.<br> Erfülle meine Bitte, Du große, Du getreue, Du aller Gnaden Vermittlerin. Amen.</p><h3><strong>Herzenstausch mit Jesus</strong></h3><p>Setze, o guter Jesus, an die Stelle meines sündigen Herzens Dein göttliches verwundetes Herz, damit der Heilige Geist in mir wirken und Du, Barmherziger Jesus, in mir wachsen kannst.<br> Erfülle meine Bitte, Du guter, Du getreuer, und liebender Jesus, damit Du bald als Friedenskönig über diese Welt herrschen kannst. Amen.</p><p><strong>Anmerkung:</strong></p><ul><li><p><em>Der Herzenstausch mit Jesus wird durch den Herzenstausch mit Maria vorbereitet. Maria, die große Gnadenvermittlerin, gießt alle Gnaden über unser Herz aus und bereitet unser Herz vor für den Herzenstausch mit Jesus.</em></p></li><li><p><em>Der Herzenstausch mit Jesus wandelt unser Herz und gibt der Gnade freien Lauf, damit wir den Willen Gottes erkennen und erfüllen können. Er ist die persönliche Ganzhingabe an Gott mit dem Ziel, dass Christus in uns und über die Welt als Friedenskönig herrschen kann.</em></p></li></ul><p><strong>„Nicht das kleinste Gebet, nicht eine Träne einer geheimen Not, nicht ein Atemzug einer geheimen Sehnsucht an Gott gerichtet werden je vergeblich sein! Doch in Gottes eigener Zeit und auf Seine Weise werden sie in Wolken des Segens zurückgeweht und in einem Gnadenstrom der Barmherzigkeit auf dich herabfallen und auf alle, für die du betest.“</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1601,16 +1756,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1622,11 +1777,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>„Niemals werde ich dich verlassen.</strong><strong><br></strong><strong> Mein Unbeflecktes Herz wird deine Zuflucht sein</strong><strong><br></strong><strong> und der Weg, der dich zu Gott führen wird.“</strong><strong><br></strong> <em>(Maria zu Lúcia am 13. Juni 1917)</em></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1636,16 +1797,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1657,11 +1818,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Im Namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1671,16 +1838,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1692,11 +1859,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Ich glaube an Gott, den Vater, den Allmächtigen, den Schöpfer des Himmels und der Erde, und an Jesus Christus, Seinen eingeborenen Sohn, unseren Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von den Toten, aufgefahren in den Himmel; Er sitzt zur Rechten Gottes, des allmächtigen Vaters; von dort wird Er kommen zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Vergebung der Sünden, Auferstehung der Toten und das ewige Leben. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1706,16 +1879,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1727,11 +1900,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Vater unser im Himmel,<br> geheiligt werde Dein Name.<br> Dein Reich komme,<br> Dein Wille geschehe, wie im Himmel, so auf Erden.<br> Unser tägliches Brot gib uns heute<br> und vergib uns unsere Schuld,<br> wie auch wir vergeben unseren Schuldigern.<br> Und führe uns nicht in Versuchung,<br> sondern erlöse uns von dem Bösen. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1741,16 +1920,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1762,11 +1941,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Gegrüßet seist Du, Maria, voll der Gnade, der Herr ist mit Dir.<br> Du bist gebenedeit unter den Frauen,<br> und gebenedeit ist die Frucht Deines Leibes, Jesus.<br> Heilige Maria, Mutter Gottes, bitte für uns Sünder,<br> jetzt und in der Stunde unseres Todes. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1776,6 +1961,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1858,6 +2044,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1912,6 +2133,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1947,12 +2179,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

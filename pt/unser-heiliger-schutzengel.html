@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="O Nosso Santo Anjo da Guarda">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="O Nosso Santo Anjo da Guarda">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/unser-heiliger-schutzengel.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../pt/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../pt/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,7 +988,13 @@
             
 
             
+            
 
+            
+
+            
+
+            
             
 
             
@@ -957,16 +1004,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -978,11 +1025,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Bendizei ao Senhor, todos os Seus anjos, poderosos na força, que executais as Suas ordens, obedecendo à Sua palavra.</strong> (Sl 103:20)</p><p>A Sagrada Escritura revela-nos quão incompreensivelmente grandes e elevados são os santos anjos, que Deus criou para a Sua glória assim como para a protecção e orientação da humanidade.</p><p><strong>Vede, envio um anjo à vossa frente para vos guardar no caminho e para vos levar ao lugar que preparei.</strong> (Ex 23:20)</p><p>Não é a bondade paternal infinita de Deus que brilha sobre nós nesta promessa e nos toca profundamente.</p><p>O pensamento do nosso querido santo Anjo da Guarda, a devoção e a vida consciente com o nosso melhor amigo, pertencem inseparavelmente à fé católica. O Catecismo da Igreja Católica assegura-nos:<br> <strong>"Desde o seu início até à morte, a vida humana está rodeada pelo seu cuidado vigilante e intercessão. O mistério da ajuda poderosa e misteriosa da Igreja beneficia toda a vida da Igreja até ao regresso de Cristo."</strong><strong><br></strong> E:<br> <strong>"Junto de cada crente está um anjo como protector e pastor que o conduz à vida."</strong><strong><br></strong> Afirma este ensino através de uma citação de S. Basílio Magno († 379):<br> <strong>Cada um dos fiéis tem um anjo ao seu lado como protector e pastor para o conduzir à vida.</strong> (CCC 334/336)</p><p>Uma citação semelhante é-nos dada por S. Jerónimo († 420):<br> <strong>Tão grande é a dignidade da alma que cada uma tem um santo anjo designado para a proteger desde o nascimento.</strong></p><p>Podemos estar certos de que os santos Anjos da Guarda estão entre os melhores educadores e os nossos guias mais seguros, se apenas os deixarmos trabalhar em nós. Por isso S. Paulo escreve na sua Carta aos Hebreus:<br> <strong> não são todos espíritos ao serviço, enviados para servir, por causa daqueles que vão herdar a salvação?</strong> (Heb 1:14)</p><p><strong>Santo Anjo da Guarda meu, que eu seja confiado a vós.</strong><strong><br></strong><strong> Em todas as necessidades estai ao meu lado e guardai-me livre do pecado (este dia / esta noite / nesta viagem),</strong><strong><br></strong><strong> Peço-vos, protegei, governai e guiai-me.</strong><strong><br></strong><strong> Ajudai-me a viver rectamente e devotamente, para que alcance o céu.</strong><strong><br></strong><strong> Ámen.</strong><strong><br></strong> <em>(Imprimatur: Augsburgo, 19.3.1992, Josef Stimpfle, Bispo)</em></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -992,16 +1045,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1013,11 +1066,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>O santo Anjo da Guarda acompanha-nos constantemente. É uma testemunha coroada de todas as nossas acções. Acima de tudo reza incessantemente diante do trono de Deus por nós, oferece ao Senhor as nossas boas obras, pensamentos e desejos, e dá testemunho no juízo particular à nossa morte de todos os sinais de amor que mostrámos ao Senhor ao longo da nossa vida.</p><p>Assim o santo Anjo da Guarda viaja connosco por toda a vida como adorador, guardião e servo do Deus que habita em nós.</p><ul><li><p>A favorecida Mãe K. Vogl († 1956) tinha sempre grande dificuldade em enfiar uma agulha na sua velhice. Confiadamente como uma criança perguntava então ao seu Anjo da Guarda:<br> <strong>Por favor, ajudai-me novamente!</strong> – Cada vez agradecia-lhe, comovida, pelo serviço amoroso.</p></li></ul><p>Pois quando estamos em estado de graça santificante, a nossa alma é um templo do Espírito Santo. (1 Cor 3:16) Onde quer que Deus esteja, Ele é adorado pelos santos anjos. Com o maior interesse o santo Anjo da Guarda esforça-se também por nos preservar do pecado, porque ofende a Deus, que é infinitamente santo.</p><p>E como os santos anjos contemplam constantemente o rosto do Pai Celestial (cf. Mt 18:10), reconhecem com perfeita clareza a santa vontade de Deus para a alma que Lhe confiaram.</p><p><strong>Santo Anjo da Guarda,</strong><strong><br></strong><strong> sede o constante adorador da Santíssima Trindade na minha alma!</strong><strong><br></strong><strong> Sede o guardião da minha vida de graça!</strong><strong><br></strong><strong> Sede também o protector do meu corpo.</strong><strong><br></strong><strong> Ámen.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1027,16 +1086,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1048,11 +1107,17 @@
             
 
             
+            
             <div class="section-body">
                 <ul><li><p>Quando entrarmos num veículo, não esqueçamos nunca de convidar os nossos santos anjos! Saudemos também confiadamente os santos anjos do condutor, dos passageiros e dos que vêm em nossa direcção. Quantos acidentes poderiam assim ser evitados.</p></li><li><p>Convidemos também os nossos santos anjos para trabalhar! Abordaremos as nossas tarefas mais alegremente quando soubermos <strong>o meu santo anjo está comigo!</strong></p></li><li><p>Quanto mais de bom grado os nossos filhos aprenderiam e seriam mais obedientes aos pais e professores se lhes ensinassem a pensar de bom grado no seu Anjo da Guarda e convidá-lo.</p></li><li><p>Peçamos a tempo, por ex. antes de um exame ou operação, aos santos anjos dos médicos e enfermeiros envolvidos a sua ajuda.</p></li><li><p>Invemo-lo antes de conversas importantes, empreendimentos ou decisões, para que nos aconselhe e nos ligue aos santos anjos dos envolvidos.</p></li><li><p>Sempre que a tentação, o medo ou a angústia ameacem assaltar-nos, invoquemos o nosso santo Anjo da Guarda.</p></li><li><p>Agradeçamos ao nosso fiel companheiro repetidamente por todo o seu amor e cuidado, e consagremo-nos a ele, para que o seu poder opere em nós ainda mais efectivamente.</p></li></ul><p>Mas como a experiência mostra que nem sempre é fácil manter ou desenvolver uma amizade santa entre um ser humano e um espírito puro, é muito útil se aprendermos a colocar-nos no espírito deste bom espírito que está tão perto de nós. Assim aprendemos cada vez melhor a compreender que necessidades espirituais, mas também que grandes alegrias e experiências únicas e belas o santo Anjo da Guarda ao nosso lado pode experimentar.</p><p>Uma ajuda extremamente benéfica para isto é a meditação das suas alegrias e tristezas, como é costume na Igreja para o nosso Senhor Jesus Cristo, para Maria ou S. José.</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1062,16 +1127,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1083,11 +1148,17 @@
             
 
             
+            
             <div class="section-body">
                 <ol><li><p>É uma alegria para o santo anjo contemplar e adorar Deus Trindade das profundezas da humanidade em luta através do ofício de Anjo da Guarda e tornar-se um Bom Pastor compassivo com Cristo.</p></li><li><p>É uma alegria para o santo Anjo da Guarda seguir Cristo na Sua impotência e humilhação e ser chamado como discípulo ao serviço da Sua Igreja, para convidar as pessoas às bodas celestiais.</p></li><li><p>O santo Anjo da Guarda alegra-se em poder imitar Maria, a sua Rainha, no seu amor maternal pela humanidade, assistindo o seu protegido, especialmente na fraqueza e no perigo.</p></li><li><p>O santo Anjo da Guarda alegra-se quando pode ser uma ponte: por um lado levar as orações e boas obras do seu protegido como oferta de incenso a Deus, e por outro trazer graças de Deus ao seu protegido.</p></li><li><p>É uma alegria para o santo anjo quando o seu protegido o invoca, o ama e lhe agradece, e ele pode assim ajudá-lo a descobrir a sua vocação e conduzi-lo à santidade. Ao fazê-lo o santo Anjo da Guarda constrói, por assim dizer, um trono para o seu Senhor e Deus na alma do seu protegido, com quem pode estar unido aqui e no céu.</p></li><li><p>O santo Anjo da Guarda alegra-se em conquistar o reino de Deus juntamente com o seu protegido, inspirando-o com bons pensamentos, palavras e acções e ajudando-o na luta contra o pecado e nas tentações do malvado inimigo. Ensina-nos o discernimento dos espíritos.</p></li><li><p>E há então finalmente a alegria culminante do santo anjo quando pode levar a alma do seu protegido a Deus no céu após a morte e dar testemunho das boas obras do seu protegido. Também o defende zelosamente contra as acusações do malvado inimigo. Se o seu protegido tiver de passar certo tempo no purgatório, pode consolá-lo lá e lembrar as pessoas na terra de rezar e oferecer sacrifícios por ele.</p></li></ol><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1097,16 +1168,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1118,11 +1189,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>O santo Anjo da Guarda pertence aos espíritos bem-aventurados que vivem na constante visão de Deus. (Cf. Mt 18:11) No entanto pode ser entristecido pelos pecados e maldades dos homens.</p><ol><li><p>É um grande sacrifício para o santo anjo quando deixa a glória celeste e acompanha o seu protegido por amor a Cristo, que Se esvaziou por nós.<br> <strong>Consolai-o oferecendo ao bom santo Anjo da Guarda a nossa genuína amizade!</strong></p></li><li><p>Entristece o santo Anjo da Guarda quando o seu protegido não o invoca na necessidade e na dificuldade e esquece a ajuda que Deus lhe oferece. Através disto este bom e poderoso amigo das almas sente-se bastante abandonado e esquecido por nós.</p></li><li><p>Entristece o santo Anjo da Guarda quando o seu protegido se afasta dele, fecha-se voluntariamente aos seus avisos na consciência e em vez disso segue as múltiplas tentações da vida que no fim o tornam infeliz.<br> <strong>Então o santo anjo sente-se traído por nós.</strong></p></li><li><p>É doloroso para o santo Anjo da Guarda quando o seu protegido não segue a sua vocação pessoal e não se deixa guiar por ele.<br> <strong>Então sente-se completamente impotente e espera pelas orações e sacrifícios das boas pessoas pelo seu protegido.</strong></p></li><li><p>Entristece o santo Anjo da Guarda quando o seu protegido já não anda no caminho certo da fé. Tantas vezes na vida quotidiana Cristo, o seu querido Senhor, e a Sua santíssima Mãe Maria, a Rainha dos santos anjos, ou certas verdades de fé são esquecidos, ignorados ou até ridicularizados por nós.<br> <strong>Então o santo Anjo da Guarda sente-se desiludido e marginalizado pela nossa superficialidade e indiferença.</strong></p></li><li><p>É muito mau para o querido santo Anjo da Guarda quando o seu protegido se volta directamente contra a fé e assim desperdiça o tesouro de graça da sua alma, que recebeu através do amor de Jesus Cristo na Cruz, através da Sua palavra e dos sacramentos da Igreja.<br> <strong>Então o justo e fiel Anjo da Guarda sente-se escarnecido pelo adversário, o diabo, e só pode ajoelhar nos escombros da vida do seu protegido e implorar a Deus uma intervenção curadora.</strong><strong><br></strong> <strong>Ajudemo-lo nisto!</strong></p></li><li><p>E há ainda esta terrível tristeza até à morte (cf. Mt 26:38) do santo Anjo da Guarda de uma pessoa que, apesar de todas as intervenções do céu, consciente e voluntariamente se afasta de Deus mesmo na morte.<br> <strong>Consolai-o através de especial muito amor pelos nossos semelhantes e através de grande devoção aos anjos.</strong></p></li></ol><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1132,16 +1209,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1153,11 +1230,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Santo Anjo da Guarda,</strong><strong><br></strong><strong> vós que constantemente contemplais o rosto do nosso Pai no céu,</strong><strong><br></strong><strong> Deus confiou-vos-me desde o início da minha vida.</strong><strong><br></strong> Agradeço-vos do meu coração pelo vosso cuidado amoroso.<br> Confio-me a vós e prometo-vos o meu amor e fidelidade.</p><p>Peço-vos que me protejais contra a minha própria fraqueza e contra os ataques dos espíritos malignos.<br> Iluminai a minha mente e o meu coração para reconhecer e cumprir sempre a vontade de Deus;<br> e conduzi-me à união com Deus, o Pai, o Filho e o Espírito Santo.<br> <strong>Ámen.</strong><strong><br></strong> </p><p>Através do ofício de Anjo da Guarda o santo anjo experimenta, por assim dizer, a conclusão da sua vocação. Como Jesus pode agora descer às profundezas desta vida terrestre, onde olha com olhos diferentes para o seu irmão, por quem o Senhor derramou o Seu sangue na Cruz. Cheio de zelo pelo seu Senhor faz tudo para tornar o coração do seu protegido receptivo ao amor e à graça de Deus.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1167,6 +1250,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1252,6 +1336,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1306,6 +1425,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1341,12 +1471,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

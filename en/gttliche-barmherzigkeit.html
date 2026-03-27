@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Divine Mercy">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Divine Mercy">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gttliche-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../en/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../en/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg" 
-                 alt="" 
+            <img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -948,6 +989,7 @@
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <h1>Veneration of the Divine Mercy</h1><p><strong>According to the revelations
@@ -962,13 +1004,18 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/gs_2feac0e7808e948f91ddec88f90821eb27c7b9baed48663596574200f3edd267.png" 
-                 alt="" 
+            <img src="../static/img/gs_2feac0e7808e948f91ddec88f90821eb27c7b9baed48663596574200f3edd267.png"
+                 alt=""
                  class="section-image">
             
             
@@ -978,16 +1025,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -999,6 +1046,7 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Through the merciful love of our God, the dawn from on high will visit us." (Lk 1,78)</strong></p><p>Interiority and spirituality: fostering and developing the religious disposition of the human person (...) all these first-rate tasks and blessed fruits of lived faith we find in the Diary of Sister Maria Faustina:</p><p><strong>"O, how beautiful is the spiritual world! It is so real that in comparison the external life is nothing but empty illusion and powerlessness!"</strong> [884]</p><p>Sister Faustyna shows us what has all too often retreated into the background, if not into oblivion, in the course of development over recent decades – the interior life of the soul with God.</p><p><strong>"If only souls would listen to My voice when I speak in the depth of their hearts, they would reach the summit of holiness in a short time."</strong> [584]</p><p>True interiority consists in joyful love for God and His holy will:</p><p><strong>"Sadness cannot take root in a heart that loves God!"</strong> [886]</p><p>Under the name of total freedom, limitless emancipation, the commandments of God were called repressive – yes, God Himself was declared the opponent of human freedom. Pope John Paul II noted in his encyclical <em>Dominum et Vivificantem</em> (No. 38) that God was ultimately declared the enemy of His own creature. Sister Faustyna unmasks this blasphemy by proclaiming luminously:</p><p><strong>"Love for God sets the soul free! It is like a queen who knows not the compulsion of slavery!"</strong> [890]</p><p>The concern of many believers that interiority, the spiritual life, is a very difficult thing, that the ascent of the soul can only be achieved with extraordinary deeds, had already been rejected as groundless by St. Thérèse of the Child Jesus with her "Little Way." Entirely in this tradition, the Diary of Sister Faustyna aims at what is decisive in religious life: love.</p><p><strong>"Jesus, You have shown me wherein the greatness of the soul consists: not in great deeds, but in great love alone. Love gives value. It gives all deeds their value. So do small and everyday deeds become great and significant before God through love. Love is a mystery that transforms everything it touches into beautiful and God-pleasing things."</strong> [889]</p><p>God is love. (1 Jn 4,16) And love wants to give itself. Giving oneself is joy; not being able to give oneself is suffering. Jesus gives Himself entirely to God; He gives His life for the sin of the world. Toward the sinful human being, love reveals itself as mercy (<em>miseri cor dare</em> = misericordia).</p><p>Divine Mercy is greater than human wretchedness. The more wretched the sinful man, the more the goodness of God is inclined to show him mercy. This total readiness to grant mercy to everyone is revealed to Faustyna in a special way. Her special vocation is to proclaim God's mercy. This is also the meaning of the image she was to paint: An image that, even when merely contemplated, awakens boundless trust in Divine Mercy. (…)</p><p><strong>"I cannot punish even the greatest sinner. If he appeals to My mercy, I justify him in My unfathomable and inscrutable mercy."</strong> [1146]</p><p>According to Jesus' revelation to Faustyna, it only takes insight into one's own wretchedness and openness to the call of the Lord, then streams of mercy will pour forth from the Heart of Jesus over mankind. Sister Faustyna thus becomes the herald of trust in infinite mercy. Whatever may have happened in a person's life, even the worst sins – full, undiminished trust in the merciful love of Jesus is always the way to salvation.</p><p>The full religious name of our Servant of God is: Sister Maria Faustyna of the Most Blessed Sacrament. This name opens the view to a further richness of this godly life, namely the significance of Holy Communion in Faustyna's life. She left a number of preparations for receiving Holy Communion. They are treasures full of incredible love and depth. Here too divine providence can be recognized: In the time of Mass Communions, of massive Communion reception, it is necessary to make the many communicants aware again and again of whom they receive, what belongs to good preparation, worthy and interior reception, and careful thanksgiving.</p><p><strong>"The most solemn moment of my life is always the moment when I receive Holy Communion … The angels would envy us humans only two things, if they could: receiving Holy Communion and suffering."</strong> [1804]</p><p>With the last-cited word, a further dimension in Faustyna's life is characterized. Suffering had become her familiar companion. With the Holy Host of the Eucharist, she wanted to become a host, a sacrifice, herself. On the one hand, her desire was to suffer with Jesus for the salvation of sinners.</p><p><strong>"The Lord granted me during the Holy Hour to share in His Passion. I participated in the bitterness that filled His soul during the Passion."</strong> [872]</p><p>On the other hand, she wanted to make reparation to Jesus for the hardships He has to suffer from men, which is why Jesus often said words like these to her at Holy Communion:</p><p><strong>"My daughter, your love is reparation to Me for the coldness of heart of many souls."</strong> [1816]</p><p>Here the cooperation in the salvation of souls, always known in the history of piety, becomes reality. (...) Pope Pius XII spoke of this earnestly in his encyclical <em>Mystici Corporis</em>:</p><p><strong>"It is a truly awe-inspiring mystery that one can never contemplate enough: that the salvation of many depends on the prayers and voluntary penances of the members of the mystical Body of Jesus Christ, which they take upon themselves for this purpose."</strong> (<strong><em>Salvation Doctrine of the Church</em></strong><strong>, p. 489, Frbg. Switzerland 1953)</strong></p><p>After reading the Diary of Sister Faustyna, this precious jewel of spiritual literature, the question arises: How can one live even a single moment without loving God?</p><p>From the preface to the Diary of St. Maria Faustyna by Bishop Josef Stimpfle †, Augsburg August 6, 1987</p>
             </div>
@@ -1007,13 +1055,18 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/gs_34410916c848bcffeed523a0de064da66d3edceda4a866828d8269b1cc133a84.jpg" 
-                 alt="On the Traces of the Divine Mercy" 
+            <img src="../static/img/gs_34410916c848bcffeed523a0de064da66d3edceda4a866828d8269b1cc133a84.jpg"
+                 alt="On the Traces of the Divine Mercy"
                  class="section-image">
             
             
@@ -1023,16 +1076,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1044,11 +1097,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"In every soul I accomplish the work of mercy. The greater the sinner, the greater his right to My mercy. Over every work of My hands My mercy is fixed."</strong> [723]</p><p>The mission of Sister Faustyna encompasses the devotion to the Divine Mercy in new forms. The foundation of this devotion is childlike trust in God and merciful love for one's neighbor, as it were the key to Christian perfection.</p><p>Sister Faustyna recognized this unfathomable mercy above all through contemplation of the works of God. In the mercy of God she sees the only reason that He calls creatures from nothing into being. She writes about this:</p><p><strong>"O God, out of mercy You have called the human race from nothing into being and have abundantly gifted it with natural and supernatural gifts. That was still not enough for Your goodness. In Your mercy You give us eternal life. You let us come to Your eternal happiness, participate in Your interior life, and that solely on account of Your mercy. You gift us with Your grace solely because You are good and filled with love. You did not need us to be happy, but You, Lord, want to share Your own happiness with us."</strong> [1743]</p><p>She recognizes even more in the Incarnation of God His superabundant mercy, which reveals itself most perfectly in the event of redemption on the Cross.</p><p><strong>"Through Your mercy – she acknowledged in conversation with Jesus – You descended to us to raise us from our distress. (…) The unfathomable miracle of Your mercy occurs, Lord: the Word becomes flesh, God dwells among us, the Word of God – incarnate mercy. This humiliation of God through the acceptance of human nature is an expression of His mercy, an expenditure of His love at which heaven marvels."</strong> [1745]</p><p>The recognition of the mystery of the mercy of God in the work of creation, redemption, and beatitude took place in her life through the use of very simple means, such as spiritual reading, daily meditation, contemplation of the Rosary mysteries and the Stations of the Cross, deep experience of the holy sacraments, the liturgical feasts of the Church year, as well as considering and noticing all the good that God had wrought in the world and in her personal life.</p><h3>The Key to the Heart of God</h3><p>The <strong>foundation</strong> of devotion to the mercy of God is trust. It is as it were the key to the Heart of God and the vessel for drawing all graces.</p><p><strong>"From My mercy one draws graces with only one vessel, and that is trust. The more a soul trusts, the more it receives."</strong> [1578]</p><p>This <strong>trust</strong> proves itself in that we daily anew direct our life according to the will of God. This happens first through the fulfillment of His commandments and our duties of state, second through following the inspirations of the Holy Spirit, and third through the grateful acceptance of all His dispositions and permissions. [Cf. 444]</p><p><strong>"Say, My daughter, that I am entirely love and mercy. When a soul approaches Me with trust, I fill it with such mighty grace that it cannot contain this grace within itself and will radiate it onto other souls."</strong> [1074]</p><p><strong>Mercy</strong> toward one's neighbor is – alongside trust – the second essential component of this devotion. Therefore Jesus expressed the wish that His devotees, out of love for Him, perform at least one act of mercy toward their neighbors in the course of the day.</p><p><strong>"You shall show mercy to your neighbor always and everywhere. You cannot excuse yourself, nor talk yourself out of it, nor justify yourself. I give you three ways to show mercy to your neighbor: first – the deed; second – the word; third – prayer. In these three degrees the fullness of mercy is contained; it is an irrefutable proof of love for Me. Thus the soul praises and venerates My mercy."</strong> [742]</p><p>He also explained that mercy toward the soul is more meritorious and added that no material means are necessary for this. Mercy can and should everyone show, above all every baptized person, according to the message of the Gospel.</p><p>Thus the devotion to the mercy of God does not have exclusively the character of a prayer, but is a deeply lived manifestation of Christian life.</p><img src="../static/img/gs_0c23712fa693ca34db8618fa68fc735906d02e327bf5863a4f2d82574c5abcf2.png"><p>This image of grace has been located in the Sanctuary of Divine Mercy in Vilnius (Lithuania) since September 2005. Eugeniusz Kazimirowski was the first painter commissioned to paint the image of the Merciful Jesus according to Sr. Faustyna's descriptions. When she saw it for the first time in 1934, she wept bitterly because it did not succeed in depicting Jesus as beautifully as she had been permitted to behold Him. Yet Jesus comforted her, speaking to her: <strong>"Not in the beauty of the colors or the brushstroke lies the greatness of this image, but in My grace."</strong> [313]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1058,16 +1117,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1079,11 +1138,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"O eternal Love, You command that Your holy image be painted and reveal to us the unfathomable source of mercy. You bless those who approach Your rays, and every black soul is transformed into snow."</strong> [1]</p><p>The encounter of Sister Faustyna with the Merciful Jesus on February 22, 1931 stands at the beginning of the veneration of that unique image through which many people receive streams of graces. She writes:</p><p><strong>"In the evening, when I was in my cell, I beheld Jesus, the Lord, in a white robe. One hand was raised in blessing, the other touched the robe at the breast. From the opening of the robe (…) two great rays went forth, a red one and a pale one. (…) My soul was permeated with fear, but also with great joy. After a while Jesus said to me: 'Paint an image according to what you see, with the inscription: Jezu Ufam Tobie (Jesus, I trust in You)! I desire that this image be venerated, first in your chapel, then throughout the whole world.'"</strong> [47]</p><p>The content of the image is closely connected with the liturgy of the second Sunday of Easter (Feast of Divine Mercy). The Gospel of the day of the Church concerns the appearance of the Risen One in the Upper Room and the institution of the Sacrament of Penance (cf. Jn 20,19-23). The rays of <strong>Blood</strong> and <strong>Water</strong> flowing from the pierced heart as well as the wounds on hands and feet recall the events of Good Friday (cf. Jn 19,16-37).</p><p><strong>"The rays of mercy consume Me, I want to pour them out over the souls of men."</strong> [50]</p><p>Characteristic of the image of the Merciful Jesus are the two rays that the Lord Himself explained:</p><p><strong>"The pale ray signifies water, which justifies souls; the red ray signifies Blood, which is the life of souls. (...)</strong> <strong>These two rays went forth from the depths of My mercy when My dying Heart on the Cross was opened with the lance. Happy are those who live in their shadow."</strong> [299]</p><p>The Sacraments of Baptism and Penance purify the soul, and in the Sacrament of the Eucharist it ever anew receives its nourishment.</p><p>Thus the image speaks on the one hand of the great mercy of God, which was revealed to us in the paschal mystery of Christ, and on the other hand it reminds us of the Christian practice of trust as well as active love for one's neighbor. The words placed on the image point to the attitude of trust: <strong>Jesus, I trust in You!</strong></p><p><strong>"The image,"</strong> said Jesus, <strong>"shall remind of the demands of My mercy, for even the strongest faith avails nothing without deeds."</strong> [742]</p><p>To devotion to the image understood in this way, the Lord has promised eternal salvation:</p><p><strong>"I promise that the soul that venerates this image will not perish."</strong> [48]</p><p>The Lord also promised great progress on the path to Christian perfection, the grace of a happy death, as well as all other graces and temporal benefits for which people will ask Him with trust:</p><p><strong>"Through the image I will grant many graces to souls; therefore every soul should have access to it."</strong> [570]</p><img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg"><p>In 1943, the painter Adolf Hyla, in thanksgiving for his rescue from the war, also made a painting of the Merciful Jesus and donated it as a votive offering for the chapel of the Sisters of the Congregation of Our Lady of Mercy in Kraków. To this day countless people come to this sanctuary to venerate the Merciful Jesus and to ask for graces. Copies of this great image of grace are distributed throughout the whole world.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1093,16 +1158,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1114,11 +1179,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"I desire that the first Sunday after Easter become the Feast of Mercy."</strong> [299]<strong><br></strong><strong>"On this day the priests shall proclaim to souls My great and unfathomable mercy."</strong> [570]</p><p>Jesus expressed this desire for the first time in 1931 in Płock, when He communicated His will concerning the creation of the image of the Merciful Jesus. In the following years Jesus returned to this desire 14 times, assigning the place of this feast in the liturgical calendar, describing the reason and goal of its institution, as well as the manner of its preparation and celebration.</p><p>The choice of the first Sunday after Easter, which concludes the octave of the Resurrection of the Lord, points to the close connection of the paschal mystery with the Feast of Divine Mercy. The suffering, death, and resurrection of Christ are the source and summit of the revelation of God''s merciful love.</p><p><strong>"The Feast of Divine Mercy was introduced for the whole Church by Pope John Paul II on April 30, 2000."</strong></p><p>The work of redemption shows itself in its full abundance in the holy sacraments, of which the liturgy of this feast speaks. The Sacraments of Baptism, Penance, and the Eucharist are therefore inexhaustible sources of the mercy of God, to which the Church leads all generations throughout the whole earth.</p><p>Therefore, Mercy Sunday should not only be the day of special veneration of God in this mystery, but also the day of grace for all people, especially for sinners.</p><p><strong>"I desire that the Feast of Mercy be a refuge and shelter for all souls, especially for poor sinners. On this day the interior of My mercy is opened; I pour forth a whole sea of graces upon those souls who approach the source of My mercy. The soul that goes to confession and receives Holy Communion obtains complete remission of guilt and punishment; on this day all the floodgates of God are open, through which graces flow. No soul should fear to approach Me, even if its sins were red like scarlet."</strong> [699]</p><p>The preparation for the Feast of Divine Mercy should be a novena based on praying the Chaplet of Divine Mercy for nine days.</p><p><strong>"In this novena,"</strong> said the Lord, <strong>"I will grant all graces to souls."</strong> [796]</p>The Feast of Divine Mercy was introduced for the whole Church by Pope John Paul II on April 30, 2000.
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1128,16 +1199,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1149,11 +1220,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Through praying the Chaplet of Divine Mercy you bring humanity closer to Me."</strong> [929]<strong><br></strong><strong>"I am pleased to grant them through this prayer everything they ask of Me."</strong> [1541]</p><p>Jesus dictated this prayer to Sister Faustyna on September 13–14, 1935. [474–476] In all Jesus spoke of it 14 times, explaining the goal and the promises connected with this prayer. In this prayer we offer God the Father: <strong>the Body and Blood, Soul and Divinity of His beloved Son in reparation for our sins and those of the whole world.</strong> We unite ourselves with Jesus' sacrifice on the Cross, which He accomplished for the redemption of the world; we appeal to the love with which God the Father loves His Son and in Him all men. When we keep in view in everything we ask the will of God and His glory, we receive the promise of Jesus:</p><p><strong>"Through the prayer you ask for everything, if what you ask for is in accord with My will."</strong> [1731]</p><p>According to Jesus' promise, especially sinners and the dying should receive special graces.</p><p><strong>"The priests will offer it to sinners as a last anchor of salvation. Even if it be the most hardened sinner – if he prays this chaplet only once, the grace of My infinite mercy will be granted him."</strong> [687]</p><p><strong>When this Chaplet of Mercy is prayed for the dying, Jesus will stand between His Father and the dying not as just Judge, but as merciful Redeemer.</strong> [1541]</p><p>But in order to obtain all the promised graces, it is important that our praying be characterized by persevering trust in the mercy of God and sincere contrition for our sins.</p><p><strong>"When the soul sees and recognizes the gravity of its sins, when the whole abyss of its wretchedness (…) spreads before its eyes, it should not despair, but cast itself with trust into the arms of My mercy, like a child into the arms of its loving mother."</strong> [1541]</p><p>According to St. Hildegard of Bingen, contrition has a world-renewing dynamism. With it we can set the cosmic world in motion. The power of contrition causes nature to blossom and become fruitful. She writes: "In contrition man breaks his sins. It is not a power that comes from us, but it springs from the suffering of the Lord …" From God the Father St. Hildegard receives the wonderful message to every human child: "Why do you not return home when you have sinned? I offer you from My fatherly heart the greatest power of My love: <strong>contrition</strong>."</p><p><a href="barmherzigkeitsrosenkranz.html">Instructions for praying the Chaplet of Divine Mercy [Click here]</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1163,16 +1240,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1184,11 +1261,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><a href="novene-gttlichen-barmherzigkeit.html">Novena of Divine Mercy [Click here]</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1198,16 +1281,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1219,11 +1302,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"In this hour grace came for the whole world. Mercy conquered justice."</strong> [1572]</p><p>In October 1937 Jesus recommended commemorating His hour of death, which He Himself called "the hour of great mercy for the world." [1320] In February 1938 the Lord repeated His desire, describing the manner of prayer in the Hour of Mercy and the promise attached to it.</p><p>Jesus wishes to commemorate in this hour of His bitter suffering, to praise and glorify the mercy of God, and to ask through the merits of His bitter sufferings for the graces necessary for the world, especially for sinners:</p><p><strong>"I remind you (...) that whenever you hear the clock strike the third hour, you shall immerse yourself entirely in My mercy, glorify and praise it. Call down its omnipotence for the whole world, especially for poor sinners, for now it is wide open for every soul."</strong> [1572]</p><p>But in order to obtain these promises, three conditions must be fulfilled:</p><ol><li><p><strong>The prayer shall be directed to Jesus.</strong></p></li><li><p><strong>It shall be prayed at 3:00 PM.</strong></p></li><li><p><strong>It shall refer to the suffering of the Lord.</strong> [cf. 1320]</p></li></ol><p>Moreover, devotion to the mercy of God should be combined with the attitude of trust and merciful love for one''s neighbor.</p><p>Jesus also named suitable forms of prayer for venerating the Divine Mercy:</p><p><strong>"Make an effort in this hour to make the Stations of the Cross. If that is not possible for you, then go for a while into the chapel and venerate My Heart, which is full of mercy in the Most Blessed Sacrament of the Altar. If that is also not possible for you, immerse yourself in prayer, even if only briefly, where you are. In this hour you can ask for everything for yourself and for others."</strong> [1572]</p><h3><a href="gebet-todesstunde-unseres-herrn.html"><strong>Prayer in the Hour of Our Lord''s Death (3:00 PM)</strong></a></h3><p><strong>Merciful Jesus</strong>, in grateful remembrance of Your bitter death on the Cross I adore You in deepest reverence and praise You for the inestimable grace of redemption. Humbly I ask You, look mercifully upon all humanity and show Your unfathomable mercy especially to poor sinners and the dying. Amen.</p><h3><a href="gebet-bekehrung-einer-seele.html"><strong>Prayer for the Conversion of a Soul</strong></a></h3><p><strong>"If you pray the following prayer for a sinner with a contrite heart and in faith, I will grant him the grace of conversion. The prayer is:</strong></p><p><strong>O Blood and Water, which gushed forth from the Heart of Jesus as a fountain of mercy for us – I trust in You.</strong> [186]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1233,16 +1322,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1254,11 +1343,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"I gave the world the Redeemer, and you shall tell the world of His great mercy and prepare it for His return."</strong> [635]</p><p>Sister Faustyna reports in her diary how she was permitted several times to behold the Mother of God as the Mediatrix between heaven and earth:</p><p><strong>"… I beheld between heaven and earth the Mother of God in a bright robe. She was praying, her hands crossed on her breast and looking up to heaven. From her heart came rays of fire, some went to heaven, others covered our earth."</strong> [33]</p><p>On August 5, 1935, the Feast of Our Lady of Mercy, Sister Faustyna again saw Mary in unspeakable beauty, and this time Mary spoke to her:</p><p><strong>"I am your Mother from the unfathomable mercy of God. The soul that faithfully fulfills the will of God is dearest to me."</strong> [449]</p><p>With these words Mary reminds us of the hour of great mercy, in which Jesus, dying on the Cross, gave us His Mother as it were as <em>gate of mercy</em>.</p><p>Since that moment, according to the divine plan, Mary is the great mediatrix of graces of the merits of the Redeemer (Cf. II Vatican Council, Lumen Gentium, No. 62). Mary carries our prayers and sacrifices up to the Heart of God. Therefore she always invites us again to consecrate ourselves, our families, and representatively all humanity to her maternal heart. Through this consecration to Mary we may help at the triumph of her Immaculate Heart, which she already announced in 1917 at Fatima. (May her Immaculate Heart triumph!)</p><h3><a href="weihe-unbefleckte-herz-mariens.html"><strong>Consecration to the Immaculate Heart of Mary</strong></a></h3><p><strong>Most Holy Virgin Mary!</strong><strong><br></strong>Mother of God and my Mother! To Your Immaculate Heart I consecrate myself with all that I am and have. Take me under Your maternal protection! Preserve me from all dangers. Help me to overcome the temptations that lead me to evil, that I may preserve the purity of my body and soul. May Your Immaculate Heart be my refuge and the way that leads me to God.</p><p>Obtain for me the grace to pray and sacrifice often out of love for Jesus for the conversion of sinners and in reparation for the sins committed against Your Immaculate Heart. In union with You and the Heart of Your divine Son I wish to live in total consecration to the Most Holy Trinity, in whom I believe, whom I adore, in whom I hope, and whom I love. Amen. (Sr. M. Lucia)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1268,16 +1363,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1289,11 +1384,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Before I come as just Judge, I open wide the door of My mercy. Whoever does not want to enter through the door of My mercy must pass through the door of My justice."</strong> [1146]</p><p>Sister Faustyna recognized the mystery of the mercy of God also in the destination of man for eternal beatitude. God granted her in His goodness and mercy the grace to behold the beauties and happiness of heavenly glory, which is prepared for those who love and trust Him.</p><p>A further occurrence that Sister Faustyna reports in her diary is the stay in the place of purification (purgatory), where she saw the suffering souls who satisfy the justice of God for their sins, which is a further gift of the mercy of God. These souls are full of hope, for they know that one day they will behold God.</p><p>Quite different is the place of eternal torment, hell. Sister Faustyna was led by command of God through an angel into the abyss of hell, to bear witness to mankind that it exists and is populated with damned souls who endure terrible torments that last eternally.</p><h3><strong>Glimpse into Heaven</strong></h3><p>"Today I was in spirit in heaven and beheld the unfathomable beauties and the happiness that awaits us after death. I saw how all creatures unceasingly render honor and glory to God. I saw how great is the happiness in God that flows out upon all creatures, makes them happy, and how all glory and honor return from this happiness to the source. They penetrate into the depths of God, contemplating the interior life of God – of the Father, the Son, and the Holy Spirit – which they will never comprehend or fathom. This source of happiness is unchangeable in its essence, yet ever new, bubbling with beatitude for all creatures. Now I can understand the holy Paul, who said: 'No eye has seen, no ear has heard, nor has it entered the heart of man what God has prepared for those who love Him.' (1 Cor 2,9)</p><p>And God gave me to understand something that has infinite value in His eyes – it is the love of God, love, love, and again love; with a single act of pure love of God nothing can be compared. (…) O my God, how sorry I feel for the people who do not believe in eternal life; I pray so much for them that they too may be touched by a ray of mercy and God may press them to His paternal heart."</strong> [777–780]</p><h3><strong>In Purgatory</strong></h3><p>At the beginning of her religious life, during a brief illness, Sister Faustyna asked Jesus for whom she should still pray:</p><p>"Jesus replied to me that He would make known to me in the next night for whom I should pray. I beheld my Guardian Angel, who commanded me to follow him. Suddenly I found myself in a misty place filled with fire, and in it many suffering souls. These souls pray most fervently, yet without effect for themselves; only we can help them. The flames burning around them did not touch me. My Guardian Angel did not leave me for a moment. I asked the souls what their greatest suffering was. They answered me unanimously that their greatest suffering was the longing for God. I saw the Mother of God visiting the souls in purgatory. The souls call Mary 'Star of the Sea.' She brings them relief. I wanted to speak more with them, but my Guardian Angel gave me a sign to go. (…) I heard an interior voice that said:</p><p><strong>'My mercy does not desire this, but justice demands it.'</strong></p><p>Since that time I have cultivated a closer relationship with the suffering souls."</strong> [20]</p><h3><strong>Descent into Hell</strong></h3><p>"Today I was led by an angel into the abyss of hell. It is a place of great torment; its extent is terribly great. The kinds of torment I saw are the following: The first torment that constitutes hell is the loss of God; the second – the unceasing reproach of conscience; the third – that this lot will never change again. The fourth torment – the fire that penetrates the soul without destroying it; it is a terrible torment; it is a purely spiritual fire kindled by the wrath of God. The fifth torment – is constant darkness and a terribly stifling smell. Although it is dark, the devils and the damned souls see one another; they see all the evil of others and also their own. The sixth torment – is the unceasing company of Satan. The seventh torment – is terrible despair, hatred of God, blasphemies, curses, and reproaches. These are torments that all the damned suffer in common, yet that is not the end. There are still special torments for souls, namely torments of the senses. With what the individual soul sinned, with that it is tormented in a terrible, indescribable way. There are terrible caverns and abysses of torment, where one torment differs from another. In the face of this dreadful torment I would have died had not the omnipotence of God preserved me. The sinner should know that he will be tormented for all eternity with the sense organ with which he sinned. I write of this by God's command, so that no soul may excuse itself that hell does not exist, or that no one was there and one does not know what it is like."</p><p>"I, Sister Faustyna, was by God's command in the abyss of hell to report and testify to souls that hell exists. Now I cannot speak of it, for I have God's command to leave it in writing. The devils had great hatred for me, but by God's command they had to obey me. What I have written is a meager shadow of the things I saw. One thing I could observe: there are mostly souls who had not believed in hell. When I came to myself, I could not recover from the horror of how much the souls suffer there. Therefore I pray all the more fervently for the conversion of sinners. Without ceasing I implore God's mercy for them. O my Jesus, I would rather suffer torments until the end of the world than offend You with the slightest sin."</strong> [741]</p><p>This personal testimony of Saint Maria Faustyna deserves all the more attention as it is in accord with the teachings of the Church:</p><p><strong>"The teaching of the Church affirms that hell exists and that it lasts eternally. To die in mortal sin without having repented of it and without accepting the merciful love of God means to remain forever separated from Him by one's own free choice."</strong> (CCC 1035, 1033)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1303,16 +1404,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1324,11 +1425,17 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"The happiest soul is one that entrusts itself to My mercy, for I Myself take care of it."</strong> [1273]</p><h3><a href="sr-faustynas-gebet.html">Sister Faustyna's Prayer [163]</a></h3><p>As often as my breast breathes, as often as my heart beats, as often as the blood pulses in my body, so many thousand times I will praise Your mercy, O Most Holy Trinity. (…) May this greatest attribute of God, His unfathomable mercy, reach my neighbors through my heart and my soul.</p><p>Help me, O Lord, that my eyes may look with mercy, that I may never suspect and judge by outward appearance, but perceive what is beautiful in the souls of my neighbors and come to their aid.</p><p>Help me that my hearing may become merciful, that I may incline to the needs of my neighbors, that my ears may not remain indifferent to the suffering and lament of my neighbors.</p><p>Help me, Lord, that my tongue may become merciful, that I may never speak disparagingly of my neighbors, but have a word of comfort and forgiveness for everyone.</p><p>Help me, Lord, that my hands may be merciful and full of good deeds, that I may do only good to my neighbor and take upon myself more difficult, more laborious work.</p><p>Help me that my feet may be merciful, that they may always hasten to the aid of my neighbor and master my own weariness and fatigue. My true rest is in serving my neighbor.</p><p>Help me, Lord, that my heart may be merciful, that I may feel all the sufferings of my neighbors, that I may refuse my heart to no one, maintain sincere dealings even with those whose goodness I know will be abused; I myself will close myself in the most merciful Heart of Jesus. I will be silent about my own sufferings. Your mercy, O my Lord, shall rest in me.</p><p><strong>O my Jesus, transform me into Yourself, for You can do all things.</strong></p><h3><a href="litanei-gttlichen-barmherzigkeit.html">Litany of Divine Mercy [949]</a></h3><p><strong>Mercy of God</strong>,<br>sprung from the bosom of the Father,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>greatest attribute of God,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>unfathomable mystery of God,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>source springing from the mystery of the Most Holy Trinity,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>fathomed neither by the intellect of men nor of angels,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>from which all life and happiness flow,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>raised above heaven,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>source of wonders and mysteries,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>encompassing the entire universe,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>come into the world in the Person of the Incarnate Word,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>flowing from the open wound of the Heart of Jesus,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>contained in the Heart of Jesus for us, especially for sinners,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>unfathomable in the institution of the Most Holy Eucharist,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>in the founding of the holy Church,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>in the Sacrament of holy Baptism,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>in our justification through Jesus Christ,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>accompanying us through our whole life,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>embracing us especially in the hour of our death,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>granting us eternal life,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>at our side at every moment of our life,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>protecting us from the fire of hell,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>in the conversion of hardened sinners,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>wonder of the angels and unfathomable for the saints,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>unfathomable in all the mysteries of God,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>raising us from all wretchedness,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>source of our happiness and joy,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>calling us from nothingness to life,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>encompassing all the works of His hands,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>crowning all that is and will be,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>in which we are all immersed,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>sweet consolation of afflicted hearts,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>only hope of despairing souls,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>rest of hearts, peace amid terror,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>delight and rapture of holy souls,<br><em>I trust in You!</em></p><p><strong>Mercy of God</strong>,<br>awakening trust despite hopelessness,<br><em>I trust in You!</em></p><p><strong>O Eternal God</strong>, whose mercy is unfathomable and whose treasury of compassion is inexhaustible, look graciously upon us and increase Your mercy in us, that we may not despair or become discouraged in difficult times, but with great trust surrender to Your holy will, which is love and mercy itself. Amen.</p><h3><a href="weihe-barmherzigen-jesus.html">Consecration to the Merciful Jesus</a></h3><p><strong>Merciful Jesus</strong>, Your goodness is infinite, and the treasures of Your graces are inexhaustible. I trust boundlessly in Your mercy, which surpasses all Your works.</p><p>I consecrate myself entirely to You, to live in the rays of Your grace and love that went forth from Your Heart on the Cross.</p><p>I want to spread Your mercy and especially to pray Your Chaplet, to implore Your mercy for us, for the conversion of sinners, for the whole world, and for the Poor Souls in purgatory.</p><p>You, however, will protect me as Your property and Your honor, for I fear everything from my weakness and hope for everything from Your mercy.</p><p>May the whole of humanity recognize the unfathomable depth of Your mercy, place all their hope in it, and praise it for all eternity. Amen.</p><p><strong>Jesus, I trust in You, for You are my confidence!</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1338,16 +1445,16 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1358,6 +1465,7 @@ is so necessary to man as the mercy of God." <br>Saint Pope John Paul II.</p>
             <h2 class="section-heading">Way of the Cross on the Interior Life</h2>
             
 
+            
             
             <div class="section-body">
                 <p>(Cf. God, Full of Mercy)</p><p><strong>"Most graces I grant to souls
@@ -1540,22 +1648,27 @@ soul that has understood the love of the Heart of Jesus. [304]</p>
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1567,11 +1680,17 @@ soul that has understood the love of the Heart of Jesus. [304]</p>
             
 
             
+            
             <div class="section-body">
                 <p><strong>"To save a single soul for all eternity is worth sacrificing a whole life."</strong> [1435]</p><p>Helena Kowalska, as Sister Faustyna was called before her entrance into religious life, was born on August 25, 1905 in the Polish village of Głogowiec as the third of ten children of a poor peasant family. Early on the desire stirred in Helena to enter the convent. Her father, however, was opposed, as he did not feel able to provide the dowry required for entrance into the convent. So Helena tried to suppress her vocation by devoting herself to worldly things.</p><p>A profound experience at a ball reawakened in her the first longing: While dancing she suddenly saw the tormented Jesus, completely covered with wounds, beside her, who spoke to her:</p><p><strong>"How long shall I put up with you, and how long will you put Me off?"</strong> [9]</p><p>This encounter with Jesus marked the turning point in her vocation story. Deeply touched in soul, she went immediately to a church and threw herself down before the tabernacle. In this posture she implored God to make known to her what she should now do. Then she heard in her heart the words:</p><p><strong>"Go immediately to Warsaw, there you will enter the convent!"</strong> [10]</p><p>Leaving her previous life behind, she went without hesitation to Warsaw and there sought to enter a convent. Everywhere she was turned away, until she finally found acceptance with the <strong>Congregation of the Sisters of Our Lady of Mercy</strong>. There she entered on August 1, 1925.</p><p>God chose this simple religious sister to bring the truth revealed in Sacred Scripture about His merciful love for all people closer to humanity and to proclaim it. Her mission also included imploring the mercy of God for the whole world through corresponding forms of veneration, so as to promote a movement for the renewal of religious life in the spirit of Christian trust and mercy.</p><p>Faithful to the fulfillment of her mission, she died already at the age of 33 on October 5, 1938 in the convent in Kraków-Łagiewniki of tuberculosis.</p><p>On April 18, 1993 Sister Faustyna was beatified by Pope John Paul II. With her canonization on April 30, 2000, he also officially introduced the <strong>"Feast of Divine Mercy"</strong> for the whole Church and fixed its celebration on the first Sunday after Easter (Divine Mercy Sunday).</p><p><strong>"Look into My merciful Heart and reflect its mercy in your own heart and in your actions."</strong><strong><br></strong><em>– Jesus to St. Maria Faustyna</em></p><br><p><strong>"We are most like God when we grant forgiveness to our neighbor."</strong><strong><br></strong><em>– St. Maria Faustyna</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1581,6 +1700,7 @@ soul that has understood the love of the Heart of Jesus. [304]</p>
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1666,6 +1786,41 @@ soul that has understood the love of the Heart of Jesus. [304]</p>
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1720,6 +1875,17 @@ soul that has understood the love of the Heart of Jesus. [304]</p>
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1755,12 +1921,50 @@ soul that has understood the love of the Heart of Jesus. [304]</p>
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

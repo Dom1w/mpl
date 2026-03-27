@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Gebeden tot het Genaderijke Loreto-Kindje van Salzburg">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Gebeden tot het Genaderijke Loreto-Kindje van Salzburg">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gebete-zum-gnadenreichen-loretokindl-von-salzbug.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../nl/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../nl/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Godskindje, zegen ons!</p><p><strong>Korte geschiedenis van het Loreto-Kindje</strong></p><p>Sinds het jaar 1650 herbergen de Kapucijnerinnen van de Eeuwige Aanbidding in Salzburg een kostbare schat. Het is het alom geliefde Genaderijke Loreto-Kindje, naar wie ontelbare mensen pelgrimeren om hun zorgen en noden toe te vertrouwen.<br>En die Jezuskind-vereerders die niet persoonlijk kunnen komen, reizen in de sneltrein van hun verlangende hart naar de kleine Christus-Koning, die de vermoeiden en belasten met open armen ontvangt.</p><p>De geschiedenis van het door onbekende kunstenaarshand vervaardigde ivoren beeldje laat zich tot het jaar 1620 terugvoeren. Destijds schonk gravin Oettingen het slechts 11 cm grote beeldje aan <strong>Moeder Euphrasia Silberrath</strong>, die juist bezig was in Ensisheim in de Elzas een nieuw klooster te stichten. Op dezelfde plaats stond in die tijd <strong>P. Johannes Chrysostomus Schenk</strong> de Kapucijnen als gardiaan en novicenmeester voor. Toen deze heilige kloosterling, die al van jongs af aan een heel levendige relatie met het Goddelijk Kind had, bij Moeder Euphrasia het mooie beeldje zag, bedelde hij zo lang, tot het hem uiteindelijk als bruikleen tot aan zijn kloosterstichting werd overgelaten.</p><p>Door zijn tedere en innige verering van het Kindje Jezus werd hij al spoedig algemeen de <strong>„Christkindlpatre“</strong> genoemd. Het Goddelijk Kindje beloonde zijn liefde met vele en buitengewone genaden. In de geur van heiligheid stierf hij op 25 november 1643 te Delemont.</p><p>Intussen was Moeder Euphrasia naar de Kapucijnerinnen in Salzburg gekomen, waar nu ook haar Jezuskindje thuis wilde zijn. Hier sloeg Het Zijn genadetroon op, en tot op de huidige dag verspreidt zich de roem van Zijn liefde en wondermacht door ontelbare genadebewijzen en opvallende gebedsverhoringen.</p><br><h3><strong>Gebed bij het zegenen met het Genadekindje</strong></h3><p><strong>God zegene u</strong>,<br>    de ✝ Vader die u geschapen,<br>    de ✝ Zoon die u verlost,<br>    de ✝ Heilige Geest die u geheiligd heeft.</p><p>De zegen van de Allerheiligste Drievuldigheid zij met u op al uw wegen en beware uw lichaam en uw ziel voor alle onheil. <strong>Amen.</strong></p><p>Zegen ons met Uw Goddelijk Kindje, o Gij allerzuiverste Maagd-Moeder Maria!</p><br><p><strong>Dagelijks om ~14:30 uur</strong><strong><br></strong>wordt bijzonder voor alle Jezuskind-vereerders, weldoeners, zieken, lijdenden en allen die met ons verbonden zijn en die niet persoonlijk naar de kloosterpoort kunnen komen, de <strong>Jezuskind-zegen</strong> in alle vier windstreken gegeven.</p><br><p><strong>En de klok rond geldt de belofte:</strong></p><p>    <strong>Denk je maar vol verlangen aan het Goddelijk Kind,</strong><strong><br></strong>    <strong>al heft Het Zijn handje en zegent je mild!</strong></p><br><h3><strong>O allermooiste Jezuskind</strong></h3><p><strong>O allermooiste Jezuskind</strong>,<br>    met U wil ik verenigd zijn.<br>Ik wijdt mij geheel aan U,<br>o neem mijzelf van mij.<br>Opdat ik leef in U<br>en U alleen in mij,<br>o lief Jezuskind!</p><p><em>(P. Chrysostomus Schenk)</em></p><br><h3><strong>Kort noveengebed tot het Genaderijke Jezuskind</strong></h3><p><strong>O Jezus</strong>,<br>    aan Uw Hart vertrouw ik toe …<br>(deze ziel, deze intentie, dit lijden …)<br>Blik erop en doe dan wat Uw Hart U ingeeft …<br>Laat Uw Hart beschikken!</p><p><strong>O Jezus</strong>,<br>    ik reken op U,<br>ik vertrouw mij aan U toe,<br>ik laat mij aan U over,<br>ik ben van U zeker!<br><strong>Amen.</strong></p><p><em>(Wordt gezamenlijk door de Loretozusters, bijzonder voor de weldoeners en Jezuskind-vereerders, dagelijks gebeden. Uitgezonderd van de 17e tot de 25e van elke maand.)</em></p><br><h3><strong>Innig smeekgebed tot het lieve Jezuskind</strong></h3><p><strong>O almachtig Jezuskind</strong>,<br>    in wie de hele volheid van de Godheid woont, dat Gij geheel liefde en goedheid zijt, rijk voor allen die U aanroepen.<br>Gij bron van leven en heiligheid, van volmaakte troost.<br>Gij onze vrede, onze verzoening, Gij redding van allen die op U hopen:</p><p><strong>Aan Uw Hart vertrouw ik toe …</strong><strong><br></strong>    (deze ziel, deze intentie, dit lijden …)<br>Blik erop en doe dan wat Uw liefde U ingeeft!</p><p><strong>O liefrijkst Jezuskind</strong>,<br>    dat Gij al door ontelbare genadebewijzen Uw welbehagen in de verering van Uw allerheiligste kindertijd in dit beeld geopenbaard hebt, ontferm U over ons.<br>Verheerlijk Uw allerheiligste zoete Naam ook aan ons!<br>Wees ons Jezus! Wees ons Heiland!<br><strong>Amen.</strong></p><p><em>(Wordt gezamenlijk door de Loretozusters, bijzonder voor de weldoeners en Jezuskind-vereerders, van de 17e tot de 25e van elke maand dagelijks gebeden.)</em></p><br><h3><strong>Jezuskindje, zie ons armen</strong></h3><p><strong>Jezuskindje, zie ons armen</strong><strong><br></strong>    smeken tot U, Gij Godskind.<br>Wilt U Zich over ons ontfermen, omdat wij hulpbehoevend zijn.</p><p><strong>Gij zijt immers de genadezon</strong>,<br>    zijt aan goedheid overrijk.<br>Wie tot U komt, gaat in verrukking en verkwikt van daar gelijk.</p><p><strong>Zieken laat Gij snel genezen</strong>,<br>    de moedelozen troost Gij.<br>Wie in zonden is geweest, vond bij U de rust der ziel.</p><p><strong>Jezuskindje</strong>,<br>    vol vertrouwen naderen ook wij nu Uw troon.<br>Laat ons eens Uzelve aanschouwen, Mensenheiland, Gods Zoon!</p><br><h3><strong>Tot het Goddelijk Jezuskind</strong></h3><p><strong>Lief Jezuskind</strong>,<br>    Gij zijt vol van de Heilige Geest! Stort de Heilige Geest met Zijn zeven gaven en de twaalf vruchten uit over ons en de hele wereld, opdat de boze vijand van ons moet wijken!<br>In de naam van de ✝ Vader en van de ✝ Zoon en van de ✝ Heilige Geest.<br><strong>Amen.</strong></p><br><h3><strong>Gebed tot het lieve Jezuskind</strong></h3><p><strong>O Gij mijn lief Jezuskind</strong>,<br>    Gij wonderdadig Godskind, laat allen U aanbevolen zijn, die lijdend en gebrekkig zijn!<br>Gij zijt aan genaden overrijk, voor U is ook de rijkste arm.<br>Uw handje zegent allen gelijk, vol wonderkrachten is Uw arm.</p><p><strong>O genees, als de Vader het wil</strong>,<br>    wat ziek is, ogen, hoofd en hart.<br>Beveel het lijden: „Sta stil“ en verzacht elke hete smart!</p><p><strong>Ook waar het kwaad dieper ligt</strong>,<br>    waar het zwaar als lood de ziel drukt,<br>help daar, o wijze Zieledokter, die Gij immers ook hard geplaagd werd!</p><p><strong>Waar een ziel bang verzaagt</strong>,<br>    leer haar in het lijden geduldig zijn, waar een duistere twijfel plaagt, licht haar helder met de waarheid bij!</p><p><strong>Laat niemand ongetroost gaan</strong>,<br>    lief Kindje, dat zich voor U buigt, verhoor liefrijk, vroom smeken, dat hulpbehoevend omhoog stijgt!</p><p><strong>Neem weg van ons de zondigheid</strong><strong><br></strong>    en schenk ons vast Godsvertrouwen, opdat wij eens in eeuwigheid Uzelve in Uw glorie aanschouwen.<br><strong>Amen.</strong></p><br><h3><strong>Morgengroet aan het Jezuskind</strong></h3><p><strong>Goedemorgen, Hemelskindje</strong>,<br>    Jezuskindje, ik groet U!<br>O, ik heb U lief uit mijn hart, Godskindje, zegen mij!</p><p><strong>Goddelijk Broertje</strong>,<br>    ik dank U voor de afgelopen nacht;<br>door U zij de Hemelse Vader voor ons allen dank gebracht.</p><p><strong>Door U zijn wij Godskinderen</strong>,<br>    zijn wij zo oneindig rijk.<br>Maak Gij, tot Vaders vreugde, onze harten aan het Uwe gelijk.</p><p><strong>Hemelskindje</strong>,<br>    sluit ons allen in Uw goddelijk Hartje in;<br>hul ons zo in Uw liefde, dat wij eeuwig de Uwe blijven!</p><p><strong>Wat wij vandaag denken, spreken, doen en lijden, Jezuskindje</strong>,<br>    het zij alles U ter liefde, U tot dank, om U te verblijden!</p><p><strong>Zegen ons en die wij liefhebben</strong>,<br>    allen die ons nabij staan.<br>Help de armen, de bedrukten, trek tot U, die dwaalwegen gaan!</p><p><strong>En komt eens mijn laatste uurtje</strong>,<br>    voer Gij naar de hemel mij.<br>Wil U eeuwig jubelend zeggen: Jezuskindje, ik heb U lief!</p><br><h3><strong>Avondgroet aan het Jezuskind</strong></h3><p><strong>Zoet, lief Jezuskind</strong>,<br>    eer wij ter ruste gaan, zal het onze vreugde zijn, lieflijk Kind, U nog te zien.<br>Liefde heeft ons hierheen gebracht, om U te wensen goede nacht!</p><p><strong>Danken willen wij ook U</strong>,<br>    voor de dag die ons is ontgleden; Jezuskindje, aan U wijden wij al onze levensuren.<br>Goedenacht, lief Jezuskind, laat ons U aanbevolen zijn.</p><p><strong>Nog één ding, dierbaar Hemelskind</strong>,<br>    O vergeef ons onze zonden! Maak ons vroom en goed gezind, laat ons bij U genade vinden.<br>Goedenacht, lief Jezuskind, laat ons U aanbevolen zijn.</p><p><strong>Bescherm ons in deze nacht</strong>,<br>    voor U ook zal zij zacht heenvloeien. Morgen gelijk, wanneer wij ontwaakt zijn, zullen wij U weer groeten.<br>Goedenacht, lief Jezuskind, Gij zijt de onze, wij zijn de Uwe!</p><br><h3><strong>Dankgebed tot het Genadekindje na verkregen verhoring</strong></h3><p><strong>O liefrijkst Kindje Jezus</strong>,<br>    in nederigheid en vol van de innigste dank kniel ik voor Uw beeld. Loven en prijzen wil ik Uw oneindige goedheid, daar Gij U over mij ontfermd en mijn smeken zo genaderijk verhoord hebt.<br>Gij zult steeds mijn toeverlaat en mijn hoop zijn.<br>Mochten toch alle mensen erkennen, hoe welgevallig het U is, Uw allerheiligste kindertijd te vereren en hoe wonderbaar Gij allen hun vertrouwen beloont!</p><p><strong>O Goddelijk Kindje Jezus</strong>,<br>    schenk mij de genade, U door kinderlijke zin steeds welgevalliger te worden, om eens in Uw rijk van de glorie te kunnen binnengaan. <strong>Amen.</strong></p><br><h3><strong>Informatie</strong></h3><p>Replica's van het Loreto-Kindje, gewijde Jezuskind-olie, medailles, rozenkransen, prentjes, kaarsen en aan het Genadekindje aangeraakte stroken stof zijn aan de kloosterpoort verkrijgbaar.</p><h1>2. Brochure</h1><p>Godskindje, wij vertrouwen op U!</p>
             </div>
@@ -955,13 +997,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/Nur%20Jesulein.png" 
-                 alt="Genaderijk Loreto-Kindje" 
+            <img src="../static/img/Nur%20Jesulein.png"
+                 alt="Genaderijk Loreto-Kindje"
                  class="section-image">
             
             
@@ -971,16 +1018,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -992,11 +1039,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>O Loreto-Kindje,</strong><strong><br></strong> sterk en wonderbaar,<br> wees mijn kleine,<br> grote Helper altijd!<br> Wees mij licht in alle donkere dagen,<br> wees mijn raad in alle bange vragen!</p><p><strong>Kindje,</strong><strong><br></strong> zegen de harde moeite van mijn dagwerk,<br> zegen de stille gloed<br> van mijn liefde!<br> En de mensen die Gij mij gegeven hebt<br> tot geleide voor dit aardse leven!</p><p>Maak de wonden heel die het leven sloeg,<br> versterk mijn ziel die veel lijden verdroeg!<br> Laat mij Uw liefde ook dan erkennen,<br> wanneer de noden diep in het hart branden!</p><p>Schenk mij gezondheid en het dagelijks brood,<br> houd zorgen, ongeluk, angst en nood verre!<br> Wees mij genadig eens bij het oordeel,<br> roep mij tot rust in het eeuwige licht!</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1006,16 +1059,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1027,11 +1080,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>O lief, zoet Jezuskind,</strong><strong><br></strong> wees innig gegroet!<br> Gij hier in dit tranendal,<br> mijn troost, mijn alles zijt.<br> Gij werd ons broertje,<br> door de macht van Uw liefde,<br> en wilt nog steeds bij ons zijn<br> in de heilige gedaante van brood.<br> Ik groet U veelduizendmaal<br> in het heilig Sacrament!<br> Zou met de grote schare engelen<br> U prijzen zonder eind.<br> O, kon ik maar naar de kerk gaan,<br> in het gewaad van de hostie U aanschouwen.<br> Maar nee, Uw wil geschiede,<br> op U wil ik blij vertrouwen.</p><p>Wil hier op mijn smartenbed<br> U eren, trouw en vroom;<br> wil aan U denken vroeg en laat,<br> tot dat ik bij U kom.<br> Ben ik in smarten en in lijden<br> bij dag en nacht alleen,<br> dan denk ik aan Uw eenzaamheid<br> in de kleine genadeschrijn.<br> Gloeit in koortshitte mijn bloed<br> en branden mijn handen,<br> dan denk ik aan Uw liefdesgloed<br> in het Heilig Sacrament.<br> Wil de geduld mij verlaten,<br> voel ik zo recht de smart,<br> aan de liefdeskwellingen denk ik,<br> die eens Uw Hart verdroeg.<br> O Jezuskindje, ik lijd graag<br> voor U, voor U alleen,<br> voor U, die Gij mij nimmer verre zijt,<br> Gij zult mij kracht verlenen!<br> O wend Uw blik zo mild<br> tot mij arme zieke,<br> Gij zijt het die mijn verlangen stilt,<br> die vrede schenkt en rust.</p><p>O, wanneer Gij genadiglijk zegent<br> de vrome schare bidders,<br> zegen dan, Jezuskindje, ook mij,<br> die verre van het altaar is.<br> Ja, zegen mij, die op U vertrouwt,<br> U alles overgeeft,<br> die gelovig U in de geest aanschouwt<br> en die U eeuwig liefheeft!</p><p><strong>Amen.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1041,16 +1100,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1062,11 +1121,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Als alle engelen, alle genieën van de wereld bestudeerd hadden wat in deze of die situatie nuttig zou zijn, bijv. dit offer, die bekoring, dat lijden, zij hadden niets beters kunnen vinden dat voor u passender geweest zou zijn. Zo heeft Gods eeuwige wijsheid van eeuwigheid her bestudeerd om dit kruis uit Zijn Hart aan u te geven als Zijn kostbaarste geschenk.</p><p>Hij heeft dit kruis, voordat Hij het aan u verzond, gemonsterd met Zijn alwetend oog, doordacht met Zijn goddelijk verstand, beproefd met Zijn wijze gerechtigheid en met liefdevol erbarmen doorwarmd en gewogen met Zijn beide handen, of het niet een millimeter te groot en een milligram te zwaar was. Toen heeft Hij het nog gezegend met Zijn heilige Naam, gezalfd met Zijn genade, doorgeurd met Zijn troost, nieuw bezield op u en uw moed geblikt, en zo komt het rechtstreeks uit de hemel als een groet van God, als een aalmoes van de erbarmende liefde van uw God.</p><p>De kruisen die wij onszelf oprichten, of onszelf uitzoeken, zijn altijd wat versierd; want er steekt in dezelfde iets van ons eigen ik en daarom kruisigen zij ons minder. De volmaaktheid, deze glansprestatie in het deugdenleven, zal er derhalve in bestaan dat men vreugdig die kruisen op zich neemt die men zonder eigen toedoen opgeladen krijgt.</p><p>(Hl. Franciscus van Sales)</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1076,16 +1141,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1097,11 +1162,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>O Goddelijk Jezuskind!</strong><strong><br></strong> Gij hebt U waardig gekeurd om uit liefde voor ons de menselijke natuur aan te nemen en de glans van Uw Godheid onder de gedaante van een zwak kind te verbergen. O hoe groot en beminnenswaardig zijt Gij in Uw vernedering!<br> Vol vertrouwen kom ik tot U, o lief Jezuskind. Door ontelbare genadebewijzen hebt Gij Uw welbehagen in de verering van Uw heilige kindertijd in dit beeld geopenbaard. Ik bid U door Uw en mijn Moeder Maria, ontferm U over mij, vergeef mij mijn zonden, laat mij door hartsreinigheid, nederigheid en gehoorzaamheid U steeds meer gelijk worden. O kom mij, almachtig Jezuskind, te hulp, bijzonder in deze intentie...</p><p>Bescherm ook de jeugd, die Gij op bijzondere wijze liefhebt, maar aan zo grote gevaren blootgesteld is.</p><p><strong>O Genaderijk Jezuskind,</strong><strong><br></strong> aan U beveel ik ook al mijn familieleden, Uw heilige Kerk en ons vaderland aan.</p><p><strong>Amen.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1111,16 +1182,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1132,11 +1203,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Genadekindje wondervol,</strong><strong><br></strong> zeg mij hoe ik leven moet.<br> Om U, o Kindje, te vergelden<br> Uw liefde door tijd en werelden.</p><p><strong>Genadekindje wondervol,</strong><strong><br></strong> zeg mij hoe ik danken moet,<br> voor de genaden, voor de gaven,<br> die mij lichaam en ziel laven.</p><p><strong>Genadekindje wondervol,</strong><strong><br></strong> zeg mij hoe ik bidden moet,<br> om Uw Vaders Hart te roeren,<br> Zijn wil te bespeuren.</p><p><strong>Genadekindje wondervol,</strong><strong><br></strong> zeg mij hoe ik leren moet,<br> onder het kruis niet te bezwijken,<br> U het „Fiat“ na te spreken.</p><p><strong>Genadekindje wondervol,</strong><strong><br></strong> zeg mij hoe ik liefhebben moet;<br> is zo dor nog mijn ziel,<br> en zo nabij de drempel van de dood.</p><p><strong>Genadekindje wondervol,</strong><strong><br></strong> reik mij, wanneer ik scheiden moet,<br> Uw lieve kleine handen,<br> en leid mij tot het zalig einde!</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1146,16 +1223,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1167,11 +1244,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Wij ijlen hierheen gezwind,<br> omdat jij immers toeverlaat en thuishaven bent<br> voor het kleine Genadekind!</p><p>Het troont op gouden altaar<br> en blikt vol goedheid neer<br> en hoort getrouw jaar na jaar<br> veel smekingen, dank en liederen.</p><p>En wanneer wij zwaar in noden zijn<br> en geen hoop meer bleef,<br> dan helpt ons het Loretokind<br> met Godsmacht en liefde!</p><br><p>De gebeden zijn aan het boekje <em>Het Genaderijke Loreto-Kindje van Salzburg</em> ontleend, Imprimatur: Ordinariaat Salzburg, nr. 918/92, 29 oktober 1992.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1181,6 +1264,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1266,6 +1350,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1320,6 +1439,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1355,12 +1485,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

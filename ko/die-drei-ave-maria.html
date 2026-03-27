@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="세 번의 성모송">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="세 번의 성모송">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/die-drei-ave-maria.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ko/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ko/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,7 +988,13 @@
             
 
             
+            
 
+            
+
+            
+
+            
             
 
             
@@ -957,16 +1004,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -978,6 +1025,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>하케본의 성녀 메흐틸트데(Mechthild von Hackeborn, † 1299)가 생애의 마지막 무렵에 두려움 속에서 자신의 임종 시간을 생각했을 때, 그녀는 성모님께 마지막 시간을 위한 어머니의 보호를 간구했습니다. 그녀의 충실한 여종에게 이미 여러 번 나타나셨던 성모님께서는 그녀의 간구를 들어주시고 이렇게 말씀하셨습니다.<br>  <strong>“그래, 내 딸아, 내가 네 청을 꼭 들어주마. 하지만 나는 네가 매일 나를 사랑하는 마음으로 성모송 세 번을 바칠 것을 요구한다.”</strong></p><h3><strong>표지 그림에 대하여 — 기다림의 어머니</strong></h3><p>19세기부터 잘츠부르크의 성 마리아 로레토 카푸친 수녀원(Kloster der Kapuzinerinnen von St. Maria Loreto)에 보관되어 있는 이 특별한 은총의 성모상의 유래는 오늘날까지도 신비에 싸여 있습니다. 로레토 수녀원에 “은총의 어머니”가 도착하면서 곧 특별한 관습이 생겨났는데, 그것은 임종을 앞둔 수녀들의 방에 이 성모상을 모셔가는 것이었습니다. 이때 눈에 띄는 점은 로레토 수녀들이 항상 차분하고 평화롭게, 심지어 “기쁜 기다림” 속에서 하느님 곁으로 돌아갔다는 사실입니다. 그리고 이 특별한 은총은 오늘날까지도 그들에게 주어지고 있습니다.<br> 참고로, “은총의 어머니” 공경과 세 번의 성모송 신심은 수녀회 전체에 있어 서로 떼려야 뗄 수 없게 연결되어 있습니다.</p><h3><strong>첫 번째 성모송</strong></h3><p>성부 하느님을 찬미하며 바칩니다. 성부께서는 당신의 영광스러운 전능함으로 내 영혼을 매우 뛰어나게 하셨기에, 나는 그분 다음으로 하늘과 땅에서 전능합니다.</p><h3><strong>두 번째 성모송</strong></h3><p>성자 하느님을 찬미하며 바칩니다. 성자께서는 당신의 헤아릴 수 없는 지혜의 위대함 속에서 나를 지식과 이해의 은사들로 장식하고 채워 주셨기에, 나는 모든 성인보다 더 깊이 지극히 거룩하신 삼위일체를 뵙게 되었습니다.<br> 게다가 그분은 나를 빛으로 감싸 주셔서, 나는 빛나는 태양처럼 온 하늘을 밝힙니다...</p><h3><strong>세 번째 성모송</strong></h3><p>성령 하느님을 찬미하며 바칩니다. 성령께서는 당신 사랑의 달콤한 풍요로움을 내 마음에 부어 주셨고 나를 매우 착하고 자비롭게 창조하셨기에, 나는 하느님 다음으로 가장 온유하고 선한 존재입니다...</p><br><p>이 세 번의 성모송에 성모님께서는 다음과 같은 위대한 약속을 덧붙이셨습니다.</p><p> <strong>“나는 네 임종의 순간에 너를 도와주고 위로하며, 악마의 모든 권세를 네게서 멀리 치워버리겠다.</strong><strong><br></strong><strong>  나는 네게 신앙과 인식의 빛을 부어 주어, 네 신앙이 무지와 오류로 인해 유혹받지 않게 하겠다.</strong><strong><br></strong><strong>  나는 네가 세상을 떠나는 시간에 네 곁에 머물며 네 영혼에 신성한 사랑의 환희가 넘쳐흐르게 하겠다. 그리하여 그 사랑의 압도적인 힘으로 모든 죽음의 고통과 비통함이 복락으로 바뀌게 하겠다.”</strong><strong><br></strong>  <em>(Liber specialis gratiae, P.I. Ch. 47)</em></p><p>이 신심의 놀라운 전파와 그로부터 생겨난 많은 좋은 열매들을 고려하여, 교회는 승인을 내렸을 뿐만 아니라 교회에 맡겨진 예수 그리스도의 구원 공로의 위대한 보물에서 많은 특권도 부여했습니다.<br> 교황 베네딕토 15세는 ‘세 번의 성모송 형제회’를 대형제회(Erzbruderschaft)로 승격시키고 귀중한 대사(大赦)를 부여했습니다.</p><p><strong>실천:</strong><strong><br></strong> 아침과 저녁에 위에서 설명한 마리아의 세 가지 특권을 찬미하며 성모송 세 번(성모송, …)을 바치고, 마지막에 다음과 같은 호칭 기도를 덧붙입니다.<br>  <strong>“오 나의 어머니, 오늘 낮에 / 오늘 밤에 저를 죄악(대죄)으로부터 보호하소서.”</strong><strong><br></strong> (대사 기도문)</p>
 
@@ -987,22 +1035,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1014,6 +1067,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>세 번의 성모송은 영원한 구원과 모든 은총을 얻기 위한 강력한 도움입니다. 이 기도 실천은 모든 이가 알고 받아들이며 널리 전파할 가치가 있습니다.<br> 파도바의 성 안토니오, 성 알폰소 마리아 데 리구오리, 포르토 마우리치오의 성 레오나르도, 성 요한 보스코, 성 클레멘스 마리아 호프바우어와 같은 위대한 성인들은 스스로 이 신심을 열심히 실천하고 전파했습니다.<br> 성 안토니오는 이를 통해 세상의 유혹 속에서 완전한 정결의 은총을 얻었습니다. 마찬가지로 우리 시대 많은 사람의 신앙 증언은 세 번의 성모송 실천을 통한 특별한 은총의 사례들을 전합니다. 놀라운 회개, 유혹(특히 정결을 거스르는 유혹)에서의 특별한 보호, 다양한 지향에 대한 도움, 나아가 좋은 직업과 신분의 선택, 그리고 항구함과 선종(善終)의 은총에 이르기까지 다양합니다.</p><p><strong>성 보나벤투라의 이 말씀은 얼마나 적절한지요.</strong><strong><br></strong>  <strong>“우리가 성모송으로 성모님께 인사할 때, 성모님께서는 은총으로 우리에게 인사하신다.</strong><strong><br></strong><strong>  비록 우리가 병들어 어떤 일도 할 수 없을지라도, 성모송을 바치는 것은 우리를 하느님 나라의 소중한 협력자로 만든다.”</strong></p><p>기회가 있을 때마다 반복해서 “성모송(Ave Maria)”을 바쳤다는 어느 소위 ‘바보’에 의해 세워진 팔고에(Falgoët) 성지의 이야기는 놀라움을 자아냅니다.<br> 성모님께서는 이 단순하지만 가치 있는 신심에 기적으로 보답하셨습니다.<br> 그가 죽은 후 그의 무덤 위로 백합 한 송이가 피어났는데, 그 꽃잎에는 금색 글씨로 “Ave Maria”라는 단어가 새겨져 있었습니다. 뿌리를 조사해 보니 그것은 죽은 솔로몬(그의 이름)의 입으로 이어져 있었습니다. 성모송이 얼마나 하느님 보시기에 좋고 강력한지를 보여주는 하늘의 놀라운 현시였습니다.</p><p><strong>아직 살아있어 매일 성모송을 바칠 수 있는 우리는, 성모송을 바칠 때마다 우리 영혼을 아름답게 가꾸고 성모님께 말할 수 없는 기쁨을 드린다는 사실을 기억해야 합니다.</strong><strong><br></strong> <strong>이토록 아름답고 경건한 신심을 모두 익히고 생이 끝날 때까지 실천하십시오.</strong><strong><br></strong> <strong>그렇습니다. 저는 고해 사제들에게도 이 신심을 보속 기도로 주실 것을 간곡히 부탁드립니다. 이 기도 하나가 다른 어떤 보속보다 더 많은 열매를 맺기 때문입니다.</strong><strong><br></strong>  <em>(포르토 마우리치오의 성 레오나르도)</em></p>
 
@@ -1023,22 +1077,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1049,6 +1108,7 @@
             <h2 class="section-heading">세 번의 성모송과 회개한 아들</h2>
             
 
+            
             
             <div class="section-body">
                 <p>약 10년 동안 나쁜 친구들과 어울리던 24세의 한 청년은 범죄적 정욕의 장난감이 되어 있었습니다.<br>
@@ -1067,22 +1127,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1093,6 +1158,7 @@
             <h2 class="section-heading">성소가 꽃피다</h2>
             
 
+            
             
             <div class="section-body">
                 <p>사제 성소나 수도 성소는 주님께서 선택하신 영혼에 대한 특별한 사랑을 드러냅니다. 주님께서는 그 영혼을 “수많은 사람 가운데서 수많은 사람을 위하여” 부르셨습니다.<br>
@@ -1127,12 +1193,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1218,6 +1290,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1272,6 +1379,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1307,12 +1425,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

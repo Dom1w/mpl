@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Divina Misericordia">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Divina Misericordia">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gttliche-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../es/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../es/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg" 
-                 alt="" 
+            <img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -949,6 +990,7 @@
             
 
             
+            
             <div class="section-body">
                 <h1>Veneración de la Divina Misericordia</h1><p><strong>Según las revelaciones de Jesús del Diario de Santa Sor Faustina</strong></p><p>Hija mía, proclama al mundo entero Mi misericordia insondable. [699]</p><p>Di a la humanidad que sufre que se acerque a Mi Corazón misericordioso y Yo la llenaré de paz. [1074]</p><p>"Nada es tan necesario para el hombre como la misericordia de Dios." <br>San Juan Pablo II.</p>
             </div>
@@ -957,13 +999,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/gs_2feac0e7808e948f91ddec88f90821eb27c7b9baed48663596574200f3edd267.png" 
-                 alt="" 
+            <img src="../static/img/gs_2feac0e7808e948f91ddec88f90821eb27c7b9baed48663596574200f3edd267.png"
+                 alt=""
                  class="section-image">
             
             
@@ -973,16 +1020,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -994,6 +1041,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Por la entrañable misericordia de nuestro Dios nos visitará la aurora de lo alto." (Lc 1,78)</strong></p><p>Interioridad y espiritualidad: fomentar y desarrollar la disposición religiosa de la persona humana (...) todas estas tareas de primer orden y benditos frutos de la fe vivida encontramos en el Diario de Sor María Faustina:</p><p><strong>"¡Qué hermoso es el mundo espiritual! ¡Es tan real que, en comparación, la vida exterior no es más que vana ilusión e impotencia!"</strong> [884]</p><p>Sor Faustina nos muestra lo que con demasiada frecuencia ha quedado en segundo plano, si no en el olvido, en el curso del desarrollo de las últimas décadas: la vida interior del alma con Dios.</p><p><strong>"Si tan solo las almas escucharan Mi voz cuando hablo en lo más hondo de sus corazones, alcanzarían la cima de la santidad en poco tiempo."</strong> [584]</p><p>La verdadera interioridad consiste en el amor gozoso hacia Dios y Su santa voluntad:</p><p><strong>"¡La tristeza no puede echar raíces en un corazón que ama a Dios!"</strong> [886]</p><p>Bajo el nombre de libertad total y emancipación ilimitada, los mandamientos de Dios fueron llamados represivos – sí, el mismo Dios fue declarado adversario de la libertad humana. El Papa Juan Pablo II señaló en su encíclica <em>Dominum et Vivificantem</em> (n. 38) que, en definitiva, Dios fue declarado enemigo de Su propia criatura. Sor Faustina desenmascara esta blasfemia proclamando luminosamente:</p><p><strong>"¡El amor a Dios libera al alma! Es como una reina que no conoce la coacción de la esclavitud!"</strong> [890]</p><p>La preocupación de muchos creyentes de que la interioridad, la vida espiritual, es algo muy difícil, de que el ascenso del alma solo puede lograrse con obras extraordinarias, ya había sido rechazada como infundada por Santa Teresa del Niño Jesús con su "Pequeño Camino". Enteramente en esta tradición, el Diario de Sor Faustina apunta a lo decisivo en la vida religiosa: el amor.</p><p><strong>"Jesús, me has mostrado en qué consiste la grandeza del alma: no en grandes obras, sino únicamente en un gran amor. El amor da valor. Da valor a todas las obras. Así las pequeñas y cotidianas obras se vuelven grandes y significativas ante Dios por el amor. El amor es un misterio que transforma todo lo que toca en cosas bellas y agradables a Dios."</strong> [889]</p><p>Dios es amor. (1 Jn 4,16) Y el amor quiere darse. Darse es gozo; no poder darse es sufrimiento. Jesús se da enteramente a Dios; da Su vida por el pecado del mundo. Hacia el ser humano pecador, el amor se revela como misericordia (<em>miseri cor dare</em> = misericordia).</p><p>La Divina Misericordia es mayor que la miseria humana. Cuanto más miserable es el hombre pecador, tanto más la bondad de Dios se inclina a mostrarle misericordia. Esta total disposición a conceder misericordia a todos se revela a Faustina de un modo especial. Su vocación especial es proclamar la misericordia de Dios. Este es también el sentido de la imagen que debía pintar: Una imagen que, incluso solo contemplada, despierta una confianza sin límites en la Divina Misericordia. (…)</p><p><strong>"No puedo castigar ni siquiera al mayor pecador. Si recurre a Mi misericordia, lo justifico en Mi misericordia insondable e inescrutable."</strong> [1146]</p><p>Según la revelación de Jesús a Faustina, solo se necesita el conocimiento de la propia miseria y la apertura a la llamada del Señor, y entonces manarán torrentes de misericordia del Corazón de Jesús sobre la humanidad. Sor Faustina se convierte así en heraldo de la confianza en la misericordia infinita. Sea lo que haya pasado en la vida de una persona, incluso los peores pecados – la plena e íntegra confianza en el amor misericordioso de Jesús es siempre el camino hacia la salvación.</p><p>El nombre religioso completo de nuestra Sierva de Dios es: Sor María Faustina del Santísimo Sacramento. Este nombre abre la perspectiva a una riqueza más de esta vida divina: la significación de la Sagrada Comunión en la vida de Faustina. Dejó varias preparaciones para recibir la Sagrada Comunión. Son tesoros llenos de increíble amor y profundidad. También aquí puede reconocerse la divina providencia: en tiempos de Comuniones masivas, de recepción masiva de la Comunión, es necesario hacer conscientes una y otra vez a los muchos comulgantes de a quién reciben, qué pertenece a una buena preparación, recepción digna e interior, y acción de gracias cuidadosa.</p><p><strong>"El momento más solemne de mi vida es siempre el momento en que recibo la Sagrada Comunión … Solo dos cosas envidiarían los ángeles a los humanos, si pudieran: recibir la Sagrada Comunión y sufrir."</strong> [1804]</p><p>Con la última palabra citada, se caracteriza una dimensión más en la vida de Faustina. El sufrimiento se había convertido en su compañera familiar. Con la Santa Hostia de la Eucaristía, quería convertirse ella misma en hostia, en sacrificio. Por un lado, su deseo era sufrir con Jesús por la salvación de los pecadores.</p><p><strong>"El Señor me concedió durante la Hora Santa participar de Su Pasión. Participé en la amargura que llenó Su alma durante la Pasión."</strong> [872]</p><p>Por otro lado, quería dar satisfacción a Jesús por las adversidades que Él tiene que sufrir de los hombres, por eso Jesús a menudo le decía palabras como estas en la Sagrada Comunión:</p><p><strong>"Hija mía, tu amor es para Mí satisfacción por la frialdad de corazón de muchas almas."</strong> [1816]</p><p>Aquí se hace realidad la cooperación en la salvación de las almas, siempre conocida en la historia de la piedad. (...) El Papa Pío XII habló de esto con seriedad en su encíclica <em>Mystici Corporis</em>:</p><p><strong>"Es un misterio verdaderamente sobrecogedor que nunca se puede contemplar lo bastante: que la salvación de muchos depende de las oraciones y penitencias voluntarias de los miembros del Cuerpo místico de Jesucristo, que ellos asumen con este fin."</strong> (<strong><em>Doctrina de salvación de la Iglesia</em></strong><strong>, p. 489, Friburgo Suiza 1953)</strong></p><p>Tras leer el Diario de Sor Faustina, esta preciosa joya de la literatura espiritual, surge la pregunta: ¿Cómo se puede vivir siquiera un solo momento sin amar a Dios?</p><p>Del prólogo al Diario de Santa Sor Faustina de Mons. Josef Stimpfle †, Augsburgo 6 de agosto de 1987</p>
             </div>
@@ -1002,13 +1050,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/gs_34410916c848bcffeed523a0de064da66d3edceda4a866828d8269b1cc133a84.jpg" 
-                 alt="Tras las huellas de la Divina Misericordia" 
+            <img src="../static/img/gs_34410916c848bcffeed523a0de064da66d3edceda4a866828d8269b1cc133a84.jpg"
+                 alt="Tras las huellas de la Divina Misericordia"
                  class="section-image">
             
             
@@ -1018,16 +1071,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1039,11 +1092,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"En toda alma Yo realizo la obra de misericordia. Cuanto mayor es el pecador, mayor es su derecho a Mi misericordia. Sobre toda obra de Mis manos Mi misericordia está fijada."</strong> [723]</p><p>La misión de Sor Faustina abarca la devoción a la Divina Misericordia en nuevas formas. El fundamento de esta devoción es la confianza filial en Dios y el amor misericordioso hacia el prójimo, como si fuera la clave de la perfección cristiana.</p><p>Sor Faustina reconoció esta misericordia insondable sobre todo mediante la contemplación de las obras de Dios. En la misericordia de Dios ve la única razón de que llame a las criaturas de la nada al ser. Escribe sobre esto:</p><p><strong>"Oh Dios, por misericordia has llamado al género humano de la nada al ser y lo has colmado abundantemente de dones naturales y sobrenaturales. Eso aún no fue suficiente para Tu bondad. En Tu misericordia nos das la vida eterna. Nos permites llegar a Tu dicha eterna, participar de Tu vida interior, y eso únicamente a causa de Tu misericordia. Nos regalas Tu gracia únicamente porque eres bueno y estás lleno de amor. No nos necesitabas para ser feliz, pero Tú, Señor, quieres compartir Tu propia felicidad con nosotros."</strong> [1743]</p><p>Reconoce aún más en la Encarnación de Dios Su misericordia superabundante, que se revela más perfectamente en el acontecimiento de la redención en la Cruz.</p><p><strong>"Por Tu misericordia – reconoció en conversación con Jesús – descendiste a nosotros para levantarnos de nuestra tribulación. (…) El milagro insondable de Tu misericordia ocurre, Señor: el Verbo se hace carne, Dios habita entre nosotros, el Verbo de Dios – misericordia encarnada. Esta humillación de Dios mediante la aceptación de la naturaleza humana es una expresión de Su misericordia, un despliegue de Su amor ante el cual el cielo se maravilla."</strong> [1745]</p><p>El reconocimiento del misterio de la misericordia de Dios en la obra de la creación, redención y beatitud tuvo lugar en su vida mediante el uso de medios muy simples, como la lectura espiritual, la meditación diaria, la contemplación de los misterios del Rosario y del Vía Crucis, la profunda vivencia de los santos sacramentos, las fiestas litúrgicas del año de la Iglesia, así como considerar y notar todo el bien que Dios había obrado en el mundo y en su vida personal.</p><h3>La Clave del Corazón de Dios</h3><p>El <strong>fundamento</strong> de la devoción a la misericordia de Dios es la confianza. Es como si fuera la clave del Corazón de Dios y el recipiente para sacar todas las gracias.</p><p><strong>"De Mi misericordia se sacan gracias con un solo recipiente, y ese es la confianza. Cuanto más confía un alma, más recibe."</strong> [1578]</p><p>Esta <strong>confianza</strong> se demuestra en que dirigimos nuestra vida diariamente de nuevo según la voluntad de Dios. Esto ocurre primero mediante el cumplimiento de Sus mandamientos y nuestros deberes de estado, segundo mediante el seguimiento de las inspiraciones del Espíritu Santo, y tercero mediante la aceptación agradecida de todas Sus disposiciones y permisos. [Cf. 444]</p><p><strong>"Di, hija mía, que soy enteramente amor y misericordia. Cuando un alma se acerca a Mí con confianza, la lleno de una gracia tan poderosa que no puede contener esta gracia en sí misma y la irradiará sobre otras almas."</strong> [1074]</p><p>La <strong>misericordia</strong> hacia el prójimo es – junto con la confianza – el segundo componente esencial de esta devoción. Por ello Jesús expresó el deseo de que Sus devotos, por amor a Él, realizaran al menos un acto de misericordia hacia sus prójimos en el transcurso del día.</p><p><strong>"Mostrarás misericordia a tu prójimo siempre y en todas partes. No puedes excusarte, ni hablar para salirte, ni justificarte. Te doy tres formas de mostrar misericordia a tu prójimo: primero – la obra; segundo – la palabra; tercero – la oración. En estos tres grados está contenida la plenitud de la misericordia; es una prueba irrebatible de amor hacia Mí. Así el alma alaba y venera Mi misericordia."</strong> [742]</p><p>También explicó que la misericordia hacia el alma es más meritoria y añadió que no se necesitan medios materiales para esto. La misericordia puede y debe mostrarla todo el mundo, sobre todo todo bautizado, según el mensaje del Evangelio.</p><p>Así la devoción a la misericordia de Dios no tiene exclusivamente el carácter de una oración, sino que es una manifestación profundamente vivida de la vida cristiana.</p><img src="../static/img/gs_0c23712fa693ca34db8618fa68fc735906d02e327bf5863a4f2d82574c5abcf2.png"><p>Esta imagen de gracia se encuentra en el Santuario de la Divina Misericordia en Vilna (Lituania) desde septiembre de 2005. Eugeniusz Kazimirowski fue el primer pintor encargado de pintar la imagen del Jesús Misericordioso según las descripciones de Sor Faustina. Cuando la vio por primera vez en 1934, lloró amargamente porque no logró representar a Jesús tan hermoso como ella había podido contemplarlo. Sin embargo, Jesús la consoló, diciéndole: <strong>"No en la belleza de los colores ni del trazo del pincel reside la grandeza de esta imagen, sino en Mi gracia."</strong> [313]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1053,16 +1112,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1074,11 +1133,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Oh Amor eterno, mandas que se pinte Tu santa imagen y nos revelas la fuente insondable de misericordia. Bendices a los que se acercan a Tus rayos, y toda alma negra se transforma en nieve."</strong> [1]</p><p>El encuentro de Sor Faustina con el Jesús Misericordioso el 22 de febrero de 1931 está en el origen de la veneración de esa imagen única a través de la cual muchas personas reciben torrentes de gracias. Escribe:</p><p><strong>"Por la tarde, cuando estaba en mi celda, vi a Jesús, el Señor, con una túnica blanca. Una mano estaba levantada en bendición, la otra tocaba la túnica en el pecho. Desde la abertura de la túnica (…) salieron dos grandes rayos, uno rojo y otro pálido. (…) Mi alma fue impregnada de temor, pero también de gran gozo. Al cabo de un momento Jesús me dijo: '¡Pinta una imagen según lo que ves, con la inscripción: Jezu Ufam Tobie (¡Jesús, en Ti confío)! Deseo que esta imagen sea venerada, primero en tu capilla, luego en todo el mundo.'"</strong> [47]</p><p>El contenido de la imagen está íntimamente conectado con la liturgia del segundo domingo de Pascua (Fiesta de la Divina Misericordia). El Evangelio del día de la Iglesia trata de la aparición del Resucitado en el Cenáculo y la institución del Sacramento de la Penitencia (cf. Jn 20,19-23). Los rayos de <strong>Sangre</strong> y <strong>Agua</strong> que fluyen del corazón traspasado así como las heridas en manos y pies recuerdan los acontecimientos del Viernes Santo (cf. Jn 19,16-37).</p><p><strong>"Los rayos de misericordia Me consumen, quiero derramarlos sobre las almas de los hombres."</strong> [50]</p><p>Característico de la imagen del Jesús Misericordioso son los dos rayos que el Señor mismo explicó:</p><p><strong>"El rayo pálido significa el agua, que justifica las almas; el rayo rojo significa la Sangre, que es la vida de las almas. (...)</strong> <strong>Estos dos rayos salieron de las profundidades de Mi misericordia cuando Mi Corazón moribundo en la Cruz fue abierto con la lanza. Dichosos los que viven a su sombra."</strong> [299]</p><p>Los sacramentos del Bautismo y de la Penitencia purifican el alma, y en el Sacramento de la Eucaristía recibe nuevamente su sustento.</p><p>Así la imagen habla por un lado de la gran misericordia de Dios, que nos fue revelada en el misterio pascual de Cristo, y por otro nos recuerda la práctica cristiana de la confianza así como el amor activo hacia el prójimo. Las palabras colocadas en la imagen apuntan a la actitud de confianza: <strong>¡Jesús, en Ti confío!</strong></p><p><strong>"La imagen,"</strong> dijo Jesús, <strong>"recordará las exigencias de Mi misericordia, pues incluso la fe más fuerte no vale nada sin obras."</strong> [742]</p><p>A la devoción a la imagen entendida de este modo, el Señor ha prometido la salvación eterna:</p><p><strong>"Prometo que el alma que venera esta imagen no perecerá."</strong> [48]</p><p>El Señor también prometió gran progreso en el camino hacia la perfección cristiana, la gracia de una muerte dichosa, así como todas las demás gracias y beneficios temporales por los que las personas Le pedirán con confianza:</p><p><strong>"Por medio de la imagen concederé muchas gracias a las almas; por tanto, toda alma debe tener acceso a ella."</strong> [570]</p><img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg"><p>En 1943, el pintor Adolf Hyla, en acción de gracias por su rescate de la guerra, también realizó una pintura del Jesús Misericordioso y la donó como exvoto para la capilla de las Hermanas de la Congregación de Nuestra Señora de la Misericordia en Cracovia. Hasta hoy innumerables personas acuden a este santuario para venerar al Jesús Misericordioso y pedir gracias. Copias de esta gran imagen de gracia se distribuyen por todo el mundo.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1088,16 +1153,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1109,11 +1174,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Deseo que el primer domingo después de Pascua sea la Fiesta de la Misericordia."</strong> [299]<strong><br></strong><strong>"En este día los sacerdotes proclamarán a las almas Mi gran e insondable misericordia."</strong> [570]</p><p>Jesús expresó este deseo por primera vez en 1931 en Płock, cuando comunicó Su voluntad sobre la creación de la imagen del Jesús Misericordioso. En los años siguientes Jesús volvió a este deseo 14 veces, asignando el lugar de esta fiesta en el calendario litúrgico, describiendo el motivo y fin de su institución, así como la manera de su preparación y celebración.</p><p>La elección del primer domingo después de Pascua, que concluye la octava de la Resurrección del Señor, apunta a la estrecha conexión del misterio pascual con la Fiesta de la Divina Misericordia. El sufrimiento, muerte y resurrección de Cristo son la fuente y cumbre de la revelación del amor misericordioso de Dios.</p><p><strong>"La Fiesta de la Divina Misericordia fue introducida para toda la Iglesia por el Papa Juan Pablo II el 30 de abril de 2000."</strong></p><p>La obra de redención se muestra en toda su abundancia en los santos sacramentos, de los cuales habla la liturgia de esta fiesta. Los sacramentos del Bautismo, Penitencia y Eucaristía son por tanto fuentes inagotables de la misericordia de Dios, a las que la Iglesia conduce a todas las generaciones por toda la tierra.</p><p>Por tanto, el Domingo de la Misericordia no debe ser solo el día de especial veneración de Dios en este misterio, sino también el día de gracia para todas las personas, especialmente para los pecadores.</p><p><strong>"Deseo que la Fiesta de la Misericordia sea refugio y cobijo para todas las almas, especialmente para los pobres pecadores. En este día se abre el interior de Mi misericordia; derramo todo un mar de gracias sobre aquellas almas que se acercan a la fuente de Mi misericordia. El alma que va a confesarse y recibe la Sagrada Comunión obtiene la remisión completa de la culpa y del castigo; en este día se abren todas las compuertas de Dios, por las que fluyen las gracias. Ningún alma debe temer acercarse a Mí, aunque sus pecados fueran rojos como la escarlata."</strong> [699]</p><p>La preparación para la Fiesta de la Divina Misericordia debe ser una novena basada en rezar la Coronilla de la Divina Misericordia durante nueve días.</p><p><strong>"En esta novena,"</strong> dijo el Señor, <strong>"concederé todas las gracias a las almas."</strong> [796]</p><p>La Fiesta de la Divina Misericordia fue introducida para toda la Iglesia por el Papa Juan Pablo II el 30 de abril de 2000.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1123,16 +1194,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1144,11 +1215,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Rezando la Coronilla de la Divina Misericordia acercáis a la humanidad a Mí."</strong> [929]<strong><br></strong><strong>"Me complace concederles por esta oración todo lo que Me pidan."</strong> [1541]</p><p>Jesús dictó esta oración a Sor Faustina los días 13-14 de septiembre de 1935. [474–476] En total Jesús habló de ella 14 veces, explicando el fin y las promesas ligadas a esta oración. En esta oración ofrecemos a Dios Padre: <strong>el Cuerpo y la Sangre, el Alma y la Divinidad de Su amado Hijo en reparación por nuestros pecados y los del mundo entero.</strong> Nos unimos al sacrificio de Jesús en la Cruz, que Él realizó por la redención del mundo; recurrimos al amor con que Dios Padre ama a Su Hijo y en Él a todos los hombres. Cuando tenemos en vista en todo lo que pedimos la voluntad de Dios y Su gloria, recibimos la promesa de Jesús:</p><p><strong>"Por la oración pedís todo, si lo que pedís está de acuerdo con Mi voluntad."</strong> [1731]</p><p>Según la promesa de Jesús, especialmente los pecadores y los agonizantes deben recibir gracias especiales.</p><p><strong>"Los sacerdotes la ofrecerán a los pecadores como último ancla de salvación. Incluso si fuera el pecador más endurecido – si reza esta coronilla solo una vez, se le concederá la gracia de Mi misericordia infinita."</strong> [687]</p><p><strong>Cuando se reza esta Coronilla de la Misericordia por los agonizantes, Jesús se mantendrá entre Su Padre y el moribundo no como Juez justo, sino como Redentor misericordioso.</strong> [1541]</p><p>Pero para obtener todas las gracias prometidas, es importante que nuestra oración se caracterice por la confianza perseverante en la misericordia de Dios y la contrición sincera por nuestros pecados.</p><p><strong>"Cuando el alma vea y reconozca la gravedad de sus pecados, cuando todo el abismo de su miseria (…) se extienda ante sus ojos, no debe desesperarse, sino arrojarse con confianza en los brazos de Mi misericordia, como un niño en los brazos de su madre amorosa."</strong> [1541]</p><p>Según Santa Hildegarda de Bingen, la contrición tiene una dinámica renovadora del mundo. Con ella podemos poner en movimiento el cosmos. El poder de la contrición hace que la naturaleza florezca y dé fruto. Escribe: "En la contrición el hombre rompe sus pecados. No es un poder que viene de nosotros, sino que brota del sufrimiento del Señor …" De Dios Padre Santa Hildegarda recibe el maravilloso mensaje para todo hijo del hombre: "¿Por qué no volvéis a casa cuando habéis pecado? Os ofrezco desde Mi corazón paternal la mayor potencia de Mi amor: la <strong>contrición</strong>."</p><p><a href="barmherzigkeitsrosenkranz.html">Instrucciones para rezar la Coronilla de la Divina Misericordia [Haced clic aquí]</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1158,16 +1235,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1179,11 +1256,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><a href="novene-gttlichen-barmherzigkeit.html">Novena de la Divina Misericordia [Haced clic aquí]</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1193,16 +1276,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1214,11 +1297,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"En esta hora llegó la gracia para todo el mundo. La misericordia venció a la justicia."</strong> [1572]</p><p>En octubre de 1937 Jesús recomendó conmemorar Su hora de muerte, que Él mismo llamó "la hora de gran misericordia para el mundo". [1320] En febrero de 1938 el Señor repitió Su deseo, describiendo la manera de orar en la Hora de la Misericordia y la promesa ligada a ella.</p><p>Jesús desea conmemorar en esta hora Su amargo sufrimiento, alabar y glorificar la misericordia de Dios, y pedir por los méritos de Sus amargos sufrimientos las gracias necesarias para el mundo, especialmente para los pecadores:</p><p><strong>"Os recuerdo (...) que siempre que oigáis dar la tercera hora del reloj, os sumergiréis enteramente en Mi misericordia, la glorificaréis y alabaréis. Implorad su omnipotencia para todo el mundo, especialmente para los pobres pecadores, pues ahora está abierta para toda alma."</strong> [1572]</p><p>Pero para obtener estas promesas, deben cumplirse tres condiciones:</p><ol><li><p><strong>La oración debe dirigirse a Jesús.</strong></p></li><li><p><strong>Debe rezarse a las 15:00.</strong></p></li><li><p><strong>Debe referirse al sufrimiento del Señor.</strong> [cf. 1320]</p></li></ol><p>Además, la devoción a la misericordia de Dios debe combinarse con la actitud de confianza y amor misericordioso hacia el prójimo.</p><p>Jesús también indicó formas de oración adecuadas para venerar la Divina Misericordia:</p><p><strong>"Esforzaos en esta hora por hacer el Vía Crucis. Si eso no os es posible, id un rato a la capilla y venerad Mi Corazón, que está lleno de misericordia en el Santísimo Sacramento del Altar. Si eso tampoco os es posible, sumergíos en la oración, aunque sea brevemente, donde estéis. En esta hora podéis pedir todo para vosotros mismos y para los demás."</strong> [1572]</p><h3><a href="gebet-todesstunde-unseres-herrn.html"><strong>Oración en la Hora de la Muerte de Nuestro Señor (15:00)</strong></a></h3><p><strong>Jesús Misericordioso</strong>, en recuerdo agradecido de Tu amarga muerte en la Cruz Te adoro en profunda reverencia y Te alabo por la inestimable gracia de la redención. Humildemente Te pido que mires misericordiosamente sobre toda la humanidad y muestres Tu misericordia insondable especialmente a los pobres pecadores y a los agonizantes. Amén.</p><h3><a href="gebet-bekehrung-einer-seele.html"><strong>Oración por la Conversión de un Alma</strong></a></h3><p><strong>"Si rezáis la siguiente oración por un pecador con corazón contrito y con fe, le concederé la gracia de conversión. La oración es:</strong></p><p><strong>Sangre y Agua que brotaste del Corazón de Jesús como fuente de misericordia para nosotros – en Ti confío.</strong> [186]</p>'
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1228,16 +1317,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1249,11 +1338,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Yo di al mundo al Redentor, y tú dirás al mundo de Su gran misericordia y lo prepararás para Su retorno."</strong> [635]</p><p>Sor Faustina relata en su diario cómo se le permitió varias veces contemplar a la Madre de Dios como Mediadora entre el cielo y la tierra:</p><p><strong>"… vi entre el cielo y la tierra a la Madre de Dios con una túnica brillante. Estaba orando, sus manos cruzadas sobre el pecho y mirando al cielo. De su corazón salían rayos de fuego, algunos iban al cielo, otros cubrían nuestra tierra."</strong> [33]</p><p>El 5 de agosto de 1935, Fiesta de Nuestra Señora de la Misericordia, Sor Faustina vio de nuevo a María en inefable belleza, y esta vez María le habló:</p><p><strong>"Yo soy vuestra Madre por la misericordia insondable de Dios. El alma que cumple fielmente la voluntad de Dios es la más querida para mí."</strong> [449]</p><p>Con estas palabras María nos recuerda la hora de gran misericordia, en la que Jesús, muriendo en la Cruz, nos dio a Su Madre como si fuera <em>puerta de misericordia</em>.</p><p>Desde ese momento, según el plan divino, María es la gran mediadora de las gracias de los méritos del Redentor (Cf. Concilio Vaticano II, Lumen Gentium, n. 62). María lleva nuestras oraciones y sacrificios hasta el Corazón de Dios. Por eso nos invita siempre de nuevo a consagrarnos, a nuestras familias y representativamente a toda la humanidad a su corazón maternal. Mediante esta consagración a María podemos ayudar en el triunfo de su Inmaculado Corazón, que ella ya anunció en 1917 en Fátima.</p><h3><a href="weihe-unbefleckte-herz-mariens.html"><strong>Consagración al Inmaculado Corazón de María</strong></a></h3><p><strong>¡Santísima Virgen María!</strong><strong><br></strong>¡Madre de Dios y mi Madre! A Tu Inmaculado Corazón me consagro con todo lo que soy y tengo. ¡Acógeme bajo Tu protección maternal! Presérvame de todos los peligros. Ayúdame a vencer las tentaciones que me llevan al mal, para que preserve la pureza de mi cuerpo y alma. Que Tu Inmaculado Corazón sea mi refugio y el camino que me lleve a Dios.</p><p>Obtén para mí la gracia de orar y sacrificarme a menudo por amor a Jesús por la conversión de los pecadores y en reparación por los pecados cometidos contra Tu Inmaculado Corazón. En unión contigo y con el Corazón de Tu divino Hijo deseo vivir en total consagración a la Santísima Trinidad, en quien creo, a quien adoro, en quien espero y a quien amo. Amén. (Sor M. Lucía)</p>'
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1263,16 +1358,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1284,11 +1379,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Antes de venir como Juez justo, abro de par en par la puerta de Mi misericordia. Quien no quiera entrar por la puerta de Mi misericordia debe pasar por la puerta de Mi justicia."</strong> [1146]</p><p>Sor Faustina reconoció el misterio de la misericordia de Dios también en el destino del hombre para la beatitud eterna. Dios le concedió en Su bondad y misericordia la gracia de contemplar las bellezas y la dicha de la gloria celestial, que está preparada para quienes Le aman y confían en Él.</p><p>Un acontecimiento más que Sor Faustina relata en su diario es la estancia en el lugar de purificación (purgatorio), donde vio las almas sufrientes que satisfacen la justicia de Dios por sus pecados, que es un don más de la misericordia de Dios. Estas almas están llenas de esperanza, pues saben que un día contemplarán a Dios.</p><p>Muy distinto es el lugar del tormento eterno, el infierno. Sor Faustina fue conducida por mandato de Dios mediante un ángel al abismo del infierno, para dar testimonio a la humanidad de que existe y está poblado de almas condenadas que soportan terribles tormentos que duran eternamente.</p><h3><strong>Visión del Cielo</strong></h3><p>"Hoy estuve en espíritu en el cielo y contemplé las bellezas insondables y la dicha que nos espera tras la muerte. Vi cómo todas las criaturas rinden sin cesar honor y gloria a Dios. Vi cuán grande es la dicha en Dios que fluye sobre todas las criaturas, las hace felices, y cómo toda gloria y honor regresa de esta dicha a la fuente. Penetran en las profundidades de Dios, contemplando la vida interior de Dios – del Padre, del Hijo y del Espíritu Santo – que nunca comprenderán ni sondearán. Esta fuente de dicha es inmutable en su esencia, pero siempre nueva, burbujeando con beatitud para todas las criaturas. Ahora puedo comprender al santo Pablo, que dijo: 'Ni el ojo vio, ni el oído oyó, ni pasó por el corazón del hombre lo que Dios ha preparado para quienes Le aman.' (1 Cor 2,9)"</p><p>Y Dios me hizo comprender algo que tiene valor infinito ante Sus ojos – es el amor de Dios, amor, amor y de nuevo amor; con un solo acto de puro amor de Dios nada puede compararse. (…) Oh Dios mío, cuánto siento por las personas que no creen en la vida eterna; rezo tanto por ellas para que también ellas sean tocadas por un rayo de misericordia y Dios las estreche contra Su corazón paternal."</strong> [777–780]</p><h3><strong>En el Purgatorio</strong></h3><p>Al comienzo de su vida religiosa, durante una breve enfermedad, Sor Faustina preguntó a Jesús por quiénes debía aún rezar:</p><p>"Jesús me respondió que me daría a conocer en la noche siguiente por quiénes debía rezar. Vi a mi Ángel de la Guarda, que me ordenó seguirle. De repente me encontré en un lugar brumoso lleno de fuego, y en él muchas almas sufrientes. Estas almas rezan con el mayor fervor, mas sin efecto para sí mismas; solo nosotros podemos ayudarlas. Las llamas que ardían a su alrededor no me tocaron. Mi Ángel de la Guarda no me dejó un momento. Pregunté a las almas cuál era su mayor sufrimiento. Me respondieron unánimemente que su mayor sufrimiento era el anhelo de Dios. Vi a la Madre de Dios visitando las almas en el purgatorio. Las almas llaman a María 'Estrella del Mar'. Les trae alivio. Quise hablar más con ellas, pero mi Ángel de la Guarda me dio señal de partir. (…) Oí una voz interior que decía:</p><p><strong>'Mi misericordia no desea esto, pero la justicia lo exige.'</strong></p><p>Desde entonces he cultivado una relación más cercana con las almas sufrientes."</strong> [20]</p><h3><strong>Descenso al Infierno</strong></h3><p>"Hoy fui conducida por un ángel al abismo del infierno. Es un lugar de gran tormento; su extensión es terriblemente grande. Los tipos de tormento que vi son los siguientes: El primer tormento que constituye el infierno es la pérdida de Dios; el segundo – el reproche incesante de la conciencia; el tercero – que esta suerte nunca cambiará de nuevo. El cuarto tormento – el fuego que penetra el alma sin destruirla; es un tormento terrible; es un fuego puramente espiritual encendido por la ira de Dios. El quinto tormento – es la oscuridad constante y un hedor terriblemente sofocante. Aunque está oscuro, los demonios y las almas condenadas se ven unos a otros; ven todo el mal de los demás y también el propio. El sexto tormento – es la compañía incesante de Satanás. El séptimo tormento – es la terrible desesperación, odio a Dios, blasfemias, maldiciones y reproches. Estos son tormentos que todos los condenados sufren en común, mas eso no es el fin. Aún hay tormentos especiales para las almas, a saber tormentos de los sentidos. Con aquello con que el alma individual pecó, con eso es atormentada de manera terrible e indescriptible. Hay terribles cavernas y abismos de tormento, donde un tormento difiere de otro. Ante este espantoso tormento habría muerto de no haber preservado la omnipotencia de Dios. El pecador debe saber que será atormentado por toda la eternidad con el órgano del sentido con el que pecó. Escribo esto por mandato de Dios, para que ninguna alma pueda excusarse de que el infierno no existe, o de que nadie estuvo allí y no se sabe cómo es."</p><p>"Yo, Sor Faustina, estuve por mandato de Dios en el abismo del infierno para informar y dar testimonio a las almas de que el infierno existe. Ahora no puedo hablar de ello, pues tengo el mandato de Dios de dejarlo por escrito. Los demonios tenían gran odio hacia mí, pero por mandato de Dios tenían que obedecerme. Lo que he escrito es una sombra pobre de las cosas que vi. Una cosa pude observar: hay sobre todo almas que no habían creído en el infierno. Cuando volví en mí, no pude recuperarme del horror de cuánto sufren las almas allí. Por eso rezo con más fervor por la conversión de los pecadores. Sin cesar imploro la misericordia de Dios para ellos. Oh Jesús mío, preferiría sufrir tormentos hasta el fin del mundo antes que ofenderte con el más leve pecado."</strong> [741]</p><p>Este testimonio personal de Santa Sor Faustina merece tanto más atención cuanto que está de acuerdo con las enseñanzas de la Iglesia:</p><p><strong>"La enseñanza de la Iglesia afirma que el infierno existe y que dura eternamente. Morir en pecado mortal sin haberse arrepentido de él y sin aceptar el amor misericordioso de Dios significa permanecer para siempre separado de Él por libre elección propia."</strong> (CCC 1035, 1033)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1298,16 +1399,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1319,11 +1420,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"El alma más dichosa es la que se encomienda a Mi misericordia, pues Yo mismo Me encargo de ella."</strong> [1273]</p><h3><a href="sr-faustynas-gebet.html">Oración de Sor Faustina [163]</a></h3><p>Cada vez que mi pecho respira, cada vez que mi corazón late, cada vez que la sangre pulsa en mi cuerpo, tantas miles de veces alabaré Tu misericordia, oh Santísima Trinidad. (…) Que este mayor atributo de Dios, Su misericordia insondable, alcance a mis prójimos a través de mi corazón y mi alma.</p><p>Ayúdame, oh Señor, a que mis ojos miren con misericordia, a que nunca sospeche y juzgue por la apariencia exterior, sino que perciba lo bello en las almas de mis prójimos y acuda en su ayuda.</p><p>Ayúdame a que mi oído se vuelva misericordioso, a que me incline a las necesidades de mis prójimos, a que mis oídos no permanezcan indiferentes al sufrimiento y lamento de mis prójimos.</p><p>Ayúdame, Señor, a que mi lengua se vuelva misericordiosa, a que nunca hable despectivamente de mis prójimos, sino que tenga una palabra de consuelo y perdón para todos.</p><p>Ayúdame, Señor, a que mis manos sean misericordiosas y llenas de buenas obras, a que solo haga bien a mi prójimo y tome sobre mí trabajos más difíciles y penosos.</p><p>Ayúdame a que mis pies sean misericordiosos, a que siempre se apresuren a ayudar a mi prójimo y dominen mi propio cansancio y fatiga. Mi verdadero descanso está en servir a mi prójimo.</p><p>Ayúdame, Señor, a que mi corazón sea misericordioso, a que sienta todos los sufrimientos de mis prójimos, a que no rechace mi corazón a nadie, mantenga trato sincero incluso con aquellos cuya bondad sé que será abusada; yo mismo me encerraré en el Corazón más misericordioso de Jesús. Guardaré silencio sobre mis propios sufrimientos. Tu misericordia, oh mi Señor, descansará en mí.</p><p><strong>Oh Jesús mío, transfórmame en Ti mismo, pues Tú puedes hacerlo todo.</strong></p><h3><a href="litanei-gttlichen-barmherzigkeit.html">Letanía de la Divina Misericordia [949]</a></h3><p><strong>Misericordia de Dios</strong>,<br>surgida del seno del Padre,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>mayor atributo de Dios,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>misterio insondable de Dios,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>fuente que brota del misterio de la Santísima Trinidad,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>ni sondada por el intelecto de hombres ni de ángeles,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>de la que fluyen toda vida y dicha,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>elevada sobre el cielo,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>fuente de prodigios y misterios,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que abarca todo el universo,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>venida al mundo en la Persona del Verbo Encarnado,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que fluye de la herida abierta del Corazón de Jesús,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>contenida en el Corazón de Jesús para nosotros, especialmente para los pecadores,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>insondable en la institución de la Santísima Eucaristía,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>en la fundación de la santa Iglesia,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>en el Sacramento del santo Bautismo,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>en nuestra justificación por Jesucristo,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que nos acompaña a lo largo de toda nuestra vida,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que nos abraza especialmente en la hora de nuestra muerte,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que nos concede la vida eterna,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>a nuestro lado en todo momento de nuestra vida,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que nos protege del fuego del infierno,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>en la conversión de pecadores endurecidos,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>maravilla de los ángeles e insondable para los santos,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>insondable en todos los misterios de Dios,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que nos levanta de toda miseria,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>fuente de nuestra dicha y gozo,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que nos llama de la nada a la vida,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que abarca todas las obras de Sus manos,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que corona todo lo que es y será,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>en la que todos estamos sumergidos,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>dulce consuelo de corazones afligidos,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>única esperanza de almas desesperadas,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>descanso de corazones, paz en medio del terror,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>delicia y arrobamiento de almas santas,<br><em>¡en Ti confío!</em></p><p><strong>Misericordia de Dios</strong>,<br>que despierta confianza pese a la desesperanza,<br><em>¡en Ti confío!</em></p><p><strong>Oh Dios Eterno</strong>, cuya misericordia es insondable y cuyo tesoro de compasión es inagotable, miranos benignamente y aumenta Tu misericordia en nosotros, para que no desesperemos ni nos desanimemos en tiempos difíciles, sino que con gran confianza nos entreguemos a Tu santa voluntad, que es amor y misericordia misma. Amén.</p><h3><a href="weihe-barmherzigen-jesus.html">Consagración al Jesús Misericordioso</a></h3><p><strong>Jesús Misericordioso</strong>, Tu bondad es infinita y los tesoros de Tus gracias son inagotables. Confío sin límite en Tu misericordia, que supera todas Tus obras.</p><p>Me consagro enteramente a Ti, para vivir en los rayos de Tu gracia y amor que salieron de Tu Corazón en la Cruz.</p><p>Quiero difundir Tu misericordia y especialmente rezar Tu Coronilla, implorar Tu misericordia por nosotros, por la conversión de los pecadores, por todo el mundo y por las Almas del Purgatorio.</p><p>Tú, sin embargo, me protegerás como Tu propiedad y Tu honor, pues temo todo de mi debilidad y espero todo de Tu misericordia.</p><p>Que toda la humanidad reconozca la profundidad insondable de Tu misericordia, deposite toda su esperanza en ella y la alabe por toda la eternidad. Amén.</p><p><strong>Jesús, en Ti confío, pues Tú eres mi confianza!</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1333,16 +1440,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1354,11 +1461,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>(Cf. Dios, Lleno de Misericordia)</p><p><strong>"La mayor parte de las gracias las concedo a las almas que contemplan devotamente Mi sufrimiento."</strong> [737]</p><h3><strong>Oración inicial</strong></h3><p>Señor Misericordioso, mi Maestro, quiero seguirte fielmente, quiero imitarte en mi vida de modos cada vez más perfectos. Por eso Te pido que mediante la contemplación de Tu sufrimiento me concedas la gracia de comprender cada vez mejor los misterios de la vida espiritual.</p><p>María, Madre de la Misericordia, guíame por los caminos del amargo sufrimiento de Tu Hijo y obtén para mí las gracias necesarias para una vivencia fructífera de este Vía Crucis. Lo ofrezco especialmente por la santificación de sacerdotes y religiosos y por todos los que se esfuerzan por la verdadera interioridad y perfección.</p><h3><strong>Oración antes de cada Estación</strong></h3><p><strong>Te adoramos, Señor Jesucristo, y Te alabamos.</strong><strong><br></strong>Por Tu santa Cruz has redimido el mundo.</p><h3><strong>I. Estación</strong></h3><p><strong>Jesús es condenado a muerte</strong></p><p>Los sumos sacerdotes y todo el Sanedrín buscaron falso testimonio contra Jesús para condenarlo a muerte.<br><em>(Mt 26,59-60)</em></p><p><strong>Jesús:</strong></p><p>"No te extrañes de que a veces seas expuesto a sospecha injusta. Por amor a ti bebí primero la copa del sufrimiento inocente." [289]<br>"Cuando estuve ante Herodes, obtuve para ti la gracia de elevarte sobre el desprecio de los hombres y seguir Mis caminos fielmente." [1164]</p><p><strong>Sor Faustina:</strong></p><p>"Estamos acostumbrados a reaccionar al lenguaje y creemos que siempre debemos responder de inmediato, sin notar si es voluntad de Dios que hablemos. Un alma silenciosa es fuerte; todas las adversidades no le hacen daño cuando persevera en el silencio. Un alma silenciosa es capaz de unirse más íntimamente con Dios." [477]</p><p>Jesús Misericordioso, ayúdame a aceptar todo juicio humano, y no permitas que jamás Te condene en mi prójimo.</p><h3><strong>II. Estación</strong></h3><p><strong>Jesús toma Su Cruz sobre Sí</strong></p><p>"Él llevó Su Cruz y salió al lugar llamado el Lugar de la Calavera, que en hebreo se llama Gólgota."<br><em>(Jn 19,17)</em></p><p><strong>Jesús:</strong></p><p>"No temas el sufrimiento, Yo estoy contigo." [151]<br>"Cuanto más llegues a amar el sufrimiento, más puro será tu amor hacia Mí." [279]</p><p><strong>Sor Faustina:</strong></p><p>"Jesús, Te doy gracias por las pequeñas cruces diarias, por los obstáculos a mis planes, por la carga de la vida comunitaria, por la mala interpretación de las intenciones, por las humillaciones de otros, por el trato duro hacia nosotros, por las acusaciones infundadas, por la débil salud y el agotamiento, por la negación de mi propia voluntad, por el borrado de mi propio yo, por la falta de reconocimiento en todo, por el fracaso de todos los planes." [343]</p><p>Jesús Misericordioso, enséñame a valorar la carga de la vida, la enfermedad y todo sufrimiento y a llevar esta cruz diaria con amor.</p><h3><strong>III. Estación</strong></h3><p><strong>Jesús cae por primera vez bajo la Cruz</strong></p><p>"Sobre Él estuvo el castigo que nos sana, por Sus heridas fuimos curados."<br><em>(Is 53,5)</em></p><p><strong>Jesús:</strong></p><p>"Las faltas involuntarias de las almas no Me retienen en Mi amor por ellas (…) ni Me impiden unirme con ellas; pero incluso las más pequeñas faltas, cometidas voluntariamente, retienen Mis gracias; a tales almas no puedo colmarlas con Mis dones." [1641]</p><p><strong>Sor Faustina:</strong></p><p>"Oh Jesús mío, qué propensa soy al mal. Eso me obliga a constante vigilancia sobre mí. Pero no dejo que nada me disuada. Confío en la gracia de Dios, que está abundantemente presente en la mayor miseria." [606]</p><p>Señor Misericordioso, presérvame de toda, incluso la más pequeña, pero cometida voluntaria y conscientemente infidelidad.</p><h3><strong>IV. Estación</strong></h3><p><strong>Jesús encuentra a Su Madre</strong></p><p>"Una espada atravesará tu propia alma."<br><em>(Lc 2,35)</em></p><p><strong>Jesús:</strong></p><p>"Aunque todas las obras que surgen de Mi voluntad están expuestas a gran sufrimiento, considera si alguna de ellas fue expuesta a mayor sufrimiento que Mi obra directa, la obra de la redención. No debes afligirte demasiado por las adversidades." [1643]</p><p><strong>Sor Faustina:</strong></p><p>"Oí la voz de la Santísima Madre: 'Sabe, hija mía, aunque fui elevada a la dignidad de Madre de Dios, siete espadas de dolor atravesaron mi corazón. No emprendas nada en tu propia defensa, soporta todo con humildad, Dios mismo Te defenderá.'" [786]</p><p>María, Madre de los Dolores, estate siempre conmigo, especialmente en el sufrimiento, como estuviste presente en el Vía Crucis de Tu Hijo.</p><h3><strong>V. Estación</strong></h3><p><strong>Simón de Cirene ayuda a Jesús a llevar la Cruz</strong></p><p>"Mientras conducían a Jesús, tomaron a un hombre de Cirene llamado Simón (…) Le pusieron la Cruz para que la llevara detrás de Jesús."<br><em>(Lc 23,26)</em></p><p><strong>Jesús:</strong></p><p>"Permito dificultades para multiplicar tus méritos. Recompenso no el buen resultado sino la paciencia y el esfuerzo emprendido por Mí." [86]</p><p><strong>Sor Faustina:</strong></p><p>"Oh Jesús mío, no recompensas por el buen resultado de una acción, sino por la voluntad sincera y los esfuerzos. Por eso estoy muy en paz, aunque todos mis esfuerzos y afanes queden fútiles o nunca se realicen. Si hago todo lo que está en mi poder, el resto ya no me pertenece." [952]</p><p>Jesús, mi Señor, que todo pensamiento, toda palabra y toda acción ocurra únicamente por amor a Ti. Purifica mis intenciones.</p><h3><strong>VI. Estación</strong></h3><p><strong>Verónica enjuga el rostro de Jesús</strong></p><p>"Muchos se espantaron de Él – tan desfigurado estaba Su aspecto, ya no como un hombre, Su forma ya no era la de un hombre."<br><em>(Is 52,14)</em></p><p><strong>Jesús:</strong></p><p>"Sabe que cuando haces algo bueno a cualquier alma, Lo acepto como si lo hubieras hecho para Mí mismo." [1768]</p><p><strong>Sor Faustina:</strong></p><p>"De Jesús aprendo a ser buena, de Él que es la bondad misma, para poder ser llamada hija del Padre celestial." [669]<br>"Un gran amor puede transformar las cosas pequeñas en grandes, y solo el amor da valor a nuestras acciones." [303]</p><p>Señor Jesús, mi Maestro, haz que mis ojos, mis manos, mi boca y mi corazón sean misericordiosos. Transfórmame en misericordia.</p><h3><strong>VII. Estación</strong></h3><p><strong>Jesús cae por segunda vez bajo la Cruz</strong></p><p>"Él ha cargado con nuestras dolencias y llevado nuestros dolores."<br><em>(Is 53,4)</em></p><p><strong>Jesús:</strong></p><p>"La razón de tus derrotas es que confías demasiado en ti misma y te apoyas demasiado poco en Mí." [1488]<br>"Sabe que nada puedes por ti misma." [639]<br>"Sin Mi ayuda especial ni siquiera eres capaz de recibir Mis gracias." [738]</p><p><strong>Sor Faustina:</strong></p><p>"Jesús, no me dejes sola. (…) Tú, Señor, sabes qué débil soy. Soy el abismo de la miseria, soy pura nada; ¿es entonces sorprendente que cuando me dejas sola, caigo?" [1489]<br>"Así que Tú, Jesús, debes estar constantemente conmigo, como una madre con su hijo débil, aún más." [264]</p><p>Que Tu gracia me asista, Señor, para no caer constantemente en los mismos errores. Y cuando caiga, ayúdame a levantarme y alabar Tu misericordia.</p><h3><strong>VIII. Estación</strong></h3><p><strong>Jesús exhorta a las mujeres de Jerusalén</strong></p><p>"Una gran multitud de gente Lo seguía, y también mujeres que lloraban y se lamentaban por Él."<br><em>(Lc 23,27)</em></p><p><strong>Jesús:</strong></p><p>"Oh cuán querida es para Mí la fe viva." [1421]<br>"Deseaba que hubiera más fe entre vosotros en el tiempo presente." [353]</p><p><strong>Sor Faustina:</strong></p><p>"Te pido encarecidamente, Señor, que fortalezcas mi fe, para que no me guíe en la gris vida cotidiana por los humores humanos, sino por el Espíritu. Oh cómo todo atrae al hombre a la tierra, pero la fe viva mantiene el alma en esferas más altas y asigna al amor propio su lugar debido, el último." [210]</p><p>Señor Misericordioso, Te doy gracias por el santo Bautismo y por la gracia de la fe. Una y otra vez clamo: ¡Señor, creo, aumenta mi fe!</p><h3><strong>IX. Estación</strong></h3><p><strong>Jesús cae por tercera vez bajo la Cruz</strong></p><p>"Él fue oprimido y afligido, pero no abrió Su boca."<br><em>(Is 53,7)</em></p><p><strong>Jesús:</strong></p><p>"Sabe que el mayor obstáculo para la santidad es la apatía y la ansiedad infundada. Te quitan la posibilidad de ejercer la virtud. (…) Estoy siempre dispuesto a perdonarte. Las veces que Me pidas, alabáis Mi misericordia." [1488]</p><p><strong>Sor Faustina:</strong></p><p>"Jesús mío, pese a Tus gracias siento y veo toda mi miseria. Comienzo y acabo el día en batalla. Apenas he superado una dificultad cuando diez nuevas surgen en su lugar que deben combatirse. Pero no me aflijo por esto, pues sé que ahora es tiempo de lucha y no de paz." [606]</p><p>Señor Misericordioso, Te doy lo que es mi única propiedad: el pecado y la debilidad humana. Te imploro que mi miseria se hunda en Tu misericordia insondable.</p><h3><strong>X. Estación</strong></h3><p><strong>Jesús es despojado de Sus vestiduras</strong></p><p>"Para que se cumpliera la Escritura: 'Repartieron Mis vestiduras entre ellos y echaron suertes sobre Mi túnica.'"<br><em>(Jn 19,24)</em></p><p><strong>Sor Faustina:</strong></p><p>"Jesús apareció de repente ante mí, despojado de Sus vestiduras, todo Su cuerpo cubierto de heridas, Sus ojos llenos de sangre y lágrimas, todo Su rostro desfigurado, cubierto de saliva. Entonces Jesús me dijo:"</p><p><strong>Jesús:</strong></p><p>"La esposa debe parecerse al esposo."</p><p><strong>Sor Faustina:</strong></p><p>"Comprendí profundamente estas palabras. No hay lugar para dudas aquí. Mi parecido con Jesús será mediante el sufrimiento y la humildad." [268]</p><p>Jesús, Tú que eres silencioso y puro de corazón, forma mi corazón según Tu Corazón.</p><h3><strong>XI. Estación</strong></h3><p><strong>Jesús es clavado en la Cruz</strong></p><p>"Llevaron a Jesús a un lugar llamado Gólgota. Era la tercera hora cuando Lo crucificaron."<br><em>(Mc 15,22.25)</em></p><p><strong>Jesús:</strong></p><p>"Mi discípula, aprecia gran amor por quienes te infligen sufrimiento; haz bien a quienes te odian." [1628]</p><p><strong>Sor Faustina:</strong></p><p>"Oh Jesús mío, sabes qué esfuerzo cuesta ser honesto y sincero con aquellos ante quienes nuestra naturaleza retrocede, o con aquellos que consciente o inconscientemente nos han infligido sufrimiento; humanamente es imposible. En esos momentos me esfuerzo más que nunca por descubrir a Jesús en la persona respectiva y por ese Jesús hago todo por las personas respectivas." [Cf. 766]</p><p>Oh amor más puro, gobierna mi corazón en plena medida y ayúdame a amar lo que supera toda medida humana. [Cf. 328]</p><h3><strong>XII. Estación</strong></h3><p><strong>Jesús muere en la Cruz</strong></p><p>"Jesús clamó con fuerte voz: 'Padre, en Tus manos encomiendo Mi espíritu.' Tras estas palabras exhaló Su último aliento."<br><em>(Lc 23,46)</em></p><p><strong>Jesús:</strong></p><p>"Todo esto por la redención de las almas. Considera lo que haces por su salvación." [1184]</p><p><strong>Sor Faustina:</strong></p><p>"Vi multitudes enteras de almas crucificadas como Jesús. Vi una segunda y una tercera multitud de almas. La segunda multitud no estaba clavada a la cruz, pero las almas sostenían firmemente la cruz en sus manos. La tercera multitud no estaba ni crucificada ni las almas sostenían la cruz en sus manos, pero la arrastraban detrás y estaban descontentas."</p><p><strong>Jesús:</strong></p><p>"¿Ves las almas que se parecen a Mí en sufrimiento y desprecio? También se parecerán a Mí en gloria; aquellas, en cambio, que se parecen menos a Mí en sufrimiento y desprecio, también tendrán menos parecido conmigo en gloria." [446]</p><p>Jesús, mi Redentor, escóndeme en lo más profundo de Tu Corazón, para que fortalecida por Tu gracia me vuelva semejante a Ti en amor por la Cruz y tenga parte en Tu gloria.</p><h3><strong>XIII. Estación</strong></h3><p><strong>Jesús es bajado de la Cruz y puesto en los brazos de Su Madre</strong></p><p>"José de Arimatea (…) pidió a Pilato que pudiera llevarse el cuerpo de Jesús, y Pilato lo permitió."<br><em>(Jn 19,38)</em></p><p><strong>Jesús:</strong></p><p>"Un alma que cree firmemente en Mi bondad es la más querida para Mí. Le doy Mi confianza y le concedo todo lo que pide." [453]</p><p><strong>Sor Faustina:</strong></p><p>"Me refugio en Tu misericordia, Dios bondadoso, pues solo Tú eres bueno. Aunque mi miseria es grande y mi culpa numerosa, confío en Tu misericordia; pues eres el Dios de la misericordia, de quien durante siglos nadie ha oído que un alma quedó decepcionada que confió en Tu misericordia." [1730]</p><p>María, Madre de la Misericordia, guíame por el camino de la vida interior. Enséñame a sufrir y a amar en el sufrimiento.</p><h3><strong>XIV. Estación</strong></h3><p><strong>Jesús es puesto en el sepulcro</strong></p><p>"José Lo tomó y Lo envolvió en una sábana limpia. Luego Lo puso en un sepulcro nuevo, que había cavado en la roca para sí mismo."<br><em>(Mt 27,59-60)</em></p><p><strong>Jesús:</strong></p><p>"Aún no estás en la casa del Padre. Ve, pues, fortalecida por Mi gracia, y lucha por Mi reino en las almas de los hombres. Lucha como una hija del rey y recuerda que los días del destierro pasan rápido y con ellos la oportunidad de reunir méritos para el cielo. Espero de ti (…) un gran número de almas que alaben Mi misericordia por toda la eternidad." [1489]</p><p><strong>Sor Faustina:</strong></p><p>"Toda alma que Tú, Jesús, me has confiado, quiero apoyar mediante oración y sacrificio, para que Tu gracia se haga efectiva en ella. Oh gran amigo de las almas, Jesús mío, Te doy gracias por Tu gran confianza, que has puesto tan bondadosamente las almas bajo nuestro cuidado." [245]</p><p>Haz, Señor misericordioso, que ninguna de las almas que me has confiado perezca.</p><br><h3><strong>Oración después del Vía Crucis</strong></h3><p>Jesús mío, mi única esperanza, Te doy gracias por el libro que has abierto ante los ojos de mi alma. El libro es Tu sufrimiento, que tomaste sobre Ti por amor a mí. De este libro he aprendido a amar a Dios y a las almas. Contiene tesoros inmensurables para nosotros.</p><p>Oh Jesús, ¡qué pocas almas Te comprenden en Tu sufrimiento por amor! (…) Dichosa el alma que ha comprendido el amor del Corazón de Jesús. [304]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1368,16 +1481,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1389,11 +1502,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Salvar una sola alma para toda la eternidad merece sacrificar toda una vida."</strong> [1435]</p><p>Helena Kowalska, como se llamaba Sor Faustina antes de su entrada en la vida religiosa, nació el 25 de agosto de 1905 en el pueblo polaco de Głogowiec como la tercera de diez hijos de una familia campesina pobre. Desde temprano se despertó en Helena el deseo de entrar en el convento. Su padre, sin embargo, se oponía, pues no se sentía capaz de proveer la dote requerida para la entrada en el convento. Así Helena intentó suprimir su vocación dedicándose a cosas del mundo.</p><p>Una experiencia profunda en un baile despertó en ella el primer anhelo: Mientras bailaba vio de repente a Jesús atormentado, completamente cubierto de heridas, a su lado, que le habló:</p><p><strong>"¿Cuánto tiempo he de soportarte, y cuánto tiempo vas a darme largas?"</strong> [9]</p><p>Este encuentro con Jesús marcó el punto de inflexión en su historia de vocación. Profundamente conmovida en el alma, fue inmediatamente a una iglesia y se postró ante el sagrario. En esta postura imploró a Dios que le diera a conocer qué debía hacer ahora. Entonces oyó en su corazón las palabras:</p><p><strong>"¡Ve inmediatamente a Varsovia, allí entrarás en el convento!"</strong> [10]</p><p>Dejando atrás su vida anterior, fue sin vacilar a Varsovia y allí buscó entrar en un convento. Por todas partes la rechazaron, hasta que finalmente encontró aceptación en la <strong>Congregación de las Hermanas de Nuestra Señora de la Misericordia</strong>. Allí entró el 1 de agosto de 1925.</p><p>Dios eligió a esta sencilla religiosa para acercar a la humanidad la verdad revelada en la Sagrada Escritura sobre Su amor misericordioso hacia todas las personas y proclamarla. Su misión también incluía implorar la misericordia de Dios por todo el mundo mediante formas correspondientes de veneración, para promover un movimiento de renovación de la vida religiosa en el espíritu de la confianza cristiana y la misericordia.</p><p>Fiel al cumplimiento de su misión, murió ya a los 33 años el 5 de octubre de 1938 en el convento de Cracovia-Łagiewniki de tuberculosis.</p><p>El 18 de abril de 1993 Sor Faustina fue beatificada por el Papa Juan Pablo II. Con su canonización el 30 de abril de 2000, también introdujo oficialmente la <strong>"Fiesta de la Divina Misericordia"</strong> para toda la Iglesia y fijó su celebración en el primer domingo después de Pascua (Domingo de la Divina Misericordia).</p><p><strong>"Mira en Mi Corazón misericordioso y refleja su misericordia en tu propio corazón y en tus acciones."</strong><strong><br></strong><em>– Jesús a Santa Sor Faustina</em></p><br><p><strong>"Nos parecemos más a Dios cuando concedemos perdón a nuestro prójimo."</strong><strong><br></strong><em>– Santa Sor Faustina</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1403,6 +1522,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1488,6 +1608,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1542,6 +1697,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1577,12 +1743,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

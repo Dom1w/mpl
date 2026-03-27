@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="安息于耶稣圣伤中">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="安息于耶稣圣伤中">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/geborgen-in-jesu-heiligen-wunden.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../zh/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../zh/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,20 +969,20 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <p>耶稣，我的天主，我爱祢在万有之上！</p><h1>安息于耶稣圣伤中</h1>
@@ -951,22 +993,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -978,6 +1025,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>要像一只小蝴蝶，飞入我的心中。</strong><strong><br></strong>如果一个灵魂飞入我这道伤口的深处并停留在那儿，他便得到了妥善的庇护。</p><p><strong>我的伤口将医治你们的伤口。</strong></p><p><strong>如果你们遇到困难或痛苦，请迅速将其带入我的圣伤中，困难将变得更容易忍受。</strong></p><p><strong>你们的一切行为，无论多么微不足道，只要浸入我的宝血中，便获得无限的价值并取悦我的心。</strong></p><p><strong>在圣伤的宝库中，有些冠冕，你们必须取来并赠与他人。</strong><strong><br></strong>当你们把圣伤奉献给我的父时，你们便能这样做，使一切灵魂的创伤藉此得医治。</p><p><strong>在病人面前，必须经常重复呼求：</strong><strong><br></strong><em>“我的耶稣，藉着祢圣伤的功勋，求祢宽恕与怜悯！”</em><em><br></em>这祈祷将为灵魂和肉体带来慰藉。</p><p><strong>我的伤口将遮盖你们所有的过错。</strong></p><p><strong>你们在念慈悲玫瑰经时所说的每一个字，我都让一滴我的宝血落在罪人的灵魂上。</strong></p><p><strong>对于在我的伤口中离世的灵魂，没有死亡；我的伤口赐予他真实的生命。</strong></p><p><strong>你们在世上越是虔诚地默想我痛苦的伤口，在天上就越能看到它们全部的美丽。</strong></p><p><strong>对于炼狱中的灵魂，圣伤是一种恩惠：</strong><strong><br></strong>藉着圣伤，恩宠从天而降，引领灵魂升入天堂。</p><p><em>摘自耶稣向玛利亚·马特·尚邦修女的启示。</em><br>Imprimatur: † Dominique Castellan, Archbishop of Chambéry, 1923年11月21日</p>
 
@@ -987,22 +1035,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1014,6 +1067,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>有一夜躺在病榻上，</strong><strong><br></strong>我忍不住痛哭流涕。<br>泪水中我暗自思量：<br>是什么让我如此痛苦？<br>我像约伯一样破碎且遍体鳞伤，<br>噢，是谁发明了痛苦？</p><p>突然间，我在神魂中见到一幅画像。<br>那是十字架上如此温柔的主。<br>“救主啊，祢究竟犯了什么罪，<br>竟让人把祢刺得如此体无完肤？”</p><p>祂充满慈爱地看着我。<br>“我的孩子，这是世人的罪恶所致。<br>把你的小脑袋靠在我的神圣圣心上吧，<br>这样我们两人便在痛苦中合而为一。<br>如此，你便是在爱中帮助我，<br>向天父补偿世人的罪债。”</p><p>在神圣光辉的照耀下，<br>我的忧愁顿时变得渺小。<br>噢，我无法理解但这却是事实，<br>救主在痛苦中竟与我如此亲近。</p><p>你也一样，我的灵魂，不要丧气。<br>耶稣也会帮助你背负你的小十字架。<br>只需将你的伤口放入祂的伤口中，<br>这样你在痛苦中便永不孤单。</p><p>在天国里，我们的伤口将如太阳般闪耀，<br>并获得永恒福乐的报偿。</p><p><strong>这首诗并非随意构思，</strong><strong><br></strong><strong>而是护慰者圣神此刻专为你而作。</strong><strong><br></strong><em>（圣玛利亚洛雷托卡布遣会修女）</em></p>
 
@@ -1023,22 +1077,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1050,6 +1109,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>天父，我信赖并向祢奉献耶稣与玛利亚的联合圣心、耶稣得胜的流血圣伤，以及我们亲爱的天上母亲玛利亚的泪水。</strong><strong><br></strong>我将我的思想、言语、行为、脚步、举止，我的细胞、组织、血管、血滴、神经、腺体、骨骼和器官，都放入耶稣与玛利亚的联合圣心中。<br><strong>主啊，愿祢的旨意成就！</strong></p>
 
@@ -1059,22 +1119,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1086,6 +1151,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><em>使用普通玫瑰经，并以以下祷文开始：</em></p><p>耶稣，神圣的救主，求祢对我们及全世界广施仁慈与慈悲！阿们。<br>至圣天主，至圣强有力者，至圣长存者，求祢怜悯我们及全世界！阿们。<br>我的耶稣，在当前的危险中，求祢赐予恩宠与怜悯，用祢的宝血覆盖我们！阿们。<br>永生之父，我们哀求祢，藉着祢至爱之子耶稣基督的宝血，向我们显示慈悲。阿们。</p><p><strong>在大珠上（1次）：</strong></p><p>永生之父，我向祢奉献我们主耶稣基督的圣伤，为医治我们灵魂的伤口。</p><p><strong>在小珠上（10次）：</strong></p><p>我的耶稣，藉着祢圣伤的功勋，求祢宽恕与怜悯。</p><p><strong>结束时（3次）：</strong></p><p>永生之父，我向祢奉献我们主耶稣基督的圣伤，为医治我们灵魂的伤口。</p>
 <p><em>Imprimatur: Friburgi Helv., May 12, 1930, L. Ems, vic. gen.</em></p>
@@ -1096,12 +1162,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1187,6 +1259,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1241,6 +1348,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1276,12 +1394,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sheltered in Jesus' Holy Wounds">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Sheltered in Jesus' Holy Wounds">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/geborgen-in-jesu-heiligen-wunden.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../en/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../en/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,20 +969,20 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <p>Jesus, my God, I love You above all!</p><h1>Sheltered in Jesus' Holy Wounds</h1>
@@ -950,22 +992,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -977,11 +1024,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Be like a little butterfly and fly into My Heart.</strong><strong><br></strong>When a soul flies deep into this wound of Mine and dwells there, it is well sheltered.</p><p><strong>My wounds will heal your wounds.</strong></p><p><strong>When you have a difficulty or something to suffer, bring it quickly into My holy wounds, and the difficulty will be easier to bear.</strong></p><p><strong>All your actions, however insignificant they may be, gain infinite value when dipped in My Blood and gladden My Heart.</strong></p><p><strong>The treasury of the holy wounds contains crowns that you must take and give to others.</strong><strong><br></strong>You can do this when you offer the holy wounds to My Father, so that through them the wounds of all souls may be healed.</p><p><strong>With the sick, the invocation must often be repeated:</strong><strong><br></strong><em>"My Jesus, pardon and mercy, through the merits of Thy holy wounds!"</em><br>This prayer will bring relief to soul and body.</p><p><strong>My wounds will cover all your faults.</strong></p><p><strong>At every word you say in the Chaplet of Mercy, I let a drop of My Blood fall upon the soul of a sinner.</strong></p><p><strong>For the soul that expires in My wounds, there is no death; My wounds give it true life.</strong></p><p><strong>The more you have contemplated My painful wounds in prayer on earth, the more you will behold them in all their beauty in heaven.</strong></p><p><strong>For the souls in purgatory, the holy wounds are a blessing:</strong><strong><br></strong>Through them grace descends from heaven and leads the souls upward to heaven.</p><p><em>From the revelations of Jesus to Sr. Mary Martha Chambon.</em><br>Imprimatur: † Dominique Castellan, Archbishop of Chambéry, November 21, 1923</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -991,16 +1044,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1012,11 +1065,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>One night upon my bed of pain,</strong><strong><br></strong>I had to weep from my whole heart.<br>Through tears I wondered to myself,<br>what has made me suffer so?<br>Like Job I am broken and full of wounds,<br>O who invented such suffering?</p><p>Suddenly I see in spirit an image.<br>It is the Lord upon the Cross so gentle.<br>"O Savior, what have You done wrong,<br>that they have pierced You so?"</p><p>With kindness He looks at me.<br>"My child, the sin of mankind has done this.<br>Lay your little head against My divine Heart,<br>then we are two united in suffering.<br>Thus you help Me in love to repay<br>to the Father in heaven the sins of the world."</p><p>Illumined by the divine radiance,<br>my sorrow suddenly becomes quite small.<br>O I cannot grasp it and yet it is true,<br>the Savior is so near to me just in suffering.</p><p>You too, my soul, need not despair.<br>Jesus helps you also to carry your little cross.<br>Just lay your wounds into His,<br>so you are never alone in suffering.</p><p>Up in heaven our wounds shine like suns<br>and will be repaid with eternal joys.</p><p><strong>This poem is not merely conceived,</strong><strong><br></strong><strong>the Comforter Spirit has just made it for you.</strong><strong><br></strong><em>(Capuchin Sisters of Perpetual Adoration)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1026,16 +1085,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1047,11 +1106,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Heavenly Father, I entrust and offer unto You the United Hearts of JESUS and MARY, the victorious bleeding wounds of Jesus, and the tears of our dear Heavenly Mother Mary.</strong><strong><br></strong>I place my thoughts, words, works, steps, actions, my cells, tissues, vessels, blood drops, nerves, glands, bones and organs into the United Hearts of JESUS and MARY.<br><strong>Lord, Thy will be done!</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1061,16 +1126,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1082,11 +1147,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><em>Use an ordinary rosary and begin with the following prayer:</em></p><p>O Jesus, divine Redeemer, be gracious and merciful to us and to the whole world! Amen.<br>Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and on the whole world! Amen.<br>Grace and mercy, O my Jesus, in the present dangers, cover us with Your precious Blood! Amen.<br>Eternal Father, we implore You, show us mercy through the precious Blood of Jesus Christ, Your dearly beloved Son. Amen.</p><p><strong>On the large beads (once):</strong></p><p>Eternal Father, I offer You the wounds of our Lord Jesus Christ to heal the wounds of our souls.</p><p><strong>On the small beads (10 times):</strong></p><p>My Jesus, pardon and mercy through the merits of Thy holy wounds.</p><p><strong>At the end (3 times):</strong></p><p>Eternal Father, I offer You the wounds of our Lord Jesus Christ to heal the wounds of our souls.</p><p><em>Imprimatur: Friburgi Helv., May 12, 1930, L. Ems, vic. gen.</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1096,6 +1167,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1181,6 +1253,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1235,6 +1342,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1270,12 +1388,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

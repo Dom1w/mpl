@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Goddelijke Barmhartigheid">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Goddelijke Barmhartigheid">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gttliche-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../nl/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../nl/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg" 
-                 alt="" 
+            <img src="../static/img/gs_4e9e8d08c06e4cd1d1a1b102b4112ea90d10a3fa6ef112f17188c7c1e23065ac.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -949,6 +990,7 @@
             
 
             
+            
             <div class="section-body">
                 <h1>Verering van de Goddelijke Barmhartigheid</h1><p><strong>Volgens de openbaringen van Jezus uit het Dagboek van de Heilige Zuster Faustina</strong></p><p>Mijn dochter, verkondig aan de hele wereld Mijn ondoorgrondelijke barmhartigheid. [699]</p><p>Zeg het lijdende mensdom dichter bij Mijn barmhartige Hart te komen en Ik zal het met vrede vullen. [1074]</p><p>"Niets is de mens zo noodzakelijk als de barmhartigheid van God."<br>Heilige Paus Johannes Paulus II.</p>
             </div>
@@ -957,13 +999,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/gs_2feac0e7808e948f91ddec88f90821eb27c7b9baed48663596574200f3edd267.png" 
-                 alt="" 
+            <img src="../static/img/gs_2feac0e7808e948f91ddec88f90821eb27c7b9baed48663596574200f3edd267.png"
+                 alt=""
                  class="section-image">
             
             
@@ -973,16 +1020,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -994,6 +1041,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Door de barmhartige liefde van onze God zal de dageraad uit den hoge ons bezoeken." (Lk 1,78)</strong></p><p>Innerlijkheid en spiritualiteit: het bevorderen en ontwikkelen van de religieuze gezindheid van de mens […] al deze eersteklas taken en gezegende vruchten van geleefd geloof vinden we in het Dagboek van Zuster Maria Faustina:</p><p><strong>"O, hoe mooi is de geestelijke wereld! Zij is zo werkelijk dat in vergelijking het uitwendige leven niets dan lege illusie en machteloosheid is!"</strong> [884]</p><p>Zuster Faustina toont ons wat al te vaak op de achtergrond is geraakt, zo niet in vergetelheid, in de loop van de ontwikkeling der laatste decennia – het innerlijke leven van de ziel met God.</p><p><strong>"Als de zielen slechts naar Mijn stem zouden luisteren wanneer Ik spreek in de diepte van hun harten, zij zouden in korte tijd het toppunt van heiligheid bereiken."</strong> [584]</p><p>Ware innerlijkheid bestaat in vreugdevolle liefde voor God en Zijn heilige wil:</p><p><strong>"Droefheid kan geen wortel schieten in een hart dat God bemint!"</strong> [886]</p><p>Onder de naam van totale vrijheid, grenzeloze emancipatie werden de geboden van God repressief genoemd – ja, God Zelf werd tot tegenstander van de menselijke vrijheid verklaard. Paus Johannes Paulus II merkte in zijn encycliek <em>Dominum et Vivificantem</em> (Nr. 38) op dat God uiteindelijk tot vijand van Zijn eigen schepsel werd verklaard. Zuster Faustina ontmaskert deze godslastering door luisterrijk te verkondigen:</p><p><strong>"Liefde voor God maakt de ziel vrij! Zij is als een koningin die de dwang van slavernij niet kent!"</strong> [890]</p><p>Het bezwaar van vele gelovigen dat innerlijkheid, het geestelijke leven, iets heel moeilijks is, dat de beklimming van de ziel alleen met buitengewone daden kan worden bereikt, was reeds als ongegrond verworpen door de Hl. Thérèse van het Kind Jezus met haar "Kleine Weg". Volledig in deze traditie mikt het Dagboek van Zuster Faustina op wat beslissend is in het religieuze leven: liefde.</p><p><strong>"Jezus, Gij hebt mij getoond waarin de grootheid van de ziel bestaat: niet in grote daden, maar alleen in grote liefde. Liefde geeft waarde. Zij geeft alle daden hun waarde. Zo worden kleine en alledaagse daden groot en betekenisvol voor God door liefde. Liefde is een mysterie dat alles wat het aanraakt in mooie en God welgevallige dingen verandert."</strong> [889]</p><p>God is liefde. (1 Joh 4,16) En liefde wil zich geven. Zich geven is vreugde; zich niet kunnen geven is lijden. Jezus geeft zich volledig aan God; Hij geeft Zijn leven voor de zonde van de wereld. Tegenover de zondige mens openbaart liefde zich als barmhartigheid (<em>miseri cor dare</em> = misericordia).</p><p>Goddelijke Barmhartigheid is groter dan menselijke ellende. Hoe ellendiger de zondige mens, hoe meer de goedheid van God geneigd is hem barmhartigheid te tonen. Deze totale bereidheid om allen barmhartigheid te schenken wordt aan Faustina op bijzondere wijze geopenbaard. Haar bijzondere roeping is Gods barmhartigheid te verkondigen.</p><p><strong>"Ik kan zelfs de grootste zondaar niet straffen. Als hij zich beroept op Mijn barmhartigheid, rechtvaardig Ik hem in Mijn ondoorgrondelijke en onpeilbare barmhartigheid."</strong> [1146]</p><p>Volgens de openbaring van Jezus aan Faustina is alleen inzicht in de eigen ellende en openheid voor de roep van de Heer nodig, dan zullen stromen van barmhartigheid uit het Hart van Jezus over de mensheid vloeien. Zuster Faustina wordt zo de heraut van het vertrouwen in oneindige barmhartigheid. Wat er ook in iemands leven is gebeurd, zelfs de ergste zonden – vol, onverminderd vertrouwen in de barmhartige liefde van Jezus is altyd de weg naar het heil.</p><p>De volledige religieuze naam van onze Dienstmaagd Gods is: Zuster Maria Faustina van het Allerheiligst Sacrament. Deze naam opent het zicht op een verdere rijkdom van dit goddelijke leven: het belang van de Heilige Communie in Faustina's leven.</p><p><strong>"Het meest plechtige ogenblik van mijn leven is altijd het ogenblik waarop ik de Heilige Communie ontvang … De engelen zouden ons mensen slechts twee dingen benijden, als zij konden: het ontvangen van de Heilige Communie en het lijden."</strong> [1804]</p>
             </div>
@@ -1002,13 +1050,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/gs_34410916c848bcffeed523a0de064da66d3edceda4a866828d8269b1cc133a84.jpg" 
-                 alt="Op het Spoor van de Goddelijke Barmhartigheid" 
+            <img src="../static/img/gs_34410916c848bcffeed523a0de064da66d3edceda4a866828d8269b1cc133a84.jpg"
+                 alt="Op het Spoor van de Goddelijke Barmhartigheid"
                  class="section-image">
             
             
@@ -1018,16 +1071,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1039,11 +1092,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"In elke ziel verricht Ik het werk van barmhartigheid. Hoe groter de zondaar, hoe groter zijn recht op Mijn barmhartigheid. Over elk werk van Mijn handen is Mijn barmhartigheid gevestigd."</strong> [723]</p><p>De missie van Zuster Faustina omvat de devotie tot de Goddelijke Barmhartigheid in nieuwe vormen. De grondslag van deze devotie is kinderlijk vertrouwen in God en barmhartige liefde voor de naaste, als het ware de sleutel tot christelijke volmaaktheid.</p><p>Het <strong>fundament</strong> van devotie tot de barmhartigheid van God is vertrouwen. Het is als het ware de sleutel tot het Hart van God en het vat om alle genaden te putten.</p><p><strong>"Uit Mijn barmhartigheid put men genaden met slechts één vat, en dat is vertrouwen. Hoe meer een ziel vertrouwt, hoe meer zij ontvangt."</strong> [1578]</p><p><strong>Barmhartigheid</strong> jegens de naaste is – naast vertrouwen – het tweede wezensbestanddeel van deze devotie.</p><p><strong>"Gij zult uw naaste altijd en overal barmhartigheid tonen. Gij kunt u niet verontschuldigen, noch u eruit praten, noch rechtvaardigen. Ik geef u drie manieren om uw naaste barmhartigheid te tonen: eerst – de daad; tweede – het woord; derde – het gebed. In deze drie graden is de volheid van barmhartigheid vervat; het is een onweerlegbaar bewijs van liefde voor Mij. Zo looft en vereert de ziel Mijn barmhartigheid."</strong> [742]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1053,16 +1112,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1074,11 +1133,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"O eeuwige Liefde, Gij beveelt dat Uw heilig beeld geschilderd wordt en ons de ondoorgrondelijke bron van barmhartigheid openbaart. Gij zegent hen die tot Uw stralen naderen, en iedere zwarte ziel wordt tot sneeuw wit."</strong> [1]</p><p>De ontmoeting van Zuster Faustina met de Barmhartige Jezus op 22 februari 1931 staat aan het begin van de verering van dat unieke beeld, waardoor velen de grote genade van een steeds dieper vertrouwen in God hebben ontvangen. Faustina beschrijft de verschijning met de woorden:</p><p><strong>"In de avond, toen ik in mijn cel was, zag ik de Heer Jezus, gekleed in een wit gewaad. Zijn ene hand was opgeheven om te zegenen, de andere raakte het gewaad bij de borst aan. Uit de opening van het gewaad bij de borst kwamen twee grote stralen: een rode en een bleke. Stil keek ik naar de Heer; mijn ziel was vervuld van ontzag, maar ook van grote vreugde. Na een ogenblik zei Jezus tot mij: Schilder een beeld volgens wat gij ziet, met het onderschrift: Jezu, Ufam Tobie (Jezus, ik vertrouw op U). Ik wens dat dit beeld vereerd wordt, eerst in uw kapel, en vervolgens in de hele wereld."</strong> [47]</p><p>De kern van het beeld van de Barmhartige Jezus wordt door de stralen uitgedrukt. De rode straal betekent het bloed van Jezus, dat het leven van de zielen is; de bleke straal betekent het water, dat de zielen reinigt. Samen verwijzen zij naar het geheim van de verlossing (vgl. Joh 19,34) en naar de sacramenten, vooral Doopsel en Eucharistie.</p><p>Jezus legt uit:</p><p><strong>"Die twee stralen betekenen bloed en water. De bleke straal betekent het water, dat de zielen rechtvaardigt. De rode straal betekent het bloed, dat het leven van de zielen is... Deze twee stralen ontsprongen uit de diepten van Mijn barmhartigheid, toen Mijn stervend Hart door de lans op het kruis werd geopend."</strong> [299]</p><p>Het onderschrift "Jezus, ik vertrouw op U" wijst op de houding van vertrouwen, waartoe de Heer ieder mens uitnodigt. Vertrouwen is een daad van overgave: wij leggen onze ellende in de handen van de barmhartige Redder. Zoals een kind zich laat dragen door zijn moeder, zo werpt de ziel zich in de armen van Gods barmhartigheid.</p><p><strong>"De genaden van Mijn barmhartigheid worden uit één vat geput, en dat is: vertrouwen. Hoe meer een ziel vertrouwt, des te meer zij ontvangt."</strong> [1578]</p><p>In 1943 schilderde de kunstenaar Adolf Hyła in Kraków het bekende beeld van de Barmhartige Jezus als dank voor zijn redding uit de oorlog. Dit beeld verspreidde zich in vele landen en werd voor tallozen een weg tot bekering, genezing en een dieper leven uit de sacramenten.</p><p>Daarom is de verering van dit beeld geen oppervlakkige vroomheid, maar een concrete oproep: om in de genade te leven, Gods barmhartigheid te aanvaarden en zelf barmhartigheid te oefenen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1088,16 +1153,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1109,11 +1174,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Ik wens dat de eerste zondag na Pasen het Feest van de Barmhartigheid wordt."</strong> [299]<br><strong>"Op deze dag zullen de priesters aan de zielen Mijn grote en ondoorgrondelijke barmhartigheid verkondigen."</strong> [570]</p><p>Jezus uitte deze wens voor het eerst in 1931 in Płock, toen Hij Zijn wil meedeelde over het maken van het beeld van de Barmhartige Jezus. In de volgende jaren keerde Jezus 14 keer tot deze wens terug.</p><p><strong>"Het Feest van de Goddelijke Barmhartigheid werd voor de hele Kerk door Paus Johannes Paulus II ingesteld op 30 april 2000."</strong></p><p><strong>"Ik wens dat het Feest van de Barmhartigheid een toevlucht en schuilplaats voor alle zielen zij, vooral voor arme zondaars. Op deze dag wordt het binnenste van Mijn barmhartigheid geopend; Ik stort een hele zee van genaden uit over die zielen die de bron van Mijn barmhartigheid naderen. De ziel die te biecht gaat en de Heilige Communie ontvangt verkrijgt volledige vergeving van schuld en straf; op deze dag zijn alle sluizen van God geopend, waardoor genaden vloeien. Geen ziel behoeft vrees te hebben Mij te naderen, zelfs als haar zonden rood als scharlaken waren."</strong> [699]</p><p>De voorbereiding op het Feest van de Goddelijke Barmhartigheid zou een noveen moeten zijn gebaseerd op het bidden van de Rozenkrans van de Goddelijke Barmhartigheid gedurende negen dagen.</p><p><strong>"In deze noveen,"</strong> zei de Heer, <strong>"zal Ik alle genaden aan de zielen schenken."</strong> [796]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1123,16 +1194,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1144,11 +1215,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Door het bidden van de Rozenkrans van de Goddelijke Barmhartigheid brengt gij het mensdom dichter bij Mij."</strong> [929]<br><strong>"Met genoegen schenk Ik hun door dit gebed alles wat zij Mij vragen."</strong> [1541]</p><p>Jezus dicteerde dit gebed aan Zuster Faustina op 13–14 september 1935. [474–476] In totaal sprak Jezus er 14 keer over. In dit gebed bieden wij God de Vader aan: <strong>het Lichaam en Bloed, Ziel en Godheid van Zijn geliefde Zoon tot genoegdoening voor onze zonden en die van de hele wereld.</strong></p><p><strong>"Wanneer gij dit Rozenkransje van Barmhartigheid bidt voor de stervenden, zal Jezus tussen Zijn Vader en de stervende staan niet als rechtvaardige Rechter, maar als barmhartige Verlosser.</strong> [1541]</p><p><a href="barmherzigkeitsrosenkranz.html">Instructies voor het bidden van de Rozenkrans van de Goddelijke Barmhartigheid [Klik hier]</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1158,16 +1235,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1179,11 +1256,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><a href="novene-gttlichen-barmherzigkeit.html">Noveen van de Goddelijke Barmhartigheid [Klik hier]</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1193,16 +1276,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1214,11 +1297,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"In dit uur kwam genade voor de hele wereld. Barmhartigheid overwon de gerechtigheid."</strong> [1572]</p><p>In oktober 1937 raadde Jezus aan Zijn sterfuur te gedenken, dat Hij Zelf "het uur van grote barmhartigheid voor de wereld" noemde. [1320]</p><p><strong>"Ik herinner u eraan […] dat wanneer gij het uur hoort slaan, gij u geheel zult onderdompelen in Mijn barmhartigheid, haar zult verheerlijken en loven. Roept haar almightigheid aan voor de hele wereld, vooral voor arme zondaars, want nu staat zij wijd open voor elke ziel."</strong> [1572]</p><p>Drie voorwaarden moeten vervuld zijn: 1) Het gebed moet tot Jezus gericht zijn. 2) Het moet om 15.00 uur gebeden worden. 3) Het moet betrekking hebben op het lijden van de Heer. [cf. 1320]</p><h3><a href="gebet-todesstunde-unseres-herrn.html"><strong>Gebed in het Uur van de Dood van Onze Heer (15.00 uur)</strong></a></h3><p><strong>Barmhartige Jezus</strong>, in dankbare herinnering aan Uw bittere dood aan het Kruis aanbid ik U in diepste eerbied en loof ik U om de onschatbare genade van de verlossing. Nederig vraag ik U, zie barmhartig op heel het mensdom en toon Uw ondoorgrondelijke barmhartigheid vooral aan arme zondaars en de stervenden. Amen.</p><h3><a href="gebet-bekehrung-einer-seele.html"><strong>Gebed voor de Bekering van een Ziel</strong></a></h3><p><strong>"Als gij het volgende gebed met berouwvol hart en in geloof bidt voor een zondaar, zal Ik hem de genade van bekering schenken. Het gebed is:</strong></p><p><strong>O Bloed en Water, die uit het Hart van Jezus zijn voortgekomen als een bron van barmhartigheid voor ons – ik vertrouw op U.</strong> [186]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1228,16 +1317,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1249,11 +1338,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Ik heb de wereld de Verlosser gegeven, en gij zult de wereld vertellen over Zijn grote barmhartigheid en haar voorbereiden op Zijn wederkomst."</strong> [635]</p><p>Zuster Faustina verhaalt in haar Dagboek hoe het haar meerdere malen toegestaan werd de Moeder Gods te aanschouwen als Middelares tussen hemel en aarde:</p><p><strong>"... Ik zag tussen hemel en aarde de Moeder Gods in een stralend gewaad. Zij bad, met de handen tegen haar borst gevouwen; uit haar hart kwamen lichtstralen, die zich naar de hemel uitstrekten. Plotseling werd ik door een innerlijke stem aangespoord de wereld tot barmhartigheid op te roepen. En ik hoorde: "Mijn dochter, vertel de zielen hoe groot Gods barmhartigheid is.""</strong> [vgl. 635]</p><p>In deze mariale dimensie wordt duidelijk: Maria leidt ons altijd naar Jezus. Zij leert de ziel vertrouwen en brengt ons, als een goede Moeder, onder de stralen van de barmhartige Heiland.</p><p>Wie zich aan haar toevertrouwt, leert het gebed, de boete en de liefde. Zo wordt de verkondiging van de Barmhartigheid een werk van de Kerk, gedragen door de voorspraak van de Moeder van God.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1263,16 +1358,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1284,11 +1379,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Voordat Ik kom als rechtvaardige Rechter, open Ik wijd de deur van Mijn barmhartigheid. Wie niet door de deur van Mijn barmhartigheid wil binnengaan, moet door de deur van Mijn gerechtigheid gaan."</strong> [1146]</p><p>Zuster Faustina herkende het mysterie van Gods barmhartigheid ook in de bestemming van de mens tot eeuwige zaligheid. God schonk haar in Zijn goedheid en barmhartigheid de genade de schoonheid en de gelukzaligheid van de hemelse heerlijkheid te aanschouwen, die bereid is voor hen die Hem liefhebben en op Hem vertrouwen.</p><p>Een andere gebeurtenis die Zuster Faustina in haar Dagboek verhaalt, is haar verblijf in de plaats van loutering (het vagevuur), waar zij de lijdende zielen zag die door hun lijden voldoen aan de gerechtigheid van God voor hun zonden. Ook dit is een gave van Gods barmhartigheid, want deze zielen zijn vol hoop: zij weten dat zij eens God zullen aanschouwen.</p><p>Heel anders is de plaats van de eeuwige kwelling, de hel. Zuster Faustina werd door een engel, op bevel van God, geleid in de afgrond van de hel, om aan de mensheid te getuigen dat zij bestaat en bevolkt is met verdoemde zielen die vreselijke pijnen ondergaan die eeuwig duren.</p><h3><strong>Blik in de hemel</strong></h3><p>"Vandaag was ik in geest in de hemel en aanschouwde de ondoorgrondelijke schoonheden en de gelukzaligheid die ons na de dood wacht. Ik zag hoe alle schepselen onophoudelijk eer en glorie aan God brengen. Ik zag hoe groot de gelukzaligheid in God is, die over alle schepselen uitvloeit, hen gelukkig maakt, en hoe alle glorie en eer uit deze gelukzaligheid terugkeren naar de Bron. Zij dringen door tot in de diepten van God en aanschouwen het innerlijke leven van God..." [777-780]</p><h3><strong>In het vagevuur</strong></h3><p>"Ik zag de zielen lijden, maar zij hadden een groot verlangen naar God. Zij leden, maar zij waren ook vol vrede..." [20]</p><h3><strong>In de hel</strong></h3><p>"Ik, Zuster Faustina, ben op bevel van God in de afgrond van de hel geweest, om de zielen te vertellen dat de hel bestaat..." [741]</p><p>Deze persoonlijke getuigenis van de heilige Zuster Faustina verdient des te meer aandacht, omdat zij overeenstemt met het leergezag van de Kerk:</p><p><strong>"De leer van de Kerk bevestigt dat de hel bestaat en dat zij eeuwig duurt. Sterven in doodzonde zonder berouw en zonder de barmhartige liefde van God te aanvaarden, betekent voor altijd gescheiden te blijven van Hem door eigen vrije keuze."</strong> (KKK 1035, 1033)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1298,16 +1399,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1319,11 +1420,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"De gelukkigste ziel is die welke zich aan Mijn barmhartigheid toevertrouwt, want Ik Zelf zorg voor haar."</strong> [1273]</p><h3><strong>Gebed van Zuster Faustina [163]</strong></h3><p>Zo vaak als mijn borst ademt, zo vaak als mijn hart klopt, zo vaak als het bloed in mijn lichaam pulst, zo vaak wil ik Uw barmhartigheid loven, o Allerheiligste Drievuldigheid. (…) Moge dit grootste attribuut van God, Zijn ondoorgrondelijke barmhartigheid, door mijn hart en ziel tot mijn naasten gaan.</p><p>Help mij, o Heer, dat mijn ogen met barmhartigheid mogen kijken, dat ik nooit moge verdenken of naar uiterlijk oordelen, maar moge waarnemen wat mooi is in de zielen van mijn naasten en te hulp komen.</p><p>Help mij dat mijn gehoor barmhartig moge worden, dat ik moge aandacht schenken aan de noden van mijn naasten, dat mijn oren niet onverschillig mogen blijven voor het lijden en de klacht van mijn naasten.</p><p>Help mij, Heer, dat mijn tong barmhartig moge worden, dat ik nooit kwaad moge spreken van mijn naasten, maar een woord van troost en vergiffenis voor iedereen heb.</p><p>Help mij, Heer, dat mijn handen barmhartig en vol goede werken mogen zijn, dat ik alleen goed doe aan mijn naaste en moeilijker, zwaarder werk op mij neem.</p><p>Help mij dat mijn voeten barmhartig mogen zijn, dat zij altijd mogen haasten om mijn naaste te helpen en mijn eigen vermoeidheid en uitputting overwinnen. Mijn ware rust is in de dienst van mijn naaste.</p><p>Help mij, Heer, dat mijn hart barmhartig moge zijn, dat ik alle lijden van mijn naasten moge voelen, dat ik mijn hart aan niemand weiger, dat ik oprechte omgang moge onderhouden zelfs met hen van wie ik weet dat zij mijn vriendelijkheid zullen misbruiken; ikzelf zal mij opsluiten in het allerbarmhartigste Hart van Jezus. Ik zal stilzwijgen over mijn eigen lijden. Uw barmhartigheid, o mijn Heer, zal in mij rusten.</p><p><strong>O mijn Jezus, verander mij in U, want Gij kunt alles.</strong></p><p>Uit het Dagboek van de Hl. Faustina [163]</p><h3><strong>Litanie van de Goddelijke Barmhartigheid [949]</strong></h3><p><strong>Barmhartigheid van God</strong>,<br>voortgesproten uit de schoot van de Vader,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Grootste eigenschap van God,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Onbegrijpelijk mysterie van God,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Bron die ontspringt uit het mysterie van de Allerheiligste Drievuldigheid,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Noch doorgrond door het verstand van mensen noch van engelen,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Waaruit al het leven en geluk vloeit,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Verheven boven de hemelen,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Bron van wonderen en mysteries,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>De hele kosmos omvattend,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>In de wereld gekomen in de Persoon van het Woord dat vlees is geworden,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Vloeiend uit de open wond van het Hart van Jezus,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Vervat in het Hart van Jezus voor ons, vooral voor zondaars,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Onuitputtelijk in de instelling van het Allerheiligst Sacrament,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>In de stichting van de heilige Kerk,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>In het Sacrament van het heilig Doopsel,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>In onze rechtvaardigmaking door Jezus Christus,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Ons door ons hele leven begeleidend,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Ons vooral omarmend in het uur van onze dood,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Ons het eeuwige leven schenkend,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Naast ons in ieder moment van ons leven,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Ons beschermend tegen het vuur van de hel,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>In de bekering van hardnekkige zondaars,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Wonder van de engelen en onbegrijpelijk voor de heiligen,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Onuitputtelijk in alle mysteries van God,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Ons uit alle ellende verheffend,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Bron van ons geluk en onze vreugde,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Ons van het niets tot het leven roepend,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Al de werken van Zijn handen omvattend,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Kronend al wat is en zal zijn,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Waarin wij allen zijn ondergedompeld,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Zoete troost van angstige harten,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Enige hoop van wanhopige zielen,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Rust van harten, vrede te midden van terreur,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Vreugde en verrukking van heilige zielen,<br><em>Ik vertrouw op U!</em></p><p><strong>Barmhartigheid van God</strong>,<br>Vertrouwen wekkend ondanks hopeloosheid,<br><em>Ik vertrouw op U!</em></p><p><strong>O Eeuwige God</strong>, wiens barmhartigheid onuitputtelijk is en wiens schatkamer van medelijden grenzeloos is, zie genadig op ons neer en vermeerder Uw barmhartigheid in ons, opdat wij niet wanhopen of de moed verliezen in moeilijke tijden, maar met groot vertrouwen ons onderwerpen aan Uw heilige wil, die liefde en barmhartigheid zelf is. Amen.</p><p>Uit het dagboek van de Hl. Zuster Faustina [949]</p><h3><strong>Wijding aan de Barmhartige Jezus</strong></h3><p>Barmhartige Jezus, Uw goedheid is oneindig en de schatten van Uw genaden zijn onuitputtelijk.</p><p>Ik stel grenzeloos vertrouwen in Uw barmhartigheid, die al Uw werken overtreft.<br>Ik wijd mij geheel aan U toe, om te leven in de stralen van Uw genade en liefde die uit Uw Hart aan het Kruis zijn voortgekomen.</p><p>Ik wens Uw barmhartigheid te verspreiden en vooral Uw Rozenkrans te bidden, om Uw barmhartigheid voor ons aan te roepen, voor de bekering van zondaars, voor de hele wereld en voor de arme zielen in het vagevuur.</p><p>Maar Gij zult mij beschermen als Uw eigendom en Uw eer, want ik vrees alles van mijn zwakheid en hoop alles op Uw barmhartigheid.</p><p>Moge heel het mensdom de ondoorgrondelijke diepte van Uw barmhartigheid erkennen, al hun hoop daarop plaatsen en haar voor altijd loven. Amen.</p><p><strong>Jezus, ik vertrouw op U,</strong><br><strong>want Gij zijt mijn vertrouwen!</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1333,16 +1440,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1353,6 +1460,7 @@
             <h2 class="section-heading">Kruisweg over het Innerlijke Leven</h2>
             
 
+            
             
             <div class="section-body">
                 <p>(Zie God, die rijk is aan barmhartigheid)</p>
@@ -1506,22 +1614,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1533,11 +1646,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Om één enkele ziel voor eeuwig te redden is het waard een heel leven op te offeren."</strong> [1435]</p><p>Helena Kowalska, zoals Zuster Faustina heette vóór haar intrede in het religieuze leven, werd op 25 augustus 1905 geboren in het Poolse dorp Głogowiec als derde van tien kinderen van een arm boerengezin. Vroeg ontwaakte in Helena het verlangen het klooster in te gaan. Haar vader verzette zich echter, omdat hij zich niet in staat voelde de bruidsschat te verschaffen die voor intrede vereist was. Zo probeerde Helena haar roeping te onderdrukken door zich aan wereldse dingen te wijden.</p><p>Een diepgaande ervaring op een bal wekte in haar het eerste verlangen opnieuw: terwijl zij danste, zag zij plotseling de gemartelde Jezus, geheel met wonden bedekt, naast haar, die tot haar sprak:</p><p><strong>"Hoe lang zal Ik u nog verdragen, en hoe lang zult gij Mij nog uitstellen?"</strong> [9]</p><p>Dit treffen met Jezus betekende het keerpunt in haar roepingsgeschiedenis. Diep in de ziel geraakt, ging zij onmiddellijk naar een kerk en wierp zich voor het tabernakel neer. In deze houding smeekte zij God haar bekend te maken wat zij nu moest doen. Toen hoorde zij in haar hart de woorden:</p><p><strong>"Ga onmiddellijk naar Warschau, daar zult gij het klooster binnengaan!"</strong> [10]</p><p>Haar vorige leven achter zich latend, ging zij zonder aarzeling naar Warschau en trachtte daar een klooster te vinden. Overal werd zij afgewezen, tot zij uiteindelijk werd aangenomen bij de <strong>Congregatie van de Zusters van Onze Lieve Vrouw van Barmhartigheid</strong>. Daar trad zij op 1 augustus 1925 in.</p><p>God koos deze eenvoudige religieuze zuster om de in de Heilige Schrift geopenbaarde waarheid over Zijn barmhartige liefde voor alle mensen dichter bij de mensheid te brengen en te verkondigen. Haar opdracht omvatte ook het afsmeken van Gods barmhartigheid voor de hele wereld door passende vormen van verering, om zo een beweging tot vernieuwing van het religieuze leven in de geest van christelijk vertrouwen en barmhartigheid te bevorderen.</p><p>Trouw aan de vervulling van haar opdracht stierf zij reeds op 33-jarige leeftijd op 5 oktober 1938 in het klooster te Kraków-Łagiewniki aan tuberculose.</p><p>Op 18 april 1993 werd Zuster Faustina door paus Johannes Paulus II zalig verklaard. Met haar heiligverklaring op 30 april 2000 stelde hij ook officieel het <strong>"Feest van de Goddelijke Barmhartigheid"</strong> in voor de hele Kerk en bepaalde de viering op de eerste zondag na Pasen (Zondag van de Goddelijke Barmhartigheid).</p><p><strong>"Kijk in Mijn barmhartige Hart en weerspiegel Zijn barmhartigheid in uw eigen hart en in uw daden."</strong><br><em>– Jezus tot de heilige Zuster Faustina</em></p><br><p><strong>"Wij zijn het meest gelijk aan God wanneer wij onze naaste vergeving schenken."</strong><br><em>– Heilige Zuster Faustina</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1547,6 +1666,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1632,6 +1752,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1686,6 +1841,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1721,12 +1887,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

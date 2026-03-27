@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="De Drie Wees Gegroet">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="De Drie Wees Gegroet">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/die-drei-ave-maria.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../nl/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../nl/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,7 +988,13 @@
             
 
             
+            
 
+            
+
+            
+
+            
             
 
             
@@ -957,16 +1004,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -978,11 +1025,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Toen de Hl. Mechtildis van Hackeborn († 1299) aan het einde van haar leven angstig dacht aan het uur van haar dood, smeekte zij de Moeder Gods om haar moederlijke bescherming in haar laatste uur. De Madonna, die reeds vaak aan haar getrouwe dienares was verschenen, hoorde haar smeekbede en zei tot haar:<br><strong>"Ja, ik zal uw verzoeken zeker vervullen, mijn dochter, maar ik eis van u dat gij dagelijks drie Wees Gegroet bidt uit liefde voor mij."</strong></p><h3><strong>Bij de titelafbeelding – De Moeder van de Verwachting</strong></h3><p>De oorsprong van dit buitengewone genadebeeld, dat zich sinds de 19e eeuw in het klooster van de Kapucijnerinnen van St. Maria Loreto in Salzburg bevindt, blijft tot op de dag van vandaag in mysterie gehuld. Met de aankomst van de "Moeder van Genade" in het Loretoklooster verbond zich spoedig het bijzondere gebruik om het beeld naar de cellen van de stervende zusters te brengen. Opvallend was daarbij dat de Loretozusters altijd rustig en vredig, ja zelfs in "vreugdevolle verwachting" heengingen. En deze bijzondere genade is hen tot op de dag van vandaag geschonken.<br> Trouwens, de verering van de "Moeder van Genade" en de devotie van de Drie Wees Gegroet zijn voor het hele zusterconvent onafscheidelijk met elkaar verbonden.</p><h3><strong>Het eerste Wees Gegroet</strong></h3><p>Ter ere van God de Vader, die in Zijn glorierijke almacht mijn ziel zo heeft onderscheiden dat ik na Hem almachtig ben in de hemel en op aarde.</p><h3><strong>Het tweede Wees Gegroet</strong></h3><p>Ter ere van God de Zoon, die in de grootheid van Zijn ondoorgrondelijke wijsheid mij heeft getooid en vervuld met zulke gaven van kennis en inzicht dat ik de Allerheiligste Drievuldigheid inniger mag aanschouwen dan alle heiligen.<br> Hij heeft mij bovendien in een licht gehuld, zodat ik als een stralende zon de hele hemel verlicht ...</p><h3><strong>Het derde Wees Gegroet</strong></h3><p>Ter ere van de Heilige Geest, die de zoete volheid van Zijn liefde in mijn hart heeft uitgestort en mij zo goed en barmhartig heeft geschapen dat ik na God het zachtmoedigste en vriendelijkste wezen ben ...</p><br><p>Aan deze Drie Wees Gegroet hechtte de Moeder Gods de volgende grote belofte:</p><p><strong>"Ik zal u in het uur van de dood bijstaan, u troosten en alle macht van de duivel van u weghouden.</strong><br><strong>Ik zal u het licht van geloof en kennis instorten, opdat uw geloof niet door onwetendheid en dwaling beproefd worde.</strong><br><strong>Ik zal u in het uur van het heengaan nabij zijn en uw ziel overladen met de zoetheid van de goddelijke liefde, opdat door haar overtreffende kracht alle doodsangst en bitterheid door de liefde in zaligheid moge worden veranderd."</strong><br><em>(Liber specialis gratiae, P.I. Ch. 47)</em></p><p>Gezien de wonderbaarlijke verspreiding en de vele goede vruchten die uit deze devotie voortkwamen, verleende de Kerk niet alleen haar goedkeuring, maar ook vele privileges uit de grote schat van de verlossingsverdiensten van Jezus Christus die haar zijn toevertrouwd.<br> Paus Benedictus XV heeft de Broederschap van de Drie Wees Gegroet tot Aartsbroederschap verheven en haar waardevolle aflaten verleend.</p><p><strong>Oefening:</strong><br>'s Morgens en 's avonds de Drie Wees Gegroet (Wees Gegroet, Maria, …) ter ere van de hierboven beschreven drie voorrechten van Maria met de volgende aanroeping aan het einde:<br><strong>"O mijn Moeder, bewaar mij deze dag / deze nacht voor de doodzonde."</strong><br>(Aflaatgebed)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -992,16 +1045,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1013,11 +1066,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>De Drie Wees Gegroet zijn een machtige hulp om het eeuwig heil en elke genade te verkrijgen. Deze gebedsoefening verdient het door allen gekend, aangenomen en verder verspreid te worden.<br> Betekenisvolle heiligen zoals de Hl. Antonius van Padua, de Hl. Alfonsus Maria van Liguori, de Hl. Leonardus van Porto Maurizio, de Hl. Don Bosco en de Hl. Clemens Maria Hofbauer hebben deze devotie zelf met ijver beoefend en verspreid.<br> De Hl. Antonius verkreeg zo de genade van de volkomen zuiverheid in de bekoringen van de wereld. Evenzo berichten de geloofsgetuigenissen van vele mensen van onze tijd van de buitengewone genadebewijzen door de oefening van de Drie Wees Gegroet: opvallende bekeringen, bijzondere bescherming in bekoringen, vooral tegen de zuiverheid, hulp in de meest uiteenlopende intenties, tot aan een goede beroeps- en levenskeuze alsmede de genade van de volharding en een goede dood.</p><p><strong>Hoe treffend zijn daarom de woorden van de Hl. Bonaventura:</strong><br><strong>"Maria begroet ons met genade wanneer wij haar groeten met het Wees Gegroet.</strong><br><strong>Zelfs als wij ziek waren en onbekwaam tot enig werk, het bidden van het Wees Gegroet maakt ons tot waardevolle medewerkers in het Rijk Gods."</strong></p><p>Met verbazing leest men de geschiedenis van het bedevaartsoord Falgoët, waarvan de stichting teruggaat op een vermeende dwaas die bij elke gelegenheid steeds weer "Ave Maria" sprak.<br> De Moeder Gods beloonde deze eenvoudige maar waardevolle vroomheid met een wonder:<br> Na zijn dood groeide op zijn graf een lelie omhoog, waarvan de bladeren de woorden "Ave Maria" in gouden letters droegen. Bij het onderzoeken van de wortel ontdekte men dat deze in de mond van de dode Salomon leidde: een wonderbaarlijke manifestatie van de hemel hoe welgevallig aan God en machtig het Wees Gegroet is.</p><p><strong>Maar wij die nog leven en dagelijks het Wees Gegroet mogen bidden, moeten eraan herinnerd worden dat wij met elk Wees Gegroet onze ziel verfraaien en de Moeder Gods een onuitsprekelijke vreugde bereiden.</strong><br><strong>Maakt u allen vertrouwd met deze zo mooie en kernachtig vrome devotie en beoefent haar tot het einde van uw leven.</strong><br><strong>Ja, ik vraag de biechtvaders zelfs deze devotie als boete op te leggen, aangezien zij alleen meer vruchten brengt dan elke andere boete.</strong><br><em>(Hl. Leonardus van Porto Maurizio)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1027,16 +1086,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1048,11 +1107,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Een 24-jarige jongeman die ongeveer tien jaar in slecht gezelschap had verkeerd, was het speelbal geworden van misdadige passies.<br> Zijn moeder had bekeringspogingen niet gespaard: gebeden, vasten, aalmoezen, raad, verwijten en tranen – toch scheen alles tevergeefs.</p><p>Toen beklaagde zij haar verdriet bij een priester, en hij, een gelukkige ingeving volgende, deed haar de heilzame suggestie:<br><strong>"Beloof mij uw hele leven lang 's morgens en 's avonds ter ere van de allerheiligste Maagd Drie Wees Gegroet te bidden, en ik beloof u in de naam van de hemelse Trooster de terugkeer van uw lieve zoon tot God."</strong></p><p>De moeder begon onmiddellijk in haar nood met de devotie die de priester had aangeraden, en beoefende haar vol vertrouwen en volharding.<br> Zo verstreken enige weken zonder dat haar zoon enig teken van verbetering gaf. De arme vrouw was nabij wanhoop en vreesde dat God en de allerheiligste Maagd haar hadden verlaten.<br> Maar op 15 mei, die in haar streek gevierd wordt als de feestdag van "Onze Lieve Vrouw van de Aren", kwam zij naar de missionaris niet zoals gewoonlijk met tranen in de ogen, maar stralend van vreugde, en zei diep ontroerd:<br><strong>"Vader, dank zij Maria!"</strong></p><p>Toen de pas bekeerde hem biechtte, kon ook de priester zijn tranen van vreugde niet bedwingen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1062,16 +1127,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1083,11 +1148,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>De roeping tot het priesterschap of de religieuze staat verraadt een bijzondere voorkeur van de Heer voor de ziel die Hij heeft gekozen, die Hij "onder miljoenen voor miljoenen" heeft geroepen.<br> Wanneer zij naar de stem van God luistert en haar Ja uitspreekt, roept zij over zichzelf en over allen aan wie God haar roeping heeft toevertrouwd een onmeetbare stroom van genaden neer.</p><p>De Hl. Johannes Bosco beweerde in zijn tijd dat een derde van de jongeren geroepen is tot het priesterschap of de religieuze staat, maar slechts een tiende zich van deze hoge genade bewust is.<br> Wie altijd drie Wees Gegroet 's morgens en 's avonds bidt, plaatst zich onder de bijzondere bescherming van de Moeder Gods, die bij de troon van God voor haar beschermeling heel speciale genaden voor de verlichting van de verstands- en wilskrachten afsmeekt.</p><p>Een voorbeeld onder vele mag hier genoemd worden:<br><strong>"Lieve Pater," zei een jonge monnik, "ik heb me tijdens een missie op herhaaldelijk aandringen van de Redemptoristenmissionarissen de gebedsoefening van de Drie Wees Gegroet eigen gemaakt en dank aan deze eenvoudige devotie eerst mijn volharding op de weg naar het priesterschap en later mijn religieuze roeping in de familie van de Hl. Alfonsus. Daarvan ben ik vast overtuigd."</strong></p><p>Een goed gebeden Wees Gegroet is<br>– voor de duivel een vijand die hem op de vlucht jaagt,<br>– een hamer die hem verplettert,<br>– voor de ziel een middel tot heiliging,<br>– voor de engelen een vreugde.</p><p>Het is<br>– de hymne van de uitverkorenen,<br>– het Hooglied van het Nieuwe Verbond,<br>– de verrukking van Maria<br>– en de verheerlijking van de Allerheiligste Drievuldigheid.<br><em>(Hl. Ludovicus Maria Grignion de Montfort)</em></p><br><p><strong>Wees Gegroet Maria, vol van genade,</strong><br><strong>de Heer is met u.</strong><br><strong>Gij zijt de gezegende onder de vrouwen,</strong><br><strong>en gezegend is de vrucht van uw schoot, Jezus.</strong><br><strong>Heilige Maria, Moeder van God, bid voor ons zondaars,</strong><br><strong>nu en in het uur van onze dood. Amen.</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1097,6 +1168,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1182,6 +1254,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1236,6 +1343,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1271,12 +1389,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

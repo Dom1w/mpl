@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="萨尔茨堡恩宠洛雷托圣婴祈祷经文">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="萨尔茨堡恩宠洛雷托圣婴祈祷经文">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gebete-zum-gnadenreichen-loretokindl-von-salzbug.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../zh/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../zh/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>天主圣婴，请降福我们！</p><p><strong>洛雷托圣婴小史</strong></p><p>自1650年以来，萨尔茨堡圣玛利亚洛雷托卡布遣会修女们一直守护着一份珍贵的宝藏。这就是广受喜爱的“恩宠洛雷托圣婴”（Gnadenreiches Loretokindl），无数人前来朝圣，向祂倾诉忧虑与困苦。<br>而那些无法亲身前来的圣婴敬礼者，则乘着渴望之心的“特快列车”，奔向这位小小的基督君王，祂正张开双臂迎接那些劳苦和负重的人。</p><p>这尊由无名艺术家制作的象牙雕像的历史可以追溯到1620年。当时，奥廷根伯爵夫人将这尊仅11厘米高的雕像赠送给了<strong>艾夫拉西亚·西尔伯拉特（Euphrasia Silberrath）姆姆</strong>，她当时正在阿尔萨斯的恩西赛姆筹建一座新修道院。与此同时，<strong>若望·金口·申克（Johannes Chrysostomus Schenk）神父</strong>作为院长和初学导师领导着那里的卡布遣会。这位圣德卓越的会士从小就与天主圣婴有着非常生动的关系，当他在艾夫拉西亚姆姆那里看到这尊美丽的雕像时，他苦苦哀求，直到最终被允许借用这尊雕像，直到他的修道院建成。</p><p>由于他对耶稣圣婴那温柔而深切的敬礼，他很快被大家普遍称为<strong>“耶稣圣婴神父”（Christkindlpatre）</strong>。天主圣婴以许多非凡的恩宠报答了他的爱。他在圣德的名声中于1643年11月25日在德莱蒙去世。</p><p>与此同时，艾夫拉西亚姆姆来到了萨尔茨堡的卡布遣会修女院，现在她的耶稣圣婴也想在这里安家。祂在这里设立了祂的恩宠宝座，直到今天，祂慈爱与奇迹力量的声望仍通过无数的恩宠方式和显著的祈祷应允而广为流传。</p><br><h3><strong>用恩宠圣婴降福时的祷词</strong></h3><p><strong>愿天主降福你</strong>，<br>    ✝ 创造你的圣父，<br>    ✝ 救赎你的圣子，<br>    ✝ 使你圣化的圣神。</p><p>至圣圣三的降福在你的所有道路上与你同在，并保护你的灵魂肉身免受一切灾祸。<strong>阿们。</strong></p><p>请同您的天主圣婴一起降福我们，噢，至纯的童贞圣母玛利亚！</p><br><p><strong>每天约14:30</strong><strong><br></strong>会专门为所有圣婴敬礼者、恩人、病人、受苦者以及所有与我们有联系但无法亲身来到修道院门口的人，向四方施放<strong>圣婴降福</strong>。</p><br><p><strong>而且这个应许全天候有效：</strong></p><p>    <strong>只要你满怀渴望地想到天主圣婴，</strong><strong><br></strong>    <strong>祂就已经举起小手，温柔地降福你！</strong></p><br><h3><strong>噢，最美丽的耶稣圣婴</strong></h3><p><strong>噢，最美丽的耶稣圣婴</strong>，<br>    我愿与祢合而为一。<br>我将自己完全奉献给祢，<br>噢，请从我手中接管我自己。<br>好使我活在祢内，<br>而祢独自活在我内，<br>噢，可爱的耶稣圣婴！</p><p><em>（申克神父）</em></p><br><h3><strong>向恩宠圣婴念的短九日敬礼祷词</strong></h3><p><strong>噢，耶稣</strong>，<br>    我将……托付给祢的圣心<br>（这个灵魂、这个意向、这份痛苦……）<br>请垂顾它，然后按照祢圣心的指引而行……<br>让祢的圣心作主！</p><p><strong>噢，耶稣</strong>，<br>    我仰赖祢，<br>我将自己托付给祢，<br>我把自己交托给祢，<br>我对祢深信不疑！<br><strong>阿们。</strong></p><p><em>（由洛雷托修女们每天共同为恩人和圣婴敬礼者祈祷。每月17日至25日除外。）</em></p><br><h3><strong>向亲爱的耶稣圣婴献上的深情求助祷词</strong></h3><p><strong>噢，全能的耶稣圣婴</strong>，<br>    在祢内居住着天主性的全部丰盈，祢完全是慈爱与良善，对所有呼求祢的人都慷慨大方。<br>祢是生命与圣德的源泉，是完美的安慰。<br>祢是我们的和平，我们的和解，祢是所有寄望于祢的人的救星：</p><p><strong>我将……托付给祢的圣心</strong><strong><br></strong>    （这个灵魂、这个意向、这份痛苦……）<br>请垂顾它，然后按照祢的慈爱所指引的而行！</p><p><strong>噢，最慈爱的耶稣圣婴</strong>，<br>    祢已经通过无数的恩宠方式，在这幅画像中启示了祢对敬礼祢至圣童年的喜悦，求祢怜悯我们。<br>也在我们身上显扬祢至圣甘甜之名！<br>请作我们的耶稣！请作我们的救主！<br><strong>阿们。</strong></p><p><em>（由洛雷托修女们从每月17日至25日每天共同为恩人和圣婴敬礼者祈祷。）</em></p><br><h3><strong>耶稣圣婴，请看我们贫穷的人</strong></h3><p><strong>耶稣圣婴，请看我们贫穷的人</strong><strong><br></strong>    向祢哀求，祢这天主之子。<br>愿祢怜悯我们，因为我们急需帮助。</p><p><strong>因为祢是恩宠的太阳</strong>，<br>    祢的良善极其丰厚。<br>凡来到祢台前者，必满怀欣喜而去，并立即获得力量。</p><p><strong>祢使病人迅速痊愈</strong>，<br>    祢安慰那些沮丧的人。<br>凡曾陷于罪恶者，在祢那里找到了灵魂的安息。</p><p><strong>耶稣圣婴</strong>，<br>    我们现在也满怀信心地靠近祢的宝座。<br>请让我们有朝一日能亲眼看见祢，人类的救主，天主之子！</p><br><h3><strong>致神圣耶稣圣婴</strong></h3><p><strong>亲爱的耶稣圣婴</strong>，<br>    祢充满了圣神！请将圣神及其七恩和十二果倾注在我们和全世界身上，好使邪恶的仇敌必须远离我们！<br>因父、及子、及圣神之名。<br><strong>阿们。</strong></p><br><h3><strong>向亲爱的耶稣圣婴祈祷</strong></h3><p><strong>噢，我亲爱的耶稣圣婴</strong>，<br>    祢这显奇迹的天主之子，请让所有受苦和软弱的人都得到您的眷顾！<br>祢的恩宠极其丰厚，在祢面前，即使是最富有的人也是贫穷的。<br>祢的小手平等地降福众人，祢的手臂充满了奇迹的力量。</p><p><strong>噢，如果父愿意，请医治</strong><br>    那些患病的：眼睛、头部和心脏。<br>命令痛苦：“止住”，并减轻每一份灼热的剧痛！</p><p><strong>即使在邪恶根深蒂固的地方</strong>，<br>    在它像铅一样沉重地压在灵魂上的地方，<br>求祢提供帮助，噢，智慧的灵魂医生，祢自己也曾遭受过严酷的折磨！</p><p><strong>在灵魂惊恐沮丧的地方</strong>，<br>    教导她在痛苦中保持耐心；在阴暗的怀疑困扰的地方，用真理照亮她！</p><p><strong>请不要让任何在您面前俯首的人</strong>，<br>    亲爱的圣婴，在得不到安慰的情况下离去，<br>请慈爱地应允那向上升起的虔诚、求助的哀祷！</p><p><strong>请除去我们的罪污</strong><strong><br></strong>    并赐予我们坚定的对天主的信赖，好使我们有朝一日能在永恒中亲眼看见处于光荣中的祢。<br><strong>阿们。</strong></p><br><h3><strong>向圣婴致晨候礼</strong></h3><p><strong>早安，上天的小圣婴</strong>，<br>    耶稣圣婴，我向祢致意！<br>噢，我全心爱祢，天主圣婴，请降福我！</p><p><strong>神圣的小弟弟</strong>，<br>    我感谢祢赐予的昨夜；<br>通过祢，愿我们大家向天父献上感谢。</p><p><strong>通过祢，我们成为天主的子女</strong>，<br>    我们是如此无限地富有。<br>为了父的喜悦，求祢使我们的心像祢的心一样。</p><p><strong>上天的小圣婴</strong>，<br>    请将我们众人都关锁在祢神圣的小心里；<br>将我们如此笼罩在祢的爱中，使我们永远属于祢！</p><p><strong>耶稣圣婴，我们今天所思、所言、所行和所受的苦</strong>，<br>    愿这一切都是为了爱祢，为了感谢祢，为了取悦祢！</p><p><strong>请降福我们和我们所爱的人</strong>，<br>    所有亲近我们的人。<br>帮助贫穷的人、忧伤的人，吸引那些迷失的人归向祢！</p><p><strong>当我的最后时刻到来时</strong>，<br>    请引领我进入天堂。<br>我要永远欢呼着对祢说：耶稣圣婴，我爱祢！</p><br><h3><strong>向圣婴致晚候礼</strong></h3><p><strong>甜美、亲爱的耶稣圣婴</strong>，<br>    在我们休息之前，能再次见到祢，可爱的小孩，将是我们的喜悦。<br>爱把我们带到这里，向祢道晚安！</p><p><strong>我们也要感谢祢</strong>，<br>    感谢那已经逝去的一天；耶稣圣婴，我们将生命中的每一刻都奉献给祢。<br>晚安，亲爱的耶稣圣婴，愿我们得到您的眷顾。</p><p><strong>还有一件事，宝贵的上天小孩</strong>，<br>    噢，请宽恕我们的罪过！使我们变得虔诚和善良，让我们在祢那里获得恩宠。<br>晚安，亲爱的耶稣圣婴，愿我们得到您的眷顾。</p><p><strong>请在今夜保护我们</strong>，<br>    愿今夜对祢来说也同样温柔地流逝。明天一早，当我们醒来时，我们将再次向祢致意。<br>晚安，亲爱的耶稣圣婴，祢是我们的，我们是祢的！</p><br><h3><strong>获得应允后向恩宠圣婴献上的感谢祷词</strong></h3><p><strong>噢，最慈爱的耶稣圣婴</strong>，<br>    我满怀谦卑和最深切的感激，跪在祢的画像前。我要赞美和颂扬祢无限的良善，因为祢怜悯了我，并如此恩慈地应允了我的哀求。<br>祢将永远是我的信心和我的希望。<br>愿所有的人都能认识到，敬礼祢至圣的童年是多么令祢喜悦，以及祢是如何奇妙地报答所有信赖祢的人！</p><p><strong>噢，神圣耶稣圣婴</strong>，<br>    请赐予我恩宠，通过孩童般的心情变得越来越令祢喜悦，以便有朝一日能进入祢光荣的国度。 <strong>阿们。</strong></p><br><h3><strong>信息</strong></h3><p>洛雷托圣婴的复制品、祝圣过的圣婴油、圣牌、玫瑰经、小圣像、蜡烛以及接触过恩宠圣婴的布条，均可在修道院门口购买。</p><h1>2. 小册子</h1><p>天主圣婴，我们信赖祢！</p>
 
@@ -956,13 +998,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/Nur%20Jesulein.png" 
-                 alt="恩宠洛雷托圣婴" 
+            <img src="../static/img/Nur%20Jesulein.png"
+                 alt="恩宠洛雷托圣婴"
                  class="section-image">
             
             
@@ -972,16 +1019,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -993,6 +1040,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>噢，洛雷托圣婴，</strong><strong><br></strong> 强大而奇妙，<br> 请永远作我小小的、<br> 伟大的助手！<br> 请在所有黑暗的日子里作我的光，<br> 请在所有焦虑的问题中作我的顾问！</p><p><strong>圣婴，</strong><strong><br></strong> 请降福我日常工作的辛劳，<br> 请降福我爱之火的<br> 静静燃烧！<br> 还有祢赐予我的、<br> 在这尘世生命中陪伴我的人们！</p><p>请医治生命所造成的伤口，<br> 请坚固我那承受了许多痛苦的灵魂！<br> 即使当困苦在心中深处灼烧时，<br> 也请让我辨认出祢的爱！</p><p>请赐予我健康和日用食粮，<br> 请让忧虑、不幸、恐惧和困苦远离我！<br> 请在日后的审判中对我施以仁慈，<br> 请召唤我在永恒的光明中安息！</p><br>
 
@@ -1002,22 +1050,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1029,6 +1082,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>噢，亲爱、甜美的耶稣圣婴，</strong><strong><br></strong> 向祢致以深情的问候！<br> 祢在这泪谷中，<br> 是我的安慰，我的一切。<br> 祢通过祢爱的力量，<br> 成为了我们的小弟弟，<br> 并且仍然想以神圣面饼的形式<br> 与我们同在。<br> 我在圣体圣事中<br> 向祢致意千万次！<br> 愿与大群的天使一起<br> 无止境地赞美祢。<br> 噢，如果我能去教堂，<br> 在圣体中瞻仰祢。<br> 但不，愿祢的旨意成就，<br> 我要欣然信赖祢。</p><p>我要在这里，在我的病榻上，<br> 忠信且虔诚地尊崇祢；<br> 我要早晚记念祢，<br> 直到我来到祢那里。<br> 当我在痛苦和苦难中<br> 昼夜独处时，<br> 我就想到祢在小小的恩宠龛里的<br> 孤独。<br> 当我的血液在发烧中灼热，<br> 我的双手在燃烧时，<br> 我就想到祢在圣体圣事中的<br> 爱之火。<br> 当耐心想要离开我，<br> 我真切地感受到痛苦时，<br> 我就想到祢的心<br> 曾经承受的爱之苦。<br> 噢，耶稣圣婴，我甘愿<br> 为祢，唯独为祢而受苦，<br> 为祢，祢从未远离我，<br> 祢将赐予我力量！</p><p>噢，请将祢那如此温柔的目光<br> 转向我这贫穷的病人，<br> 是祢，平息了我的渴望，<br> 赐予了平安与安宁。<br> 噢，当您仁慈地降福<br> 虔诚的祈祷人群时，<br> 那么，耶稣圣婴，也请降福我，<br> 远离祭坛的我。<br> 是的，请降福我，我信赖祢，<br> 将一切交给祢，<br> 我在精神中怀着信仰瞻仰祢，<br> 并且永远爱祢！</p><p><strong>阿们。</strong></p><br>
 
@@ -1038,22 +1092,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1065,6 +1124,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>如果世界上所有的天使、所有的天才都研究过在这种或那种情况下什么是有用的，例如：这种牺牲、那种诱惑、那种痛苦，他们也不可能找到比这更适合你的东西。因此，天主的永恒智慧从无始之始就在研究，以便从祂的心中把这个十字架作为祂最珍贵的礼物送给你。</p><p>祂在把这个十字架寄给你之前，曾用祂那全知的眼目审视过它，用祂那神圣的理智思考过它，用祂那智慧的公义检验过它，并用慈悲的怜悯使它温暖，用祂的双手的重量衡量过它，看它是否大了一毫米或重了一毫克。然后，祂还用祂的神圣之名降福了它，用祂的恩宠膏抹了它，用祂的安慰使其充满芬芳，重新生动地注视着你和你的勇气，就这样，它直接从天堂降下，作为来自天主的问候，作为你的天主仁慈之爱的施舍。</p><p>我们自己建立或自己选择的十字架总是带有一些装饰；因为在这些十字架中含有一些我们自己的“自我”，因此它们对我们的钉死程度较轻。在德行生活中的这种完美，这种辉煌的成就，将在于欣然接受那些在没有自己参与的情况下被加在身上的十字架。</p><p>（圣方济各·沙雷氏）</p><br>
 
@@ -1074,22 +1134,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1101,6 +1166,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>噢，神圣耶稣圣婴！</strong><strong><br></strong> 祢竟然降尊就卑，出于对我们的爱而取了人性，并将祢天主性的光辉隐藏在软弱孩童的形象下。噢，在祢的屈尊就卑中，祢是多么伟大和可爱！<br> 我满怀信心地来到祢台前，噢，亲爱的耶稣圣婴。通过无数的恩宠方式，祢在这幅画像中启示了祢对敬礼祢神圣童年的喜悦。我通过祢的和我的母亲玛利亚请求祢，怜悯我，宽恕我的罪过，让我通过内心的纯洁、谦卑和顺服而变得越来越像祢。噢，全能的耶稣圣婴，请来帮助我，特别是在这个意向中……</p><p>也请保护青少年，祢以特殊的方式爱他们，但他们正面临着巨大的危险。</p><p><strong>噢，恩宠耶稣圣婴，</strong><strong><br></strong> 我也将我所有的亲人、祢的神圣教会和我们的祖国托付给祢。</p><p><strong>阿们。</strong></p><br>
 
@@ -1110,22 +1176,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1137,6 +1208,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>奇妙的恩宠圣婴，</strong><strong><br></strong> 请告诉我，我该如何生活。<br> 噢，圣婴，为了报答祢<br> 跨越时空的爱。</p><p><strong>奇妙的恩宠圣婴，</strong><strong><br></strong> 请告诉我，我该如何感谢，<br> 为了那些滋养我身心的<br> 恩宠和恩赐。</p><p><strong>奇妙的恩宠圣婴，</strong><strong><br></strong> 请告诉我，我该如何祈求，<br> 以打动祢父亲的心，<br> 去觉察祂的旨意。</p><p><strong>奇妙的恩宠圣婴，</strong><strong><br></strong> 请告诉我，我该如何学习，<br> 在十字架下不致破碎，<br> 向祢重复那句“Fiat”（愿祢的旨意成就）。</p><p><strong>奇妙的恩宠圣婴，</strong><strong><br></strong> 请告诉我，我该如何爱；<br> 我的灵魂还是如此干枯，<br> 而死亡的门槛已如此临近。</p><p><strong>奇妙的恩宠圣婴，</strong><strong><br></strong> 当我必须离去时，请向我伸出<br> 祢那可爱的小手，<br> 引领我走向福乐的终点！</p><br>
 
@@ -1146,22 +1218,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1173,6 +1250,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>我们急忙赶到这里，<br> 因为您确实是那小小恩宠圣婴的<br> 避难所和家园！</p><p>祂端坐在金色的祭坛上，<br> 满怀仁慈地俯视，<br> 并且年复一年地忠实地倾听着<br> 许多请求、感谢和歌声。</p><p>当我们陷入沉重的困境，<br> 并且不再有任何希望时，<br> 洛雷托圣婴就会以天主的力量和爱<br> 来帮助我们！</p><br><p>这些祷词摘自小册子《萨尔茨堡的恩宠洛雷托圣婴》，准印：萨尔茨堡教区，编号：918/92，1992年10月29日。</p>
 
@@ -1182,12 +1260,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1273,6 +1357,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1327,6 +1446,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1362,12 +1492,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

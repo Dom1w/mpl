@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Il nostro santo Angelo Custode">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Il nostro santo Angelo Custode">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/unser-heiliger-schutzengel.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../it/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../it/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,7 +988,13 @@
             
 
             
+            
 
+            
+
+            
+
+            
             
 
             
@@ -957,16 +1004,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -978,11 +1025,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Benedite il Signore, voi tutti, suoi angeli, potenti esecutori dei suoi comandi, attenti alla voce della sua parola.</strong> (Sal 103,20)</p><p>La Sacra Scrittura ci rivela quanto siano incomparabilmente grandi e eccelsi i santi angeli, che Dio ha creato per la sua gloria e per la protezione e guida dell'umanità.</p><p><strong>Ecco, io invio un angelo davanti a te per custodirti nel cammino e per farti entrare nel luogo che ho preparato.</strong> (Es 23,20)</p><p>Non è forse l'infinito amore paterno di Dio che risplende su di noi in questa promessa e ci commuove profondamente?</p><p>Il pensiero del nostro caro santo Angelo Custode, la devozione e la vita consapevole con il nostro migliore amico, appartengono inseparabilmente alla fede cattolica. Il Catechismo della Chiesa Cattolica ci assicura:<br> <strong>«Dalla sua origine fino alla morte, la vita umana è circondata dalla loro premurosa custodia e intercessione. Il mistero del soccorso potente e misterioso della Chiesa si estende a tutta la vita della Chiesa fino al ritorno di Cristo.»</strong><strong><br></strong> E ancora:<br> <strong>«Accanto ad ogni credente sta un angelo come protettore e pastore per condurlo alla vita.»</strong><strong><br></strong> Lo afferma attraverso una citazione di San Basilio Magno († 379):<br> <strong>Ogni fedele ha al suo fianco un angelo come protettore e pastore per condurlo alla vita.</strong> (CCC 334/336)</p><p>Una citazione simile ci è data da San Girolamo († 420):<br> <strong>Tanto grande è la dignità dell'anima che a ciascuno è assegnato un santo angelo per proteggerla fin dalla nascita.</strong></p><p>Possiamo essere certi che i santi Angeli Custodi sono tra i migliori educatori e le guide più sicure, purché li lasciamo operare in noi. Per questo San Paolo scrive nella Lettera agli Ebrei:<br> <strong>Non sono forse tutti spiriti incaricati di un ministero, inviati per servire coloro che devono ereditare la salvezza?</strong> (Eb 1,14)</p><p><strong>Santo Angelo Custode mio, che io sia affidato a te.</strong><strong><br></strong><strong> In tutti i bisogni sta accanto a me e preservami dal peccato (questo giorno / questa notte / in questo viaggio),</strong><strong><br></strong><strong> ti chiedo, proteggimi, governami e guidami.</strong><strong><br></strong><strong> Aiutami a vivere rettamente e devotamente, affinché possa giungere al cielo.</strong><strong><br></strong><strong> Amen.</strong><strong><br></strong> <em>(Imprimatur: Augsburg, 19.3.1992, Josef Stimpfle, Vescovo)</em></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -992,16 +1045,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1013,11 +1066,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Il santo Angelo Custode ci accompagna costantemente. È un testimone privilegiato di tutte le nostre azioni. Soprattutto prega incessantemente davanti al trono di Dio per noi, offre al Signore le nostre buone opere, pensieri e desideri, e testimonia nel giudizio particolare alla nostra morte tutti i segni d'amore che abbiamo mostrato al Signore nel corso della nostra vita.</p><p>Così il santo Angelo Custode cammina con noi per tutta la vita come adoratore, custode e servo del Dio che abita in noi.</p><ul><li><p>La Madre favorita K. Vogl († 1956) ebbe sempre grande difficoltà a infilare un ago nella vecchiaia. Con fiducia come un bambino chiedeva allora al suo Angelo Custode:<br> <strong>Per favore, aiutami di nuovo!</strong> – Ogni volta lo ringraziava, commossa, per il servizio amorevole.</p></li></ul><p>Poiché quando siamo nello stato di grazia santificante, la nostra anima è un tempio dello Spirito Santo. (1 Cor 3,16) Ovunque Dio sia, è adorato dai santi angeli. Con il massimo interesse il santo Angelo Custode si sforza anche di preservarci dal peccato, poiché offende Dio, che è infinitamente santo.</p><p>E poiché i santi angeli contemplano costantemente il volto del Padre Celeste (cfr. Mt 18,10), riconoscono con perfetta chiarezza la santa volontà di Dio per l'anima che Egli ha loro affidato.</p><p><strong>Santo Angelo Custode,</strong><strong><br></strong><strong> sii l'adoratore costante della Santissima Trinità nella mia anima!</strong><strong><br></strong><strong> Sii il custode della mia vita di grazia!</strong><strong><br></strong><strong> Sii anche il protettore del mio corpo.</strong><strong><br></strong><strong> Amen.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1027,16 +1086,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1048,11 +1107,17 @@
             
 
             
+            
             <div class="section-body">
                 <ul><li><p>Quando saliamo su un mezzo, non dimentichiamo mai di invitare i nostri santi angeli! Salutiamo anche con fiducia i santi angeli dell'autista, dei passeggeri e di quelli che vengono verso di noi. Quanti incidenti si potrebbero evitare.</p></li><li><p>Invitiamo anche i nostri santi angeli al lavoro! Affronteremo le nostre incombenze più gioiosamente quando sapremo <strong>il mio santo angelo è con me!</strong></p></li><li><p>Quanto più volentieri i nostri figli imparerebbero e sarebbero più obbedienti a genitori e insegnanti se venissero educati a pensare volentieri al loro Angelo Custode e a invitarlo.</p></li><li><p>Chiediamo in tempo utile, ad es. prima di un esame o di un'operazione, ai santi angeli dei medici e del personale infermieristico coinvolti il loro aiuto.</p></li><li><p>Invocamolo prima di conversazioni importanti, imprese o decisioni, affinché ci consigli e ci metta in collegamento con i santi angeli delle persone coinvolte.</p></li><li><p>Ogni volta che tentazione, paura o angoscia minacciano di assalirci, invochiamo il nostro santo Angelo Custode.</p></li><li><p>Ringraziamo il nostro fedele compagno ancora e ancora per tutto il suo amore e le sue cure, e consacriamoci a lui, affinché il suo potere operi in noi tanto più efficacemente.</p></li></ul><p>Ma come l'esperienza mostra non è sempre facile mantenere o sviluppare una santa amicizia tra un essere umano e uno spirito puro, è molto utile se impariamo a metterci nello spirito di questo spirito buono che ci è così vicino. Così impariamo sempre meglio a capire quali bisogni spirituali, ma anche quali grandi gioie ed esperienze uniche e belle il santo Angelo Custode al nostro fianco è autorizzato a vivere.</p><p>Un aiuto straordinariamente benefico per questo è la meditazione sulle sue gioie e i suoi dolori, come è consuetudine nella Chiesa per il nostro Signore Gesù Cristo, per Maria o San Giuseppe.</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1062,16 +1127,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1083,11 +1148,17 @@
             
 
             
+            
             <div class="section-body">
                 <ol><li><p>È una gioia per il santo angelo contemplare e adorare Dio Trinità dalle profondità dell'umanità sofferente attraverso l'ufficio di Angelo Custode e diventare un Buon Pastore compassionevole con Cristo.</p></li><li><p>È una gioia per il santo Angelo Custode seguire Cristo nella sua impotenza e umiliazione ed essere chiamato come un discepolo al servizio della sua Chiesa, per invitare le persone alle nozze celesti.</p></li><li><p>Il santo Angelo Custode si rallegra di poter imitare Maria, sua Regina, nel suo amore materno per l'umanità, assistendo il suo protetto, soprattutto nella debolezza e nel pericolo.</p></li><li><p>Il santo Angelo Custode si rallegra quando può essere un ponte: da un lato portare le preghiere e le buone opere del suo protetto come offerta di incenso a Dio, e dall'altro portare le grazie da Dio al suo protetto.</p></li><li><p>È una gioia per il santo angelo quando il suo protetto lo invoca, lo ama e lo ringrazia, e può così aiutarlo a scoprire la sua vocazione e condurlo alla santità. Così facendo il santo Angelo Custode costruisce, per così dire, un trono per il suo Signore e Dio nell'anima del suo protetto, con cui può essere unito qui e in cielo.</p></li><li><p>Il santo Angelo Custode si rallegra di conquistare il regno di Dio insieme al suo protetto, ispirandolo con buoni pensieri, parole e opere e aiutandolo nella lotta contro il peccato e nelle tentazioni del malvagio nemico. Ci insegna il discernimento degli spiriti.</p></li><li><p>E poi c'è infine la gioia culminante del santo angelo quando può portare l'anima del suo protetto a Dio in cielo dopo la morte e testimoniare le buone opere del suo protetto. Lo difende anche zelantemente dalle accuse del malvagio nemico. Se il suo protetto deve trascorrere un certo tempo in purgatorio, può consolarlo lì e ricordare alle persone sulla terra di pregare e offrire sacrifici per lui.</p></li></ol><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1097,16 +1168,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1118,11 +1189,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Il santo Angelo Custode appartiene agli spiriti beati che vivono nella costante visione di Dio. (Cfr. Mt 18,11) Tuttavia può essere addolorato dai peccati e dalla malvagità degli uomini.</p><ol><li><p>È un grande sacrificio per il santo angelo quando lascia la gloria celeste e accompagna il suo protetto per amore di Cristo, che si è umiliato per noi.<br> <strong>Consoliamolo offrendo al buon santo Angelo Custode la nostra genuina amicizia!</strong></p></li><li><p>Addolora il santo Angelo Custode quando il suo protetto non lo invoca nel bisogno e nella difficoltà e dimentica l'aiuto che Dio gli offre. Attraverso questo questo amico buono e potente delle anime si sente del tutto abbandonato e dimenticato da noi.</p></li><li><p>Addolora il santo Angelo Custode quando il suo protetto si allontana da lui, si chiude volutamente ai suoi ammonimenti nella coscienza e invece segue le molteplici tentazioni della vita che alla fine lo rendono infelice.<br> <strong>Allora il santo angelo si sente tradito da noi.</strong></p></li><li><p>È doloroso per il santo Angelo Custode quando il suo protetto non segue la sua vocazione personale e non si lascia guidare da lui.<br> <strong>Allora si sente del tutto impotente e spera nelle preghiere e nei sacrifici delle persone buone per il suo protetto.</strong></p></li><li><p>Addolora il santo Angelo Custode quando il suo protetto non cammina più sul retto sentiero della fede. Così spesso nella vita quotidiana Cristo, il suo amato Signore, e la sua santissima Madre Maria, Regina dei santi angeli, o certe verità di fede sono dimenticati, trascurati o addirittura derisi da noi.<br> <strong>Allora il santo Angelo Custode si sente deluso ed emarginato dalla nostra superficialità e indifferenza.</strong></p></li><li><p>È molto grave per il caro santo Angelo Custode quando il suo protetto si rivolge direttamente contro la fede e così disperde il tesoro di grazia della sua anima, che ha ricevuto attraverso l'amore di Gesù Cristo sulla Croce, attraverso la sua parola e i sacramenti della Chiesa.<br> <strong>Allora il giusto e fedele Angelo Custode si sente deriso dall'avversario, il diavolo, e può solo inginocchiarsi sulle macerie della vita del suo protetto e implorare Dio per un intervento sanatore.</strong><strong><br></strong> <strong>Aiutiamolo in questo!</strong></p></li><li><p>E c'è ancora questo terribile dolore fino alla morte (cfr. Mt 26,38) del santo Angelo Custode di una persona che, nonostante tutti gli interventi del cielo, consapevolmente e volutamente si allontana da Dio anche nella morte.<br> <strong>Consoliamolo attraverso tanto amore per i nostri fratelli e sorelle e attraverso grande devozione agli angeli.</strong></p></li></ol><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1132,16 +1209,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1153,11 +1230,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Santo Angelo Custode,</strong><strong><br></strong><strong> tu che contempli costantemente il volto del nostro Padre che è nei cieli,</strong><strong><br></strong><strong> Dio mi ha affidato a te dall'inizio della mia vita.</strong><strong><br></strong> Ti ringrazio di cuore per la tua premurosa cura.<br> Mi affido a te e ti prometto il mio amore e la mia fedeltà.</p><p>Ti chiedo di proteggermi dalla mia debolezza e dagli attacchi degli spiriti malvagi.<br> Illumina la mia mente e il mio cuore per riconoscere e compiere sempre la volontà di Dio;<br> e conducimi all'unione con Dio, Padre, Figlio e Spirito Santo.<br> <strong>Amen.</strong><strong><br></strong> </p><p>Attraverso l'ufficio di Angelo Custode il santo angelo vive, per così dire, il compimento della sua vocazione. Come Gesù può ora discendere nelle profondità di questa vita terrena, dove guarda con occhi diversi il suo fratello, per il quale il Signore ha versato il suo sangue sulla Croce. Pieno di zelo per il suo Signore fa tutto per rendere il cuore del suo protetto ricettivo all'amore e alla grazia di Dio.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1167,6 +1250,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1252,6 +1336,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1306,6 +1425,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1341,12 +1471,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="صلوات الطفل اللوريتي الممتلئ نعمة من سالزبورغ">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="صلوات الطفل اللوريتي الممتلئ نعمة من سالزبورغ">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gebete-zum-gnadenreichen-loretokindl-von-salzbug.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ar/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ar/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>أيها الطفل الإلهي، باركنا!</p><p><strong>نبذة تاريخية عن الطفل اللوريتي</strong></p><p>منذ عام 1650 تضم راهبات السجود الدائم في سالزبورغ كنزاً ثميناً. إنه الطفل اللوريتي الممتلئ نعمة المحبوب على نطاق واسع، الذي يحج إليه عدد لا يُحصى من الناس ليدَعوا همومهم واحتياجاتهم.<br>والذين يتقون الطفل الإلهي ولا يستطيعون الحضور شخصياً يسافرون في قطار الوجود السريع لقلبهم المشتاق إلى المسيح الملك الصغير، الذي يستقبل المتعبين والمثقلين بذراعين مفتوحين.</p><p>يمكن تتبع تاريخ التمثال العاجي المصنوع من فنان مجهول إلى عام 1620. آنذاك أعطت الكونتيسة أوتينغن التمثال الذي يبلغ ارتفاعه 11 سم فقط لـ<strong>الأم أوفراسيا سيلبرراث</strong>، التي كانت في طور تأسيس دير جديد في إنسيسهايم في الألزاس. في نفس المكان وقف <strong>الأب يوهانس كريزوستوموس شينك</strong> آنذاك على رأس الكبوشيين كحارس ومعلم المبتدئين. عندما رأى هذا الراهب القديس، الذي كانت علاقته بالطفل الإلهي حيّة جداً منذ الصبا، التمثال الجميل عند الأم أوفراسيا، توسّل طويلاً حتى أُعرِض له أخيراً حتى تأسيس ديره.</p><p>بسبب تقواه الرقيقة والقلبية تجاه الطفل يسوع سُمّي قريباً <strong>"أبو المسيح الطفل"</strong>. كافأ الطفل الإلهي محبته بنِعَم كثيرة وغير عادية. توفي في رائحة القداسة في 25 نوفمبر 1643 في ديلمونت.</p><p>في غضون ذلك جاءت الأم أوفراسيا للراهبات في سالزبورغ، حيث أراد طفلها يسوع أيضاً أن يتخذ موطناً. هنا أقام عرش نعمته، وإلى هذه الساعة ينتشر صيت محبته وقوته العجيبة عبر نِعَم لا تُحصى وإجابات صلاة لافتة.</p><br><h3><strong>صلاة عند البركة بالطفل الممتلئ نعمة</strong></h3><p><strong>ليباركك الله</strong>،<br>   الآب ✝ الذي خلقك،<br>   الابن ✝ الذي فداك،<br>   الروح القدس ✝ الذي قدّسك.</p><p>لتكن بركة الثالوث الأقدس معك في كل طرقه وتحمي جسدك ونفسك من كل ضرر. <strong>آمين.</strong></p><p>بطفلك الإلهي باركينا، يا مريم العذراء الأم الطاهرة!</p><br><p><strong>يومياً حوالي 2:30 مساءً</strong><strong><br></strong>تُمنح <strong>بركة الطفل يسوع</strong> خاصة في الجهات الأربع للبوصلة لجميع المتقين للطفل يسوع والمُحسنين والمرضى والمتألمين وكل من يرتبط بنا ولا يستطيع الحضور شخصياً إلى بوابة الدير.</p><br><p><strong>والوعد قائم على مدار الساعة:</strong></p><p>    <strong>إن فكرت فقط بشوق بالطفل الإلهي،</strong><strong><br></strong>   <strong>فقط يرفع يده الصغيرة ويباركك بلطف!</strong></p><br><h3><strong>يا أجمل طفل يسوع</strong></h3><p><strong>يا أجمل طفل يسوع</strong>،<br>   أريد أن أكون متحداً معك.<br>أكرّس نفسي لك بالكامل،<br>يا خذني من نفسي.<br>لأعيش فيك<br>وحدك فيّ،<br>يا طفل يسوع الحبيب!</p><p><em>(الأب كريزوستوموس شينك)</em></p><br><h3><strong>صلاة نوفنة قصيرة للطفل يسوع الممتلئ نعمة</strong></h3><p><strong>يا يسوع</strong>،<br>   إلى قلبك أُودِع…<br>(هذه النفس، هذا القصد، هذا الألم…)<br>انظر إليها ثم افعل ما يلهمه قلبك…<br>ليكن قلبك السائد!</p><p><strong>يا يسوع</strong>،<br>   أنا أعتمد عليك،<br>أُودِع نفسي لك،<br>أتخلّى عن نفسي لك،<br>أنا واثق منك!<br><strong>آمين.</strong></p><p><em>(تُصلّى يومياً جماعياً من راهبات لوريتو، خاصة لأجل المُحسنين والمتقين للطفل يسوع. ما عدا من 17 إلى 25 من كل شهر.)</em></p><br><h3><strong>توسّل قلبي للطفل يسوع الحبيب</strong></h3><p><strong>أيها الطفل يسوع القدير</strong>،<br>   الذي يسكن فيه ملء اللاهوت كله، أنت الذي أنت كل محبة وصلاح، غني لكل من يدعوك.<br>أنت ينبوع الحياة والقداسة، العزاء الكامل.<br>أنت سلامنا، مصالحتنا، أنت خلاص كل من يرجوك:</p><p><strong>إلى قلبك أُودِع…</strong><strong><br></strong>   (هذه النفس، هذا القصد، هذا الألم…)<br>انظر إليها ثم افعل ما تلهمه محبتك!</p><p><strong>يا طفل يسوع الأحب</strong>،<br>   أنت الذي أظهرت بالفعل عبر نِعَم لا تُحصى رضاك عن التقوى لطفولتك الأقدسة في هذه الصورة، ارحمنا.<br>مجّد اسمك الأقدس الحلو فينا أيضاً!<br>كن لنا يسوع! كن لنا مخلصاً!<br><strong>آمين.</strong></p><p><em>(تُصلّى يومياً جماعياً من راهبات لوريتو، خاصة لأجل المُحسنين والمتقين للطفل يسوع، من 17 إلى 25 من كل شهر.)</em></p><br><h3><strong>طفل يسوع، انظر إلينا نحن المساكين</strong></h3><p><strong>طفل يسوع، انظر إلينا نحن المساكين</strong><strong><br></strong>   نتوسل إليك، أيها الطفل الإلهي.<br>ارحمنا، لأننا نحتاج المساعدة.</p><p><strong>أنت شمس النعمة</strong>،<br>   غني بالصلاح فوق المقياس.<br>من يأتي إليك يذهب في سعادة ومنعشاً فوراً.</p><p><strong>المرضى تشفيهم بسرعة</strong>،<br>   ضعاف القلوب تعزّيهم.<br>من كان في الخطيئة وجد راحة للنفس عندك.</p><p><strong>طفل يسوع</strong>،<br>   بثقة كاملة نقترب نحن أيضاً الآن من عرشك.<br>لنراك ذاتك يوماً، فادي البشرية، ابن الله!</p><br><h3><strong>للطفل يسوع الإلهي</strong></h3><p><strong>أيها طفل يسوع الحبيب</strong>،<br>   أنت ممتلئ بالروح القدس! اسكب الروح القدس بمواهبه السبعة وثماره الاثني عشر علينا وعلى العالم بأسره، ليضطر العدو الشرير أن يفرّ منا!<br>باسم الآب ✝ والابن ✝ والروح القدس ✝.<br><strong>آمين.</strong></p><br><h3><strong>صلاة للطفل يسوع الحبيب</strong></h3><p><strong>أيها طفلي يسوع الحبيب</strong>،<br>   أيها الطفل الإلهي صانع العجائب، لِتُودَع إليك جميع المتألمين والمرضى!<br>أنت غني بالنعمة فوق المقياس، أمامك حتى الأغنى فقير.<br>يدك الصغيرة تبارك الجميع سواءً، مليئة بقوة العجائب ذراعك.</p><p><strong>اشفِ يا، إن شاء الآب</strong>،<br>   ما هو مريض، العيون والرأس والقلب.<br>أمر المعاناة: "اسكت" وخفّف كل ألم حارق!</p><p><strong>وكذلك حيث يكون المرض أعمق</strong>،<br>   حيث يثقل على النفس كالرصاص،<br>ساعد هناك، يا طبيب النفوس الحكيم، أنت الذي تألمت بشدة أيضاً!</p><p><strong>حيث تتذبذب نفس بقلق</strong>،<br>   علّمها الصبر في الألم؛ حيث يضايق الشك الكئيب أحداً، أشرق بضوء الحق!</p><p><strong>لا تدع أحداً يذهب بلا عزاء</strong>،<br>   أيها الطفل الحبيب، من ينحني أمامك، اسمع بتفضل التوسّل التقي الذي يصعد طالباً العون!</p><p><strong>انزع عنا الخطيئة</strong><strong><br></strong>   وأعطنا ثقة راسخة بالله، لنراك ذاتك يوماً في مجدك في الأبدية.<br><strong>آمين.</strong></p><br><h3><strong>تحية الصباح للطفل يسوع</strong></h3><p><strong>صباح الخير، أيها الطفل السماوي</strong>،<br>   طفل يسوع، أحييك!<br>أوه، أحبك من قلبي، أيها الطفل الإلهي، باركني!</p><p><strong>أيها الأخ الإلهي الصغير</strong>،<br>   أشكرك على الليل الذي مرّ؛<br>عبرك لتُقدّم الشكر للآب السماوي من أجلنا جميعاً.</p><p><strong>عبرك نحن أبناء الله</strong>،<br>   نحن أغنياء بلا حدود.<br>اجعل قلوبنا مثل قلبك، لفرح الآب.</p><p><strong>أيها الطفل السماوي</strong>،<br>   اطوِنا جميعاً في قلبك الإلهي الصغير؛<br>لفّنا في محبتك حتى نبقى ملكك للأبد!</p><p><strong>ما نفعله ونقوله ونفعل ونحتمل اليوم، طفل يسوع</strong>،<br>   ليكون كله من أجل محبتك، شكراً لك، لإسعادك!</p><p><strong>باركنا ومن نحب</strong>،<br>   كل من هم قريبون منا.<br>ساعد الفقراء والحزانى، اجذب إليك الضالين!</p><p><strong>وعندما تأتي ساعتي الأخيرة</strong>،<br>   اهدني إلى السماء.<br>سأقول لك إلى الأبد بفرح: طفل يسوع، أحبك!</p><br><h3><strong>تحية المساء للطفل يسوع</strong></h3><p><strong>أيها طفل يسوع الحبيب الحلو</strong>،<br>   قبل أن نذهب للراحة، لتكن فرحتنا، أيها الطفل الرقيق، أن نراك مرة أخرى.<br>المحبة جلبتنا هنا لنتمنى لك ليلة سعيدة!</p><p><strong>نريد أيضاً أن نشكرك</strong>،<br>   على النهار الذي انزلق بعيداً؛ طفل يسوع، نكرّس لك كل ساعات حياتنا.<br>ليلة سعيدة، أيها طفل يسوع الحبيب، لِنتُودَع إليك.</p><p><strong>شيء آخر، أيها الطفل السماوي الغالي</strong>،<br>   اغفر لنا خطايانا! اجعلنا أتقياء ومستعدين للخير، لننجح نعمة لديك.<br>ليلة سعيدة، أيها طفل يسوع الحبيب، لِنتُودَع إليك.</p><p><strong>احمِنا هذه الليلة</strong>،<br>   لتنزلق بلطف من أجلك أيضاً. بمجرد استيقاظنا غداً سنحييك مرة أخرى.<br>ليلة سعيدة، أيها طفل يسوع الحبيب، أنت لنا، نحن ملكك!</p><br><h3><strong>الشكر للطفل الممتلئ نعمة بعد الحصول على ما طُلِب</strong></h3><p><strong>يا طفل يسوع الأحب</strong>،<br>   بتواضع ومليء بأخلص الشكر أنحني أمام صورتك. سأمدح وأُمجّد صلاحك اللامتناهي، لأنك رحمتني وسمعت توسّلي بنعمة.<br>ستكون دائماً ثقتي ورجائي.<br>ليت جميع الناس يعرفون كم يُرضيك تكريم طفولتك الأقدسة وكم تُكافئ بدائعاً كل من يثق بك!</p><p><strong>أيها طفل يسوع الإلهي</strong>،<br>   امنحني نعمة أن أصبح أكثر إرضاءً لك عبر روح طفولي، لأدخل يوماً ملكوت مجدك. <strong>آمين.</strong></p><br><h3><strong>معلومات</strong></h3><p>نسخ من الطفل اللوريتي، زيت الطفل يسوع المبارك، ميداليات، مسبحات، صور مقدسة، شموع وشرائط قماش مسّها الطفل الممتلئ نعمة متوفرة عند بوابة الدير.</p><h1>2. كتيب</h1><p>أيها الطفل الإلهي، نحن نثق بك!</p>
             </div>
@@ -955,13 +997,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/Nur%20Jesulein.png" 
-                 alt="الطفل اللوريتي الممتلئ نعمة" 
+            <img src="../static/img/Nur%20Jesulein.png"
+                 alt="الطفل اللوريتي الممتلئ نعمة"
                  class="section-image">
             
             
@@ -971,16 +1018,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -992,11 +1039,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>أيها الطفل اللوريتي،</strong><strong><br></strong> القوي والعجيب،<br> كن معيني الصغير<br> العظيم دائماً!<br> كن نورِي في كل الأيام المظلمة،<br> كن مشورتي في كل الأسئلة القلقة!</p><p><strong>أيها الطفل الصغير،</strong><strong><br></strong> بارك تعب عملي اليومي الشاق،<br> بارك التوهج الهادئ<br> لمحبتي!<br> والناس الذين أعطيتني إياهم<br> كرفقاء لهذه الحياة الأرضية!</p><p>اشفِ الجروح التي ضربتها الحياة،<br> قوِّ نفسي التي تحملت كثيراً من المعاناة!<br> دعني أتعرف على محبتك حتى حين<br> عندما تحترق الاحتياجات بعمق في القلب!</p><p>امنحني الصحة والخبز اليومي،<br> أبعد عني القلق والشقاء والخوف والحاجة!<br> ارحمني في الدينونة،<br> ادعني للراحة في النور الأبدي!</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1006,16 +1059,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1027,11 +1080,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>أيها طفل يسوع الحبيب الحلو،</strong><strong><br></strong> لِتُستقبل بأحر تحية!<br> أنت هنا في وادي الدموع هذا،<br> عزائي، كليّ.<br> أصبحت أخانا الصغير<br> بقوة محبتك،<br> وستبقى دائماً معنا<br> في الشكل المقدس للخبز.<br> أحييك آلاف المرات<br> في السر المقدس!<br> ليتني مع الجند العظيم من الملائكة<br> أُمجّدك بلا نهاية.<br> أوه، لو أستطيع الذهاب إلى الكنيسة<br> بثياب احتفالية لأراك.<br> لكن لا، لتكن إرادتك،<br> سأثق بك بفرح.</p><p>سأُكرمك هنا على سرير ألامي<br> بإخلاص وتقوى؛<br>سأتذكرك مبكراً ومتأخراً<br> حتى أأتيك.<br> عندما أكون في ألم ومعاناة<br> وحيداً نهاراً وليلاً،<br> أفكر في وحدتك<br> في المزار الصغير للنعمة.<br> عندما يتوهج دمي بحرارة الحمى<br> وتُحرق يداي،<br> أفكر في حرارة محبتك<br> في السر المقدس.<br> عندما يتركني الصبر<br> وأشعر بالألم بشدة،<br> أفكر في آلام المحبة<br> التي تحملها قلبك ذات يوم.<br> يا طفل يسوع، أتحمل بفرح<br> من أجلك، من أجلك وحدك،<br> من أجلك الذي لم تكن بعيداً عني أبداً،<br> أنت ستعطيني القوة!<br> أوه أدر نظرك الرقيق<br> إليّ، المسكين المريض،<br> أنت الواحد الذي يُسكّن اشتياقي،<br> الذي يمنح السلام والراحة.</p><p>أوه، عندما تبارك بنعمة<br> الفرقة التقيّة من المصلين،<br> فاركني أنا أيضاً، طفل يسوع،<br> رغم أنني بعيد عن المذبح.<br> نعم، فاركني، من يثق بك،<br> يقدم كل شيء لك،<br> من يراك بالروح بإيمان<br> ومن يحبك أبدياً!</p><p><strong>آمين.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1041,16 +1100,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1062,11 +1121,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>لو درس جميع الملائكة وجميع عباقرة العالم ما قد يساعد في هذا الموقف أو ذاك، مثلاً هذه التضحية، تلك التجربة، ذلك الألم، لما استطاعوا أن يجدوا شيئاً أفضل كان أنسب لك. هكذا درس حكمة الله الأزلية من الأزل أن يعطيك هذا الصليب من قلبه كأثمن هدية.</p><p>فحص هذا الصليب بعينه العارفة الكل قبل إرساله إليك، تأمّله بعقله الإلهي، اختبره بعدالته الحكيمة ودفّأه ووزنه برحمة محبة بيديه الاثنتين، سواء لم يكن ميليمتراً كبيراً جداً وميليغراماً ثقيلاً جداً. ثم باركه باسمه المقدس، مسحه بنعمته، عطّره بعزائه، نظر إليك وإلى شجاعتك بحياة جديدة، وهكذا يأتي مباشرة من السماء كتحية من الله، كصدقة للمحبة الرحيمة لإلهك.</p><p>الصلبان التي نُقيمها لأنفسنا، أو نختارها لأنفسنا، مُزيّنة دائماً قليلاً؛ لأن فيها شيئاً من ذاتنا ولذلك تصلبنا أقل. الكمال، هذا الإنجاز التتويجي في حياة الفضيلة، سيتألف إذن من تحمل بفرح الصلبان الموضوعة علينا دون فعلنا الخاص.</p><p>(القديس فرنسيس دي سال)</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1076,16 +1141,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1097,11 +1162,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>أيها طفل يسوع الإلهي!</strong><strong><br></strong> لقد تواضعت من محبتك لنا لتتحمل الطبيعة البشرية وتخفي إشراق ألوهيتك تحت شكل طفل ضعيف. أو كم أنت عظيم ومحبوبة في إذلالك!<br> ممتلئاً ثقة آتي إليك، أيها طفل يسوع الحبيب. عبر نِعَم لا تُحصى أظهرت رضاك عن تكريم طفولتك المقدسة في هذه الصورة. أتوسل إليك عبر أمك وأمي مريم، ارحمني، اغفر لي خطاياي، دعني أصبح أشبه بك أكثر عبر نقاوة القلب والتواضع والطاعة. يا تعال لمعونتي، أيها طفل يسوع القدير، خاصة في هذا القصد...</p><p>احمِ أيضاً الشبان، الذين تحبهم بطريقة خاصة، لكنهم معرّضون لأخطار عظيمة كهذه.</p><p><strong>أيها طفل يسوع الممتلئ نعمة،</strong><strong><br></strong> أُودِع إليك أيضاً كل أقاربي، كنيستك المقدسة ووطننا.</p><p><strong>آمين.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1111,16 +1182,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1132,11 +1203,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>أيها الطفل الممتلئ نعمة العجيب،</strong><strong><br></strong> أخبرني كيف يجب أن أعيش.<br> لأكافئك، أيها الطفل،<br> محبتك عبر الزمن والعصور.</p><p><strong>أيها الطفل الممتلئ نعمة العجيب،</strong><strong><br></strong> أخبرني كيف يجب أن أشكر،<br> للنعم، للهدايا،<br> التي تُنعش جسدي ونفسي.</p><p><strong>أيها الطفل الممتلئ نعمة العجيب،</strong><strong><br></strong> أخبرني كيف يجب أن أصلّي،<br> لتحريك قلب أبيك،<br> لتمييز إرادته.</p><p><strong>أيها الطفل الممتلئ نعمة العجيب،</strong><strong><br></strong> أخبرني كيف يجب أن أتعلّم<br> ألا أتكسر تحت الصليب،<br> أن أقول "فليكن" من بعدك.</p><p><strong>أيها الطفل الممتلئ نعمة العجيب،</strong><strong><br></strong> أخبرني كيف يجب أن أحب؛<br> نفسي ما زالت عطشى جداً،<br> وقريبة جداً من عتبة الموت.</p><p><strong>أيها الطفل الممتلئ نعمة العجيب،</strong><strong><br></strong> مدّ لي يديكِ الصغيرتين الحبيبتين عندما يجب أن أرحل،<br> واهدني إلى النهاية المباركة!</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1146,16 +1223,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1167,11 +1244,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>نُسرع هنا بسرعة<br> لأنكم الملجأ والبيت<br> للطفل الممتلئ نعمة الصغير!</p><p>يملك على مذبح ذهبي<br> وينظر للأسفل بصلاح<br> ويسمع بإخلاص سنة تلو سنة<br> توسلات وشكر وأغانٍ كثيرة.</p><p>وعندما نكون في حاجة شديدة<br> ولم يبقَ رجاء،<br> يساعدنا الطفل اللوريتو<br> بقوة الله ومحبته!</p><br><p>مأخوذة الصلوات من الكتيب <em>الطفل اللوريتي الممتلئ نعمة من سالزبورغ</em>، الإمبريماتور: أبرشية سالزبورغ، رقم: 918/92، 29 أكتوبر 1992.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1181,6 +1264,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1266,6 +1350,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1320,6 +1439,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1355,12 +1485,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Noveen van de Goddelijke Barmhartigheid">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Noveen van de Goddelijke Barmhartigheid">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/novene-gttlichen-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../nl/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../nl/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,11 +988,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>"Ik wens dat gij gedurende deze negen dagen zielen naar de bron van Mijn barmhartigheid brengt, opdat zij kracht, troost en elke genade die zij nodig hebben voor de inspanning van het leven mogen putten, en vooral in het uur van de dood. Elke dag zult gij een andere groep zielen naar Mijn Hart brengen en hen onderdompelen in de zee van Mijn barmhartigheid. En Ik zal al deze zielen naar het huis van Mijn Vader leiden. (…) Gij zult Mijn Vader elke dag door Mijn bittere lijden om genaden voor deze zielen vragen."</p><p>Jezus Zelf dicteerde de volgende noveen aan Zuster Faustina; zij begint op Goede Vrijdag. [1209–1229] Zij kan echter ook op elk moment worden gebeden.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -961,16 +1008,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -982,11 +1029,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>"Breng Mij vandaag <strong>heel de mensheid</strong>, vooral <strong>alle zondaars</strong>, en dompel hen onder in de zee van Mijn barmhartigheid. Zo zult gij Mij troosten in de bittere droefheid waarin het verlies van zielen Mij stort."</p><p><strong>Gebed:</strong></p><p>Allerbarmhartigste Jezus, het is Uw eigenschap ons barmhartig te zijn en ons te vergeven. Zie niet op onze zonden, maar op het vertrouwen dat wij hebben in Uw oneindige goedheid. Neem ons op in de woning van Uw allerbarmhartigste Hart en behoud ons daarin voor eeuwig. Dit vragen wij U door Uw liefde, waarin Gij met de Vader en de Heilige Geest verenigd zijt.</p><p>O almacht van Gods barmhartigheid,<br>Gij redding van de mens in zonde,<br>Gij zijt Barmhartigheid – een zee van ontferming,<br>en Gij helpt hem die U in nederigheid vindt.</p><p>Eeuwige Vader, richt Uw barmhartige blik op heel de mensheid, vooral op de arme zondaars; zij zijn geborgen in het allerbarmhartigste Hart van Jezus. Omwille van Zijn bitter lijden, toon ons Uw barmhartigheid, opdat de almachtige kracht van Uw barmhartigheid geprezen worde tot in eeuwigheid. Amen.</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>Rozenkrans van de Goddelijke Barmhartigheid</strong></a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -996,16 +1049,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1017,11 +1070,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>"Breng Mij vandaag alle <strong>priesters en kloosterlingen</strong> en dompel hen onder in Mijn onuitputtelijke barmhartigheid."</p><p><strong>Gebed:</strong></p><p>Allerbarmhartigste Jezus, van U komt al wat goed is. Vermeerder in ons Uw genade, opdat wij waardige werken van barmhartigheid verrichten, zodat zij die ons zien de Hemelse Vader van barmhartigheid loven.</p><p>Een bron van goddelijke liefde woont in reine harten.<br>Harten, omgevormd in de zee van ontferming,<br>schijnen als sterren in de duisternis van de nacht.</p><p>Eeuwige Vader, richt Uw barmhartige blik op de uitverkoren kudde in Uw wijngaard, op de zielen van priesters en kloosterlingen, en schenk hun de kracht van Uw zegen. Door de gezindheid van het Hart van Uw Zoon, in Wie zij geborgen zijn, geef hun de kracht van Uw licht, opdat zij anderen leiden op de weg van het heil en tezamen Uw onuitputtelijke barmhartigheid loven tot in eeuwigheid. Amen.</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>Rozenkrans van de Goddelijke Barmhartigheid</strong></a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1031,16 +1090,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1051,6 +1110,7 @@
             <h2 class="section-heading">Derde Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag alle <strong>vrome en getrouwe</strong> zielen en dompel hen onder in de zee van Mijn barmhartigheid. Deze zielen hebben Mij op de kruisweg getroost; zij waren een druppel verkwikking in de zee van bitterheid."</p>
@@ -1066,22 +1126,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1092,6 +1157,7 @@
             <h2 class="section-heading">Vierde Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag <strong>de heidenen en hen die Mij nog niet kennen</strong>. Ook Ik dacht aan hen tijdens Mijn bittere lijden. Hun toekomstige ijver heeft Mijn Hart getroost. Dompel hen onder in de zee van Mijn barmhartigheid."</p>
@@ -1107,22 +1173,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1133,6 +1204,7 @@
             <h2 class="section-heading">Vijfde Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag de zielen van <strong>ketters</strong> en <strong>schismatici</strong> en dompel hen onder in de zee van Mijn barmhartigheid. Tijdens Mijn bitter lijden verscheurden zij Mijn Lichaam en Mijn Hart, dat wil zeggen Mijn Kerk. Wanneer zij terugkeren tot de eenheid van de Kerk genezen Mijn wonden en verlichten zij Mijn lijden."</p>
@@ -1148,22 +1220,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1174,6 +1251,7 @@
             <h2 class="section-heading">Zesde Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag <strong>zachtmoedige en nederige</strong> zielen en de zielen van <strong>kleine kinderen</strong> en dompel hen onder in Mijn barmhartigheid. Deze zielen gelijken het meest op Mijn Hart. Zij hebben Mij gesterkt in Mijn bitter lijden. Ik zag hen als levende engelen, die bij Mijn altaren waken. Over hen stort Ik volle stromen van genaden uit. Alleen de nederige ziel is in staat Mijn genade te ontvangen. Nederige zielen begunstig Ik met Mijn vertrouwen."</p>
@@ -1189,22 +1267,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1215,6 +1298,7 @@
             <h2 class="section-heading">Zevende Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag de zielen die <strong>Mijn barmhartigheid bijzonder eren en loven</strong> en dompel hen onder in Mijn barmhartigheid. Deze zielen hebben het meest geleden onder Mijn lijden en zijn het diepst in Mijn geest doorgedrongen. Zij zijn de levende weerspiegeling van Mijn allerbarmhartigste Hart. Deze zielen zullen in het toekomstige leven met een bijzondere glans stralen. Geen van hen zal in het vuur van de hel vallen; in het uur van de dood zal Ik ieder van hen op bijzondere wijze verdedigen."</p>
@@ -1231,22 +1315,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1257,6 +1346,7 @@
             <h2 class="section-heading">Achtste Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag de zielen die <strong>in de gevangenis van het vagevuur</strong> zijn, en dompel hen onder in de afgrond van Mijn barmhartigheid. Mogen de stromen van Mijn Bloed hun brand verkoelen. Deze zielen zijn Mij zeer dierbaar. Zij doen genoegdoening aan Mijn gerechtigheid. Het staat in uw macht hun verlichting te brengen. Neem uit de schat van Mijn Kerk alle aflaten en offer ze voor hen op... O, als gij hun pijnen kende, zoudt gij onophoudelijk geestelijke aalmoezen voor hen offeren en hun schuld aan Mijn gerechtigheid voldoen."</p>
@@ -1272,22 +1362,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1298,6 +1393,7 @@
             <h2 class="section-heading">Negende Dag</h2>
             
 
+            
             
             <div class="section-body">
                 <p>"Breng Mij vandaag de <strong>lauwe</strong> zielen en dompel hen onder in de afgrond van Mijn barmhartigheid. Deze zielen wonden Mijn Hart het pijnlijkst. In de Hof van Olijven heeft Mijn ziel de grootste afkeer ondervonden van lauwe zielen. Lauwe zielen waren de oorzaak van Mijn woorden: 'Vader, neem deze beker weg, (maar alleen) als het Uw wil is.' Hun laatste reddingsanker is de vlucht tot Mijn barmhartigheid."</p>
@@ -1313,12 +1409,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1404,6 +1506,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1458,6 +1595,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1493,12 +1641,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

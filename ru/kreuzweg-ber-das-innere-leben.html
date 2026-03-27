@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Крестный путь внутренней жизни">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Крестный путь внутренней жизни">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/kreuzweg-ber-das-innere-leben.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ru/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ru/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>(Ср. Бог, богатый милосердием)</p><p>«Наибольшие благодати Я дарую тем душам, которые благочестиво созерцают Мои страдания». [737]</p><h3><strong>Вступительная молитва</strong></h3><p>Милосердный Господи, мой Учитель, я хочу верно следовать за Тобой, я хочу подражать Тебе в моей жизни всё более совершенным образом. Поэтому я прошу Тебя, чтобы через созерцание Твоих страданий Ты даровал мне благодать всё лучше понимать тайны духовной жизни.</p><p>Мария, Матерь Милосердия, веди меня путями горьких страданий Твоего Сына и испроси мне необходимые благодати для плодотворного переживания этого Крестного пути. Я приношу его особенно за освящение священников и монашествующих и за всех, кто стремится к истинной внутренней жизни и совершенству.</p><h3><strong>Молитва перед каждой станцией</strong></h3><p><strong>Поклоняемся Тебе, Господи Иисусе Христе, и благословляем Тебя.</strong><strong><br></strong>Ибо Ты святым Крестом Своим искупил мир.</p><h3><strong>I станция</strong></h3><p><strong>Иисуса приговаривают к смерти</strong></p><p>Первосвященники и весь синедрион искали лжесвидетельства против Иисуса, чтобы предать Его смерти.<br><em>(Мф 26, 59-60)</em></p><p><strong>Иисус:</strong></p><p>«Не удивляйся, что ты иногда безвинно подвергаешься подозрениям. Из любви к тебе Я первым выпил чашу невинных страданий». [289]<br>«Когда Я стоял перед Иродом, Я вымолил тебе благодать возвыситься над презрением людей и верно следовать Моими путями». [1164]</p><p><strong>Сестра Фаустина:</strong></p><p>«Мы привыкли реагировать на слова и думаем, что всегда должны тотчас отвечать, не обращая внимания на то, есть ли воля Божия на то, чтобы мы говорили. Молчаливая душа сильна; никакие невзгоды не вредят ей, если она пребывает в молчании. Молчаливая душа способна глубочайшим образом соединиться с Богом». [477]</p><p>Милосердный Иисус, помоги мне быть в состоянии принять любое человеческое суждение и не допусти, чтобы я когда-либо осудил Тебя в моем ближнем.</p><h3><strong>II станция</strong></h3><p><strong>Иисус берет на Себя Крест</strong></p><p>«И, неся крест Свой, Он вышел на место, называемое Лобное, по-еврейски Голгофа».<br><em>(Ин 19, 17)</em></p><p><strong>Иисус:</strong></p><p>«Не бойся страданий, Я с тобою». [151]<br>«Чем больше ты полюбишь страдание, тем чище будет твоя любовь ко Мне». [279]</p><p><strong>Сестра Фаустина:</strong></p><p>«Иисус, благодарю Тебя за ежедневные маленькие кресты, за препятствия моим намерениям, за тяготы совместной жизни, за неправильное истолкование намерений, за унижения со стороны других, за суровое обращение с нами, за необоснованные обвинения, за слабое здоровье и истощение, за отречение от собственной воли, за уничтожение собственного „я“, за отсутствие признания во всем, за расстройство всех планов». [343]</p><p>Милосердный Иисус, научи меня ценить тяготы жизни, болезнь и всякое страдание и с любовью нести этот ежедневный крест.</p><h3><strong>III станция</strong></h3><p><strong>Иисус падает первый раз под бременем Креста</strong></p><p>«Но Он изъязвлен был за грехи наши и мучим за беззакония наши; наказание мира нашего было на Нем, и ранами Его мы исцелились».<br><em>(Ис 53, 5)</em></p><p><strong>Иисус:</strong></p><p>«Невольные проступки душ не удерживают Меня в Моей любви к ним (…) и не мешают Мне соединяться с ними; но даже малейшие проступки, совершенные добровольно, задерживают Мои благодати; такие души Я не могу осыпать Моими дарами». [1641]</p><p><strong>Сестра Фаустина:</strong></p><p>«О мой Иисус, как сильно я склонна ко злу. Это заставляет меня постоянно бодрствовать над собой. Но я ничем не даю себя запугать. Я уповаю на благодать Божию, которая преизобилует в величайшей нищете». [606]</p><p>Милосердный Господи, сохрани меня от всякой, даже самой малой, но добровольно совершенной и сознательной неверности.</p><h3><strong>IV станция</strong></h3><p><strong>Иисус встречает Свою Матерь</strong></p><p>«И Тебе Самой оружие пройдет душу».<br><em>(Лк 2, 35)</em></p><p><strong>Иисус:</strong></p><p>«Хотя все дела, возникающие по Моей воле, подвержены великим страданиям, подумай, подвергалось ли какое-либо из них большим страданиям, чем Мое прямое дело — дело Искупления. Тебе не следует слишком сокрушаться из-за невзгод». [1643]</p><p><strong>Сестра Фаустина:</strong></p><p>«Я слышала голос Пресвятой Матери: „Знай, дочь моя, что хотя я и была вознесена до достоинства Матери Божией, семь мечей скорби пронзили мое сердце. Не предпринимай ничего в свою защиту, переноси всё со смирением, Сам Бог защитит тебя“». [786]</p><p>Мария, Матерь Скорбящая, будь всегда со мной, особенно в страдании, как Ты присутствовала при Крестном пути Твоего Сына.</p><h3><strong>V станция</strong></h3><p><strong>Симон Киринеянин помогает Иисусу нести Крест</strong></p><p>«И когда повели Его, то, захватив некоего Симона Киринеянина (…) возложили на него крест, чтобы нес за Иисусом».<br><em>(Лк 23, 26)</em></p><p><strong>Иисус:</strong></p><p>«Трудности Я допускаю для того, чтобы умножить твои заслуги. Не за хороший исход Я вознаграждаю, а за терпение и труд, предпринятые ради Меня». [86]</p><p><strong>Сестра Фаустина:</strong></p><p>«О мой Иисус, Ты вознаграждаешь не за хороший исход дела, а за искреннюю волю и труды. Поэтому я совершенно спокойна, даже если все мои старания и усилия останутся напрасными или никогда не будут осуществлены. Если я делаю всё, что в моих силах, остальное уже не мое». [952]</p><p>Иисус, Господь мой, да будет каждая мысль, каждое слово и каждое действие совершено только из любви к Тебе. Очисти мои намерения.</p><h3><strong>VI станция</strong></h3><p><strong>Вероника подает Иисусу плат</strong></p><p>«Как многие изумлялись, смотря на Тебя, — столько был обезображен паче всякого человека лик Его, и образ Его — паче сынов человеческих!»<br><em>(Ис 52, 14)</em></p><p><strong>Иисус:</strong></p><p>«Знай, что когда ты делаешь что-то доброе какой-либо душе, Я принимаю это так, как если бы ты сделала это для Меня Самого». [1768]</p><p><strong>Сестра Фаустина:</strong></p><p>«От Иисуса я учусь быть доброй, от Того, Кто есть сама Благость, чтобы меня могли называть дочерью Отца Небесного». [669]<br>«Великая любовь способна превращать малые дела в великие, и только любовь придает ценность нашим поступкам». [303]</p><p>Господи Иисус, мой Учитель, соделай так, чтобы мои глаза, мои руки, мои уста и мое сердце были милосердны. Преобрази меня в милосердие.</p><h3><strong>VII станция</strong></h3><p><strong>Иисус падает второй раз под бременем Креста</strong></p><p>«Но Он взял на Себя наши немощи и понес наши болезни».<br><em>(Ис 53, 4)</em></p><p><strong>Иисус:</strong></p><p>«Причина твоих падений в том, что ты слишком много рассчитываешь на себя и слишком мало опираешься на Меня». [1488]<br>«Знай, что сама по себе ты ничего не можешь». [639]<br>«Без Моей особой помощи ты даже не способна принимать Мои благодати». [738]</p><p><strong>Сестра Фаустина:</strong></p><p>«Иисус, не оставляй меня одну. (…) Ты, Господи, знаешь, как я слаба. Я — бездна нищеты, я — само ничтожество; так удивительно ли, если Ты оставишь меня одну, что я паду». [1489]<br>«Так Ты, Иисус, должен постоянно быть со мной, как мать при своем слабом ребенке, и даже больше». [264]</p><p>Да поможет мне Твоя благодать, Господи, чтобы я не впадал постоянно в те же ошибки. А если я упаду, то помоги мне встать и прославлять Твое милосердие.</p><h3><strong>VIII станция</strong></h3><p><strong>Иисус поучает иерусалимских женщин</strong></p><p>«И шло за Ним великое множество народа и женщин, которые плакали и рыдали о Нем».<br><em>(Лк 23, 27)</em></p><p><strong>Иисус:</strong></p><p>«О, как дорога Мне живая вера!» [1421]<br>«Я желал бы, чтобы в нынешнее время в вас было больше веры». [353]</p><p><strong>Сестра Фаустина:</strong></p><p>«Искренне прошу Тебя, Господи, укрепи мою веру, чтобы в серых буднях я руководствовалась не человеческими настроениями, а Духом. О, как всё тянет человека к земле, но живая вера удерживает душу в высших сферах и отводит самолюбию подобающее место — самое последнее». [210]</p><p>Милосердный Господь, благодарю Тебя за святое крещение и за благодать веры. Снова и снова взываю: Господи, верую, помоги моему неверию!</p><h3><strong>IX станция</strong></h3><p><strong>Иисус падает третий раз под бременем Креста</strong></p><p>«Он истязуем был, но страдал добровольно и не открывал уст Своих».<br><em>(Ис 53, 7)</em></p><p><strong>Иисус:</strong></p><p>«Знай, что самое большое препятствие к святости — это уныние и необоснованное беспокойство. Они лишают тебя возможности упражняться в добродетели. (…) Я всегда готов простить тебя. Каждый раз, когда ты просишь Меня об этом, ты прославляешь Мое милосердие». [1488]</p><p><strong>Сестра Фаустина:</strong></p><p>«Мой Иисус, несмотря на Твои благодати, я чувствую и вижу всю свою нищету. Я начинаю и заканчиваю день в борьбе. Едва я справляюсь с одной трудностью, как на её месте вырастают десять новых, с которыми нужно бороться. Но я не сокрушаюсь об этом, потому что знаю, что сейчас время борьбы, а не мира». [606]</p><p>Милосердный Господи, я отдаю Тебе то, что является моей единственной собственностью, то есть грех и человеческую слабость. Я умоляю Тебя, чтобы моя нищета исчезла в Твоем неизмеримом милосердии.</p><h3><strong>X станция</strong></h3><p><strong>С Иисуса снимают одежды</strong></p><p>«Да сбудется реченное в Писании: „разделили ризы Мои между собою и об одежде Моей бросали жребий“».<br><em>(Ин 19, 24)</em></p><p><strong>Сестра Фаустина:</strong></p><p>«Иисус вдруг предстал предо мной, лишенный Своих одежд, покрытый ранами по всему телу, глаза наполнены кровью и слезами, всё лицо обезображено, покрыто слюной. Тогда Иисус сказал мне:»</p><p><strong>Иисус:</strong></p><p>«Невеста должна быть подобна Жениху».</p><p><strong>Сестра Фаустина:</strong></p><p>«Я глубоко поняла эти слова. Здесь нет места сомнениям. Мое подобие Иисусу должно быть через страдание и смирение». [268]</p><p>Иисус, кроткий и смиренный сердцем, сотвори сердце мое по сердцу Твоему.</p><h3><strong>XI станция</strong></h3><p><strong>Иисуса прибивают к Кресту</strong></p><p>«И привели Его на место Голгофу. Был час третий, и распяли Его».<br><em>(Мк 15, 22.25)</em></p><p><strong>Иисус:</strong></p><p>«Моя ученица, питай великую любовь к тем, кто причиняет тебе страдания; делай добро тем, кто тебя ненавидит». [1628]</p><p><strong>Сестра Фаустина:</strong></p><p>«О мой Иисус, Ты знаешь, каких усилий стоит быть честной и искренней с теми, от кого отвращается наше естество, или с теми, кто сознательно или бессознательно причинил нам боль; по-человечески это невозможно. В такие моменты я стараюсь более чем когда-либо открыть в соответствующем человеке Иисуса и ради этого Иисуса делаю для этого человека всё». [Ср. 766]</p><p>О чистейшая Любовь, воцарись в моем сердце во всей полноте и помоги мне любить то, что превосходит всякую человеческую меру. [Ср. 328]</p><h3><strong>XII станция</strong></h3><p><strong>Иисус умирает на Кресте</strong></p><p>«Иисус, возгласив громким голосом, сказал: Отче! в руки Твои предаю дух Мой. И, сие сказав, испустил дух».<br><em>(Лк 23, 46)</em></p><p><strong>Иисус:</strong></p><p>«Всё это для искупления душ. Подумай, что ты делаешь для их спасения». [1184]</p><p><strong>Сестра Фаустина:</strong></p><p>«Я видела целые сонмы распятых душ точно так же, как Иисус. Я видела второй и третий сонм душ. Второй сонм не был прибит к кресту, но души крепко держали крест в руках. Третий сонм не был ни распят, ни держал крест в руках, но они волокли его за собой и были недовольны».</p><p><strong>Иисус:</strong></p><p>«Видишь ли души, которые в страдании и в презрении подобны Мне, они и в прославлении будут подобны Мне; те же, кто меньше уподобляется Мне в страдании и презрении, будут иметь и меньше подобия со Мною в прославлении». [446]</p><p>Иисус, мой Искупитель, сокрой меня в глубине Твоего Сердца, чтобы я, укрепленный Твоей благодатью, уподобился Тебе в любви к Кресту и стал причастником Твоей славы.</p><h3><strong>XIII станция</strong></h3><p><strong>Иисуса снимают с Креста и полагают на лоно Его Матери</strong></p><p>«Иосиф из Аримафеи (…) просил Пилата, чтобы снять тело Иисуса; и Пилат позволил».<br><em>(Ин 19, 38)</em></p><p><strong>Иисус:</strong></p><p>«Душа, которая твердо верит в Мою благость, Мне всего дороже. Я дарю ей Мое доверие и даю ей всё, о чем она просит». [453]</p><p><strong>Сестра Фаустина:</strong></p><p>«Я прибегаю к Твоему милосердию, благий Боже, ибо только Ты один благ. Хотя бы нищета моя была велика и проступки многочисленны, я уповаю на Твое милосердие; ибо Ты — Бог милосердия, о котором не слыхали веками, и небо и земля не помнят, чтобы душа, уповающая на Твое милосердие, была обманута». [1730]</p><p>Мария, Матерь Милосердия, веди меня путем внутренней жизни. Научи меня страдать и в страдании любить.</p><h3><strong>XIV станция</strong></h3><p><strong>Иисуса полагают во гроб</strong></p><p>«И, взяв тело, Иосиф обвил его чистою плащаницею и положил его в новом своем гробе, который высек он в скале».<br><em>(Мф 27, 59-60)</em></p><p><strong>Иисус:</strong></p><p>«Ты еще не в доме Отца. Иди же, укрепленная Моей благодатью, и сражайся за Мое Царство в душах людей. Сражайся как царское дитя и помни, что дни изгнания быстро проходят, а с ними и возможность собирать заслуги для неба. Я ожидаю от тебя (…) большого числа душ, которые вечно будут прославлять Мое милосердие». [1489]</p><p><strong>Сестра Фаустина:</strong></p><p>«Каждую душу, которую Ты, Иисус, вверил мне, я хочу поддерживать молитвой и жертвой, чтобы Твоя благодать могла в ней действовать. О великий Друг душ, мой Иисус, благодарю Тебя за Твое великое доверие, что Ты благоволил отдать души под нашу опеку». [245]</p><p>Соделай, милосердный Господи, чтобы ни одна из душ, которых Ты мне вверил, не погибла.</p><br><h3><strong>Молитва после Крестного пути</strong></h3><p>Мой Иисус, моя единственная надежда, благодарю Тебя за книгу, которую Ты открыл перед очами моей души. Эта книга — Твои страдания, которые Ты принял на Себя из любви ко мне. Из этой книги я научилась любить Бога и души. Она содержит неизмеримые сокровища для нас.</p><p>О Иисус, как мало душ понимают Тебя в Твоих страданиях из любви! (…) Счастлива душа, которая поняла любовь Сердца Иисуса. [304]</p>
 
@@ -956,12 +998,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1047,6 +1095,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1101,6 +1184,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1136,12 +1230,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

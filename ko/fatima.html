@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="파티마">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="파티마">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/fatima.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ko/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ko/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg" 
-                 alt="" 
+            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -948,6 +989,7 @@
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <p>매달 12일과 13일에 우리 성모님께서는 이 왕관을 쓰십니다</p><h1>파티마의 화해 메시지</h1><p>“내 가슴 속에서 타오르며 예수님과 마리아님의 마음을 그토록 사랑하게 만드는 그 불을 모든 이의 마음 속에 던질 수만 있다면!” (성 히야친타 마르토)</p><p>“나는 구세주를 위로해 드리고 죄인들을 회개시켜, 그들이 더 이상 그분께 모욕을 드리지 않게 하고 싶어요!” (성 프란치스코 마르토)</p><p>죄인들을 위해 자신을 봉헌하고, 특히 희생을 바칠 때 자주 예수님께 말씀드리십시오: <br>오 나의 예수님, 당신에 대한 사랑으로, 죄인들의 회개를 위하여, 교황님을 위하여, 그리고 마리아의 티 없는 성심을 거스른 죄의 보속을 위하여 이 희생을 바치나이다. <br>(1917년 7월 13일 파티마에서의 마리아)</p><p>포르투갈어 원문 기록에 따른 루치아 수녀의 회고록</p>
@@ -958,13 +1000,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg" 
-                 alt="" 
+            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg"
+                 alt=""
                  class="section-image">
             
             
@@ -974,16 +1021,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -995,6 +1042,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>하느님께서 당신의 자비로운 사랑에 이끌려 마리아를 메시지와 함께 세상 자녀들에게 보내실 때, 그 이면에는 모든 사람이 구원받기를 원하시는 하느님의 갈망이 숨겨져 있습니다. (1티모 2,4)</p><p>마리아는 말하자면 착한 목자의 어머니로서, 당신 아들의 양들에게 복음의 구원 진리를 일깨워주기 위해 오십니다.</p><p>너희 가운데 어떤 사람이 양 백 마리를 가지고 있었는데 그 가운데 한 마리를 잃으면, 아흔아홉 마리를 광야에 놓아둔 채 잃은 양을 찾을 때까지 뒤쫓아 가지 않느냐? 그러다가 양을 찾으면 기뻐하며 어깨에 메고…<br>내가 너희에게 말한다. 이와 같이 하늘에서는, 회개하는 죄인 한 사람 때문에 더 기뻐할 것이다. (루카 15,4)</p><p>“모든 발현지에서 그녀의 고귀한 모습을 감싸고 있는 빛은 죄 많은 세상이 빠져들 위험에 처한 어둠에 맞서는 공격 전선입니다. […] 그녀는 청하고, 애원하며, 우십니다. 그녀는 1830년 7월 18일 파리 뤼뒤박에서 우십니다. 그녀는 1846년 라 살레트에서 우십니다. 레옹 블로아는 그녀의 눈물에 대해, 십자가 위에서 ‘다 이루어졌다(Consummatum est)’는 말씀이 들린 이래 세상에서 들린 가장 가슴 아픈 탄식이었다고 썼습니다. 그녀는 1858년 2월 21일 루르드에서 우십니다. 순진한 아이 베르나데트가 부인이 울기 때문에 자기도 운다고 말하는 것을 듣고 감동하지 않을 사람이 어디 있겠습니까? 이 눈물은 분명 죄인들의 완고함에 대한 천상의 슬픔의 표징입니다. 그러나 그것은 또한 오직 어머니의 마음만이 자녀들을 동정과 통회의 눈물로 이끌기 위해 고안하고 시도할 수 있는 마지막 시도이기도 합니다.”<br>[A. J. 푸스 — 파티마와 평화, 46쪽]</p><p>그리고 1917년 5월 13일까지 전혀 알려지지 않았던 포르투갈의 작은 마을 파티마에서, 마리아는 그녀의 거대한 구원 사업을 계속하십니다. 그녀는 세상 자녀들에게 하느님과 화해하고 “더 이상 그분께 모욕을 드리지 말 것”을 간곡히 요청하십니다. 그녀가 자녀들에게 그토록 요청하는 두 번째 사항은 기도와 희생을 통한 그녀의 위대한 구원 사업에 대한 협력입니다. “기도하십시오, 많이 기도하고 죄인들을 위해 희생을 바치십시오.” 그리고 그녀는 양들이 바친 보속 기도와 희생을 가지고 당신의 신성한 아들에게 달려가 자비와 인내를 간청하십니다.</p><p>『루치아 수녀가 말하는 파티마 — 루치아 수녀의 회고록 I』이라는 책에는 천사와 성모님의 발현 외에도, 성모님의 요청을 모범적으로 실천한 세 목동 아이들의 삶이 묘사되어 있습니다. 영혼들의 구원을 위한 그들의 끊임없는 기도와 희생은 파티마의 메시지에 아주 특별한 매력을 부여합니다. 2000년 5월 13일, 프란치스코와 히야친타 마르토는 교황 요한 바오로 2세에 의해 시복되었습니다. 그리고 2017년 5월 13일, 교황 프란치스코에 의해 그들의 시성식이 거행되었습니다.</p><p>하느님께서는 이 순수한 어린이들의 영혼을 선택하시어 당신의 양들을 풍요로운 초원과 솟구치는 복음의 샘으로 인도하게 하셨습니다. 이렇게 하여 작은 목동들은 성모님의 인도 아래 예수 성심을 따르는 영혼의 목자가 되었습니다. 그들은 모든 신자들, 특히 어린이들에게 거룩함의 길을 앞서 비추어 줍니다. 그들은 인류가 그토록 갈망하는 그 형언할 수 없는 평화의 사절입니다. 베들레헴의 기쁜 소식이 파티마에서 울려 퍼집니다.</p><p>두려워하지 마라. 나는 평화의 천사다!</p><p>모두가 위대한 파티마 공경가였던 최근의 교황들 중에서, 성 요한 바오로 2세 교황이 특별히 돋보입니다. 1981년 5월 13일 그의 생명을 노린 암살 시도는 그를 파티마의 메시지에 더욱 깨어 있게 만들었습니다. 교황은 성모님께서 자신의 생명을 구하셨고, 총알을 비껴가게 하시어 암살에서 살아남게 하셨음을 거듭 강조했습니다. 그래서 그는 자신의 몸을 관통했던 총알을 파티마의 성모님께 봉헌했습니다. 1982년 5월 13일 그는 파티마에서 이렇게 기도했습니다.<br>오 티 없는 성심이시여! 저희가 악의 위험을 극복하도록 도와주소서… 세계 역사 속에서 구원의 무한한 힘인 자비로운 사랑의 힘이 다시 한번 드러나게 하소서! 그 힘이 악을 저지하고 양심을 변화시키게 하소서! 당신의 티 없는 성심 안에서 모든 이에게 희망의 빛이 밝혀지게 하소서!</p><p>한번은 두 명의 신부님이 저희를 심문하러 오셨습니다. 그분들은 저희에게 교황님을 위해 기도하라고 권하셨습니다. 히야친타는 교황님이 누구인지 물었고, 신부님들은 그분이 누구인지, 그리고 그분에게 우리의 기도가 얼마나 필요한지 설명해 주셨습니다. 히야친타는 교황님에 대한 아주 큰 사랑을 간직하게 되어, 항상 예수님께 자신의 희생을 바칠 때마다 “그리고 교황님을 위하여”라고 덧붙였습니다. 묵주기도 끝에는 항상 교황님을 위해 성모송 세 번을 바쳤습니다. [1 E I. 11]</p><p>나는 착한 목자다! (요한 10,14)</p><p>히야친타는 또한 하얀 어린 양들을 안아주고 입 맞추는 것을 매우 좋아했으며, 저녁에는 양들이 지치지 않도록 팔에 안고 집으로 돌아오곤 했습니다. 어느 날 그녀는 집으로 돌아오는 길에 양 떼 한가운데에 섰습니다.<br>— 히야친타 — 내가 물었습니다. 왜 거기 양들 한가운데서 가고 있니?<br>— 우리 구세주처럼 하려고요. 나에게 주신 작은 성화에서도 그분은 이렇게 많은 양들 한가운데 서서 한 마리를 팔에 안고 계시거든요. [1 E I. 6]</p>
 
@@ -1004,22 +1052,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1031,6 +1084,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3>1916년 첫 번째 발현</h3><p>우리가 잠시 놀고 있을 때, 평소와 달리 평온한 날이었음에도 갑자기 강한 바람이 나무들을 흔들었습니다. 우리가 위를 올려다보니 […] 눈보다 더 하얀 14~15세 정도의 소년이 보였습니다. […], 그는 대단히 아름다웠습니다. 그가 우리 앞에 섰을 때 이렇게 말했습니다.<br>— 두려워하지 마라! 나는 평화의 천사다! 나와 함께 기도하자! 땅에 무릎을 꿇으며 그는 이마를 바닥까지 숙이고 우리에게 이 말을 세 번 반복하게 했습니다.<br>— 저의 하느님, 당신을 믿고 흠숭하며 희망하고 사랑하나이다. 당신을 믿지 않고 흠숭하지 않으며 희망하지 않고 사랑하지 않는 이들을 위해 용서를 청하나이다.</p><p>그런 다음 그는 일어나며 말했습니다.<br>— 너희는 이렇게 기도해야 한다. 예수님과 마리아님의 마음이 너희의 간절한 기도를 기다리고 계신다.</p><p>그의 말씀은 우리의 기억 속에 너무나 깊이 각인되어 우리는 결코 잊지 못했습니다. 그때부터 우리는 때때로 피로로 쓰러질 때까지 몸을 깊이 숙인 채 그 기도를 반복하며 많은 시간을 보냈습니다. [2 E II. 2]</p><h3>1916년 두 번째 발현</h3><p>한참 후에 어느 여름날 우리는 […] 우물가에서 놀고 있었습니다. […] 갑자기 우리 앞에 전과 같은 모습, 즉 천사가 나타난 것 같았습니다. 그가 말했습니다.<br>— 너희는 무엇을 하고 있느냐? 기도하여라, 많이 기도하여라! 예수님과 마리아님의 마음은 너희에 대한 자비의 계획을 가지고 계신다. 지극히 높으신 분께 끊임없이 기도와 희생을 바쳐라.<br>— 저희가 어떻게 희생을 바쳐야 하나요? — 내가 물었습니다.<br>— 너희가 할 수 있는 모든 것으로 희생을 삼아, 그분을 모욕하는 죄를 보속하고 죄인들의 회개를 간청하여라. […] 무엇보다도 고통을 받아들이고 주님께서 너희에게 보내실 것을 순종하며 견디어라. [2 E II. 2]</p><p>천사의 이 말씀은 우리 정신에 하느님이 누구이신지, 그분이 우리를 얼마나 사랑하시는지, 그리고 우리로부터 얼마나 사랑받기를 원하시는지 깨닫게 해주는 빛처럼 각인되었습니다. 우리는 희생의 가치와 그것이 그분께 얼마나 기쁨이 되는지, 그리고 그분이 희생을 인하여 어떻게 죄인들을 회개시키시는지 깨달았습니다. 이때부터 우리는 우리를 괴롭히는 모든 것을 주님께 봉헌하기 시작했습니다. 하지만 우리는 몇 시간 동안 땅에 엎드려 천사의 기도를 반복하는 것 외에 다른 고행이나 보속을 찾지는 않았습니다. [4 E II. 1]</p><h3>1916년 세 번째 발현</h3><p>그렇게 시간이 흐르고 우리는 양 떼와 함께 부모님의 땅으로 가는 길이었습니다. […] 그곳에 도착했을 때 우리는 무릎을 꿇고 얼굴을 땅에 댄 채 천사의 기도를 반복하기 시작했습니다.<br>— 저의 하느님, 당신을 믿으며 …</p><p>우리가 이 기도를 몇 번이나 반복했는지 모를 때, 우리 위로 알 수 없는 빛이 비치는 것을 보았습니다. 우리는 무슨 일이 일어났는지 보려고 몸을 일으켰고 천사를 보았습니다. 그의 왼손에는 성혈 그릇(성배)이 있었고, 그 위에는 성체가 떠 있었는데, 그 성체에서 성혈 몇 방울이 성배 속으로 떨어지고 있었습니다. 천사는 성배를 공중에 띄워 둔 채 우리 곁에 무릎을 꿇고 우리에게 세 번 반복하게 했습니다.</p><p>지극히 거룩하신 삼위일체, 성부 성자 성령님, 저는 당신을 깊이 흠숭하며, 세상의 모든 감실 안에 계신 예수 그리스도의 지극히 귀중한 몸과 피, 영혼과 신성을 당신께 바치나이다. 그분께서 친히 모욕당하시는 모든 모독과 모성(聖), 그리고 냉담을 보속하기 위함이옵니다. 그분의 지극히 거룩한 성심과 마리아의 티 없는 성심의 무한한 공로를 통하여, 불쌍한 죄인들의 회개를 당신께 청하나이다.</p><p>그런 다음 그는 일어나 성배와 성체를 들고 저에게 거룩한 성체를 주었으며, 성배 안의 성혈을 히야친타와 프란치스코에게 나누어 주며 이렇게 말했습니다.<br>— 배은망덕한 사람들에 의해 그토록 끔찍하게 모욕당하시는 예수 그리스도의 몸을 모시고 피를 마셔라. 그들의 죄를 보속하고 너희의 하느님을 위로해 드려라! 그는 다시 땅에 무릎을 꿇고 우리와 함께 똑같은 기도를 세 번 더 반복했습니다.<br>지극히 거룩하신 삼위일체 …<br>그리고 사라졌습니다. 우리는 이 자세를 유지하며 계속 같은 말을 반복했습니다. [2 E II. 2]</p><p>성체 안에 현존하시는 주님 앞에 오랫동안 무릎을 꿇고 머물며, 우리의 믿음과 사랑으로 우리 구세주께서 세상의 많은 곳에서 겪으셔야 하는 소홀함과 망각, 심지어 모욕까지도 보속합시다. (성 요한 바오로 2세, 『주님, 저희와 함께 머무소서』, 18)</p>
 
@@ -1040,22 +1094,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1067,6 +1126,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3>1917년 5월 13일</h3><p>나는 프란치스코, 히야친타와 함께 코바 다 이리아의 비탈 꼭대기에서 놀고 있었습니다. […] 그때 갑자기 번개 같은 것을 보았습니다. […]<br>우리는 비탈을 내려가기 시작했고 양들을 도로 쪽으로 몰았습니다. 우리가 비탈 중간쯤 왔을 때, […] 떡갈나무 위에 온통 하얀 옷을 입고 태양보다 더 밝게 빛나는 한 부인을 보았습니다. […] 이 발현에 놀라 우리는 멈춰 섰습니다. […] 그때 성모님께서 말씀하셨습니다.<br>— 두려워하지 마라! 나는 너희에게 나쁜 짓을 하지 않는다!<br>— 어디서 오셨나요? — 내가 그녀에게 물었습니다.<br>— 나는 하늘에서 왔다!<br>— 저에게 무엇을 원하시나요?<br>— 나는 너희에게 앞으로 6개월 동안, 매달 13일 같은 시간에 이곳으로 오라고 부탁하러 왔다. 그때 내가 누구인지, 무엇을 원하는지 말해 주겠다. […]<br>— 저도 하늘나라에 가나요?<br>— 그래, 갈 것이다!<br>— 히야친타는요?<br>— 그녀도!<br>— 프란치스코는요?<br>— 그도 역시, 하지만 그는 묵주기도를 훨씬 더 많이 바쳐야 한다. […]<br>— 너희는 하느님께서 너희에게 보내실 모든 고통을 견디며, 그분이 모욕당하시는 죄를 보속하고 죄인들의 회개를 위한 청원으로서 너희 자신을 하느님께 봉헌하겠느냐?<br>— 네, 저희는 원합니다!<br>— 그러면 너희는 많은 고통을 겪어야 하겠지만, 하느님의 은총이 너희의 위로가 될 것이다!</p><p>1917년 5월 13일부터 10월 13일까지의 발현 기간 동안 성모님과 세 아이의 “의사소통 단계”는 서로 달랐습니다. 히야친타는 성모님을 보고 들었으며, 루치아는 보고 들었을 뿐만 아니라 유일하게 성모님과 대화를 나누었습니다. 프란치스코는 모든 것을 보았지만 성모님께서 하시는 말씀을 결코 들을 수 없었습니다.</p><p>그녀가 이 마지막 말씀을 하셨을 때, 그녀는 처음으로 손을 펴서 우리에게 아주 강한 빛을 전달해 주셨는데, 그것은 그녀의 손에서 나오는 반사광 같았습니다. 그것은 우리의 가슴 속과 영혼의 가장 깊은 곳까지 꿰뚫고 들어왔으며, 우리는 이 빛이신 하느님 안에서 우리 자신을 인식했습니다. 그것은 우리가 가장 좋은 거울에서 우리 자신을 보는 것보다 훨씬 더 분명했습니다. 우리에게도 전달된 내면의 충동에 따라 우리는 이제 무릎을 꿇고 내면으로 반복했습니다.</p><p>— 오 지극히 거룩하신 삼위일체님, 당신을 흠숭하나이다. 저의 하느님, 저의 하느님, 지극히 거룩한 성사 안에 계신 당신을 사랑하나이다.</p><p>잠시 후 성모님께서 덧붙이셨습니다.<br>— <strong>매일 묵주기도를 바쳐라</strong>, 세상의 평화와 전쟁의 종식을 얻기 위하여! 그러고 나서 그녀는 천천히 떠오르기 시작하여 해가 뜨는 방향으로 올라가다가 먼 곳의 무한함 속으로 사라졌습니다. [4 E II. 3]</p><p>그 부인은 우리에게 묵주기도를 바치고 죄인들의 회개를 위해 희생을 바치라고 말씀하셨습니다. 이제 우리가 묵주기도를 바칠 때, 우리는 성모송과 주님의 기도를 온전히 바쳐야 합니다. 그리고 희생은 어떻게 바쳐야 할까요?<br>프란치스코는 금방 좋은 희생을 찾아냈습니다.<br>— 우리 점심 빵을 양들에게 주자 — 아무것도 먹지 않는 희생을 바치는 거야. 몇 분 만에 우리의 양식은 양 떼에게 나누어졌습니다. [1 E I. 8]</p><p>“우리는 오후 간식을 먹은 후 묵주기도를 바치라는 권고를 받았지만, 노는 시간이 너무 짧게 느껴졌기 때문에 빨리 끝낼 수 있는 좋은 방법을 찾아냈습니다. 우리는 알을 굴리며 ‘성모송, 성모송, 성모송!’이라고만 말했습니다. 한 신비가 끝날 때쯤이면 긴 휴지기를 두고 간단한 말인 ‘주님의 기도’를 말했습니다. 그렇게 해서 우리는 눈 깜짝할 사이에 묵주기도를 다 바쳤습니다.” [1 E I. 6]</p>
 
@@ -1076,22 +1136,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1103,6 +1168,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>1917년 8월 13일, 세 목동 아이들은 코바 다 이리아에 가지 말라는 압력을 받았지만 진실을 포기하지 않았습니다. 그들은 붙잡혀 감옥에 갇히는 시련을 겪었습니다.</p><p>그곳에서 위협을 받으면서도 아이들은 성모님의 요청대로 묵주기도를 바치고, 고통을 예수님께 봉헌하여 죄인들의 회개와 성모님의 티 없으신 성심에 대한 보속을 위해 희생했습니다.</p>
 
@@ -1112,22 +1178,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1139,6 +1210,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3>1917년 8월 19일(발리뉴스 Valinhos)</h3><p>8월 13일의 사건 뒤, 성모님께서는 발리뉴스에서 아이들에게 다시 나타나셨습니다. 성모님은 13일에 다시 오고 <strong>매일 묵주기도</strong>를 바치라고 하셨습니다.</p><p>또한 죄인들을 위해 많이 기도하고 희생을 바치라고 당부하셨습니다.</p><h3>1917년 9월 13일</h3><p>9월에도 성모님은 묵주기도에 충실할 것을 요청하시며, 10월에 모두가 믿을 수 있도록 표징을 주겠다고 약속하셨습니다.</p>
 
@@ -1148,22 +1220,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1175,6 +1252,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>1917년 10월 13일, 수많은 사람들이 코바 다 이리아에 모였습니다. 비가 내리고 땅은 진흙투성이였지만, 사람들은 약속된 표징을 기다렸습니다.</p><p>성모님은 회개와 기도, 죄를 끊을 것을 다시 요청하시고, 그곳에 경당을 지어 달라고 하셨습니다.</p><p>그 후 많은 이들이 목격한 <strong>“태양의 기적”</strong>이 일어났습니다. 태양이 회전하고 색이 변하며, 마치 땅으로 내려오는 듯 보였다고 합니다.</p>
 
@@ -1184,22 +1262,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1211,6 +1294,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>1925년 12월 10일, 루치아 수녀에게 폰테베드라에서 지극히 거룩하신 동정녀가 나타나셨고, 옆에는 빛나는 구름 속에 한 어린이가 있었습니다. 지극히 거룩하신 동정녀께서는 그녀의 어깨에 손을 얹고 다른 한 손에 들고 계신 가시로 둘러싸인 마음을 보여주셨습니다. 어린이가 말했습니다.<br> <strong>— 배은망덕한 사람들이 끊임없이 꿰찌르는 가시로 둘러싸인 네 지극히 거룩하신 어머니의 성심을 가엽게 여겨라. 그것들을 뽑아내기 위해 보속 행위를 하는 사람이 아무도 없구나.</strong></p><p>그러자 지극히 거룩하신 동정녀께서 말씀하셨습니다.<br> <strong>— 내 딸아, 배은망덕한 사람들이 그들의 모독과 배은망덕으로 끊임없이 꿰찌르는 가시로 둘러싸인 내 마음을 보아라. 적어도 너만이라도 나를 위로하려고 노력하고, 이 영혼들의 구원을 위해 필요한 모든 은총으로 임종의 시각에 내가 도울 것을 약속한다고 전하여라. 다섯 달 동안 매달 첫 토요일에 고해성사를 보고, 영성체를 하며, 묵주기도 한 번을 바치고, 나에게 보속하려는 의도로 15분 동안 묵주기도의 15가지 신비를 묵상하며 나와 함께 있어 주는 모든 이들에게 말이다.</strong></p><p><strong>1926년 2월 15일, 그녀에게 다시 아기 예수님이 나타나셨습니다. 그분은 그녀에게 이미 어머니에 대한 신심을 전파했는지 물으셨습니다. 그녀는 고해 신부님이 겪고 있던 어려움을 말씀드렸고, 원장 수녀님은 전파할 준비가 되어 있지만 고해 신부님은 그녀 혼자서는 아무것도 할 수 없다고 말씀하셨다고 전했습니다. 예수님께서 대답하셨습니다.</strong><br> <strong>— 네 원장이 혼자서는 아무것도 할 수 없다는 것은 사실이다. 하지만 나의 은총과 함께라면 그녀는 모든 것을 할 수 있다.</strong></p><p>그녀는 예수님께 일부 영혼들이 토요일에 고해성사를 보는 데 겪는 어려움을 말씀드렸고, 고해성사가 8일 동안 유효할 수 있게 해달라고 청했습니다. 예수님께서 대답하셨습니다.<br> <strong>— 그래, 그들이 나를 모실 때 은총의 상태에 있고, 마리아의 티 없는 성심에 보속하려는 의도를 가지고 있다면 훨씬 더 길어도 괜찮다.</strong></p><p><strong>— 저의 예수님, 만약 누군가가 이 지향을 세우는 것을 잊어버린다면요?</strong></p><p>예수님께서 대답하셨습니다.<br> <strong>— 그들은 다음 고해성사 때 그렇게 할 수 있다. 고해성사를 볼 수 있는 첫 번째 기회를 이용한다면 말이다.</strong><br>(출처: [A I])</p>
 
@@ -1220,22 +1304,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1247,6 +1336,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>파티마 메시지는 평화와 회개를 함께 가르칩니다. 이후 루치아 수녀에게 주어진 계시에서 성모님은 <strong>러시아를 티 없으신 성모 성심께 봉헌</strong>하고 <strong>보속 첫 토요일 신심</strong>을 널리 알리기를 요청하셨습니다.</p><p>핵심은 정치가 아니라 영적 회심입니다. 하느님께로 돌아갈 때 참된 평화가 옵니다.</p>
 
@@ -1256,22 +1346,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1283,6 +1378,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>파티마의 ‘비밀’은 보통 세 부분으로 전해집니다. 첫째는 지옥의 환시로, 영혼들의 구원을 위해 기도와 보속을 촉구합니다. 둘째는 세상의 죄와 시련을 경고하며, 티 없으신 성모 성심에 대한 봉헌과 보속을 요청합니다.</p><p>셋째는 교회의 큰 시련과 신앙의 증인들이 겪는 고통을 말하며, 두려움이 아니라 회개와 신뢰로 응답하도록 부릅니다.</p>
 
@@ -1292,22 +1388,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1319,6 +1420,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>프란치스코와 히야친타는 어린 목동이었지만 성모님의 ‘작은 사도’가 되었습니다. 그들은 묵주기도, 희생과 보속으로 죄인들의 회개를 위해 살았습니다.</p><p>그들의 모범은 어린이에게도 성덕의 길이 열려 있음을 보여 줍니다.</p>
 
@@ -1328,22 +1430,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1355,6 +1462,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>파티마의 메시지는 성모님께서 공식화하신 복음의 요약이라고도 불리며, 다음과 같은 중점 사항을 포함합니다.</p><ul><li><p><strong>단호한 회개</strong></p></li><li><p><strong>하느님의 계명과 개인의 본분에 대한 충실한 이행</strong></p></li><li><p><strong>정기적인 성사 배령</strong></p></li><li><p><strong>마리아의 티 없는 성심 공경</strong></p><ul><li><p>마리아에 대한 개인적 봉헌을 통해</p></li><li><p>명상적 기도, 특히 묵주기도와 보속 기도를 통해</p></li><li><p>성모 신심 보속 첫 토요일의 실천을 통해</p></li><li><p>갈색 스카풀라 착용을 통해</p></li></ul></li><li><p><strong>본분에 맞는 사도직, 특히 대속적인 기도와 희생</strong></p></li></ul>
 
@@ -1364,22 +1472,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1391,6 +1504,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>“저의 하느님, 당신을 믿고 흠숭하며 희망하고 사랑하나이다. 당신을 믿지 않고 흠숭하지 않으며 희망하지 않고 사랑하지 않는 이들을 위해 용서를 청하나이다.”</strong></p><p><strong>“지극히 거룩하신 삼위일체, 성부 성자 성령님, 저는 당신을 깊이 흠숭하며, 세상의 모든 감실 안에 계신 예수 그리스도의 지극히 귀중한 몸과 피, 영혼과 신성을 당신께 바치나이다. 그분께서 친히 모욕당하시는 모든 모독과 모성(聖), 그리고 냉담을 보속하기 위함이옵니다. 그분의 지극히 거룩한 성심과 마리아의 티 없는 성심의 무한한 공로를 통하여, 불쌍한 죄인들의 회개를 당신께 청하나이다.”</strong></p>
 
@@ -1400,22 +1514,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1427,6 +1546,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>“예수님의 신성한 성심이시여, 마리아의 티 없는 성심을 통하여 저는 오늘 제가 바치는 모든 기도와 일, 희생과 고통을 모든 이의 이름으로, 그리고 삼중의 거룩한 교회의 모든 영혼을 위하여 당신께 봉헌하나이다. 당신께서 친히 영혼들의 구원을 위하여 우리 제단 위에서 끊임없이 기도하시고 당신 자신을 바치시는 그 지향으로 이 기도를 바치나이다. 아멘.”</strong></p><br><p><strong>“사람은 무릎을 꿇고 있는 곳에서 가장 위대하다.”</strong><br><em>(성 요한 23세 교황)</em></p>
 
@@ -1436,22 +1556,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1463,6 +1588,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>「하늘 나라는 좋은 진주를 구하는 장사꾼과 같다. 값진 진주 하나를 발견하니 가서 가진 것을 다 팔아 그 진주를 사느니라.」</strong><br> <em>(마태 13,45-46)</em></p><p>마리아가 우리에게 「매일 로사리오를 바치세요!」라고 거듭 권고하실 때, 그분은 마치 복음의 귀한 진주를 우리에게 건네주시나니, 그것은 로사리오의 신비 안에 감추어져 있나이다.</p><p>우리 중 누가 인생에서 가장 귀한 것을 찾지 않으리요? 그러나 우리는 종종 겉으로만 반짝이지만 영원에는 쓸모없는 진주를 잡으려 하나이다. 그래서 마리아는 우리에게 이 생의 헛되고 속이는 진주를 모두 「팔아」 하나의 귀한 진주를 얻으라고 그토록 간절히 권하시나이다.</p><p>로사리오의 신비를 묵상하며 묵상하며 우리 일상의 실과 굳게 이어 나갈 때, 하늘 나라 — 그리고 그와 함께 하느님 자신 — 우리에게 점점 더 열리나이다.</p><h3>로사리오의 여왕의 약속</h3><p>축복 받은 알랑 드 라 로슈(1428–1475), 로사리오의 도미니코회 설교자는 천주의 모신의 현현을 기록하나이다. 그분은 그에게 로사리오 기도를 선양하고 전파할 임무를 주셨나이다. 마리아는 온전한 신뢰로 이 기도를 통하여 그분을 부르는 이들에게 셀 수 없는 은총을 약속하셨나이다.</p><p>총 열다섯 가지 약속 중 다섯 가지를 여기 실으니:</p><ul><li><p><strong>「나의 로사리오 시편을 경건히 바치는 모든 이에게 나의 특별한 보호와 큰 은총을 약속한다.」</strong><br> <em>(히로시마 기적 참조: 1945년 8월 6일 히로시마의 끔찍한 원자폭탄 투하에서 네 명의 예수회 신부들이 원자 방사선의 무서운 효과로부터 설명할 수 없이 보호되셨나이다. 1.5km 반경 내에서 수십만 명 중 유일한 생존자이셨나이다. [출처:</em><a href="http://www.gnadenquelle.de/hiroshima.htm" target="_blank" rel="noopener noreferrer"><em>http://www.gnadenquelle.de/hiroshima.htm</em></a><em>])</em></p></li><li><p><strong>「로사리오는 덕과 경건의 행실을 다시 꽃피우나이다. 이를 통해 영혼들은 신성한 자비의 충만을 받나이다.」</strong><br> 마음들을 회심시키리니, 땅의 것을 경멸하고 하늘의 것을 사랑하며 급속히 전진하리이다. 많은 영혼이 로사리오를 통해 구원되리이다.</p></li><li><p><strong>「경건히 로사리오를 바치고 신비를 묵상하는 모든 이는 불운에 좌절하지 않으며 예기치 못한 죽음에서 보존되리이다. 죄 중에 있으면 회심의 은총; 의인이면 견진의 은총을 받아 영생에 참예하리이다.」</strong></p></li><li><p><strong>「생애에 나의 로사리오를 사랑한 영혼들을 곧 연옥에서 해방하리라.」</strong></p></li><li><p><strong>「나의 로사리오의 충실한 자녀들은 하늘에서 큰 영광을 누리리라.」</strong></p></li></ul><p><em>(진주와 장미에서)</em></p>
 
@@ -1472,22 +1598,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1499,6 +1630,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>시작:</strong></h3><ul><li><p><strong>성부와 성자와 성령의 이름으로 …</strong> <em>(성호)</em></p></li><li><p><strong>저는 전능하신 천주 성부를 믿나이다 …</strong> <em>(사도 신경)</em></p></li></ul><p>이어서: 1 주님의 기도, 3 성모송 — 각각 「예수」이름 뒤에 세 가지 신학적 덕목: <strong>… 저희의 믿음을 늘리시고, … 희망을 굳게 하시며, … 사랑을 타오르게 하소서</strong>. <strong>영광송</strong>으로 마침.</p><h3><strong>로사리오 신비 구조:</strong></h3><p>각 신비마다: <strong>1 주님의 기도</strong>, 그다음 <strong>10 성모송</strong> — 「예수」 뒤에 해당 묵상 문구*. 각 신비 끝에: <strong>영광송</strong> 및 <strong>파티마 기도:</strong> <strong>「오 나의 예수시여, 저희의 죄를 용서하시고 지옥의 불에서 구하시며 모든 영혼을 천국으로 인도하시되 특히 당신 자비가 가장 필요한 영혼들을 인도하시옵소서.」</strong></p><h3><strong>로사리오의 신비:</strong></h3><p><strong><em>환희의 신비</em></strong></p><ol><li><p><strong>… 동정 마리아님, 성령으로 잉태하신</strong></p></li><li><p><strong>… 동정 마리아님, 엘리사벳에게 뵙고 가신</strong></p></li><li><p><strong>… 동정 마리아님, 베들레헴에서 나오신</strong></p></li><li><p><strong>… 동정 마리아님, 성전에 봉헌하신</strong></p></li><li><p><strong>… 동정 마리아님, 성전에서 찾으신</strong></p></li></ol><p><strong><em>광명의 신비</em></strong></p><ol><li><p><strong>… 요한에게 세례받으신</strong></p></li><li><p><strong>… 가나에서 자신을 드러내신</strong></p></li><li><p><strong>… 저희에게 하느님의 나라를 선포하신</strong></p></li><li><p><strong>… 산에서 변용되신</strong></p></li><li><p><strong>… 저희에게 성체성사를 주신</strong></p></li></ol><p><strong><em>고통의 신비</em></strong></p><ol><li><p><strong>… 저희를 위하여 피땀 흘리신</strong></p></li><li><p><strong>… 저희를 위하여 채찍에 맞으신</strong></p></li><li><p><strong>… 저희를 위하여 가시관 쓰신</strong></p></li><li><p><strong>… 저희를 위하여 무거운 십자가 지신</strong></p></li><li><p><strong>… 저희를 위하여 십자가에 못 박히신</strong></p></li></ol><p><strong><em>영광의 신비</em></strong></p><ol><li><p><strong>… 죽은 이 가운데서 부활하신</strong></p></li><li><p><strong>… 하늘에 오르신</strong></p></li><li><p><strong>… 저희에게 성령을 보내신</strong></p></li><li><p><strong>… 동정 마리아님, 하늘에 받아들이신</strong></p></li><li><p><strong>… 동정 마리아님, 하늘에서 모시신</strong></p></li></ol><br><p><strong>「지극히 복되신 동정 마리아님이 로사리오에 그런 효력을 주셨나니 우리 삶의 어떤 문제도 이 기도를 통하여 해결될 수 없음이 없나이다.」</strong> <em>(루시아 도스 산투스)</em></p><p><strong>「기도할 때 우리는 하느님 사랑의 빛이 되나니: 집에서, 우리가 사는 곳에서, 마침내 온 세상을 위하여.」</strong> <em>(성 테레사 수녀)</em></p><p><strong>「로사리오는 저의 가장 사랑하는 기도이옵니다. 그 단순함과 깊이에서 놀라운 기도이옵니다.」</strong> <em>(성 요한 바오로 2세 교황)</em></p><p>작은 <strong>요제피나</strong>도 「귀한 진주」를 발견하였나이다:<br> <strong>「성모송 …」</strong></p>
 
@@ -1508,22 +1640,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1535,6 +1672,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>지극히 거룩한 동정 마리아님이시여! 천주의 모시요 저의 어머니시여! 저는 제가 된 모든 것과 가진 모든 것으로 당신의 성모 무염시태 마음에 봉헌하나이다. 저를 당신의 어머니의 보호 아래 받아 주시옵소서! 저를 모든 위험에서 지켜 주시옵소서. 악으로 이끄는 유혹을 이기도록 도와 주시옵소서, 저의 육신과 영혼의 순결을 지킬 수 있도록 하소서. 당신의 성모 무염시태 마음이 저의 피신처이시며 하느님께로 이끄는 길이 되시옵소서.</p><p>예수를 사랑하여 자주 기도하고 희생하며, 죄인들의 회심을 위하여, 당신의 성모 무염시태 마음에 범한 죄를 보속하기 위하여 저에게 은총을 내려 주시옵소서. 당신과 당신 성자의 마음과 함께 저는 제가 믿고, 경배하고, 희망하고, 사랑하는 지극히 거룩한 삼위일체에 온전히 봉헌된 삶을 살고자 하나이다. 아멘.<strong><br></strong> <em>(파티마의 수녀 M. 루시아)</em></p><p><strong>Imprimatur:</strong> 파티마, 2006년 7월 1일, 안토니오, 레이리아-파티마 주교</p><br><p>우리가 마리아와 함께, 마리아 안에서, 마리아를 통하여, 마리아를 위하여 모든 것을 하기 위해 천주의 성모님께 스스로를 봉헌할 때, 그분은 우리를 예수께 대한 완전한 봉헌으로 확실히 이끌어 주시나이다. 동시에, 이 봉헌을 통해 우리는 우리의 내적·외적 소유, 심지어 우리 모든 선행의 가치까지 마리아의 손에 맡기나이다. 그리하여 그분이 보존하고 늘리며 아름답게 하시도록. 우리가 이처럼 마리아에게 맡긴 것은 어떤 사람도, 악한 원수도, 우리 자신의 나약함도 빼앗아 갈 수 없나이다. 더욱이 우리는 이로써 높은 수준의 기독교적 애덕을 실천하나이다. 마리아가 산 이와 죽은 이를 위한 우리 영적 재화의 처분을 허용하기 때문이니이다.<br> <em>(참조 성 L. M. 그리뇽 드 몽포르, 황금의 책, 233–238면)</em></p>
 
@@ -1544,22 +1682,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1571,6 +1714,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>자비로우신 예수시여, 당신의 선하심은 무한하며 당신 은총의 보물은 다함이 없나이다.</p><p>저는 당신의 모든 사업을 뛰어넘는 당신의 자비에 무한한 신뢰를 두나이다.<br> 저는 십자가 위에서 당신 마음에서 흘러나온 당신 은총과 사랑의 광채 안에서 살기 위해 온전히 당신께 봉헌하나이다.</p><p>저는 당신의 자비를 전파하고 특히 하느님 자비의 기도를 바치며 우리를 위하여, 죄인들의 회심을 위하여, 온 세상을 위하여, 연옥의 영혼들을 위하여 당신의 자비를 구하고자 하나이다.</p><p>그러나 당신은 저를 당신의 소유이자 당신의 영예로 지켜 주시리니, 이는 저는 제 나약함으로 인해 모든 것을 두려워하고 당신의 자비로 인해 모든 것을 희망하기 때문이옵니다.</p><p>온 인류가 당신 자비의 헤아릴 수 없는 깊이를 인식하고 그 안에 온 희망을 두며 영원히 찬미하도록 하소서. 아멘.</p><p><strong>예수님이시여, 저는 당신을 신뢰하나이다,</strong><strong><br></strong><strong>당신이 곧 저의 신뢰이시기 때문이옵니다!</strong></p>
 
@@ -1580,22 +1724,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1607,6 +1756,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>마리아와의 마음 교환</strong></h3><p>오 놀라우신 어머니시여, 나의 죄 많은 마음 대신 당신의 티 없는 마음을 두어 주소서, 그래서 성령께서 내 안에서 일하시고 당신의 신성한 아들이 내 안에서 자라나게 하소서.<br> 나의 청원을 들어 주소서, 오 위대하시고 충실하신 모든 은총의 중재자시여. 아멘.</p><h3><strong>예수와의 마음 교환</strong></h3><p>오 선하신 예수시여, 나의 죄 많은 마음 대신 당신의 신성한 상처 난 마음을 두어 주소서, 그래서 성령께서 내 안에서 일하시고 당신, 자비로우신 예수시여, 내 안에서 자라나게 하소서.<br> 나의 청원을 들어 주소서, 오 선하시고 충실하시며 사랑 많으신 예수시여, 당신이 이 세상 위에 평화의 왕으로 곧 임하시도록 하소서. 아멘.</p><p><strong>참고:</strong></p><ul><li><p><em>예수와의 마음 교환은 마리아와의 마음 교환으로 준비됩니다. 마리아, 은총의 위대한 중재자시여, 우리 마음 위에 모든 은총을 부어 주시고 예수와의 마음 교환을 위해 우리 마음을 준비해 주십니다.</em></p></li><li><p><em>예수와의 마음 교환은 우리 마음을 변화시키고 은총이 자유롭게 작용하게 하여, 우리가 하느님의 뜻을 인식하고 실천할 수 있게 합니다. 그것은 그리스도가 우리 안에서와 세상 위에 평화의 왕으로 임하시게 하려는 목표를 가진 하느님에 대한 개인적 전체 봉헌입니다.</em></p></li></ul><p><strong>«가장 작은 기도도, 비밀한 필요의 눈물도, 하느님께 향한 비밀한 갈망의 한숨도 결코 헛되지 않으리라! 그러나 하느님의 때에 그분의 방식으로 그것들은 축복의 구름으로 돌아와 당신과 당신이 위하여 기도하는 모든 이에게 자비의 흐름으로 쏟아질 것이다.»</strong></p>
 
@@ -1616,22 +1766,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1643,6 +1798,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>“나는 결코 너를 떠나지 않을 것이다.</strong><br><strong>나의 티 없는 성심이 너의 피신처가 될 것이며</strong><br><strong>너를 하느님께로 인도하는 길이 될 것이다.”</strong><br><em>(1917년 6월 13일 마리아가 루치아에게)</em></p><br>
 
@@ -1652,22 +1808,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1679,6 +1840,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>성부와 성자와 성령의 이름으로. 아멘.</p>
 
@@ -1688,22 +1850,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1715,6 +1882,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>전능하신 천주 성부, 천지의 창조주를 저는 믿나이다. 그 외아들 우리 주 예수 그리스도, 성령으로 잉태되사 동정 마리아께서 나시고, 본시오 빌라도 치하에서 고난을 받으사 십자가에 못 박혀 돌아가시고 묻히셨으며, 저승에 내려가사 사흘 만에 죽은 이 가운데서 부활하시고, 하늘에 오르사 전능하신 천주 성부 오른편에 앉으시며, 저리로서 산 이와 죽은 이를 심판하러 오시리라. 저는 성령을 믿으며, 거룩하고 보편된 교회와 성인의 통공과, 죄의 사함과 육신의 부활과 영생을 믿나이다. 아멘.</p>
 
@@ -1724,22 +1892,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1751,6 +1924,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>하늘에 계신 우리 아버지, 이름이 거룩히 여겨지시며, 나라이 임하시며, 뜻이 하늘에서와 같이 땅에서도 이루어지소서. 오늘 우리에게 일용할 양식을 주시고, 우리가 우리에게 죄지은 이를 용서한 것 같이 우리 죄를 용서하시고, 우리를 유혹에 빠지지 않게 하시고, 악에서 구하소서. 아멘.</p>
 
@@ -1760,22 +1934,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1787,6 +1966,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>은총이 가득하신 마리아님, 기뻐하소서! 주님께서 함께 계시니 여인 중에 복되시며 태중의 아들 예수님 또한 복되시나이다. 천주의 성모 마리아님, 이제와 저희 죽을 때에 저희 죄인을 위하여 빌어주소서. 아멘.</p>
 
@@ -1796,12 +1976,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1887,6 +2073,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1941,6 +2162,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1976,12 +2208,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

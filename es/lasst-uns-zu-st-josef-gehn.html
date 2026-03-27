@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="¡Vayamos a San José!">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="¡Vayamos a San José!">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/lasst-uns-zu-st-josef-gehn.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../es/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../es/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,11 +988,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>San José está tan dispuesto a ayudar</strong></h3><p>Innumerables personas, a quienes San José ya ha ayudado en diversas necesidades, encuentran sus sentimientos expresados por San Luis María Grignion de Montfort cuando nos invita: <strong>¡Ve a José!</strong> Porque:</p><ol><li><p><strong>Es el abogado de la Divina Providencia;</strong><br> Cuidará de tus necesidades temporales y velará por su éxito.</p></li><li><p><strong>Es la cabeza de la Sagrada Familia y así también el guía de toda la familia de la Iglesia cristiana;</strong><br> Te mostrará tu vocación y te ayudará a alcanzar un estado de vida pleno.</p></li><li><p><strong>Es modelo de la vida oculta e interior;</strong><br> Te guiará e instruirá en la vida espiritual y la perfección.</p></li><li><p><strong>Es el protector de la pureza de la Inmaculada Virgen María;</strong><br> Te ayudará a conservar el gran tesoro de la pureza.</p></li><li><p><strong>Es el patrón de una muerte feliz;</strong><br> Te asistirá en esa hora angustiosa y te obtendrá un final dichoso.</p></li><li><p><strong>Es el padre putativo de Jesús y el esposo de María;</strong><br> En esta capacidad puede obtenerte todas las gracias; pues no ha de suponerse, dice San Bernardino de Siena, que Jesús y María en el cielo rechazarían algo a San José, a quien ambos fueron obedientes en la tierra.</p></li></ol><p>(Del Libro de Oro, p. 485)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -961,16 +1008,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -982,11 +1029,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Amado San José, poderoso protector de la Iglesia, mira la gran tribulación de la Esposa de Jesucristo y la terrible angustia de tantas almas. Oh acude en su ayuda con Jesús y María, los ángeles y los santos. Confunde los planes de los malvados y enciende los corazones de los fieles con el fuego del Espíritu Santo, para que confiesen a Jesús libre y abiertamente, luchen por las causas del Reino de Dios y triunfen. Amén.</p><p><strong>„Hija, di a todos que deben venerar e invocar más a mi esposo José. Él fue nuestro protector y cuidó de mi Jesús como padre y de mí. Él es el protector especial de la santa Iglesia."</strong><br> (La Madre de Dios a la Madre Vogl – 6 de marzo de 1938)</p><p><strong>„Él es el protector especial de los sacerdotes... así como me protegió de los enemigos, también los sacerdotes serán protegidos por él. No le niego ninguna petición. Se le invoca demasiado poco por los sacerdotes."</strong><br> (Jesús a la Madre Vogl – 4 de junio de 1938)</p><p><strong>„Oh, si todos los sacerdotes veneraran propiamente a mi esposo José! Él es especialmente el protector de la castidad."</strong><br> (La Madre de Dios a la Madre Vogl – en el Sábado de Sacerdotes, 1943)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -996,16 +1049,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1017,11 +1070,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Oh San José, nos has dado tan glorioso ejemplo como cabeza de la Sagrada Familia. Te damos gracias por esto y te veneramos con la santa Iglesia como apoyo de las familias. Mira con bondad a las familias cristianas, que te encomendamos a tu especial cuidado. Que sean un puerto de fe y piedad, un hogar de armonía, paz y amor. Ayúdalas a parecerse cada vez más a la Sagrada Familia, de la que cuidaste con tanto amor. Santo José, ruega por nosotros y protege nuestras familias. Amén.</p><p><strong>„Hija, ora con fervor a Mi querido padre putativo por familias santas, para que de ellas puedan salir de nuevo sacerdotes santos."</strong><br> (Jesús a la Madre Vogl – 29 de marzo de 1930)</p><p><strong>„Mi padre putativo y guardián tiene la mayor alegría cuando puede presentarme una petición. Nadie invocará su ayuda en vano. Si la persona no recibe lo que pide, obtendrá una gracia mucho mayor mediante su intercesión."</strong><br> (Jesús a la Madre Vogl – 7 de marzo de 1938)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1031,16 +1090,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1052,11 +1111,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Gran San José, concédeme la gracia de reconocer el estado al que la Divina Providencia me ha destinado. No permitas que sea engañado en esta decisión crucial, de la que dependen mi felicidad y quizá mi eterna salvación. Ayúdame a ser iluminado por la Divina Voluntad, a seguirla fielmente y a caminar por el sendero que el Señor ha trazado para mí, el que me llevará a la dicha eterna. Amén.</p><p>La herida del creciente deterioro de los valores religiosos y morales hace difícil para muchos jóvenes tomar una decisión de vida clara alineada con la voluntad de Dios. San José nos ayuda a reconocer el estado de vida designado por Dios y a seguirlo fielmente. A este audaz y decidido <strong>Sí a la gracia de la vocación</strong>, Dios ata la salvación de muchas almas. San José es también un poderoso intercesor para las parejas casadas y las comunidades religiosas que enfrentan preocupaciones sobre nuevas vocaciones.</p><p><em>Un ejemplo de la intercesión de San José: En 1833, un joven religioso del Colegio Jesuita en Sion, Suiza, distinguido por talento y virtud, yacía moribundo. Su nombre era Josef Harnisch. Cuando el rector del colegio le administró los últimos sacramentos, su pena fue grande. Poco antes había perdido a otros dos miembros de su comunidad religiosa por la muerte. El superior, usando su autoridad paternal, ordenó al moribundo que en cuanto entrara en la dicha eterna, pidiera a su santo patrón, San José, que enviara un „reemplazo" digno a la orden. El moribundo lo prometió. Murió el 6 de julio. Para el otoño de ese mismo año, doce novicios habían ingresado en la orden. Ocho de ellos se llamaban José, y tres más llamados José siguieron en el curso de un año. (Voces de María Laach, Vol. 25, p. 509)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1066,16 +1131,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1087,11 +1152,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Querido San José, deseo consagrarme a ti. Acepta bondadosamente mi devoción! Me doy enteramente a ti. Serás siempre mi padre, mi protector, mi guía en el camino a la salvación. Obtén para mí una gran pureza de corazón y una fuerte inclinación a la vida interior! Que todas mis acciones, como las tuyas, estén orientadas a la mayor gloria de Dios, para que permanezca unido al Sagrado Corazón de Jesús, al Inmaculado Corazón de María y contigo, santo José! Finalmente, te pido que me concedas la paz y la alegría que experimentaste en tu dichoso tránsito. Amén.</p><p>(Papa León XIII)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1101,16 +1172,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1122,11 +1193,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>En un rosario ordinario, se rezan los siguientes misterios:</p><ol><li><p>Jesús, que eligió a San José como esposo de la purísima Virgen María.</p></li><li><p>Jesús, que amó a San José como a su padre putativo.</p></li><li><p>Jesús, que fue obediente a San José.</p></li><li><p>Jesús, que oró y trabajó con San José.</p></li><li><p>Jesús, que nos dio a San José como patrón de la Iglesia.</p></li></ol>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1136,16 +1213,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1157,11 +1234,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Santo José, padre putativo de Jesucristo y verdadero esposo de la Bienaventurada Virgen María, ruega por nosotros y por los moribundos de este día/noche! Amén.</strong><br> (Oración con indulgencia)</p><p>Esta oración es recitada mañana y tarde por los miembros de la Cofradía de San José.</p><p>Para más información e inscripción:<br> Monasterio de San Trudpert, D-79244 Münstertal/Selva Negra</p><p><strong>La importancia de orar por los moribundos</strong></p><p>Santa Teresita del Niño Jesús dijo una vez: „Jesús quiere que la salvación de las almas dependa de nuestros sacrificios y nuestro amor." Y poco antes de su muerte dijo: „Cuánto me doy cuenta ahora de que deben decirse muchas oraciones por los moribundos."</p><p>Mediante nuestras oraciones y sacrificios, podemos ayudar a pedir la gracia de una muerte feliz para las más de 500.000 personas que mueren cada día. Oramos en particular por: Aquellos que se han separado de Dios por pecado grave. Todos los incrédulos y todos los no bautizados. A estos individuos, que no están en estado de gracia santificante, a menudo se les puede conceder la misericordia de Dios en el último minuto. Esta sublime forma de amor al prójimo, mediante la cual acudimos en ayuda de nuestros hermanos y hermanas en el mayor „peligro de vida" (¡está en juego la vida eterna!), será una bendición abundante para nosotros mismos.</p><p><strong>Oraciones por los moribundos</strong></p><p>¡Jesús, María y José, os doy mi corazón y mi alma!<br> ¡Jesús, María y José, asistidme en mi última agonía!<br> ¡Jesús, María y José, que pueda entregar mi alma en paz con vosotros!<br> Amén. (Oración con indulgencia)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1171,6 +1254,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1256,6 +1340,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1310,6 +1429,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1345,12 +1475,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

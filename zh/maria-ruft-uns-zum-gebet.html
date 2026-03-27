@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="玛利亚召唤我们祈祷">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="玛利亚召唤我们祈祷">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/maria-ruft-uns-zum-gebet.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../zh/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../zh/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>哦，玛利亚，无染原罪者，</strong><strong><br></strong> 请为我们投奔于妳者祈求，<br> 并为所有未投奔于妳者祈求，<br> 尤以共济会员。<br>  <strong>（圣麦克西米利安·M·科尔贝）</strong></p>
 
@@ -956,22 +998,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -983,6 +1030,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>永恒之父</strong>，经由玛利亚最纯洁的双手，我将我的思想、我的工作、我的辛劳与痛苦，我的现在、我的过去、我的未来，我所有的罪过、我所有爱的人、世间所有的灵魂、炼狱中的炼灵，以及死亡本身，都投入今日每一位司铎在祭台上举起的圣爵中。<br> 我向祢奉献<br> 我每一次的心跳、每一次呼吸、每一个脚步、每一个声音，意在<br> 使我的每一个行动都被祢转化成<br> 同样多的爱德行为，以补赎世界的罪过。<br> 求赐在与祢圣子耶稣基督的共融中，<br> 使我的一天成为一场不断的弥撒，一份持久的祭献，<br> 一场永恒的领受，<br> 以补偿祢神圣的公义！<br> <strong>阿们。</strong><br><br> <em>在与耶稣的结合中，祂每日在圣弥撒那完美的赞美、谢恩、补赎和祈求的祭献中更新祂的完全奉献，我们也可以在圣弥撒圣祭中将自己和所有托付给我们的人呈献给天父。每一次赞美、每一次祈求和每一次奉献都如同一只汲水器，我们借此不断从天主圣心的无限宝藏中汲取新的恩宠。</em></p><p><strong>愿天主受赞美</strong></p><p><strong>愿天主受赞美！</strong><br> 愿祂的圣名受赞美！<br> 愿天主圣父，世界的创造者，受赞美！<br> 愿耶稣基督，真实的天主与真实的人，受赞美！<br> 愿耶稣的圣名受赞美！<br> 愿祂的至圣之心受赞美！<br> 愿祂的宝血受赞美！<br> 愿祂那带来救恩的圣伤受赞美！<br> 愿祂的至圣圣容，安慰之源，受赞美！<br> 愿在祭台至圣圣事中的耶稣受赞美！<br> 愿天主圣神，慰师，受赞美！<br> 愿崇高的天主之母，至圣童贞玛利亚，受赞美！<br> 愿她神圣且无玷的始胎受赞美！<br> 愿她奇妙的升天受赞美！<br> 愿玛利亚最纯洁的圣容与圣心受赞美！<br> 愿童贞玛利亚及圣母之名受赞美！<br> 愿圣若瑟，她最纯洁的净配，受赞美！<br> 愿天主在炼狱中受苦的灵魂中受赞美！<br> 愿天主在祂的诸位天使与圣人中受赞美！<br> <strong>阿们。</strong></p>
 
@@ -992,22 +1040,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1019,6 +1072,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>愿至高、最可敬且不可言喻的天主圣名，在天上、地上和地下，受到所有出自天主之手的受造物，以及藉着祭台至圣圣事中耶稣至圣之心的永远称扬、赞美、热爱、钦崇和光荣。阿们。</strong> </p><p><em>神圣救主曾对蒙受恩宠的圣伯多禄玛利亚修女说：「亵渎是射向我圣心的毒箭。我要给妳一支『黄金之箭』，用以补赎对天主至圣圣名的凌辱与亵渎。」玛利亚修女在领受这首祷词后，获得了一个神视，在其中她看见耶稣至圣之心被这支黄金之箭温柔地刺伤。同时，恩宠的洪流从中涌出，使罪人皈依。祷文应用：为尊崇至圣三一而诵念三次；部分大赦，1881年4月15日。</em></p><p><strong>当我们看见或听到有人说恶言、行恶事或亵渎天主时，我们要说善言、行善事并赞美天主，祂在永恒中受赞美。</strong><br>  <strong>（圣方济各）</strong></p>
 
@@ -1028,22 +1082,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,6 +1114,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>哦，天主圣神</strong>，我谦卑且恳切地求祢，<br> 赐给我一项非常特别的恩宠，<br> 这是我向祢无限的慈悲所恳求的。<br> 求赐我在死前能补偿我因不幸而遭受的所有恩宠损失。<br> 求赐我能达到祢最初意愿引导我达到的<br> 恩宠、功勋与光荣的最高境界，<br> 而我至今因不断的背信弃义而使其落空。<br> 最后，请宽恕我协助他人犯下的罪过，<br> 并以此为我的慈悲冠冕：<br> 请祢亲自在那些因我的过错而遭受恩宠损失的灵魂中，<br> 补偿这些损失。<br> <strong>阿们。</strong> </p><p><em>贝达·路德维希神父（OSB）的每日祷文。Imprimatur: Friburgi Helv. 4.2.1950.</em></p>
 
@@ -1064,22 +1124,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1091,6 +1156,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>在玛利亚无玷之心上，一个极大且痛苦的刺是成立于1717年伦敦的残忍教派——共济会。无论它在哪里落脚，它都会钻进社会的所有阶层和国家的所有机构，最终使其完全屈服于其撒旦的精神。 </p><p>它与其死敌——天主教会——斗争的最狡猾方式之一，就是渗透进教会，通过在教会最高层官员中获取「朋友」，使他们成为披着羊皮的狼，变成路济弗尔的仆人。 </p><p>教宗庇护八世称其为以魔鬼为神的撒旦教派。在其成立仅20年后，教会就以最高教会刑罚——开除教籍（绝罚）谴责了这个反宗教组织。</p><p>共济会宗教的本质在于败坏，在于改变天主所赋予的创造秩序，将天主教信仰的所有神学和道德基础转化为其对立面。凭借这种态度，它在推动堕胎、同性「婚姻」和安乐死方面处于前沿，使其成为完美的「反教会」。</p><p><em>参《共济会的真面目》，阿塔纳修·施奈德辅理主教在教宗基金会「援助受难教会」电视系列讲座中的演讲，2017年</em></p>
 
@@ -1100,22 +1166,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1127,6 +1198,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>主耶稣基督</strong>，<br> 当祢宽容并施行怜悯时，最能彰显祢的全能。<br> 祢曾说过：<br>  <strong>「为那些迫害和诽谤你们的人祈祷。」</strong><br> 我们为共济会员的灵魂恳求祢至圣之心的仁慈，<br> 他们被恶敌诡诈的诡计所欺骗，<br> 正处于永恒灭亡的道路上。<br> 不要让教会，祢的净配，再受他们的压迫，<br> 而是藉着至圣童贞玛利亚及诸位圣人的代祷，<br> 赐予他们祢无限的慈悲。<br> 引导他们回到祢身边，<br> 好使他们通过真实的悔改给教会带来慰藉，<br> 为他们的恶行做出补偿，<br> 从而获得永恒的福乐。<br> <strong>阿们。</strong></p><p><em>共济会员是最不自由的人，其永恒的灵魂救赎受到的威胁最大。愿教内兴起一场运动，以拯救我们共济会同胞的灵魂，特别是通过玫瑰经祈祷和对玛利亚无玷之心的敬礼。她的无玷之心必将得胜，也会战胜共济会和共产主义，天主将藉着玛利亚赐予人类和教会一段和平的时期。</em></p>
 
@@ -1136,22 +1208,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1163,6 +1240,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>无玷圣母</strong>，天地之母皇，<br> 罪人的避难所和我们的母亲，<br> 祢如此爱我们，天主已将<br> 整个慈悲的安排托付于祢！<br> 我，N.，不忠的罪人，<br> 匍伏于祢足下，从心底恳求祢：<br> 请收纳我全然完全作为祢的产业和拥有。<br> 随祢所愿处置我，用我灵魂与身体的一切官能、<br> 我整个生命、死亡与永恒。<br> 完全按祢的旨意安排我，<br> 好使关于祢所说的得以实现：<br>  <strong>「她要踏碎蛇的头。」</strong><br> 同样：<br>  <strong>「独有妳战胜了普世的一切异端。」</strong><br> 使我成为祢手中的工具以服事祢，<br> 在众多堕落和冷淡的灵魂中尽可能增加祢的光荣。<br> 如此，耶稣至圣之心的温柔国度<br> 将日益扩展。<br> 因为祢所到之处，必得皈依与成圣的恩宠，<br> 因为一切恩宠都是从耶稣至圣之心唯独经由祢的双手来到我们这里。<br> 请赐我赞美祢，至圣童贞，<br> 并赐我力量对抗祢的仇敌。<br> <strong>阿们。</strong><br>  <strong>（圣麦克西米利安·M·科尔贝）</strong></p>
 
@@ -1172,22 +1250,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1199,6 +1282,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>高贵的天中王后与诸天使主宰</strong>，<br> 祢自受造之初得天主权柄与使命，<br> 践踏撒但的头。<br> 因此我们谦卑地恳求祢，<br> 派遣天军援助我们，<br> 使他们在祢的领导下追击恶魔，<br> 到处与他们战斗，击退他们狂妄的攻击，<br> 并将他们抛回深渊。<br> <strong>「谁如天主？」</strong><br> 噢，良善温柔的母亲，<br> 祢永远是我们的爱和希望！<br> 噢，天主圣母，请派遣圣天使，<br> 为能保卫我们，并使恶敌远离我们。<br> 诸位圣天使与总领天使，请保卫并护佑我们！<br> <strong>阿们。</strong></p><p><em>1864年1月13日，玛利亚仆人修会的创始人塞斯塔克神父（1801–1868）在昂格莱（比利牛斯山脉）的避难圣母朝圣地时，突然受到一道神圣光辉的震撼。他看见恶魔散布在全世界，到处造成无法言喻的伤害。同时，他获得了至圣童贞玛利亚的神视，她告诉他，恶魔确实已在全世界横行。因此，呼求她为天使之后，并请求她派遣圣天使军团与阴间势力战斗的时刻已经来到。「我的母亲，」神父说，「您是如此良善，难道您不能在没有人请求的情况下就派遣他们吗？」「不能，」至圣童贞回答，「祈祷是天主设定的条件，即使是想要获得恩宠时也是如此。」「如果是这样，我的母亲，那您能教导我们应当如何祈祷吗？」随后，他从至圣童贞那里领受了《高贵王后》祷文，并在获得主教批准后将其传遍全世界。这首伴随着非凡恩宠的祷文得到了教宗庇护九世的推荐，并由利奥十三世和庇护十世赋予全大赦而使其更加丰富。</em></p>
 
@@ -1208,12 +1292,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1299,6 +1389,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1353,6 +1478,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1388,12 +1524,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

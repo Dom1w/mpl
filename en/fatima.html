@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fatima">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Fatima">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/fatima.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../en/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../en/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg" 
-                 alt="" 
+            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -949,6 +990,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>On the 12th and 13th of each month Our Lady wears this crown</p><h1>The Message of Reconciliation of Fátima</h1><p>"If only I could cast into every heart the fire that burns in my breast and makes me love the Hearts of Jesus and Mary so much!" (St. Jacinta Marto)</p><p>"I want to console the Savior and then convert the sinners, so they no longer offend Him!" (St. Francisco Marto)</p><p>Sacrifice yourselves for sinners and say often to Jesus, especially when you make a sacrifice: <br>O my Jesus, it is out of love for You, for the conversion of sinners, for the Holy Father, and in reparation for the sins against the Immaculate Heart of Mary. <br>(Mary at Fátima on July 13, 1917)</p><p>Memoirs of Sister Lúcia from the Portuguese original</p>
             </div>
@@ -957,13 +999,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg" 
-                 alt="" 
+            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg"
+                 alt=""
                  class="section-image">
             
             
@@ -973,16 +1020,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -994,11 +1041,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>When God, urged by His merciful love, sends Mary with a message to the children of the earth, behind it lies that desire of God which wills that all people be saved. (1 Tim 2,4)</p><p>Mary comes as it were as the Mother of the Good Shepherd, to remind the sheep of her Son of the salvific truths of the Gospel.</p><p>Which one of you, having a hundred sheep and losing one, does not leave the ninety-nine in the wilderness and go after the lost one until he finds it? And when he has found it, he takes it upon his shoulders with joy … <br>I say to you: So there will also be joy in heaven over one sinner who repents. (Lk 15,4)</p><p>"The light that flows around her noble figure at all places of apparition is a front of attack against the darkness in which the sinful world threatens to sink. […] She asks, implores, and weeps. She weeps in the Rue du Bac in Paris on July 18, 1830. She weeps in La Salette in 1846, and León Bloy writes of her tears that they were the most heartrending sigh ever heard in the world since the Consummatum est – It is finished on the Cross. She weeps on February 21, 1858 in Lourdes, and who would not be moved when he hears the innocent child Bernadette say she weeps because the Lady weeps. These tears are certainly signs of heavenly sorrow over the obstinacy of sinners. But they are also the last attempt that only a mother's heart can conceive and undertake to move her children to tears of compassion and repentance." [A. J. Fuhs – Fátima and Peace, p. 46.]</p><p>And in Fátima, a small place in Portugal completely unknown until May 13, 1917, Mary continues her gigantic work of salvation. She urgently asks her earthly children to be reconciled with God and "no longer to offend Him." The second thing she so greatly asks of her children is help in her great work of salvation through prayer and sacrifice: "Pray, pray much and bring sacrifices for sinners." And she hastens with the reparation prayers and sacrifices of her sheep to her divine Son and implores mercy and patience.</p><p>In the book "Sister Lúcia Speaks About Fátima – Memoirs of Sister Lúcia I" are described, besides the apparitions of the Angel and the Mother of God, also the lives of the three shepherd children, who fulfilled the requests of Our Lady in an exemplary manner. Their tireless praying and sacrificing for the salvation of souls gives the message of Fátima a very special attraction. On May 13, 2000 Francisco and Jacinta Marto were beatified by Pope John Paul II. And on May 13, 2017 they were canonized by Pope Francis.</p><p>God has chosen these pure child souls to lead His sheep to the lush pasture and the bubbling spring of the Gospel. Thus the little shepherds under the guidance of Our Lady became shepherds of souls after the Heart of Jesus. They shine before all the faithful, especially children, on the path of holiness. They are messengers of peace, that ineffable peace for which humanity thirsts so much. The glad tidings of Bethlehem echo in Fátima:</p><p>Do not be afraid; I am the Angel of Peace!</p><p>Among the recent Popes, who were all great devotees of Fátima, St. Pope John Paul II stands out in a special way. The attack on his life on May 13, 1981 made him even more awake to the message of Fátima. Again and again the Pope emphasized that the Mother of God saved his life and directed the bullet against him in such a way that he survived the attack. Therefore he gave the bullet that pierced his body to Our Lady of Fátima. On May 13, 1982 he prayed in Fátima: <br>O Immaculate Heart! Help us to overcome the danger of evil… May the infinite power of redemption show itself once more in the history of the world: the power of merciful love! May it put a stop to evil and transform consciences! In Your Immaculate Heart may the light of hope be revealed to all!</p><p>Once two priests came to question us. They recommended that we pray for the Holy Father. Jacinta asked who the Holy Father was, and the priests explained to us who he is and how much he needs our prayers. Jacinta kept such great love for the Holy Father that she always added "and for the Holy Father" when she offered Jesus her sacrifices. At the end of the Rosary she always prayed three Hail Marys for the Holy Father. [1 E I. 11]</p><p>I am the Good Shepherd! (Jn 10,14)</p><p>Jacinta also loved to pick up the white lambs, embrace and kiss them, and carry them home in her arms in the evening so they would not get tired. One day she placed herself in the middle of the flock on the way home.<br>– Jacinta – I asked, why are you going there in the middle of the sheep?<br>– To do like Our Savior, who on a holy card they gave me also stands like that in the middle of many sheep and holds one in His arms. [1 E I. 6]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1008,16 +1061,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1029,11 +1082,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>The First Apparition 1916</h3><p>We had been playing for a while when suddenly, although it was otherwise a calm day, a strong wind shook the trees. We looked up and saw […] a youth of 14 to 15 years, whiter than snow. […], he was of great beauty. When he stood before us, he said: <br>– Have no fear! I am the Angel of Peace! Pray with me! Kneeling on the ground he bent his forehead to the earth and had us repeat these words three times:<br>– My God, I believe in You, I adore You, I hope in You, I love You. I ask You pardon for those who do not believe, do not adore, do not hope, and do not love You.</p><p>Then he said, rising:<br>– So shall you pray. The Hearts of Jesus and Mary await your earnest petitions.</p><p>His words impressed themselves so deeply in our memory that we never forgot them again. From then on we spent much time repeating them thus deeply bowed, until we sometimes fell from fatigue. [2 E II. 2]</p><h3>The Second Apparition 1916</h3><p>A long time later we played on a summer day […] at a well. […] Suddenly we saw before us the same figure, the Angel, as it seemed to me. He said:<br>– What are you doing? Pray, pray much! The Hearts of Jesus and Mary have plans of mercy with you. Offer the Most High unceasing prayers and sacrifices.<br>– How shall we offer sacrifices? – I asked.<br>– Make of everything you can an offering, to make reparation for the sins by which He is offended and to implore the conversion of sinners. […] Above all accept suffering and bear in submission what the Lord will send you. [2 E II. 2]</p><p>These words of the Angel impressed themselves on our minds like a light that made us recognize who God is, how much He loves us and wants to be loved in return. We recognized the value of sacrifice and how pleasing it is to Him; and how He converts sinners for the sake of sacrifice. From that time on we began to offer the Lord everything that afflicted us, yet we sought no other mortifications or penances than to repeat the Angel's prayer for hours prostrate on the ground. [4 E II. 1]</p><h3>The Third Apparition 1916</h3><p>So some time passed and we were on the way with our flocks to a piece of land belonging to my parents. […] When we arrived there, we began on our knees, faces to the ground, to repeat the Angel's prayer:<br>– My God, I believe in You …</p><p>I do not know how many times we had repeated this prayer when we saw an unknown light shining above us. We raised ourselves to see what was happening and saw the Angel. In his left hand he held a chalice; above it floated a Host, from which drops of blood fell into the chalice. The Angel let the chalice float in the air, knelt down beside us, and had us repeat three times:</p><p>Most Holy Trinity, Father, Son and Holy Spirit, in deepest reverence I adore You and offer You the precious Body, Blood, Soul and Divinity of Jesus Christ, present in all the tabernacles of the world, in reparation for all the blasphemies, sacrileges, and indifference by which He Himself is offended. Through the infinite merits of His Most Sacred Heart and of the Immaculate Heart of Mary, I ask You for the conversion of poor sinners.</p><p>Then he rose, took the chalice and the Host, gave me the sacred Host, and divided the Blood in the chalice between Jacinta and Francisco, saying:<br>– Receive the Body and drink the Blood of Jesus Christ, so terribly offended by ungrateful men. Make reparation for their sins and console your God! He knelt down again on the ground, repeated with us three more times the same prayer: <br>Most Holy Trinity … <br>and disappeared. We remained in this posture and kept repeating the same words. [2 E II. 2]</p><p>Let us remain long on our knees before the Lord present in the Eucharist, making reparation with our faith and our love for the negligence, forgetfulness, and even the offenses that our Redeemer must endure in many parts of the world. (St. John Paul II, Mane nobiscum Domine, 18)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1043,16 +1102,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1064,11 +1123,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>May 13, 1917</h3><p>I was playing with Francisco and Jacinta on the summit of the slope of the Cova da Iria. […] when we suddenly saw something like a flash of lightning. […] <br>We began to descend the slope and drove the sheep toward the road. When we were about halfway down the slope, […] we saw over an oak tree a Lady, clothed entirely in white, brighter than the sun. […] Surprised by this apparition we stood still. […] Then Our Lady said:<br>– Have no fear! I will do you no harm!<br>– Where do You come from? – I asked her.<br>– I am from heaven!<br>– And what do You want of me?<br>– I have come to ask you to come here for the next six months, on the thirteenth at the same hour. Then I will tell you who I am and what I want. […]<br>– Will I go to heaven too?<br>– Yes, you will!<br>– And Jacinta?<br>– Yes!<br>– And Francisco?<br>– Yes, but he must pray many more Rosaries. […] <br>– Will you offer yourselves to God to endure all the sufferings He will send you, in reparation for the sins by which He is offended and as a petition for the conversion of sinners?<br>– Yes, we will!<br>– Then you will have to suffer much, but the grace of God will be your comfort!</p><p>During the apparitions from May 13 to October 13, 1917, the "degrees of communication" of Our Lady with the three children differed: Jacinta saw and heard the Virgin; Lúcia saw, heard, and was the only one who spoke with her; Francisco saw everything but could never hear what Our Lady said.</p><p>When she said these last words, she opened her hands for the first time and transmitted to us so strong a light, as if a reflection went forth from her hands. It penetrated into our breasts and into the deepest depth of our souls and we recognized ourselves in God, who was this light, much more clearly than we could see ourselves in the best mirror. Through an interior impulse that was likewise communicated to us, we fell to our knees and repeated inwardly:</p><p>– O Most Holy Trinity, I adore You. My God, my God, I love You in the Most Holy Sacrament.</p><p>After a few moments Our Lady added:<br>– <strong>Pray the Rosary daily</strong> to obtain peace for the world and the end of the war! Thereupon she began slowly to rise and ascend toward the sunrise, until she disappeared in the infinity of the distance. [4 E II. 3]</p><p>That Lady told us we should pray the Rosary and offer sacrifices for the conversion of sinners. When we pray the Rosary now, we must pray the Hail Mary and the Our Father completely. And the sacrifices, how shall we offer them?<br>Francisco quickly discovered a good sacrifice.<br>– Let us give our lunch to the sheep – we are offering the sacrifice of eating nothing. In a few minutes our supply was distributed to the flock. [1 E I. 8]</p><p>"We had been recommended to pray the Rosary after vespers, but because the time for playing seemed too short to us, we had found a good way to get done quickly: We let the beads slide, saying only: Ave Maria, Ave Maria, Ave Maria! When we had reached the end of the decade, we said with a long pause the simple words: Our Father. And so we had prayed our Rosary in a flash." [1 E I. 6]</p><h3>June 13, 1917</h3><p>After I, Jacinta, Francisco, and some others present had prayed the Rosary, we again saw the light that approached (which we called a flash), and then Our Lady over the oak tree, just as in May.</p><p><strong>– What do You wish of me?</strong><strong><br></strong>– I asked.<br><strong>– I wish you to pray the Rosary every day and learn to read. […]</strong></p><p><strong>– I asked for the healing of a sick person.</strong><strong><br></strong><strong>– If he converts, he will be healed within the year.</strong></p><p><strong>– I would like You to take us to heaven.</strong><strong><br></strong><strong>– Yes! I will soon take Jacinta and Francisco. But you will remain here for some time. Jesus wishes to make use of you so that people may know and love me. He wishes to establish devotion to My Immaculate Heart on earth.</strong></p><p><em>(Here Lúcia in haste omits the end of the paragraph, which in other documents reads: "To those who accept it I promise salvation, and these souls will be loved by God like flowers placed by me to adorn His throne." [4 E II. 4])</em></p><p><strong>– Will I remain here alone?</strong><strong><br></strong>– I asked sadly.<br><strong>– No, my daughter! Do you suffer greatly? Do not be discouraged. I will never leave you. My Immaculate Heart will be your refuge and the way that will lead you to God.</strong></p><p>At the moment she said these last words, she opened her hands and transmitted to us a second time the reflection of this immeasurable light. In it we saw ourselves as if immersed in God. Jacinta and Francisco seemed to stand in the part of the light that rose toward heaven, and I in the part that poured over the earth. Before the right palm of Our Lady was a heart, surrounded by thorns that seemed to pierce it. We understood that this was the Immaculate Heart of Mary, wounded by the sins of humanity, desiring reparation. <em>(Source: [4 E II. 4])</em></p><p>From that day on we felt in our hearts an even stronger love for the Immaculate Heart of Mary. Jacinta sometimes said to me:<br><strong>– That Lady said her Immaculate Heart will be your refuge and the way that will lead you to God. Do you love her very much? I love her Heart so much! It is so good!</strong> <em>(Source: [3 E 5])</em></p><h3>July 13, 1917</h3><p>Shortly after we arrived at the Cova da Iria at the oak tree and prayed the Rosary with a large crowd, we saw the usual light and soon thereafter Our Lady over the oak tree.</p><p><strong>– What do You wish of me?</strong><strong><br></strong>– I asked.<br><strong>– I wish you to come here again on the thirteenth of next month, that you continue to pray the Rosary every day in honor of Our Lady of the Rosary, to obtain peace for the world and the end of the war. […]</strong></p><p><strong>– I would like You to tell us who You are and to work a miracle so that all may believe that You appear to us.</strong><strong><br></strong><strong>– Continue to come here every month! In October I will tell you who I am, what I wish, and I will work a miracle so that all may believe.</strong></p><p>Then she continued:<br><strong>– Sacrifice yourselves for sinners and say often to Jesus, especially when you make a sacrifice: O my Jesus, it is out of love for You, for the conversion of sinners, for the Holy Father, and in reparation for the sins against the Immaculate Heart of Mary.</strong></p><p>At these last words she opened her hands again as in the two preceding months. The ray seemed to penetrate the earth, and we saw as it were a sea of fire and immersed in this fire the devils and the souls, as if they were translucent, black and bronze-colored glowing coals in human form, floating in this fire. […]</p><p>Frightened and as if asking for help we raised our eyes to Our Lady, who spoke to us with full kindness and sadness:<br><strong>– You have seen hell, where the souls of poor sinners go. To save them, God wishes to establish devotion to My Immaculate Heart in the world. If you do what I tell you, many souls will be saved, and there will be peace. The war is coming to an end. But if people do not cease to offend God, under the pontificate of Pius XI another, worse war will begin. When you see a night illumined by an unknown light, then know that this is the great sign God gives you that He is about to punish the world for its sins with war, famine, persecution of the Church and of the Holy Father.</strong></p><p><strong>– To prevent this, I will come to ask for the consecration of Russia to My Immaculate Heart and the Communion of reparation on the First Saturdays.</strong> <em>(She fulfilled this promise some years later when she appeared to Lúcia in 1925 and 1926 in Pontevedra, Spain [see page 39], and in 1929 in Tuy, Spain [see page 41].)</em></p><p><strong>– If people heed My wishes, Russia will be converted and there will be peace. If not, then it will spread its errors throughout the world, will provoke wars and persecutions of the Church. The good will be martyred, and the Holy Father will have much to suffer. Various nations will be annihilated. But in the end My Immaculate Heart will triumph. The Holy Father will consecrate Russia to me, it will be converted, and a period of peace will be granted to the world. In Portugal the dogma of the faith will always be preserved.</strong> […]</p><p><strong>– When you pray the Rosary, say after each decade: O my Jesus, forgive us our sins, save us from the fire of hell, lead all souls to heaven, especially those who have most need of Your mercy.</strong> […]</p><p>In her usual way she ascended toward the east, until she disappeared in the infinite distance of the firmament. <em>(Source: [4 E II. 5])</em></p><p>We then made for the first time a meditation on hell and eternity. What impressed Jacinta most was eternity. Even when playing she would ask from time to time:<br><strong>– But look, after many, many years does hell still not end?</strong> […]</p><p>Then she added:<br><strong>– How good that Lady is! She has already promised to take us to heaven.</strong> <em>(Source: [1 E I. 8])</em></p><p>Jacinta could not forget the vision of hell of July 13, 1917 for the rest of her short life. Even shortly before her death she exclaimed in the presence of the superior of the hospital in Lisbon, where she had been brought:</p><p><strong>"If people knew what eternity means! How would they then do everything in their power to change their lives! Dear godmother (so she called the superior), penance and sacrifices give much joy to Our Lord. Flee luxury! Flee riches! Love poverty! Practice charity, even toward wicked people! Never say anything bad about anyone, and avoid those who despise others! Always practice patience; for patience leads to heaven! Priests should concern themselves only with Church affairs. They must be pure, utterly pure! The disobedience of priests and religious toward their superiors and the Holy Father offends Our Lord greatly."</strong> <em>(Source: Fátima and Peace, p. 99)</em></p><h3>The Lamps of the Angels</h3><p>We argued about who was able to count the stars, which we said were the lamps of the angels. The moon was the lantern of Our Lady and the sun that of our Savior. Therefore Jacinta sometimes said:<br><strong>– I prefer the lamp of Our Lady, for it neither burns nor dazzles us, as that of our Savior does.</strong> <em>(Source: [1 E I. 4])</em></p><p>Then we went to the threshing floor, jumped around a bit, waited for Our Lady and the angels to light their lamps and put them in the window to light for us. When there was no moon, we thought the lamp of Our Lady had no more oil. <em>(Source: [1 E I. 6])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1078,16 +1143,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1099,11 +1164,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Meanwhile the morning of August 13 was dawning. […]<br> Everyone wanted to see us, question us, and entrust their petitions to us, that we might present them to the Most Holy Virgin. […]</p><p>In the midst of all this throng my father was asked to bring me to my aunt's house, where the administrator awaited us. […]</p><p>When I arrived, the administrator was in the room with Jacinta and Francisco. There he questioned us and tried again to wrest from us the promise that we would no longer go to the Cova da Iria. <em>(Source: [2 E II. 11])</em></p><p>When we were later taken prisoner, it was the absence of our parents that weighed most heavily on Jacinta. […]<br> <strong>– Do not weep</strong> – Francisco said to her, – <strong>let us offer it to Jesus for the sinners.</strong></p><p>And raising his eyes and hands to heaven, he prayed the offering prayer:<br> <strong>– O my Jesus, it is out of love for You and for the conversion of sinners.</strong> […]</p><p>When after being separated we were brought together again in a prison cell, they said they would fetch us shortly to burn us. Then Jacinta withdrew to a window. At first I thought she wanted to distract herself with the view, but then I noticed that she was weeping.</p><p>I took her to me and asked why she was weeping:<br> <strong>– Because we will die without having seen our fathers and mothers again,</strong> she answered.</p><p>And with a face streaming with tears:<br> <strong>– I would at least like to see my mother!</strong></p><p><strong>– So you do not want to make this sacrifice for the conversion of sinners?</strong></p><p><strong>– I do, I do.</strong></p><p>And while the tears ran down her face, she raised her hands and eyes to heaven and prayed the offering prayer:<br> <strong>– O my Jesus! It is out of love for You, for the conversion of sinners, for the Holy Father, and in reparation for the sins committed against the Immaculate Heart of Mary.</strong> <em>(Source: [1 E I. 12])</em></p><p>Then we decided to pray our Rosary. Jacinta pulled out a medal she wore around her neck and asked a prisoner to hang it on a nail on the wall. Kneeling before this medal we began to pray.</p><p>The prisoners prayed with us as best they could. […]</p><p>Since the Most Holy Virgin had told us that we should also offer our prayers and sacrifices in reparation for the sins against the Immaculate Heart of Mary, we wanted to agree that each would offer for his own intention. One would offer for sinners, another for the Holy Father, and the third in reparation for the sins against the Immaculate Heart of Mary.</p><p>After we had made this agreement, I asked Jacinta to choose for which intention she wanted to offer:<br> <strong>– I offer for all, because I love everyone.</strong> <em>(Source: [1 E I. 13])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1113,16 +1184,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1134,11 +1205,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>August 19, 1917</h3><p>When I was driving the sheep with Francisco and his brother John to a place called Valinhos that promised something supernatural, and felt something approaching and enveloping us, I sensed that Our Lady would appear to us. […]</p><p>After Jacinta's arrival we shortly thereafter beheld Our Lady over an oak tree.</p><p><strong>– What do You wish of me?</strong><strong><br></strong> <strong>– I wish you to come on the thirteenth to the Cova da Iria and to continue to pray the Rosary daily. […]</strong></p><p><strong>Pray, pray much and bring sacrifices for sinners, for many souls go to hell because no one sacrifices and prays for them.</strong></p><p>And again she ascended as usual toward the east. <em>(Source: [4 E II. 6])</em></p><p><em>Since Our Lady had taught us to offer Jesus our sacrifices, Jacinta always asked, when we wanted to make an offering or had to endure some trial:</em><em><br></em><em> </em><strong>– Have you already told Jesus that it is out of love for Him?</strong></p><p>When I answered her with no:<br> <strong>– Then I will tell Him.</strong></p><p>And she folded her little hands, raised her eyes to heaven, and said:<br> <strong>– O Jesus, it is out of love for You and for the conversion of sinners.</strong> <em>(Source: [1 E I. 10])</em></p><h3>September 13, 1917</h3><p>When the expected hour approached, I went with Jacinta and Francisco through numerous people. […]</p><p>We finally arrived at the Cova da Iria at the oak tree and began to pray the Rosary with the people. Shortly thereafter we saw the light and then Our Lady over the oak tree.</p><p><strong>– Continue to pray the Rosary to obtain the end of the war. In October Our Lord will also come, Our Lady of Sorrows and of Mount Carmel,</strong> <em>(She meant to express her wish that everyone should wear the scapular […] Rosary and scapular belong inseparably together. [Sr. Lúcia in: Fátima and Peace, p. 147])</em> <strong>Saint Joseph with the Child Jesus, to bless the world. God is pleased with your sacrifices, but He does not want you to sleep with the rope. Wear it only during the day.</strong></p><p><strong>– I have been asked to implore many things from You: the healing of some sick people and of a deaf-mute.</strong><strong><br></strong><strong>– Yes, some I will heal, others not. In October I will work a miracle so that all may believe.</strong></p><p>And she began to ascend and disappeared as usual. <em>(Source: [4 E II. 7])</em></p><p><em>Sometimes Francisco and Jacinta found me sad. Since I could not speak for sobbing, they suffered with me and wept as well. Then Jacinta prayed our offering prayer in a loud voice:</em><em><br></em><strong>– My God, we offer You all these sufferings and sacrifices as an act of reparation and for the conversion of sinners.</strong> <em>(Source: [2 E II. 3])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1148,20 +1225,20 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg" 
-                 alt="October 13, 1917" 
+            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg"
+                 alt="October 13, 1917"
                  class="section-image">
             
         </div>
@@ -1176,11 +1253,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>We left the house quite early, since we expected delays on the way. The people came in masses. It was raining heavily. […] Not even the mud on the roads could stop these people from kneeling in humble and suppliant posture. […]</p><p>Shortly thereafter we saw the light and then Our Lady over the oak tree.</p><p><strong>– What do You wish of me?</strong><strong><br></strong> <strong>– I wish to tell you that a chapel shall be built here in my honor. I am Our Lady of the Rosary. One shall continue to pray the Rosary daily. […]</strong></p><p><strong>– I have been asked to implore many things from You: whether You would heal some sick and convert some sinners, and much else.</strong></p><p><strong>– Some yes, others no. They must amend and ask forgiveness of their sins.</strong></p><p>And still more sadly she said:<br> <strong>– One must no longer offend God, Our Lord, who has already been so greatly offended.</strong> <em>(Source: [8])</em></p><p>She opened her hands and let them shine in the sunlight. As she ascended, her own light was reflected in the sun. <em>(Source: [4 E II. 8])</em></p><p><em>These were the last words of Mary, the core of the message of Fátima. Thereupon the miracle of the sun occurred before approximately 60,000 to 70,000 present. This natural event was perceived by individual persons within a radius of up to 40 kilometers. The sun spun three times in succession. Thereupon beams of light in rainbow colors fell upon the hollow and all those present there.</em></p><p><em>The children saw during this the Mother of God, then Saint Joseph with the Child Jesus in his arms, the Savior who blessed the people, and finally Mary as Our Lady of Sorrows and then as Our Lady of Mount Carmel.</em></p><p><em>After the third spinning the sun turned blood red and seemed to plunge in a zigzag toward the crowd. Faithful and unfaithful sank to their knees in fear, prayed and confessed themselves sinners and implored mercy. Many sick, including cripples and blind, were instantly healed.</em></p><p><em>When the event was over, the people noticed that their completely soaked clothes were suddenly dry.</em></p><p>Jacinta took the sacrifices for the conversion of sinners so seriously that she did not let a single opportunity pass. There were some children from Moita who went begging from door to door. We met them one day when we were on our way with our sheep. When Jacinta saw them, she said to us:<br> <strong>– Let us give our lunch to those poor people for the conversion of sinners.</strong> <em>(Source: [1 E I. 9])</em></p><p>At other times she said to me:<br> <strong>– I do not know what it is. I feel the Savior in my interior. I understand what He says to me without seeing or hearing Him; but it is so beautiful to be with Him.</strong></p><p>Another time:<br> <strong>– Listen, do you know what? Our Savior is sad. Our Lady has told us one must no longer offend Him, for He has already been so greatly offended, but no one pays heed. They continue to commit the same sins.</strong> <em>(Source: [3 E 9])</em></p><p>When she did not want to eat anything for penance, I said:<br> <strong>– Jacinta, come on, eat!</strong><strong><br></strong> <strong>– No, I want to make this sacrifice for those sinners who eat too much.</strong></p><p>When she was already sick, she wanted to go to Holy Mass one day. I asked her:<br> <strong>– Jacinta, do not go, you cannot. Today is not even Sunday!</strong><strong><br></strong> <strong>– That does not matter! I am going for the sinners who do not even go on Sunday.</strong> <em>(Source: [3 E 3])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1190,16 +1273,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1211,11 +1294,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>On December 10, 1925 Sister Lúcia beheld the Most Holy Virgin in Pontevedra and, at her side, in a luminous cloud, a child. The Most Holy Virgin placed her hand on her shoulder and showed a heart surrounded by thorns that she held in her other hand. The child said:<br> <strong>– Have pity on the Heart of your Most Holy Mother, surrounded by thorns with which ungrateful men constantly pierce it, without anyone making an act of reparation to remove them.</strong></p><p>Thereupon the Most Holy Virgin said:<br> <strong>– My daughter, behold My Heart surrounded by thorns with which ungrateful men constantly pierce it through their blasphemies and ingratitude. At least you strive to console Me and make known that I promise to assist at the hour of death with all the graces necessary for the salvation of these souls all those who, for five months, on the first Saturday of each month, go to confession, receive Holy Communion, pray a Rosary, and keep Me company for 15 minutes by meditating on the 15 Rosary mysteries with the intention of making reparation to Me.</strong></p><p><strong>On February 15, 1926 the Child Jesus appeared to her again. He asked her if she had already spread the devotion to His Mother. She explained to Him the difficulties the confessor had, and told Him the Mother Superior was ready to spread it, but the confessor had said she could do nothing alone. Jesus answered:</strong><strong><br></strong><strong> – It is true that your Superior alone can do nothing, but with My grace she can do everything.</strong></p><p>She explained to Jesus the difficulties some souls had in going to confession on Saturday, and asked that confession be valid for eight days. Jesus answered:<br> <strong>– Yes, it can even be much longer, provided that they are in the state of grace when they receive Me, and that they have the intention of making reparation to the Immaculate Heart of Mary.</strong></p><p><strong>– My Jesus, and if someone forgets to form this intention?</strong></p><p>Jesus answered:<br> <strong>– They can do it at the next confession, provided they take the first opportunity they have to go to confession.</strong> <em>(Source: [A I])</em></p><p><em>(This text is a transcription by Sister Lúcia from the year 1927 on the order of her spiritual director Fr. Aparício, S.J. Here we find the necessary conditions for fulfilling the promise of the Five First Saturdays in reparation for the blasphemies against the Heart of Mary. One should never forget the actual intention: to make reparation to the Heart of Mary.)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1225,16 +1314,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1246,11 +1335,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>I had asked and received permission from my superiors and my confessor to hold the Holy Hour each night from Thursday to Friday from eleven o'clock until midnight.</p><p>One night I was alone. I knelt at the communion rail in the middle of the chapel to pray the Angel's prayers. As I felt tired, I stood up and continued praying with outstretched arms. […]</p><p>Suddenly the chapel was illumined by a supernatural light, and on the altar appeared a cross of light that reached to the ceiling. In a clear light one could see in the upper part of the cross the face and upper body of a man, over the breast a dove, likewise of light, and nailed to the cross the body of another man.</p><p>A little below the waist, floating in the air, one could see the chalice and a large Host, upon which fell drops of blood that flowed from the face of the Crucified and from a wound in the breast. Gliding from the Host, these drops fell into the chalice.</p><p>Under the right arm of the cross stood Our Lady. It was Our Lady of Fátima with her Immaculate Heart in her left hand, without sword and roses, but with a crown of thorns and flames. Under the left arm of the cross some large letters formed, running toward the altar, as if they were of crystal-clear water, the words: <strong>Grace and Mercy.</strong></p><p><strong>(</strong><a href="https://i0.wp.com/catholicism.org/wp-content/blogs.dir/1/files/2008/01/Tuy_Vision.jpg?fit=868%2C1200&amp;ssl=1" target="_blank" rel="noopener noreferrer"><strong>Image</strong></a><strong>)</strong></p><p>I understood that the mystery of the Most Holy Trinity had been shown to me. […] Then Our Lady said to me:<br> <strong>– The moment has come when God asks the Holy Father to perform in union with all the bishops of the world the consecration of Russia to My Immaculate Heart. He promises to save it through this means. So many souls are damned by the justice of God because of the sins committed against me, that I ask for reparation: Offer yourself in this intention and pray.</strong></p><p>I reported this to my confessor, who ordered me to write down what Our Lady wished. <em>(Source: [A II])</em></p><p><em>(Our Lady had to wait almost 55 years for the fulfillment of her request. Only on March 25, 1984 did Pope John Paul II for the first time perform in communion with more than 2600 Catholic bishops of the world and many bishops of the Russian and Greek Orthodox Churches the consecration of the world and those nations "which have most need of God's mercy." Although the consecration text did not list any country specifically, the Pope mentioned the names of Russia and his homeland Poland. It was the common consecration requested by Our Lady for the comfort and reparation of the offenses inflicted on her Immaculate Heart. A few months later Mikhail Gorbachev became General Secretary of the CPSU and led Russia out of communist dictatorship.)</em> <em>(Source: [3 E 2])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1260,16 +1355,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1281,11 +1376,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>The "secret" of Fátima refers to a portion of the message of July 13, 1917, which the shepherd children were to keep secret according to Our Lady's instruction.</p><p>On August 13, 1917 the district administrator of Fátima had the three shepherd children thrown into prison. Through exhausting interrogations and the threat of a torturous death, attempts were made to force the children to reveal the secret. Yet they remained steadfast. After two days they were released from custody.</p><p><a href="https://c8.alamy.com/compde/2wah5m1/das-gemalde-uber-dem-hauptaltar-in-der-basilika-unserer-lieben-frau-vom-rosenkranz-in-fatima-portugal-das-gemalde-erzahlt-die-geschichte-der-fatima-ereignisse-2wah5m1.jpg" target="_blank" rel="noopener noreferrer"><strong>Main altarpiece in the Rosary Basilica</strong></a><strong>:</strong> Christ comes to us men in the Holy Eucharist – symbolized by three children to whom the angel gives Holy Communion. But it is not the angel, but the Mother of God who stands between God and men.</p><h3>The First Two Parts of the Secret</h3><p>The first two parts of the secret were written down by Sister Lúcia in 1941 at the request of D. José Alves Correia da Silva, Bishop of Leiria:<br> <strong>"The secret consists of three different parts, of which I will reveal two. The first part was the vision of hell …"</strong> <em>(Source: [A III])</em></p><p>The second part refers to the veneration of the Immaculate Heart of Mary. <em>(Source: [3 E 5])</em></p><p>Sister Lúcia also wrote down the third part of the secret in Tuy on January 3, 1944 at the bishop's request. <em>(Source: [A III])</em></p><p>Pope John Paul II had the third part of the secret published on June 26, 2000.</p><p><strong>"As we recognized the keyword of the first and second secret to be salvare le anime (to save the souls), so the keyword of this secret is the triple call: Penitenza, Penitenza, Penitenza (Repentance, Repentance, Repentance)! We are reminded of the beginning of the Gospel: Repent and believe in the Gospel (Mk 1,15). To understand the signs of the times means: to grasp the urgency of repentance – conversion – faith. This is the right response to the historical moment surrounded by great dangers. I may add a personal memory here: In a conversation with me, Sister Lúcia said that it was becoming clearer to her that the goal of all the apparitions had been to practice more in faith, hope, and love – everything else was only a lead-up to that."</strong><strong><br></strong> <em>(From the commentary of Cardinal Joseph Ratzinger on the secret of Fátima)</em> <em>(Source: [A III])</em></p><h3>Third Part of the Secret</h3><p><strong>"J. M. J. The third part of the secret revealed on July 13, 1917 in the Cova da Iria, Fátima. I write in obedience to You, my God, who command me to do so through His Excellency, the Most Reverend Lord Bishop of Leiria, and through Your and my Most Holy Mother.</strong></p><p>After the two parts that I have already set forth, we saw to the left of Our Lady, somewhat above, an angel with a fiery sword in his left hand; it shot forth sparks and flames went from it, as if to set the world on fire; yet the flames were extinguished when they came into contact with the splendor that Our Lady radiated from her right hand upon him: the angel, pointing with his right hand to the earth and crying with a loud voice: <strong>"Repentance, Repentance, Repentance!"</strong></p><p>And we saw in an immense light, which is God: "something that looks like persons in a mirror when they pass before it" a bishop clothed in white – we had the impression that it was the Holy Father. We saw various other bishops, priests, religious men and religious women climbing a steep mountain, on whose summit was a great cross of rough trunks as of cork oak with bark.</p><p>Before he arrived there, the Holy Father passed through a great city that was half in ruins and half trembling, with faltering step, pressed by pain and sorrow, he prayed for the souls of the corpses he encountered on his way. Having arrived at the mountain, he knelt at the feet of the great cross.</p><p>There he was killed by a group of soldiers who shot at him with firearms and arrows. In the same way there died one after another the bishops, priests, religious, and various lay persons, men and women of different classes and positions.</p><p>Under the two arms of the cross were two angels, each had a crystal aspergillum in his hand. In them they collected the blood of the martyrs and sprinkled with it the souls who approached God."</p><p><em>Tuy, January 3, 1944</em><em><br></em> <strong>[A III.]</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1295,16 +1396,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1316,11 +1417,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"I praise You, Father …, because You have hidden these things from the wise and understanding and revealed them to babes."</strong> (Mt 11,25)</p><p>According to the divine plan, a woman clothed with the sun (Rev 12,1) has come down from heaven to this earth to seek out the babes preferred by the Father. She speaks to them with the voice and heart of a mother: She invites them to offer themselves as a sacrifice of reparation, and declares herself ready to lead them safely to God. And behold, they see a light going forth from her motherly hands that penetrates them to their innermost being, so that they feel themselves immersed in God – as when someone looks at himself in a mirror, so they describe it.</p><p>Later Francisco, one of the three favored, explained:<br> "We burned in that light which is God, but we did not burn. What is God like? That cannot be said. Yes, that is something we humans cannot say."<br> God: a light that burns but does not consume. All who receive this divine presence into themselves become the dwelling place and consequently the "burning bush" of the Most High.</p><p>What most amazed and fully engaged St. Francisco was God in that immense light that had penetrated all three of them to their innermost being. Yet only to him did God show Himself "so sad," as he expressed it. One night his father heard him sobbing and asked him why he was weeping; the son answered: "I was thinking of Jesus, who is so sad because of the sins committed against Him." A single [...] desire moves Francisco from now on, and it is "to console Jesus and make Him happy." [...]</p><p>He devoted himself to an intense spiritual life, [...] so that he attained a true form of mystical union with the Lord. And precisely this brings him to a progressive purification of the spirit through much renunciation of pleasant things, even of innocent children's games. Francisco bore the great sufferings caused by the illness that led to his death without any complaint. Everything seemed little to him to console Jesus; he died with a smile on his lips. [...]</p><p>The message of Fátima is a call to conversion, a warning to humanity not to play the game of the "dragon," who with his tail swept a third of the stars from heaven (Rev 12,4). The ultimate goal of man is heaven, his true dwelling, where the heavenly Father awaits all in His merciful love. God wills that no one be lost; therefore He sent His Son to earth two thousand years ago to seek and save what was lost (Lk 19,10).</p><p>In her maternal care, the Most Holy Virgin has come here, to Fátima, to call upon people "no longer to offend God, Our Lord, who is already so greatly offended." The pain of the Mother moves her to speak; the fate of her children is at stake. Therefore she says to the shepherd children: "Pray, pray much, and bring sacrifices for sinners; for many souls go to hell because there is no one who sacrifices and prays for them."</p><p>Little Jacinta felt and lived this concern of the Mother of God as her own, and she offered herself heroically as a sacrifice for sinners. [...] And when for Francisco the moment of farewell had come, Jacinta charged him: "Give many greetings from me to Our Lord and Our Lady, and tell them that I suffer everything they ask to convert the sinners."</p><p>The vision of hell at the apparition of July 13 had made such an impression on Jacinta that no penance or mortification was too much for her to save the sinners. [...]</p><p>My last word is for the children: Dear boys and girls, indeed the Mother of God needs you all very much to console Jesus, who is sad over the follies that are committed; she needs your prayers and sacrifices for sinners.</p><p>Ask your parents and educators to send you to the "school" of the Mother of God, that she may teach you to be like the shepherd children who strove to do everything she asked of them. I say to you: "In a short time of submission to Mary and dependence on her one makes greater progress than in long years of self-will and self-reliance."</strong> (St. Louis Mary Grignion de Montfort, "Treatise on True Devotion to Mary," Freiburg/Switzerland 1925, No. 155).</p><p>In this way the shepherd children quickly became holy. By letting themselves be guided with complete docility by such a good teacher, Jacinta and Francisco reached the summits of perfection in a short time. [...]</p><p>May the message of their life always remain alive to enlighten the path of humanity!</p><p><strong>(From the homily of John Paul II at the beatification of the shepherd children Francisco and Jacinta on May 13, 2000 in Fátima, in "Osservatore Romano," May 19, 2000)</strong><strong><br></strong> <strong>"Let the children come to Me …" (Mk 10,14)</strong><strong><br></strong> <strong>"… over them I pour whole streams of graces."</strong> (Jesus to St. Sr. Faustyna)</p><h3>Lúcia dos Santos</h3><p>Lúcia dos Santos was born on March 22, 1907 in Aljustrel. She was the eldest of the three seer children.</p><p>At 14 she came to Porto to the college of the Sisters of St. Dorothy in Vilar. In 1925 she decided at 18 for religious life and entered the Institute of St. Dorothy in Tuy and Pontevedra (Spain).</p><p>Because she longed for a life with more silence, prayer, and penance, she transferred in 1948 to the Carmel of St. Teresa in Coimbra. Here she continued to fulfill the mission Our Lady had entrusted to her: to spread devotion to the Immaculate Heart of Mary.</p><p>Our Lady came on February 13, 2005 to take her home. Since February 19, 2006 her mortal remains rest, beside those of her two companions, in the Basilica of Fátima.</p><p>"We mixed our tears with the water, to then drink from the same spring into which we had poured them. Should not this cistern represent the image of Mary, in whose heart we dried our tears and found comfort?" [1 E I. 3]</p><p><strong>"I always call upon Your refuge, Your name, Your heart, O Mary!"</strong><strong><br></strong> (Sr. Maria Lúcia of Jesus and the Immaculate Heart)</p><p><strong>Note:</strong> At this well behind Lúcia's parents' house the second apparition of the Angel took place in 1917. It was also the place where the shepherd children liked to stay to pray together and share their joys and sorrows with one another.</p><h3>St. Francisco Marto</h3><p>St. Francisco Marto was born on June 11, 1908 in Aljustrel. Together with his sister Jacinta and his cousin Lúcia he was permitted to see an angel three times and the Mother of God six times. From that time on his only ideal in life was to give Jesus joy and comfort.</p><p>He himself wanted to guard anxiously against every sin and if possible also prevent it in others, that the Lord might not have to be sad. Joyfully he offered all possible sacrifices to console Jesus. He spent many hours alone before the tabernacle or went to a remote place to bring comfort to the Lord. At almost 11 years of age, on April 4, 1919, God took His little "consoling angel" to Himself.</p><p>One day he said to me:</p><p><strong>"I was very glad to see the angel. I had even more joy at the sight of Our Lady. But the most beautiful was the Savior in that light that Our Lady radiated into our breasts. I love God so much. But He is so sad because of the many sins; we must never commit one again."</strong><strong><br></strong> (from his words, [4 E I. 4])</p><p>When I once expressed my sorrow over the persecution that was beginning to rise against me within and outside our family, he wanted to encourage me and said:</p><p><strong>"Let it be! Did not Our Lady predict that we would have much to suffer to make reparation to Our Lord and her Immaculate Heart for the sins by which they are offended? They are so sad! If we can console them through these sufferings, we should be glad."</strong><strong><br></strong> (from his words, [4 E I. 4])</p><p>One day I asked him:</p><p><strong>"Are you feeling better?"</strong><strong><br></strong><strong> "No, I feel worse. But it will not be long, then I will go to heaven. There I will console the Savior and the Mother of God very much."</strong><strong><br></strong> (from his words, [4 E I. 12])</p><p>While Jacinta seemed to be occupied only with the thought of converting sinners and saving souls from hell, he thought only of consoling Our Lord and Our Lady, who seemed so sad to him. [4 E I. 12]</p><p>The day before his death he said to me:</p><p><strong>"Only a little while longer, and I will go to heaven!"</strong><strong><br></strong> (the day before his death, [4 E I. 16])</p><p>It was already night when I said goodbye to him:</p><p><strong>"Francisco, goodbye! If you go to heaven tonight, do not forget me there, hear?"</strong><strong><br></strong><strong> "I will not forget you. Be at peace!"</strong><strong><br></strong><strong> "Then goodbye, Francisco! […] Goodbye in heaven!"</strong><strong><br></strong><strong> And heaven drew near. There he flew the next day into the arms of his heavenly Mother. </strong><strong><br></strong> (from his last words, [4 E I. 17])</p><h3>St. Jacinta Marto</h3><p>St. Jacinta Marto was born on March 11, 1910 in Aljustrel. She was the youngest of the three seer children. Additionally she was granted other apparitions of the Mother of God and also repeatedly saw the Holy Father. Her further life was marked by tireless prayer and generous sacrifice to convert sinners and make reparation to the Immaculate Heart of Mary. Completed early, at almost 10 years of age, God took His little "angel of reparation" to Himself on February 20, 1920.</p><p>Sometimes she would kiss and embrace a cross and say:</p><p><strong>"O my Jesus, I love You and want to suffer much out of love for You."</strong><strong><br></strong>([1 E III. 5])</p><p>One day during her illness she said to me:</p><p><strong>"I so like to tell Jesus that I love Him. When I tell Him many times, it seems to me that I have a flame in my breast, but I do not burn myself."</strong></p><p>Another time she said:</p><p><strong>"I so love Our Lord and Our Lady that I never grow tired of telling them that I love them."</strong><strong><br></strong>([1 E II. 3])</p><p>Shortly before she had to go to the hospital, she said:</p><p><strong>"It will not be long before I go to heaven. You stay here to tell people that God wishes to establish devotion to the Immaculate Heart of Mary firmly in the world. […] Tell everyone that God gives us graces through the Immaculate Heart of Mary, that people must ask for them, that the Heart of Jesus wills that the Heart of our heavenly Mother be venerated at His side. One should ask for peace from our heavenly Mother, for God has entrusted it to her."</strong><strong><br></strong>([3 E 9])</p><p>Finally the day of her departure for Lisbon came. The farewell was heartbreaking. For a long time she held me embraced and said weeping:</p><p><strong>"We will never see each other again! Pray much for me until I go to heaven. After that I will pray for you there. Love Jesus and the Immaculate Heart of Mary very much and bring many sacrifices for the sinners."</strong></p><p>From Lisbon she had it said to me that Our Lady had already visited her there. She had revealed to her the hour and day of her death, and she charged me to be very good.<br>([1 E III. 6])</p><p>On February 20, 1920 Jacinta died in the hospital in Lisbon.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1330,16 +1437,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1351,11 +1458,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>The message of Fátima is also called the summary of the Gospel formulated by Our Lady and includes the following emphases:</p><ul><li><p><strong>Resolute conversion</strong></p></li><li><p><strong>Faithful fulfillment of the commandments of God and personal duties of state</strong><strong><br></strong> <em>("The Queen of the Holy Rosary wants nothing else but holiness. Our Lady of Fátima demands the perfect fulfillment of duties of state … There are souls who believe it is a matter of great and extraordinary mortifications and penances to which they feel incapable and therefore lose courage, while the loving Mother of God speaks of the fulfillment of duties of state when she demands penance. That is holiness.")</em><em><br></em> <em>(Sr. Lúcia in: Fátima and Peace, p. 98)</em></p></li><li><p><strong>Regular reception of the sacraments</strong></p></li><li><p><strong>Veneration of the Immaculate Heart of Mary</strong></p><ul><li><p>through personal consecration to Mary</p></li><li><p>through meditative prayer, especially of the Rosary and reparation prayers</p></li><li><p>through the practice of the First Saturdays of reparation to the Heart of Mary<br> <em>("To hasten and support the triumph of her Immaculate Heart, Mary wished that the practice of the First Saturdays of reparation be practiced throughout the whole Church.")</em><em><br></em> <em>(Cf. A I.)</em></p></li><li><p>through wearing the Brown Scapular</p></li></ul></li><li><p><strong>Appropriate apostolate, especially substitute prayer and sacrifice</strong></p></li></ul><p><em>("It is to be assumed that the Mother of God makes the time of her great and manifest triumph to all the world dependent on the number of those who fulfill her demands. Until the hour of victory, therefore, our task can only be to proclaim the message and to call people to its realization.")</em><em><br></em> <em>(Fátima and Peace, p. 122)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1365,16 +1478,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1386,11 +1499,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"My God, I believe in You, I adore You, I hope in You, I love You. I ask You pardon for those who do not believe, do not adore, do not hope, and do not love You."</strong></p><p><strong>"Most Holy Trinity, Father, Son and Holy Spirit, in deepest reverence I adore You and offer You the precious Body, Blood, Soul and Divinity of Jesus Christ, present in all the tabernacles of the world, in reparation for all the blasphemies, sacrileges, and indifference by which He Himself is offended. Through the infinite merits of His Most Sacred Heart and of the Immaculate Heart of Mary, I ask You for the conversion of poor sinners."</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1400,16 +1519,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1421,11 +1540,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Divine Heart of Jesus, through the Immaculate Heart of Mary I offer You everything I pray, work, sacrifice, and suffer today in the name of all and for all souls of the three-fold holy Church, with that intention with which You Yourself pray and offer Yourself unceasingly on our altars for the salvation of souls. Amen."</strong></p><br><p><strong>"Man is never greater than when he kneels."</strong><strong><br></strong> <em>(St. Pope John XXIII)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1435,16 +1560,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1456,11 +1581,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"Again, the kingdom of heaven is like a merchant in search of fine pearls, who, on finding one pearl of great value, went and sold all that he had and bought it."</strong><strong><br></strong> <em>(Mt 13,45-46)</em></p><p>When Mary again and again urges us: <strong>"Pray the Rosary daily!"</strong>, she gives us as it were the Precious Pearl of the Gospel, which is hidden in the mysteries of the Rosary.</p><p>And who among us is not in search of the most precious thing in life? Yet so often we reach for pearls that only shine outwardly but are worthless for eternity. Therefore Mary so urgently asks us to "sell" all the vain and deceitful pearls of this life to acquire the one Precious Pearl.</p><p>By meditatively contemplating the mysteries of the Rosary and firmly connecting them with the thread of our daily life, the kingdom of heaven – and with it God Himself – opens up to us more and more.</p><h3>The Promises of the Queen of the Rosary</h3><p>Bl. Alan de la Roche (1428–1475), a Rosary preacher of the Dominican Order, reports an apparition of the Mother of God. She gave him the commission to advocate for and spread the Rosary. Countless graces has Mary promised to those who call upon her with trust through this prayer.</p><p>Of the 15 promises in all, five are given here:</p><ul><li><p><strong>"I promise all who devoutly pray the Psalter of my Rosary my special protection and great favors."</strong><strong><br></strong> <em>(Cf. the prayer miracle of Hiroshima: At the terrible atomic bomb drop on Hiroshima on August 6, 1945, four Jesuit fathers were protected in an unexplained way from the ghastly effects of atomic radiation. Within a radius of 1.5 kilometers they were the only survivors among hundreds of thousands. Even their rectory, only eight blocks from the center of the explosion, still stood, although all the buildings around were completely destroyed. With amazement the about 200 doctors and scientists heard again and again the same answer to their many questions: "As missionaries we simply wanted to live the message of the Mother of God of Fátima in our lives, and therefore we prayed the Rosary every day." That is the hope-bearing message of Hiroshima: The Rosary is mightier than the atomic bomb. Today in the center of the rebuilt city there is a Marian memorial church where the Rosary is prayed day and night. [Source:</em><a href="http://www.gnadenquelle.de/hiroshima.htm" target="_blank" rel="noopener noreferrer"><em> </em><em>http://www.gnadenquelle.de/hiroshima.htm</em></a><em>])</em></p></li><li><p><strong>"The Rosary causes virtue and works of piety to bloom again. Through it fullness of divine mercy is granted to souls."</strong><strong><br></strong> It will turn hearts and they will begin to despise earthly things, to love heavenly things, and to make rapid progress. Many souls will be saved through the Rosary.</p></li><li><p><strong>"All who devoutly pray the Rosary and contemplate the mysteries will not be weighed down by misfortune and will be preserved from an unforeseen death. If they are in sin, they will obtain the grace of conversion; but the grace of perseverance if they are just, and they will become partakers of eternal life."</strong></p></li><li><p><strong>"Very soon I will free from purgatory the souls who have loved my Rosary in their life."</strong></p></li><li><p><strong>"The faithful children of my Rosary will enjoy great glory in heaven."</strong></p></li></ul><p><em>(From: Pearls and Roses)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1470,16 +1601,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1491,11 +1622,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>The Opening:</strong></h3><ul><li><p><strong>In the name of the Father …</strong> <em>(Sign of the Cross)</em></p></li><li><p><strong>I believe in God …</strong> <em>(Apostles' Creed)</em></p></li></ul><p>Then follow:</p><ul><li><p>1 Our Father</p></li><li><p>3 Hail Marys <em>(Ave Maria)</em>, into each of which after the name "Jesus" the three theological virtues are inserted:</p><ul><li><p><strong>… increase our faith</strong></p></li><li><p><strong>… strengthen our hope</strong></p></li><li><p><strong>… enkindle our love</strong></p></li></ul></li></ul><p>This opening concludes with a <strong>Glory Be</strong>.</p><h3><strong>Course of the Rosary Mysteries:</strong></h3><p>For each of the Rosary mysteries, first:</p><ul><li><p><strong>1 Our Father</strong> is prayed.<br> Then follow:</p></li><li><p><strong>10 Hail Marys</strong> with the respective meditation text*, inserted after the name "Jesus".<br> At the end of each mystery:</p></li><li><p><strong>Glory Be</strong></p></li><li><p><strong>The so-called Fátima prayer:</strong><strong><br></strong> <strong>"O my Jesus, forgive us our sins, save us from the fire of hell, lead all souls to heaven, especially those who have most need of Your mercy."</strong></p></li></ul><p><em>("The words we speak in prayer are words of the Angel, words of the Holy Spirit … What is new about the Rosary is actually only that we linger over these words; that we repeat them, because great things do not become boring through repetition. Only the trivial needs variety … The great becomes greater when we repeat it, and we ourselves become richer thereby …")</em><em><br></em> <em>(Cardinal Joseph Ratzinger, at the German Katholikentag 1984)</em></p><h3><strong>The Mysteries of the Rosary:</strong></h3><p><strong><em>The Joyful Mysteries</em></strong></p><ol><li><p><strong>… whom You, O Virgin, conceived by the Holy Spirit.</strong></p></li><li><p><strong>… whom You, O Virgin, carried to Elizabeth.</strong></p></li><li><p><strong>… whom You, O Virgin, gave birth to in Bethlehem.</strong></p></li><li><p><strong>… whom You, O Virgin, presented in the Temple.</strong></p></li><li><p><strong>… whom You, O Virgin, found again in the Temple.</strong></p></li></ol><p><strong><em>The Luminous Mysteries</em></strong></p><ol><li><p><strong>… who was baptized by John.</strong></p></li><li><p><strong>… who revealed Himself at the wedding at Cana.</strong></p></li><li><p><strong>… who proclaimed the kingdom of God to us.</strong></p></li><li><p><strong>… who was transfigured on the mountain.</strong></p></li><li><p><strong>… who gave us the Eucharist.</strong></p></li></ol><p><strong><em>The Sorrowful Mysteries</em></strong></p><ol><li><p><strong>… who sweated blood for us.</strong></p></li><li><p><strong>… who was scourged for us.</strong></p></li><li><p><strong>… who was crowned with thorns for us.</strong></p></li><li><p><strong>… who carried the heavy Cross for us.</strong></p></li><li><p><strong>… who was crucified for us.</strong></p></li></ol><p><strong><em>The Glorious Mysteries</em></strong></p><ol><li><p><strong>… who rose from the dead.</strong></p></li><li><p><strong>… who ascended into heaven.</strong></p></li><li><p><strong>… who sent us the Holy Spirit.</strong></p></li><li><p><strong>… who took You, O Virgin, into heaven.</strong></p></li><li><p><strong>… who crowned You, O Virgin, in heaven.</strong></p></li></ol><br><p><strong>"The most Blessed Virgin gave the Rosary such efficacy that there is no problem in our life that cannot be solved through this prayer."</strong> <em>(Lúcia dos Santos)</em></p><p><strong>"When we pray, we become a ray of the love of God: at our home, where we live, and finally for the whole great world."</strong> <em>(St. Mother Teresa)</em></p><p><strong>"The Rosary is my favorite prayer. It is a marvelous prayer, marvelous in its simplicity and its depth."</strong> <em>(St. Pope John Paul II.)</em></p><p>Little Josephine too discovered the "Precious Pearl":<br> <strong>"Ave, Maria …"</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1505,16 +1642,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1526,11 +1663,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Most Holy Virgin Mary! Mother of God and my Mother! To Your Immaculate Heart I consecrate myself with all that I am and have. Take me under Your maternal protection! Preserve me from all dangers. Help me to overcome the temptations that lead me to evil, that I may preserve the purity of my body and soul. May Your Immaculate Heart be my refuge and the way that leads me to God.</p><p>Obtain for me the grace to pray and sacrifice often out of love for Jesus for the conversion of sinners and in reparation for the sins committed against Your Immaculate Heart. In union with You and the Heart of Your divine Son I wish to live in total consecration to the Most Holy Trinity, in whom I believe, whom I adore, in whom I hope, and whom I love. Amen.<strong><br></strong> <em>(Sr. M. Lúcia of Fátima)</em></p><p><strong>Imprimatur:</strong> Fátima, July 1, 2006, Antonio, Ep. Leir.-Fatimensis</p><br><p>When we consecrate ourselves to the Mother of God to do everything with Mary, in Mary, through Mary and for Mary, she leads us surely to total consecration to Jesus. At the same time, through this consecration we place our inner and outer possessions, indeed even the value of all our good works, into the hands of Mary, that she may preserve, increase, and beautify them. What we thus entrust to Mary cannot be taken from us by any man, the evil enemy, or our own weakness. Moreover, we thereby exercise Christian charity to a high degree, because we allow Mary to dispose of our spiritual goods for the living and the dead.<br> <em>(Cf. St. L. M. Grignion de Montfort, The Golden Book, p. 233–238)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1540,16 +1683,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1561,11 +1704,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Merciful Jesus, Your goodness is infinite, and the treasures of Your graces are inexhaustible.</p><p>I trust boundlessly in Your mercy, which surpasses all Your works.<br> I consecrate myself entirely to You, to live in the rays of Your grace and love that went forth from Your Heart on the Cross.</p><p>I want to spread Your mercy and especially to pray Your Chaplet, to implore Your mercy for us, for the conversion of sinners, for the whole world, and for the Poor Souls in purgatory.</p><p>You, however, will protect me as Your property and Your honor, for I fear everything from my weakness and hope for everything from Your mercy.</p><p>May the whole of humanity recognize the unfathomable depth of Your mercy, place all their hope in it, and praise it for all eternity. Amen.</p><p><strong>Jesus, I trust in You,</strong><strong><br></strong><strong> for You are my confidence!</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1575,16 +1724,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1596,11 +1745,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>Exchange of Hearts with Mary</strong></h3><p>Place, O wondrous Mother, in place of my sinful heart Your Immaculate Heart, that the Holy Spirit may work in me and Your divine Son may grow in me.<br> Grant my request, You great, You faithful, You Mediatrix of all graces. Amen.</p><h3><strong>Exchange of Hearts with Jesus</strong></h3><p>Place, O good Jesus, in place of my sinful heart Your divine wounded Heart, that the Holy Spirit may work in me and You, Merciful Jesus, may grow in me.<br> Grant my request, You good, You faithful, and loving Jesus, that You may soon reign as King of Peace over this world. Amen.</p><p><strong>Note:</strong></p><ul><li><p><em>The exchange of hearts with Jesus is prepared by the exchange of hearts with Mary. Mary, the great Mediatrix of graces, pours all graces over our heart and prepares our heart for the exchange of hearts with Jesus.</em></p></li><li><p><em>The exchange of hearts with Jesus transforms our heart and gives grace free course, that we may recognize and fulfill the will of God. It is the personal total consecration to God with the goal that Christ may reign in us and over the world as King of Peace.</em></p></li></ul><p><strong>"Not the smallest prayer, not a tear of a secret need, not a breath of a secret longing directed to God will ever be in vain! Yet in God''s own time and in His way they will be blown back in clouds of blessing and fall upon you in a stream of mercy and upon all for whom you pray."</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1610,16 +1765,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1631,11 +1786,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"I will never leave you.</strong><strong><br></strong><strong>My Immaculate Heart will be your refuge</strong><strong><br></strong><strong>and the way that will lead you to God."</strong><strong><br></strong> <em>(Mary to Lúcia on June 13, 1917)</em></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1645,16 +1806,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1666,11 +1827,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>In the name of the Father and of the Son and of the Holy Spirit. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1680,16 +1847,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1701,11 +1868,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>I believe in God, the Father almighty, Creator of heaven and earth, and in Jesus Christ, His only Son, our Lord, conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, crucified, died and was buried, descended into the realm of the dead, on the third day risen from the dead, ascended into heaven; He sits at the right hand of God, the almighty Father; from there He will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the dead and eternal life. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1715,16 +1888,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1736,11 +1909,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Our Father who art in heaven,<br> hallowed be Thy name.<br> Thy kingdom come,<br> Thy will be done, on earth as it is in heaven.<br> Give us this day our daily bread<br> and forgive us our trespasses,<br> as we forgive those who trespass against us.<br> And lead us not into temptation,<br> but deliver us from evil. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1750,16 +1929,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1771,11 +1950,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Hail Mary, full of grace, the Lord is with thee.<br> Blessed art thou among women,<br> and blessed is the fruit of thy womb, Jesus.<br> Holy Mary, Mother of God, pray for us sinners,<br> now and at the hour of our death. Amen.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1785,6 +1970,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1870,6 +2056,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1924,6 +2145,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1959,12 +2191,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

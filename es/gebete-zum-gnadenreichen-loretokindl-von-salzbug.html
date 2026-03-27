@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Oraciones al Niño de Loreto de Salzburgo">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Oraciones al Niño de Loreto de Salzburgo">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gebete-zum-gnadenreichen-loretokindl-von-salzbug.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../es/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../es/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-image--right">
+    <section class="content-section section-with-image section-with-image--right" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>¡Divino Niño, bendícenos!</p><p><strong>Breve historia del Niño de Loreto</strong></p><p>Desde 1650 las Hermanas de la Adoración Perpetua en Salzburgo albergan un preciado tesoro. Es el muy amado Niño de Loreto, al que innumerables peregrinos acuden para confiar sus inquietudes y necesidades.<br>Y aquellos devotos del Divino Niño que no pueden venir en persona viajan en el expreso de su corazón anhelante hacia el pequeño Cristo Rey, que recibe a los cansados y cargados con los brazos abiertos.</p><p>La historia de la estatuilla de marfil realizada por un artista anónimo se remonta al año 1620. En aquel entonces la Condesa Oettingen regaló la estatua de tan solo 11 cm de altura a la <strong>Madre Eufrasia Silberrath</strong>, que estaba fundando un nuevo monasterio en Ensisheim en Alsacia. En el mismo lugar estaba al frente de los Capuchinos como Guardián y Maestro de Novicios <strong>P. Juan Crisóstomo Schenk</strong>. Cuando este santo religioso, que había tenido desde joven una relación muy viva con el Divino Niño, vio la hermosa figurilla en la Madre Eufrasia, suplicó tanto hasta que finalmente se le prestó hasta su fundación de monasterio.</p><p>Por su tierna y sincera devoción al Niño Jesús pronto fue llamado en general el <strong>"Padre del Niño Cristo"</strong>. El Divino Niño recompensó su amor con muchas y extraordinarias gracias. Murió en olor de santidad el 25 de noviembre de 1643 en Delemont.</p><p>Entretanto la Madre Eufrasia había llegado a las Hermanas en Salzburgo, donde también su Niño Jesús quiso hacer su hogar. Aquí estableció Su trono de gracia, y hasta esta hora la fama de Su amor y poder taumatúrgico se extiende por incontables favores y notables respuestas a la oración.</p><br><h3><strong>Oración al bendecir con el Niño de Loreto</strong></h3><p><strong>Que Dios os bendiga</strong>,<br>   el ✝ Padre que os creó,<br>   el ✝ Hijo que os redimió,<br>   el ✝ Espíritu Santo que os ha santificado.</p><p>Que la bendición de la Santísima Trinidad esté con vosotros en todos vuestros caminos y preserve vuestro cuerpo y alma de todo mal. <strong>Amén.</strong></p><p>Con Tu Divino Niño bendícenos, ¡oh Virgen Madre María toda pura!</p><br><p><strong>Diariamente a las ~14:30 h</strong><strong><br></strong>la <strong>bendición del Niño Jesús</strong> se imparte especialmente en las cuatro direcciones cardinales para todos los devotos del Niño Jesús, bienhechores, enfermos, sufrientes y todos los conectados con nosotros que no pueden acudir personalmente a la puerta del monasterio.</p><br><p><strong>Y las veinticuatro horas del día la promesa se cumple:</strong></p><p>    <strong>Si solo piensas con anhelo en el Divino Niño,</strong><strong><br></strong>   <strong>¡ya Él alza Su manita y te bendice con dulzura!</strong></p><br><h3><strong>¡Oh hermosísimo Niño Jesús</strong></h3><p><strong>¡Oh hermosísimo Niño Jesús</strong>,<br>   contigo deseo estar unido.<br>Me consagro enteramente a Ti,<br>óh, tómame de mí mismo.<br>Para que viva en Ti<br>y solo Tú en mí,<br>¡oh querido Niño Jesús!</p><p><em>(P. Crisóstomo Schenk)</em></p><br><h3><strong>Breve oración de novena al Niño Jesús de Loreto</strong></h3><p><strong>Oh Jesús</strong>,<br>   en Tu Corazón encomiendo…<br>(esta alma, esta intención, este sufrimiento…)<br>Míralo y luego haz lo que Tu Corazón te inspire…<br>¡Que prevalezca Tu Corazón!</p><p><strong>Oh Jesús</strong>,<br>   confío en Ti,<br>me encomiendo a Ti,<br>me abandono a Ti,<br>¡estoy seguro de Ti!<br><strong>Amén.</strong></p><p><em>(Orada diariamente en común por las Hermanas de Loreto, especialmente por bienhechores y devotos del Niño Jesús. Excepto del 17 al 25 de cada mes.)</em></p><br><h3><strong>Súplica sincera al querido Niño Jesús</strong></h3><p><strong>Oh todopoderoso Niño Jesús</strong>,<br>   en quien mora la plenitud de la Divinidad, Tú que eres todo amor y bondad, rico para todos los que Te invocan.<br>Tú manantial de vida y santidad, de perfecto consuelo.<br>Tú nuestra paz, nuestra reconciliación, Tú salvación de todos los que esperan en Ti:</p><p><strong>En Tu Corazón encomiendo…</strong><strong><br></strong>   (esta alma, esta intención, este sufrimiento…)<br>¡Míralo y luego haz lo que Tu amor inspire!</p><p><strong>Oh amantísimo Niño Jesús</strong>,<br>   Tú que ya por incontables favores has revelado Tu complacencia en la devoción a Tu santísima infancia en esta imagen, ten piedad de nosotros.<br>¡Glorifica Tu santísimo y dulce Nombre también en nosotros!<br>¡Sé para nosotros Jesús! ¡Sé para nosotros Salvador!<br><strong>Amén.</strong></p><p><em>(Orada diariamente en común por las Hermanas de Loreto, especialmente por bienhechores y devotos del Niño Jesús, del 17 al 25 de cada mes.)</em></p><br><h3><strong>Niño Jesús, mira a nosotros pobres</strong></h3><p><strong>Niño Jesús, mira a nosotros pobres</strong><strong><br></strong>   te suplicamos, Divino Niño.<br>Ten piedad de nosotros, pues necesitamos ayuda.</p><p><strong>Tú eres el sol de la gracia</strong>,<br>   rico en bondad sin medida.<br>Quien acude a Ti se va dichoso y refrescado al instante.</p><p><strong>Al enfermo sanas pronto</strong>,<br>   al desfallecido consuelas.<br>Quien estaba en pecado encontró descanso para el alma contigo.</p><p><strong>Niño Jesús</strong>,<br>   llenos de confianza nosotros también nos acercamos ahora a Tu trono.<br>¡Permítenos contemplarte un día a Ti mismo, Redentor de la humanidad, Hijo de Dios!</p><br><h3><strong>Al Divino Niño Jesús</strong></h3><p><strong>Querido Niño Jesús</strong>,<br>   ¡estás lleno del Espíritu Santo! Derrama el Espíritu Santo con Sus siete dones y doce frutos sobre nosotros y el mundo entero, ¡para que el malvado enemigo huya de nosotros!<br>En el nombre del ✝ Padre y del ✝ Hijo y del ✝ Espíritu Santo.<br><strong>Amén.</strong></p><br><h3><strong>Oración al querido Niño Jesús</strong></h3><p><strong>Oh Tú mi querido Niño Jesús</strong>,<br>   ¡Divino Niño taumatúrgico, que todos los que sufren y están enfermos sean encomendados a Ti!<br>Eres rico en gracia sin medida, ante Ti hasta el más rico es pobre.<br>Tu manita bendice a todos por igual, lleno de poder taumatúrgico está Tu brazo.</p><p><strong>Oh sana, si el Padre quiere</strong>,<br>   lo que está enfermo, ojos, cabeza y corazón.<br>¡Ordena al sufrimiento: "Cállate" y alivia todo dolor ardiente!</p><p><strong>También donde la dolencia es más profunda</strong>,<br>   donde pesa en el alma como plomo,<br>allí ayuda, ¡oh sabio Médico de las almas, Tú que también sufriste tanto!</p><p><strong>Donde un alma vacila con angustia</strong>,<br>   enséñale la paciencia en el sufrimiento; donde la duda sombría atormenta a uno, ¡brilla con la verdad!</p><p><strong>Que nadie se vaya sin consuelo</strong>,<br>   querido Niño, quien se inclina ante Ti, escucha con gracia la devota súplica que sube buscando ayuda!</p><p><strong>Quítanos la pecaminosidad</strong><strong><br></strong>   y danos firme confianza en Dios, para que un día en la eternidad te contemplemos a Ti mismo en Tu gloria.<br><strong>Amén.</strong></p><br><h3><strong>Saludo matutino al Niño Jesús</strong></h3><p><strong>Buenos días, Niño celestial</strong>,<br>   Niño Jesús, ¡te saludo!<br>Oh, te amo de todo corazón, ¡Divino Niño, bendíceme!</p><p><strong>Divino Hermanito</strong>,<br>   te doy gracias por la noche que ha pasado;<br>por Ti sea dado gracias al Padre Celestial por todos nosotros.</p><p><strong>Por Ti somos hijos de Dios</strong>,<br>   somos infinitamente ricos.<br>Haz nuestros corazones como el Tuyo, para alegría del Padre.</p><p><strong>Niño celestial</strong>,<br>   acógemos a todos en Tu pequeño Corazón divino;<br>envuélvenos así en Tu amor para que permanezcamos Tuyos para siempre!</p><p><strong>Lo que hoy pensamos, decimos, hacemos y sufrimos, Niño Jesús</strong>,<br>   que todo sea por amor a Ti, en acción de gracias a Ti, ¡para alegrarte!</p><p><strong>Bendícenos a nosotros y a los que amamos</strong>,<br>   todos los que están cerca de nosotros.<br>Ayuda al pobre, al afligido, ¡atrae hacia Ti a los que se extravían!</p><p><strong>Y cuando llegue mi última hora</strong>,<br>   condúceme al cielo.<br>Te diré para siempre con gozo: ¡Niño Jesús, te amo!</p><br><h3><strong>Saludo vespertino al Niño Jesús</strong></h3><p><strong>Dulce, querido Niño Jesús</strong>,<br>   antes de ir a descansar, sea nuestra alegría, dulce Niño, verte una vez más.<br>¡El amor nos ha traído aquí para despedirte con buenas noches!</p><p><strong>También queremos darte gracias</strong>,<br>   por el día que ha pasado; Niño Jesús, te consagramos todas nuestras horas de vida.<br>Buenas noches, querido Niño Jesús, encomiéndanos a Ti.</p><p><strong>Una cosa más, precioso Niño celestial</strong>,<br>   ¡oh perdona nuestros pecados! Haznos devotos y bien dispuestos, concédenos gracia ante Ti.<br>Buenas noches, querido Niño Jesús, encomiéndanos a Ti.</p><p><strong>Protégenos esta noche</strong>,<br>   que pase dulcemente también para Ti. En cuanto despertemos mañana te saludaremos de nuevo.<br>Buenas noches, querido Niño Jesús, ¡eres nuestro, nosotros somos Tuyos!</p><br><h3><strong>Acción de gracias al Niño de Loreto tras obtener lo pedido</strong></h3><p><strong>Oh amantísimo Niño Jesús</strong>,<br>   en humildad y lleno del más sincero agradecimiento me arrodillo ante Tu imagen. Alabaré y glorificaré Tu infinita bondad, pues has tenido piedad de mí y has escuchado tan graciosamente mi súplica.<br>Tú serás siempre mi confianza y mi esperanza.<br>¡Ojalá todos los hombres reconozcan cuán grato te es venerar Tu santísima infancia y cuán maravillosamente recompensas a todos los que confían en Ti!</p><p><strong>Oh Divino Niño Jesús</strong>,<br>   concédeme la gracia de complacerte cada vez más mediante un espíritu infantil, para que un día entre en Tu reino de gloria. <strong>Amén.</strong></p><br><h3><strong>Información</strong></h3><p>Reproducciones del Niño de Loreto, aceite bendecido del Niño Jesús, medallas, rosarios, estampas, velas y tiras de tela tocadas al Niño de Loreto están disponibles en la puerta del monasterio.</p><h1>2. Folleto</h1><p>¡Divino Niño, confiamos en Ti!</p>
             </div>
@@ -955,13 +997,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/Nur%20Jesulein.png" 
-                 alt="Niño de Loreto" 
+            <img src="../static/img/Nur%20Jesulein.png"
+                 alt="Niño de Loreto"
                  class="section-image">
             
             
@@ -971,16 +1018,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -992,11 +1039,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Oh Niño de Loreto,</strong><strong><br></strong> fuerte y maravilloso,<br> sé siempre mi pequeño,<br> ¡gran Ayudador!<br> Sé mi luz en todos los días oscuros,<br> ¡sé mi consejo en todas las preguntas angustiosas!</p><p><strong>Pequeño Niño,</strong><strong><br></strong> bendice el duro trabajo de mi jornada,<br> bendice la llama callada<br> de mi amor!<br> ¡Y las personas que Tú me has dado<br> como compañeras para esta vida terrenal!</p><p>Sana las heridas que la vida ha causado,<br> ¡fortalece mi alma que ha soportado mucho sufrimiento!<br> Déjame reconocer Tu amor incluso entonces<br> cuando las necesidades arden hondo en el corazón!</p><p>Concédeme salud y pan de cada día,<br> ¡mantén lejos de mí la preocupación, la desgracia, el miedo y la necesidad!<br> Sé misericordioso conmigo en el juicio,<br> ¡llámame al reposo en la luz eterna!</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1006,16 +1059,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1027,11 +1080,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Oh querido, dulce Niño Jesús,</strong><strong><br></strong> ¡recibe el más cálido saludo!<br> Tú aquí en este valle de lágrimas,<br> mi consuelo, mi Todo eres.<br> Te hiciste nuestro Hermanito<br> por el poder de Tu amor,<br> y todavía siempre estarás con nosotros<br> en la santa forma del pan.<br> Te saludo mil veces<br> en el santo Sacramento!<br> Ojalá con la gran multitud de ángeles<br> pudiera alabarte sin fin.<br> Oh, si pudiera ir a la iglesia<br> con vestido festivo para verte.<br> Pero no, hágase Tu voluntad,<br> confiaré en Ti con gusto.</p><p>Aquí en mi lecho de dolor<br> te honraré, fiel y devotamente;<br> te recordaré temprano y tarde<br> hasta que llegue a Ti.<br> Cuando esté en dolor y sufrimiento<br> solo día y noche,<br> pienso en Tu soledad<br> en el pequeño santuario de gracia.<br> Cuando mi sangre arda con fiebre<br> y mis manos quemen,<br> pienso en el ardor de Tu amor<br> en el Santísimo Sacramento.<br> Cuando la paciencia me abandone<br> y sienta el dolor tan agudamente,<br> pienso en las agonías de amor<br> que Tu Corazón una vez soportó.<br> Oh Niño Jesús, sufro con gusto<br> por Ti, solo por Ti,<br> por Ti que nunca estás lejos de mí,<br> ¡Tú me darás fuerza!<br> Oh dirige Tu mirada tan dulce<br> hacia mí, un pobre enfermo,<br> Tú eres el que calma mi anhelo,<br> el que concede paz y descanso.</p><p>Oh, cuando bendigas con gracia<br> la devota banda de los que oran,<br> entonces bendíceme a mí también, Niño Jesús,<br> aunque esté lejos del altar.<br> Sí, bendíceme, quien confía en Ti,<br> te da todo,<br> quien te contempla en espíritu con fe<br> y quien te ama eternamente!</p><p><strong>Amén.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1041,16 +1100,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1062,11 +1121,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Si todos los ángeles, todos los genios del mundo hubieran estudiado qué ayudaría en esta o aquella situación, p. ej. este sacrificio, aquella tentación, aquel sufrimiento, no podrían haber encontrado nada mejor que fuera más adecuado para ti. Así ha estudiado la eterna sabiduría de Dios desde la eternidad para darte esta cruz de Su Corazón como Su don más preciado.</p><p>Examinió esta cruz con Su omnisciente ojo antes de enviártela, la ponderó con Su divino intelecto, la probó con Su sabia justicia y la calentó y pesó con misericordia amorosa con Sus dos manos, por si no era un milímetro demasiado grande y un miligramo demasiado pesada. Entonces la bendijo con Su santo nombre, la ungió con Su gracia, la perfumó con Su consuelo, te miró a ti y a tu valor con nueva vida, y así viene directa del cielo como un saludo de Dios, como una limosna del misericordioso amor de tu Dios.</p><p>Las cruces que nosotros mismos erigimos, o elegimos para nosotros, siempre están algo adornadas; pues hay algo de nosotros mismos en ellas y por tanto nos crucifican menos. La perfección, este logro cumbre en la vida de virtud, consistirá así en tomar alegremente sobre uno aquellas cruces que son impuestas sin obra propia.</p><p>(San Francisco de Sales)</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1076,16 +1141,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1097,11 +1162,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>¡Oh Divino Niño Jesús!</strong><strong><br></strong> Te has dignado por amor a nosotros tomar la naturaleza humana y ocultar el resplandor de Tu divinidad bajo la forma de un niño débil. ¡Oh cuán grande y amable eres en Tu humillación!<br> Lleno de confianza acudo a Ti, oh querido Niño Jesús. Por incontables favores has revelado Tu complacencia en la veneración de Tu santa infancia en esta imagen. Te suplico por Tu y mi Madre María, ten piedad de mí, perdona mis pecados, hazme cada vez más semejante a Ti mediante pureza de corazón, humildad y obediencia. Oh acude en mi ayuda, todopoderoso Niño Jesús, especialmente en esta intención...</p><p>Protége también a la juventud, a la que amas de modo especial, pero que está expuesta a tan grandes peligros.</p><p><strong>Oh Niño Jesús de Loreto,</strong><strong><br></strong> también te encomiendo a todos mis parientes, Tu santa Iglesia y nuestra patria.</p><p><strong>Amén.</strong></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1111,16 +1182,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1132,11 +1203,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Maravilloso Niño de Loreto,</strong><strong><br></strong> dime cómo debo vivir.<br> Para corresponderte, oh Niño,<br> Tu amor por tiempo y edades.</p><p><strong>Maravilloso Niño de Loreto,</strong><strong><br></strong> dime cómo debo agradecer,<br> por las gracias, por los dones,<br> que refrescan mi cuerpo y alma.</p><p><strong>Maravilloso Niño de Loreto,</strong><strong><br></strong> dime cómo debo orar,<br> para mover el Corazón de Tu Padre,<br> para discernir Su voluntad.</p><p><strong>Maravilloso Niño de Loreto,</strong><strong><br></strong> dime cómo debo aprender<br> a no quebrarme bajo la Cruz,<br> a decir el "Fiat" siguiéndote a Ti.</p><p><strong>Maravilloso Niño de Loreto,</strong><strong><br></strong> dime cómo debo amar;<br> tan reseca está aún mi alma,<br> y tan cerca del umbral de la muerte.</p><p><strong>Maravilloso Niño de Loreto,</strong><strong><br></strong> alcánzame Tus queridas manitas cuando deba partir,<br> ¡y condúceme al bienaventurado final!</p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1146,16 +1223,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1167,11 +1244,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>¡Nos apresuramos aquí rápidamente<br> porque eres el refugio y hogar<br> del pequeño Niño de Loreto!</p><p>Él reina sobre un altar de oro<br> y mira con bondad<br> y escucha fielmente año tras año<br> muchas peticiones, gracias y cantos.</p><p>Y cuando estamos muy necesitados<br> y no quedaba esperanza,<br> entonces el Niño de Loreto nos ayuda<br> con el poder y amor de Dios!</p><br><p>Las oraciones están tomadas del folleto <em>El Niño de Loreto de Salzburgo</em>, Imprimatur: Ordinariato Salzburgo, nº: 918/92, 29 de octubre de 1992.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1181,6 +1264,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1266,6 +1350,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1320,6 +1439,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1355,12 +1485,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

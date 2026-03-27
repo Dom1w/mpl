@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="예수와 마리아의 연합된 마음의 승리를 위한 사제와 평신도의 마리아운동 e.V.">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="예수와 마리아의 연합된 마음의 승리를 위한 사제와 평신도의 마리아운동 e.V.">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ko/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ko/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,8 +969,7 @@
 
     <!-- Content Sections -->
     
-    
-    
+        
     
     
     
@@ -941,20 +982,20 @@
 </div>
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_c1528c9ed8d5bbd7570da485fdf632eb0a6a01ab4e6cc48937fa23460ee6edb4.jpg" 
-                 alt="사제와 평신도의 마리아운동" 
+            <img src="../static/img/gs_c1528c9ed8d5bbd7570da485fdf632eb0a6a01ab4e6cc48937fa23460ee6edb4.jpg"
+                 alt="사제와 평신도의 마리아운동"
                  class="section-image">
             
         </div>
@@ -969,29 +1010,81 @@
             
 
             
+            
             <div class="section-body">
                 <h3>예수와 마리아의 연합된 마음의 승리를 위하여 e.V.</h3><p>2021년 12월 8일 설립된 우리의 예수와 마리아의 연합된 마음의 승리를 위한 사제와 평신도의 마리아운동(MPL)은 성 막시밀리아노 마리아 콜베가 설립한 원죄 없는 마리아의 군대의 원래 형태에 온전히 영적 방향을 두고 있습니다. 따라서 우리는 이 위대한 마리아 사도와 모든 이단에 맞서 싸우는 전사에게, 하느님의 어머니 마리아, 교회의 어머니 및 교회의 수호성인 성 요셉과 함께 우리 새로운 사도직 운동의 특별한 수호성인으로 선택했습니다.</p><h3>MPL의 목표</h3>
             </div>
             
 
             
-            <ul class="section-list">
-                
-                <li>참된 가톨릭 신앙에 대한 용감한 증언</li>
-                
-                <li>예수와 마리아의 연합된 마음에 대한 공경과 전 세계 그들의 승리 증진</li>
-                
-                <li>신의 뜻 안에서의 생활을 통해 나자렛의 거룩한 가정을 모방하여 교회 갱신에 기여</li>
-                
-                <li>공통 신앙의 길에서 상호 강화와 지원, 세상과 그 원칙에 순응하려는 큰 유혹에 저항 (cf. 롬 12,2; 딤후 4,3-5)</li>
-                
-                <li>진리를 찾는 모든 이에게 지원과 방향 제시</li>
-                
-                <li>교리 교육</li>
-                
-                <li>사도직 및 선교 활동</li>
-                
-            </ul>
+            
+    
+    <ul class="section-list">
+        
+        
+        
+            
+        <li class="section-list-item">
+            참된 가톨릭 신앙에 대한 용감한 증언
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            예수와 마리아의 연합된 마음에 대한 공경과 전 세계 그들의 승리 증진
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            신의 뜻 안에서의 생활을 통해 나자렛의 거룩한 가정을 모방하여 교회 갱신에 기여
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            공통 신앙의 길에서 상호 강화와 지원, 세상과 그 원칙에 순응하려는 큰 유혹에 저항 (cf. 롬 12,2; 딤후 4,3-5)
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            진리를 찾는 모든 이에게 지원과 방향 제시
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            교리 교육
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            사도직 및 선교 활동
+        </li>
+            
+        
+    </ul>
+    
+
+            
+
+            
+
+            
             
 
             
@@ -1000,8 +1093,8 @@
         
         <div class="section-media">
             
-            <img src="../static/img/gs_0a1f875ca43d78f0c4d18c4095c3cdc05698e2b86a9acc5a6e868fb9b9a7ee0d.jpg" 
-                 alt="사제와 평신도의 마리아운동" 
+            <img src="../static/img/gs_0a1f875ca43d78f0c4d18c4095c3cdc05698e2b86a9acc5a6e868fb9b9a7ee0d.jpg"
+                 alt="사제와 평신도의 마리아운동"
                  class="section-image">
             
             
@@ -1011,9 +1104,9 @@
         
     </section>
     
+
     
-    
-    
+        
     
     
     
@@ -1026,16 +1119,16 @@
 </div>
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1047,11 +1140,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><em>그분은 이단을 파괴하시지 이단자를 파괴하지 않으시니, 그들을 사랑하시고 그들의 회심을 바라시기 때문이다. 정확히 사랑하시기 때문에 그들을 이단에서 해방시키시고 그들의 거짓된 견해와 신념을 파괴하신다.</em> <br>(성 막시밀리아노 M. 콜베)</p><p>마리아는 모든 영혼을 그리스도와 혼인적 결합으로 인도하고 싶어 하십니다. 그러나 루시퍼와 그 부하들은 영혼 안에서 예수의 통치를 막고자 합니다. 그의 노력은 전 세계에서 예수 그리스도의 이름을 지우는 데 목표를 두고 있습니다: 그는 이 이름을 믿는 모든 이를 파멸시키려 합니다. 그의 공격의 첫 표적은 가톨릭 교회입니다. 하느님께서 가톨릭 교회에 전 인류를 위한 모든 영적 보물을 맡기셨기 때문입니다. 그의 파괴 계획을 실현하기 위해 사탄은 프리메이슨을 특히 이용합니다. 1717년에 설립된 이 비밀 종파는 가톨릭 교회와 초자연적 세계에 대한 모든 신앙을 완전히 뿌리뽑기 위해 어떤 잔인함도 주저하지 않습니다. 그러나 하느님의 어머니는 손놓고 지켜보지 않으십니다. 모성적 사랑으로 그분은 길 잃은 양들의 구원을 위해 씨름하십니다.</p><br><p>1917년 5월부터 10월까지, 원죄 없으신 동정녀가 파티마에서 세 목자 아이들에게 나타나 마지막 구원 수단을 제시하셨습니다: 그분의 원죄 없는 마음. 마리아는 죄인의 회심을 위한 기도와 희생을 촉구하셨습니다. 그분은 묵주 기도와 그분의 원죄 없는 마음에 대한 봉헌, 특히 러시아의 봉헌을 원하셨으니, 러시아가 회심하여 세상에 공산주의와 좌파 사상을 퍼뜨리지 않도록 하기 위함이었습니다. 원죄 없으신 분이 파티마의 태양 기적으로 거기에 나타난 분이 바로 그분임을 증명한 바로 그 달에 성 막시밀리아노 M. 콜베는 원죄 없는 마리아의 군대를 설립하라는 영감을 받았습니다. 파티마 사건을 모른 채 그는 하느님의 어머니의 계획을 위한 도구가 되었습니다. 그의 비전은 세상의 모든 영혼을 원죄 없으신 분에게 봉헌하고 마리아를 통해 예수를 위해 모든 마음을 정복하는 것이었습니다. 그의 타오르는 열정의 이유는 무엇이었습니까? 깊이 충격받은 1917년 10월 13일, 로마의 젊은 학생으로서 그는 사탄을 찬양하는 노래를 부르며 바티칸으로 행진하는 프리메이슨 행렬을 목격했습니다. 배너에서 그는 "사탄이 바티칸에서 통치하고 교황이 그의 종이 될 것이다"라는 문구를 읽었습니다.</p><p>그는 씁니다: <em>프리메이슨이 로마에서 점점 더 공개적으로 나타나고 바티칸 창문 앞에 대천사 미카엘이 루시퍼에게 짓밟히고 패배하는 모습을 그린 배너를 펼치고, 교황을 모욕하는 전단지를 배포했을 때, 프리메이슨과 루시퍼의 다른 종들을 대적하기 위한 단체를 설립하려는 생각이 생겼다.</em></p><p>프리메이슨은 모든 미디어, 잡지, 책을 통해 그 이데올로기를 전파합니다. 모든 신성모독적 경향과 프로그램은 주로 그들의 작업장에서 비롯됩니다. 콜베 신부는 잘 알고 있었습니다: <em>우리가 주변을 둘러보면, 특히 젊은이들 사이에서 도덕성의 놀라운 소멸을 인식합니다. 정말 지옥 같은 단체들이 나타납니다. (…) 그들은 프리메이슨의 결의에 따라 열성적으로 일합니다: "우리는 논쟁이 아니라 풍속 타락으로 가톨릭 교회를 정복할 것이다!"</em></p><p>19세기에 적대 세력들이 삶의 모든 영역에 침투했습니다. 그들은 신학교, 대학교, 수도원에서 자유주의의 모든 형태의 사상과 정신을 전파하기 위해 거룩한 교회에 스며들었습니다. 하나의 오류가 아니라 존재했던 모든 이단이 전파되었습니다. "현대주의"에서 모든 이단이 함께 포장되어 있습니다. 교회를 공격하고 훼손했던 모든 오류가 여기서 힘을 합쳐 교회를 내부에서 파괴하기 위한 전반적인 공격으로 나아갑니다. 에큐메니즘은 창시자 우리 주 예수 그리스도에 의해 로마 가톨릭 교회에만 배타적으로 맡겨진 신성한 진리를 훼손합니다.</p><p>결과를 무시할 수 없습니다: 가톨릭 교회는 다른 기독교 종파에 순응하려 합니다. 종교들 사이의 관계가 모든 종교가 같은 신을 숭배하고 구원의 길인 것처럼 재정의되고 있습니다. 2세기 이상 교황들은 거짓된 사상에 대해 경고했습니다. 그럼에도 적들은 정치와 교회에서 점점 더 핵심적인 위치를 차지했습니다. 제2차 바티칸 공의회 이후 외래 사상이 로마에서 우세해졌습니다: 교회의 본성과 전혀 맞지 않는 신학적, 정치적, 철학적, 민주적 사상. 그들은 그녀의 품 안에서 파괴적 독처럼 작용합니다. 그리고 방금 기술된 모든 것에 정확히 반하여, 성 막시밀리아노 M. 콜베는 <strong>원죄 없는 마리아의 군대</strong>를 설립했습니다.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1061,20 +1160,20 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_f0644ab1c2e3fbdf3f63bf932c4f744988c74e53b92a8f197372cc2bf929a6c3.jpg" 
-                 alt="구체적인 수단" 
+            <img src="../static/img/gs_f0644ab1c2e3fbdf3f63bf932c4f744988c74e53b92a8f197372cc2bf929a6c3.jpg"
+                 alt="구체적인 수단"
                  class="section-image">
             
         </div>
@@ -1089,33 +1188,97 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>다음 사항은 우리가 예수와 마리아의 연합된 마음의 승리를 위한 사도직에 구체적으로 참여할 수 있는 방법을 보여줍니다:</strong></p>
             </div>
             
 
             
-            <ul class="section-list">
-                
-                <li>자기 삶을 완전히 하느님의 뜻에 뿌리내리고 하느님과 친밀한 관계를 키우다</li>
-                
-                <li>성사의 정기적 수령</li>
-                
-                <li>MI 규칙에 따른 원죄 없으신 분에게의 완전한 봉헌</li>
-                
-                <li>예수와 마리아의 연합된 마음에 대한 봉헌</li>
-                
-                <li>대리 기도, 희생 및 고난 (우리는 특히 교황, 주교들, 사제들, 모든 봉헌자들 및 가정의 성화를 위해 기도합니다. 생명 보호와 모든 방황하는 이, 불신자 및 거룩한 교회의 모든 적들의 회심도 특별 기도 의도가 되어야 합니다.)</li>
-                
-                <li>매일 로자리오 신심</li>
-                
-                <li>문서 선포 및 배포</li>
-                
-                <li>기적 메달 배포</li>
-                
-                <li>자선 사업, 기부</li>
-                
-            </ul>
+            
+    
+    <ul class="section-list">
+        
+        
+        
+            
+        <li class="section-list-item">
+            자기 삶을 완전히 하느님의 뜻에 뿌리내리고 하느님과 친밀한 관계를 키우다
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            성사의 정기적 수령
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            MI 규칙에 따른 원죄 없으신 분에게의 완전한 봉헌
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            예수와 마리아의 연합된 마음에 대한 봉헌
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            대리 기도, 희생 및 고난 (우리는 특히 교황, 주교들, 사제들, 모든 봉헌자들 및 가정의 성화를 위해 기도합니다. 생명 보호와 모든 방황하는 이, 불신자 및 거룩한 교회의 모든 적들의 회심도 특별 기도 의도가 되어야 합니다.)
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            매일 로자리오 신심
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            문서 선포 및 배포
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            기적 메달 배포
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            자선 사업, 기부
+        </li>
+            
+        
+    </ul>
+    
+
+            
+
+            
+
+            
             
 
             
@@ -1125,6 +1288,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1210,6 +1374,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1264,6 +1463,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1299,12 +1509,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

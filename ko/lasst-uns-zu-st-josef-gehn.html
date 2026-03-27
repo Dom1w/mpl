@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="성 요셉에게 가자!">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="성 요셉에게 가자!">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/lasst-uns-zu-st-josef-gehn.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ko/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ko/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>성 요셉은 기꺼이 돕습니다</strong></h3><p>다양한 지향에서 성 요셉의 도움을 받은 수많은 사람을 대신하여, 성 루도비코 마리아 그리뇽 드 몽포르는 우리를 초대하며 이렇게 마음을 전합니다. <strong>요셉에게 가십시오!</strong> 왜냐하면 :</p><ol><li><p><strong>그분은 천주 섭리의 관리인이십니다.</strong><strong><br></strong> 그분은 여러분의 현세적인 근심을 돌보시고, 그것이 잘 풀리도록 해주실 것입니다.</p></li><li><p><strong>그분은 성가정의 인도자이십니다.</strong><strong><br></strong> 그러므로 모든 그리스도인 교회 가족의 지도자이기도 하십니다. 그분은 여러분에게 성소를 보여주시고 여러분이 행복한 삶의 상태에 도달하게 하실 것입니다.</p></li><li><p><strong>그분은 숨겨진 내면 생활의 모범이십니다.</strong><strong><br></strong> 그분은 여러분을 영성 생활과 완덕으로 인도하고 가르치실 것입니다.</p></li><li><p><strong>그분은 원죄 없는 동정 마리아의 순결을 지키는 보호자이십니다.</strong><strong><br></strong> 그분은 여러분이 순결이라는 큰 보물을 보존하도록 도와주실 것입니다.</p></li><li><p><strong>그분은 선종(善終)의 수호성인이십니다.</strong><strong><br></strong> 그분은 그 불안한 시간에 여러분 곁을 지켜주시고 복된 죽음을 맞이하도록 빌어주실 것입니다.</p></li><li><p><strong>그분은 예수님의 양아버지이시며 마리아님의 배필이십니다.</strong><strong><br></strong> 이 자격으로 그분은 여러분을 위해 모든 은총을 얻어주실 수 있습니다. 시에나의 성 베르나르디노는 <strong>예수님과 마리아님께서 지상에서 두 분 모두 순종했던 그 성 요셉에게 천국에서 무엇인가를 거절한다는 것은 생각할 수 없는 일</strong>이라고 말합니다.</p></li></ol><p>(《황금서》, 485쪽)</p>
 
@@ -956,22 +998,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -983,6 +1030,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>사랑이 지극하신 성 요셉, 거룩한 교회의 강력한 수호자시여, 예수 그리스도의 신부가 겪는 큰 환난과 수많은 영혼의 끔찍한 고통을 굽어보소서.<br> 오, 예수님과 마리아님, 거룩한 천사들과 성인들과 함께 그들을 도우러 오소서. 악한 자들의 계획을 혼란에 빠뜨리시고 믿는 이들의 마음을 성령의 열기로 불태우시어, 그들이 자유롭고 공개적으로 예수님을 고백하고 하느님 나라의 일을 위해 싸워 승리하게 하소서. 아멘.</p><p><strong>“아이야, 모든 이에게 내 배필 요셉을 더 공경하고 부르라고 말하여라. 그는 참으로 우리의 보호자였으며 내 예수와 나를 위해 그토록 아버지답게 돌보아 주었단다. 그는 거룩한 교회의 특별한 보호자란다.”</strong><strong><br></strong>(성모님께서 포글 원장 수녀에게 - 1938. 3. 6.)</p><p><strong>“그는 사제들의 특별한 보호자란다... 그가 나를 원수들로부터 보호했듯이, 사제들도 그에 의해 보호받을 것이다. 나는 그의 어떤 청도 거절하지 않는다. 사제들을 위해 그를 부르는 소리가 너무나 적구나.”</strong><strong><br></strong>(예수님께서 포글 원장 수녀에게 - 1938. 6. 4.)</p><p><strong>“오, 모든 사제가 내 배필 요셉을 제대로 공경하기를! 그는 특히 정결의 보호자란다. 이제는 전보다 더 많은 유혹이 사제들에게도 다가오기에, 그들은 그로부터 이 큰 은총을 얻게 될 것이다. 또한 거룩한 사제들을 위해서도 내 배필을 불러야 한다.”</strong><strong><br></strong>(성모님께서 포글 원장 수녀에게 - 1943년 사제 토요일에)</p>
 
@@ -992,22 +1040,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1019,6 +1072,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>오 성 요셉이시여, 당신은 성가정의 머리로서 저희에게 이토록 영광스러운 본보기를 주셨나이다. 저희는 그에 대해 감사드리며 거룩한 교회와 함께 당신을 가정의 지주로 공경하나이다.<br> 저희가 당신의 특별한 보호에 맡겨드리는 그리스도인 가정들을 인자하게 굽어보소서.<br> 그 가정들이 신앙과 경건의 보루가 되고, 화목과 평화와 사랑의 안식처가 되게 하소서. 당신이 그토록 사랑으로 돌보셨던 성가정을 그들이 점점 더 닮아갈 수 있도록 도와주소서.<br> 성 요셉, 저희를 위하여 빌어주시고 저희 가정을 보호하소서. 아멘.</p><p><strong>“아이야, 내 사랑하는 양아버지께 거룩한 가정들을 위해 간절히 청하여라. 그리하여 그들 중에서 다시 거룩한 사제들이 나올 수 있게 하여라.”</strong><strong><br></strong>(예수님께서 포글 원장 수녀에게 - 1930. 3. 29.)</p><p><strong>“내 양아버지이자 보호자는 나에게 청원을 올릴 수 있을 때 가장 큰 기쁨을 느낀단다. 아무도 그의 도움을 헛되이 부르지 않을 것이다. 만일 당사자가 청하는 것을 받지 못한다면, 그는 그의 전구를 통해 훨씬 더 큰 은총을 얻게 될 것이다.”</strong><strong><br></strong>(예수님께서 포글 원장 수녀에게 - 1938. 3. 7.)</p>
 
@@ -1028,22 +1082,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,6 +1114,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>위대한 성 요셉이시여, 천주 섭리가 저를 위해 정해 주신 생활 상태가 무엇인지 인식할 수 있는 은총을 얻어주소서.<br> 제 행복과 어쩌면 영원한 구원이 달려 있는 이토록 중요한 결정에서 제가 착각하지 않게 하소서. 제가 하느님의 뜻에 대해 빛을 받아 그것을 충실히 따르고, 주님께서 저를 위해 정해 주신 길, 저를 영원한 복락으로 인도할 그 길을 걷도록 도와주소서. 아멘.</p><p>종교적, 도덕적 가치가 점점 붕괴되는 상처는 많은 젊은이가 하느님의 뜻에 맞춘 명확한 인생 결정을 내리는 것을 어렵게 만듭니다.<br> 성 요셉은 하느님께서 정하신 생활 상태를 인식하고 그것을 충실히 따르도록 돕습니다. 이 용기 있고 결단력 있는 <strong>성소 은총에 대한 “예”</strong>에 하느님께서는 많은 영혼의 구원을 연결하십니다.<br> 또한 <strong>자녀 문제</strong>로 고민하는 부부들과 수도회들에게도 성 요셉은 강력한 전구자이십니다.</p>
 <p><em>1833년, 스위스 시텐(Sitten)의 예수회 콜레지움에서 재능과 덕으로 두드러졌던 한 젊은 수도자가 임종을 맞이하고 있었습니다. 그의 이름은 요셉 하르니슈(Josef Harnisch)였습니다. 학교의 원장이 그에게 임종 성사를 집전할 때, 그의 슬픔은 컸습니다. 얼마 전 그가 속한 공동체의 다른 두 구성원을 이미 죽음으로 잃었기 때문입니다. 그래서 상급자는 아버지로서의 권위를 가지고 임종자에게 명령했습니다. 그가 영원한 복락에 들어가자마자, 자신의 보호 성인인 성 요셉께 청하여 수도회에 자신을 대신할 유능한 “대체자”를 보내 달라고 간구하라는 것이었습니다. 임종자는 이를 약속했습니다. 그는 7월 6일에 선종했습니다. 같은 해 가을, 열두 명의 수련자가 수도회에 입회했고, 그중 여덟 명이 ‘요셉’이라는 이름이었습니다. 또한 1년 안에 ‘요셉’이라는 이름을 가진 세 명이 더 뒤따랐습니다. (Stimmen aus Maria Laach, Bd. 25, S. 509)</em></p>
@@ -1065,22 +1125,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1092,6 +1157,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>사랑하는 성 요셉이시여, 당신께 제 자신을 봉헌하고자 하나이다. 저의 봉헌을 인자하게 받아주소서! 저를 온전히 당신께 드립니다.<br> 당신은 언제나 저의 아버지, 저의 보호자, 구원의 길에서의 저의 인도자가 되어 주소서.<br> 저를 위해 마음의 큰 순결과 내면 생활에 대한 강한 열망을 빌어주소서!<br> 당신처럼 저의 모든 행위가 하느님의 더 큰 영광을 목표로 하게 하시고, 제가 예수님의 신성한 성심과 마리아의 티 없는 성심, 그리고 성 요셉 당신과 결합되어 있게 하소서!<br> 마지막으로 저를 위하여 빌어주시어, 저 또한 언젠가 당신이 복된 임종 때 누리셨던 평화와 기쁨을 맛보게 하소서. 아멘.<br> (교황 레오 13세)</p>
 
@@ -1101,22 +1167,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1128,6 +1199,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>일반 묵주로 다음의 신비를 기도합니다.</p><ol><li><p>예수님, 성 요셉을 지극히 깨끗하신 동정 마리아의 배필로 선택하셨나이다.</p></li><li><p>예수님, 성 요셉을 양아버지로 사랑하셨나이다.</p></li><li><p>예수님, 성 요셉에게 순종하셨나이다.</p></li><li><p>예수님, 성 요셉과 함께 기도하고 일하셨나이다.</p></li><li><p>예수님, 저희에게 성 요셉을 교회의 수호성인으로 주셨나이다.</p></li></ol>
 
@@ -1137,22 +1209,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1164,6 +1241,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>성 요셉, 예수 그리스도의 양아버지시며 지극히 복되신 동정 마리아의 참배우자시여, 저희와 오늘 낮/오늘 밤의 임종자들을 위하여 빌어주소서! 아멘.</strong><strong><br></strong>(대사 기도문)</p><p>이 기도는 전 세계에 퍼져 있는 <strong>요셉 형제회</strong> 회원들에 의해 아침저녁으로 바쳐집니다.</p><p>아기 예수님의 성녀 테레사는 한때 이렇게 말했습니다.</p><p><strong>예수님께서는 영혼들의 구원이 우리의 희생과 사랑에 달려 있기를 원하신다.</strong><strong><br></strong>그리고 선종하기 직전에 그녀는 이렇게 말했습니다.<br> <strong>임종자들을 위해 기도를 많이 해야 한다는 것을 이제야 깨닫습니다.</strong></p><p>우리의 기도와 희생을 통해 우리는 매일 죽어가는 50만 명 이상의 사람들에게 선종의 은총을 빌어주는 일을 도울 수 있습니다. 특히 중죄로 인해 하느님과 떨어져 있는 이들, 모든 불신자와 세례받지 않은 이들, 성화 은총의 상태에 있지 않은 이들에게, 이를 통해 종종 마지막 순간에 하느님의 자비가 베풀어질 수 있습니다.<br> 가장 큰 “생명의 위험”(영원한 생명이 달려 있습니다!)에 처한 우리 형제자매들을 돕는 이 숭고한 이웃 사랑의 형태는 우리 자신에게도 넘치는 축복이 될 것입니다.</p><p>예수, 마리아, 요셉,<br> 저희 마음과 영혼을 당신들께 드리나이다!</p><p>예수, 마리아, 요셉,<br> 임종의 고통 중에 저희를 도우소서!</p><p>예수, Maria, 요셉,<br> 저희 영혼이 당신들과 함께 평화로이 떠나게 하소서!<br> 아멘.<br> (대사 기도문)</p>
 
@@ -1173,12 +1251,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1264,6 +1348,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1318,6 +1437,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1353,12 +1483,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

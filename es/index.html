@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Movimiento Mariano de Sacerdotes y Laicos para el Triunfo de los Corazones Unidos de Jesús y María e.V.">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Movimiento Mariano de Sacerdotes y Laicos para el Triunfo de los Corazones Unidos de Jesús y María e.V.">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../es/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../es/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,8 +969,7 @@
 
     <!-- Content Sections -->
     
-    
-    
+        
     
     
     
@@ -941,20 +982,20 @@
 </div>
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_c1528c9ed8d5bbd7570da485fdf632eb0a6a01ab4e6cc48937fa23460ee6edb4.jpg" 
-                 alt="Movimiento Mariano de Sacerdotes y Laicos" 
+            <img src="../static/img/gs_c1528c9ed8d5bbd7570da485fdf632eb0a6a01ab4e6cc48937fa23460ee6edb4.jpg"
+                 alt="Movimiento Mariano de Sacerdotes y Laicos"
                  class="section-image">
             
         </div>
@@ -969,29 +1010,81 @@
             
 
             
+            
             <div class="section-body">
                 <h3>Por el Triunfo de los Corazones Unidos de Jesús y María e.V.</h3><p>Nuestro Movimiento Mariano de Sacerdotes y Laicos para el Triunfo de los Corazones Unidos de Jesús y María (MPL), fundado el 8 de diciembre de 2021, está orientado en su dirección espiritual íntegramente a la forma original de la Milicia de la Inmaculada fundada por San Maximiliano María Kolbe. Por ello hemos elegido a este gran apóstol mariano y luchador contra todas las herejías, junto con la Madre de Dios María, Madre de la Iglesia, y San José, Patrono de la Iglesia Universal, como patrones especiales de nuestro nuevo movimiento apostólico.</p><h3>Los Objetivos del MPL</h3>
             </div>
             
 
             
-            <ul class="section-list">
-                
-                <li>Valiente testimonio de la verdadera fe católica</li>
-                
-                <li>Veneración de los Corazones Unidos de Jesús y María y promoción de su triunfo en todo el mundo</li>
-                
-                <li>Imitación de la Sagrada Familia de Nazaret mediante una vida en la Divina Voluntad, para colaborar así en la renovación de la Iglesia</li>
-                
-                <li>Refuerzo y apoyo mutuo en el camino común de la fe, para resistir la gran tentación de conformarse al mundo y sus principios (cf. Rom 12,2; Tim 4,3-5)</li>
-                
-                <li>Dar apoyo y orientación a quienes buscan la verdad</li>
-                
-                <li>Catequesis</li>
-                
-                <li>Trabajo apostólico y misionero</li>
-                
-            </ul>
+            
+    
+    <ul class="section-list">
+        
+        
+        
+            
+        <li class="section-list-item">
+            Valiente testimonio de la verdadera fe católica
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Veneración de los Corazones Unidos de Jesús y María y promoción de su triunfo en todo el mundo
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Imitación de la Sagrada Familia de Nazaret mediante una vida en la Divina Voluntad, para colaborar así en la renovación de la Iglesia
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Refuerzo y apoyo mutuo en el camino común de la fe, para resistir la gran tentación de conformarse al mundo y sus principios (cf. Rom 12,2; Tim 4,3-5)
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Dar apoyo y orientación a quienes buscan la verdad
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Catequesis
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Trabajo apostólico y misionero
+        </li>
+            
+        
+    </ul>
+    
+
+            
+
+            
+
+            
             
 
             
@@ -1000,8 +1093,8 @@
         
         <div class="section-media">
             
-            <img src="../static/img/gs_0a1f875ca43d78f0c4d18c4095c3cdc05698e2b86a9acc5a6e868fb9b9a7ee0d.jpg" 
-                 alt="Movimiento Mariano de Sacerdotes y Laicos" 
+            <img src="../static/img/gs_0a1f875ca43d78f0c4d18c4095c3cdc05698e2b86a9acc5a6e868fb9b9a7ee0d.jpg"
+                 alt="Movimiento Mariano de Sacerdotes y Laicos"
                  class="section-image">
             
             
@@ -1011,9 +1104,9 @@
         
     </section>
     
+
     
-    
-    
+        
     
     
     
@@ -1026,16 +1119,16 @@
 </div>
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1047,11 +1140,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><em>Ella destruye las herejías, no a los herejes, pues los ama y desea su conversión. Precisamente porque los ama, los libera de la herejía y destruye sus falsas opiniones y convicciones.</em> <br>(San Maximiliano M. Kolbe)</p><p>María quiere llevar toda alma a la unión nupcial con Cristo. Pero Lucifer y sus secuaces quieren impedir el reinado de Jesús en las almas. Sus esfuerzos pretenden borrar el nombre de Jesucristo de toda la tierra: Está decidido a destruir a cuantos crean en este nombre. El primer blanco de sus ataques es la Iglesia Católica, pues a la Iglesia Católica Dios ha confiado todos los tesoros espirituales para toda la humanidad. Para realizar sus planes destructivos, Satanás se vale especialmente de la Masonería. Esta secta secreta fundada en 1717 no rehúye ninguna crueldad para erradicar por completo la Iglesia Católica y toda fe en el mundo sobrenatural. Pero la Madre de Dios no mira pasivamente. Con amor maternal lucha por la salvación de sus ovejas descarriadas.</p><br><p>En 1917, de mayo a octubre, la Virgen Inmaculada se apareció a tres niños pastores en Fátima para ofrecer el último medio de salvación: Su Inmaculado Corazón. María pidió oración y sacrificio por la conversión de los pecadores. Deseaba el Rosario y la consagración a su Inmaculado Corazón, especialmente la consagración de Rusia, para que se convirtiera y no propagara sus ideas comunistas y de izquierda en el mundo. En el mismo mes en que la Inmaculada dio prueba con el milagro del sol en Fátima de que era ella quien se había aparecido allí, San Maximiliano M. Kolbe fue inspirado a fundar la Milicia de la Inmaculada. Sin conocer los acontecimientos de Fátima, se convirtió en el instrumento de los planes de la Madre de Dios. Su visión era consagrar todas las almas del mundo a la Inmaculada y conquistar todos los corazones para Jesús a través de María. ¿Cuál era el motivo de su ardiente celo? Profundamente conmocionado, el 13 de octubre de 1917, como joven estudiante en Roma, fue testigo de procesiones masónicas cantando canciones en honor de Satanás, marchando hacia el Vaticano. En banderas leyó la inscripción: „Satanás reinará en el Vaticano y el Papa será su servidor.“</p><p>Escribe: <em>Cuando la Masonería salió cada vez más a la luz en Roma y desplegó sus banderas ante las ventanas del Vaticano, en las que representaban al Arcángel Miguel siendo pisoteado y derrotado por Lucifer, y distribuyeron folletos insultando al Santo Padre, surgió la idea de fundar una asociación para luchar contra la Masonería y los demás servidores de Lucifer.</em></p><p>La Masonería difunde sus ideologías por todos los medios, revistas y libros. Todas las tendencias blasfemas y programas provienen predominantemente de su taller. El P. Kolbe estaba muy bien informado: <em>Cuando miramos a nuestro alrededor, percibimos la alarmante desaparición de la moralidad, especialmente entre los jóvenes. Aparecen asociaciones verdaderamente infernales. (…) Trabajan febrilmente, según las resoluciones de los masones: „¡Conquistaremos la Iglesia Católica, no con argumentos, sino con la perversión de las costumbres!“</em></p><p>En el siglo XIX las fuerzas hostiles penetraron todas las esferas de la vida. Se infiltraron en la Santa Iglesia para difundir las ideas y el espíritu del liberalismo en todas sus formas en seminarios, universidades y monasterios. No un solo error, sino todas las herejías que han existido fueron propagadas. En el „Modernismo" se empaquetan todas las herejías. Todos los errores que han atacado y minado la Iglesia se unen y avanzan en un asalto general para destruirla desde dentro. El ecumenismo mina la Divina Verdad que fue confiada exclusivamente a la Iglesia Católica Romana por su Fundador, Nuestro Señor Jesucristo.</p><p>Los frutos son innegables: La Iglesia Católica busca conformarse a otras confesiones cristianas. La relación entre religiones se redefine como si todas adoraran al mismo Dios y fueran caminos de salvación. Durante más de dos siglos los Papas advirtieron contra las falsas ideas. Sin embargo, los enemigos ocuparon cada vez más posiciones clave en política y también en la Iglesia. Tras el Concilio Vaticano II prevalieron en Roma ideas extranjeras: teológicas, políticas, filosóficas, democráticas, totalmente ajenas a la naturaleza de la Iglesia. Actúan en su seno como veneno destructivo. Y precisamente en oposición a todo lo descrito, San Maximiliano M. Kolbe fundó la <strong>Milicia de la Inmaculada.</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1061,20 +1160,20 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_f0644ab1c2e3fbdf3f63bf932c4f744988c74e53b92a8f197372cc2bf929a6c3.jpg" 
-                 alt="Medios Concretos" 
+            <img src="../static/img/gs_f0644ab1c2e3fbdf3f63bf932c4f744988c74e53b92a8f197372cc2bf929a6c3.jpg"
+                 alt="Medios Concretos"
                  class="section-image">
             
         </div>
@@ -1089,33 +1188,97 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Los siguientes puntos muestran cómo podemos participar concretamente en el apostolado por el triunfo de los Corazones Unidos de Jesús y María:</strong></p>
             </div>
             
 
             
-            <ul class="section-list">
-                
-                <li>Anclar nuestra propia vida íntegramente en la voluntad de Dios y fomentar una relación íntima con Dios</li>
-                
-                <li>Recepción regular de los santos Sacramentos</li>
-                
-                <li>Consagración total a la Inmaculada según la Regla de la MI</li>
-                
-                <li>Consagración a los Corazones Unidos de Jesús y María</li>
-                
-                <li>Oración vicaria, sacrificio y sufrimiento (oramos especialmente por el Santo Padre, obispos, sacerdotes, todos los consagrados y la santificación de las familias. La protección de la vida, así como la conversión de cuantos yerran, incrédulos y enemigos de la Santa Iglesia, debe ser también una intención de oración especial.)</li>
-                
-                <li>Práctica del rezo diario del Rosario</li>
-                
-                <li>Proclamación y distribución de escritos</li>
-                
-                <li>Distribución de la Medalla Milagrosa</li>
-                
-                <li>Obras de caridad, donaciones</li>
-                
-            </ul>
+            
+    
+    <ul class="section-list">
+        
+        
+        
+            
+        <li class="section-list-item">
+            Anclar nuestra propia vida íntegramente en la voluntad de Dios y fomentar una relación íntima con Dios
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Recepción regular de los santos Sacramentos
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Consagración total a la Inmaculada según la Regla de la MI
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Consagración a los Corazones Unidos de Jesús y María
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Oración vicaria, sacrificio y sufrimiento (oramos especialmente por el Santo Padre, obispos, sacerdotes, todos los consagrados y la santificación de las familias. La protección de la vida, así como la conversión de cuantos yerran, incrédulos y enemigos de la Santa Iglesia, debe ser también una intención de oración especial.)
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Práctica del rezo diario del Rosario
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Proclamación y distribución de escritos
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Distribución de la Medalla Milagrosa
+        </li>
+            
+        
+        
+        
+            
+        <li class="section-list-item">
+            Obras de caridad, donaciones
+        </li>
+            
+        
+    </ul>
+    
+
+            
+
+            
+
+            
             
 
             
@@ -1125,6 +1288,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1210,6 +1374,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1264,6 +1463,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1299,12 +1509,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

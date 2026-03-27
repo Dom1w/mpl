@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fátima">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Fátima">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/fatima.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../fr/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../fr/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg" 
-                 alt="" 
+            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -948,6 +989,7 @@
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <p>Les 12 et 13 de chaque mois, Notre-Dame porte cette couronne</p>
@@ -963,13 +1005,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg" 
-                 alt="" 
+            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg"
+                 alt=""
                  class="section-image">
             
             
@@ -979,16 +1026,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -999,6 +1046,7 @@
             <h2 class="section-heading">Laissez-vous réconcilier avec Dieu (2 Co 5,20)</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Quand Dieu, poussé par Son amour miséricordieux, envoie Marie avec un message aux enfants de la terre, cela cache ce désir de Dieu qui veut que tous les hommes soient sauvés. (1 Tm 2,4)</p>
@@ -1020,22 +1068,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1046,6 +1099,7 @@
             <h2 class="section-heading">Un ange et trois enfants bergers</h2>
             
 
+            
             
             <div class="section-body">
                 <h3>La première apparition 1916</h3>
@@ -1068,22 +1122,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1094,6 +1153,7 @@
             <h2 class="section-heading">Notre-Dame vient</h2>
             
 
+            
             
             <div class="section-body">
                 <h3>Le 13 mai 1917</h3>
@@ -1138,22 +1198,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1164,6 +1229,7 @@
             <h2 class="section-heading">Les enfants bergers en prison</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Entre-temps, l'aube du 13 août pointait. […]<br> Tous voulaient nous voir, nous interroger et nous confier leurs demandes pour que nous les présentions à la Très Sainte Vierge. […]</p>
@@ -1188,22 +1254,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1214,6 +1285,7 @@
             <h2 class="section-heading">Notre-Dame revient</h2>
             
 
+            
             
             <div class="section-body">
                 <h3>Le 19 août 1917</h3>
@@ -1239,26 +1311,31 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg" 
-                 alt="Le 13 octobre 1917" 
+            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg"
+                 alt="Le 13 octobre 1917"
                  class="section-image">
             
         </div>
@@ -1272,6 +1349,7 @@
             <h2 class="section-heading">Le 13 octobre 1917</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Nous quittâmes la maison assez tôt, car nous comptions sur des retards en chemin. Le peuple venait en masse. Il pleuvait à verse. […] Pas même la boue sur les chemins ne pouvait arrêter ces gens de s'agenouiller dans une attitude humble et suppliante. […]</p>
@@ -1297,22 +1375,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1323,6 +1406,7 @@
             <h2 class="section-heading">La Grande Promesse</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Le 10 décembre 1925, la Très Sainte Vierge apparut à Sœur Lúcia à Pontevedra et à côté, dans une nuée lumineuse, un enfant. La Très Sainte Vierge lui posa la main sur l'épaule et montra un cœur entouré d'épines qu'elle tenait dans l'autre main. L'enfant dit :<br> <strong>– Aie compassion du Cœur de ta Très Sainte Mère, entouré d'épines que les hommes ingrats y enfoncent sans cesse, sans que personne ne fasse un acte de réparation pour les en retirer.</strong></p>
@@ -1339,22 +1423,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1365,6 +1454,7 @@
             <h2 class="section-heading">La demande de consécration de la Russie</h2>
             
 
+            
             
             <div class="section-body">
                 <p>J'avais demandé et reçu de mes supérieures et de mon confesseur l'autorisation de faire l'Heure Sainte chaque nuit du jeudi au vendredi de onze heures à minuit.</p>
@@ -1382,22 +1472,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1408,6 +1503,7 @@
             <h2 class="section-heading">Le « Secret » de Fátima</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Le « Secret » de Fátima se rapporte à une partie du message du 13 juillet 1917 que les enfants bergers devaient garder secret selon l'instruction de Notre-Dame.</p>
@@ -1433,22 +1529,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1459,6 +1560,7 @@
             <h2 class="section-heading">Les petits apôtres de Notre-Dame</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>« Je Te loue, Père …, parce que Tu as caché cela aux sages et aux intelligents, et que Tu l'as révélé aux tout-petits. »</strong> (Mt 11,25)</p>
@@ -1518,22 +1620,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1544,6 +1651,7 @@
             <h2 class="section-heading">Le message en un coup d'œil</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Le message de Fátima est aussi appelé le résumé de l'Évangile formulé par Notre-Dame et comprend les points essentiels suivants :</p>
@@ -1568,22 +1676,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1595,6 +1708,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>« Mon Dieu, je crois en Vous, je T'adore, j'espère en Vous, je Vous aime. Je Vous demande pardon pour ceux qui ne croient pas en Vous, ne T'adorent pas, n'espèrent pas en Vous et ne Vous aiment pas. »</strong></p>
 <p><strong>« Très Sainte Trinité, Père, Fils et Saint-Esprit, je T'adore profondément et je T'offre le précieux corps, le sang, l'âme et la divinité de Jésus-Christ, présent dans tous les tabernacles du monde, en réparation de tous les outrages, sacrilèges et indifférences par lesquels Il est Lui-même offensé. Par les mérites infinis de Son Sacré-Cœur et du Cœur Immaculé de Marie, je Te demande la conversion des pauvres pécheurs. »</strong></p>
@@ -1605,22 +1719,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1631,6 +1750,7 @@
             <h2 class="section-heading">Offrande de la journée</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>« Divin Cœur de Jésus, par le Cœur Immaculé de Marie, je T'offre tout ce que je prie, travaille, offre et souffre aujourd'hui au nom de tous et pour toutes les âmes de la triple sainte Église, dans l'intention avec laquelle Tu pries Toi-même sans cesse et T'offres sur nos autels pour le salut des âmes. Amen. »</strong></p>
@@ -1643,22 +1763,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1669,6 +1794,7 @@
             <h2 class="section-heading">Les Perles de Notre-Dame</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>« Le royaume des cieux est encore semblable à un marchand qui cherche de belles perles. Ayant trouvé une perle de grand prix, il s'en est allé vendre tout ce qu'il avait, et l'a achetée. »</strong><br> <em>(Mt 13,45-46)</em></p>
@@ -1693,22 +1819,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1719,6 +1850,7 @@
             <h2 class="section-heading">Les mystères du rosaire</h2>
             
 
+            
             
             <div class="section-body">
                 <h3><strong>L'ouverture :</strong></h3>
@@ -1790,22 +1922,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1816,6 +1953,7 @@
             <h2 class="section-heading">Consécration au Cœur Immaculé de Marie</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Très Sainte Vierge Marie ! Mère de Dieu et ma Mère ! À Ton Cœur Immaculé, je me consacre avec tout ce que je suis et tout ce que j'ai. Prends-moi sous Ta protection maternelle ! Préserve-moi de tous les dangers. Aide-moi à surmonter les tentations qui m'entraînent au mal, afin que je garde la pureté de mon corps et de mon âme. Que Ton Cœur Immaculé soit mon refuge et le chemin qui me conduit à Dieu.</p>
@@ -1830,22 +1968,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1856,6 +1999,7 @@
             <h2 class="section-heading">Consécration à Jésus Miséricordieux</h2>
             
 
+            
             
             <div class="section-body">
                 <p>Jésus Miséricordieux, Ta bonté est infinie, et les trésors de Tes grâces sont inépuisables.</p>
@@ -1871,22 +2015,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1897,6 +2046,7 @@
             <h2 class="section-heading">Échange des Cœurs</h2>
             
 
+            
             
             <div class="section-body">
                 <h3><strong>Échange des cœurs avec Marie</strong></h3>
@@ -1916,22 +2066,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1943,6 +2098,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>« Jamais je ne t'abandonnerai. Mon Cœur Immaculé sera ton refuge et le chemin qui te conduira à Dieu. »</strong><br> <em>(Marie à Lúcia le 13 juin 1917)</em></p>
 
@@ -1952,22 +2108,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1979,6 +2140,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Au nom du Père et du Fils et du Saint-Esprit. Amen.</p>
 
@@ -1988,22 +2150,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -2015,6 +2182,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Je crois en Dieu, le Père tout-puissant, le Créateur du ciel et de la terre, et en Jésus-Christ, Son Fils unique, notre Seigneur, qui a été conçu du Saint-Esprit, est né de la Vierge Marie, a souffert sous Ponce Pilate, a été crucifié, est mort et a été enseveli, est descendu aux enfers, le troisième jour est ressuscité des morts, est monté aux cieux, est assis à la droite de Dieu, le Père tout-puissant, d'où Il viendra juger les vivants et les morts. Je crois en l'Esprit Saint, à la sainte Église catholique, à la communion des saints, à la rémission des péchés, à la résurrection de la chair et à la vie éternelle. Amen.</p>
 
@@ -2024,22 +2192,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -2051,6 +2224,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Notre Père qui es aux cieux,<br> que Ton nom soit sanctifié,<br> que Ton règne vienne,<br> que Ta volonté soit faite sur la terre comme au ciel.<br> Donne-nous aujourd'hui notre pain de ce jour.<br> Pardonne-nous nos offenses,<br> comme nous pardonnons aussi à ceux qui nous ont offensés.<br> Et ne nous laisse pas entrer en tentation,<br> mais délivre-nous du mal. Amen.</p>
 
@@ -2060,22 +2234,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -2087,6 +2266,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Je vous salue Marie, pleine de grâce, le Seigneur est avec Vous.<br> Vous êtes bénie entre toutes les femmes,<br> et Jésus, le fruit de Vos entrailles, est béni.<br> Sainte Marie, Mère de Dieu, priez pour nous, pauvres pécheurs,<br> maintenant et à l'heure de notre mort. Amen.</p>
 
@@ -2096,12 +2276,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -2187,6 +2373,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -2241,6 +2462,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -2276,12 +2508,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

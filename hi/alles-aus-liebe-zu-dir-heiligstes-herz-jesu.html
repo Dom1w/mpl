@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="सब कुछ आपके प्रेम के लिए, यीशु का पवित्र हृदय!">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="सब कुछ आपके प्रेम के लिए, यीशु का पवित्र हृदय!">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/alles-aus-liebe-zu-dir-heiligstes-herz-jesu.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../hi/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../hi/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_58335975f98e8d3a53cf6a753f4df387ed5126ea0567e4d4d69eacaa07f6df33.png" 
-                 alt="" 
+            <img src="../static/img/gs_58335975f98e8d3a53cf6a753f4df387ed5126ea0567e4d4d69eacaa07f6df33.png"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -948,6 +989,7 @@
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <h1>सब कुछ आपके प्रेम के लिए, यीशु का पवित्रतम हृदय!</h1>
@@ -958,22 +1000,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -985,6 +1032,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>जब मैं एक बार कॉर्पस क्रिस्टी (Corpus Christi) के अष्टक (Octave) के दौरान (जून 1675) परम पावन संस्कार के सामने प्रार्थना कर रही थी, तो उनके प्रेम ने मुझे असाधारण अनुग्रह प्रदान किए, और मैंने इस प्रेम का थोड़ा सा उत्तर देने की तीव्र इच्छा महसूस की। [...]<br> <strong>  तब उन्होंने मुझसे कहा:</strong><strong><br></strong> <strong>  </strong><strong>“यहाँ उस हृदय को देखो जिसने मनुष्यों से इतना प्रेम किया कि उसने स्वयं को नहीं बचाया, बल्कि उनके प्रति अपना प्रेम सिद्ध करने के लिए स्वयं को पूरी तरह से समर्पित कर दिया और न्योछावर कर दिया। बदले में मुझे अधिकांश लोगों से केवल कृतघ्नता, ठंडापन और अवमानना ही मिलती है, जो वे मुझे प्रेम के इस संस्कार में पहुँचाते हैं। लेकिन मेरे लिए सबसे दुखद यह है कि जो आत्माएँ मुझे समर्पित हैं, वे भी मेरे साथ ऐसा ही व्यवहार करती हैं। इसलिए मैं तुमसे चाहता हूँ कि कॉर्पस क्रिस्टी के अष्टक के बाद पहले शुक्रवार को मेरे पवित्रतम हृदय की वंदना के लिए एक विशेष पर्व स्थापित किया जाए। लोगों को इस दिन पवित्र परमप्रसाद (Holy Communion) ग्रहण करना चाहिए और अपमानों का प्रायश्चित करने के लिए मुझे औपचारिक क्षमा याचना अर्पित करनी चाहिए, जो परम पावन वेदी के संस्कार [...] को पहुँचाए जाते हैं। मैं तुमसे वादा करता हूँ कि मेरा हृदय उन लोगों पर अपने दिव्य प्रेम की धारा उंडेल देगा जो इसे सम्मान देंगे और यह सुनिश्चित करने के लिए काम करेंगे कि दूसरे भी ऐसा ही करें।”</strong> [1]</p><p><strong>यीशु का पवित्रतम हृदय, समस्त भलाई का स्रोत</strong>,<br> मैं आपकी उपासना करता हूँ, आप पर विश्वास करता हूँ, आपसे आशा करता हूँ, आपसे प्रेम करता हूँ और अपने सभी पापों का पश्चाताप करता हूँ। मैं आपको अपना यह बेचारा हृदय देता हूँ, इसे विनम्र, धैर्यवान, शुद्ध और आपकी सभी इच्छाओं के अनुरूप बनाएं। हे दयालु यीशु, ऐसा करें कि मैं आपमें और आप मुझमें रहें। खतरों में मेरी रक्षा करें, कष्टों और दुखों में मुझे सांत्वना दें। मुझे मेरे शरीर का स्वास्थ्य, मेरे सभी कार्यों के लिए अपना आशीर्वाद और एक पवित्र मृत्यु का अनुग्रह प्रदान करें। आमेन।<br> <em>(बेनेडिक्ट XV, 4.12.1915)</em></p><p><strong>  जब भी आपके साथ कुछ शर्मनाक, दुखद या अन्यायपूर्ण होता है, तो अपने आप से कहें:</strong><strong><br></strong> <strong>  इसे स्वीकार करें, यीशु का पवित्रतम हृदय इसे आपको भेजता है ताकि आप उनके साथ और अधिक गहराई से जुड़ सकें। इस तरह आप हृदय की उस शांति को थामे रखते हैं जो सभी धन-दौलत से बढ़कर है।</strong><strong><br></strong> <em>(संत मार्गरेट मैरी अलाकोक)</em></p><br><p>[1] यह संत मार्गरेट मैरी को यीशु के पवित्रतम हृदय के कुल चार "महान खुलासों" में से अंतिम और साथ ही सबसे सार्थक है। स्रोत: <em>Saint Margaret Mary Alacoque, Life and Revelations</em>, Freiburg, Switzerland, 1994.</p><br>
 
@@ -994,22 +1042,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1021,6 +1074,7 @@
             
 
             
+            
             <div class="section-body">
                 <ol><li><p>मैं उन्हें उनके जीवन की स्थिति के लिए आवश्यक अनुग्रह प्रदान करूँगा।</p></li><li><p>मैं उनके परिवारों को शांति प्रदान करूँगा।</p></li><li><p>मैं उन्हें उनके सभी कष्टों में सांत्वना दूँगा।</p></li><li><p>मैं उनके सभी प्रयासों पर प्रचुर आशीर्वाद उंडेलूँगा।</p></li><li><p>मैं जीवन में और विशेष रूप से मृत्यु की घड़ी में उनका सुरक्षित आश्रय बनूँगा।</p></li><li><p>पापी मेरे हृदय में दया का सागर पाएंगे।</p></li><li><p>ठंडी आत्माएं उत्साही बन जाएंगी।</p></li><li><p>उत्साही आत्माएं पूर्णता के मार्ग पर तेजी से आगे बढ़ेंगी।</p></li><li><p>मैं स्वयं उन घरों को आशीर्वाद दूँगा जहाँ मेरे पवित्रतम हृदय का चित्र स्थापित और पूजित किया जाएगा।</p></li><li><p>मैं पुरोहितों को सबसे कठोर पापियों का भी हृदय परिवर्तन करने का अनुग्रह प्रदान करूँगा।</p></li><li><p>जो लोग इस भक्ति को बढ़ावा देते हैं, उनके नाम मेरे हृदय में अंकित किए जाएंगे और कभी मिटाए नहीं जाएंगे।</p></li><li><p>मैं अपने हृदय की दया की प्रचुरता में तुमसे वादा करता हूँ कि मेरा सर्वशक्तिमान प्रेम उन सभी को, <strong>जो लगातार नौ महीनों के पहले शुक्रवार को पवित्र परमप्रसाद ग्रहण करेंगे</strong>,[2] मृत्यु के समय पश्चाताप का अनुग्रह प्रदान करेगा। वे अनुग्रह की स्थिति के बिना और पवित्र संस्कारों को प्राप्त किए बिना नहीं मरेंगे। मेरा दिव्य हृदय उनका सुरक्षित आश्रय स्थल होगा। [3]</p></li></ol><p>[2] बशर्ते कि हम पवित्र करने वाले अनुग्रह (Sanctifying Grace) की स्थिति में हों (प्रायश्चित के संस्कार की प्राप्ति)।<br> [3] संत मार्गरेट मैरी अलाकोक (1647-1690) को यीशु के पवित्रतम हृदय के खुलासे के अनुसार।<br> <em>Imprimatur: Freiburg, Switzerland, 15.10.1950, l. Waeber, vic.gen.</em></p><br>
 
@@ -1030,22 +1084,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1056,6 +1115,7 @@
             <h2 class="section-heading">पवित्र अभिलाषा के फल</h2>
             
 
+            
             
             <div class="section-body">
                 <p>अच्छे अभिप्राय ऐसे हैं जैसे मोती, जो मनुष्य के अंतर्मन से चमकते हैं। इसी अर्थ में हेल्फ्टा की संत गर्ट्रूड यह सिद्धांत बताती हैं कि प्रभु कर्म के स्थान पर इच्छा को स्वीकार करते हैं।</p>
@@ -1080,22 +1140,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1106,6 +1171,7 @@
             <h2 class="section-heading">दैनिक अर्पण</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>यीशु का दिव्य हृदय</strong>,<br> मरियम के निष्कलंक हृदय के माध्यम से मैं आपको वह सब अर्पित करता हूँ जो मैं आज प्रार्थना करता हूँ, काम करता हूँ, बलिदान करता हूँ और कष्ट सहता हूँ, सभी के नाम पर और पवित्र कलीसिया की सभी आत्माओं के लिए, उसी मंशा में जिसके साथ आप स्वयं निरंतर प्रार्थना करते हैं और आत्माओं के उद्धार के लिए हमारी वेदियों पर स्वयं को बलिदान करते हैं। आमेन। [6]</p>
@@ -1118,22 +1184,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1144,6 +1215,7 @@
             <h2 class="section-heading">यीशु के पवित्रतम हृदय के प्रति पारिवारिक समर्पण का नवीनीकरण</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>दयालु उद्धारकर्ता!</strong><strong><br></strong> आपके चरणों में विनम्रतापूर्वक घुटने टेकते हुए हम अपने परिवार का आपके दिव्य हृदय के प्रति समर्पण का नवीनीकरण करते हैं।<br> हमेशा हमारे राजा बने रहें, हम आप पर अपना पूर्ण, बिना शर्त विश्वास रखते हैं।<br> आपकी आत्मा हमारे विचारों, हमारी इच्छाओं, शब्दों और कार्यों में समा जाए।<br> हमारे प्रयासों को आशीर्वाद दें, हमारी खुशियों में, हमारी परीक्षाओं में, हमारे कार्यों में भाग लें।</p><p>हमें ऐसा अनुग्रह दें कि हम आपको और बेहतर तरीके से जानें, आपसे और अधिक प्रेम करें और दृढ़ता से आपकी सेवा करें।<br> दुनिया के एक छोर से दूसरे छोर तक यह पुकार गूंजे:<br> <strong>विजयी यीशु हृदय की हमेशा और हर जगह जय हो, प्रशंसा हो और महिमा हो। आमेन।</strong></p><p><strong>यीशु का पवित्रतम हृदय, मैं आप पर भरोसा करता हूँ!</strong><strong><br></strong> <strong>यीशु का पवित्रतम हृदय, मैं मुझ पर आपके प्रेम में विश्वास करता हूँ!</strong><strong><br></strong> <strong>यीशु का पवित्रतम हृदय, आपका राज्य आए!</strong> [7]</p>
@@ -1156,22 +1228,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1183,6 +1260,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>हे यीशु, आपके प्रेम से दहकते हृदय के द्वारा</strong><strong><br></strong> मैं आपसे प्रार्थना करता हूँ: पूरे संसार के सभी पुरोहितों में आपके प्रेम और आपकी महिमा के लिए उत्साह प्रज्वलित कीजिए,<br> सभी मिशनरियों में, और उन सब में जो आपके दिव्य वचन की घोषणा करते हैं।<br> उन्हें यह अनुग्रह दीजिए कि वे,<br> पवित्र उत्साह से प्रज्वलित होकर,<br> शैतान से आत्माओं को छीन लें,<br> और उन्हें आपके हृदय की ओर ले आएँ,<br> जहाँ वे सदा आपकी महिमा कर सकें!<br> <strong>आमेन।</strong> [8]</p>
 <p>[8] यह प्रार्थना यीशु ने बहन जोसेफ़ा मेनेन्देज़ को यीशु के पवित्र हृदय के पर्व के दिन, 3.6.1921 को लिखवाई। From: <em>Die Liebe ruft</em>, S. 141.</p>
@@ -1193,12 +1271,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1284,6 +1368,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1338,6 +1457,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1373,12 +1503,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

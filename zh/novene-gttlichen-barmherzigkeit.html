@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="天主慈悲九日敬礼">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="天主慈悲九日敬礼">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/novene-gttlichen-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../zh/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../zh/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「我愿你们在这九日之内将灵魂领到我慈悲的泉源，使他们能从其中汲取力量、安慰以及生活劳苦所需的一切恩宠，尤其是在临终时。每天你们要把不同的一群灵魂领到我心中，将他们沉浸在我慈悲的海洋里。我要带领这一切灵魂进入我父的家。……你们每天要因我悲惨的苦难，向我父为这些灵魂祈求恩宠。」</p><p>耶稣亲自向傅天娜修女口授以下九日敬礼；从圣周五开始。[1209–1229] 亦可随时诵念。</p>
 
@@ -956,22 +998,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -983,6 +1030,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>全人类</strong>、尤其是 <strong>所有罪人</strong> 领到我跟前，将他们沉浸在我慈悲的海洋里。你这样做，是在我为丧失灵魂而陷入的悲痛中安慰我。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢的本性就是怜悯和宽恕我们。求祢不要看我们的罪过，而看我们对祢无限良善的信赖。求祢接纳我们进入祢至慈悲圣心的居所，并让我们永远留在那里。我们因祢与圣父及圣神结合的爱，向祢祈求。</p><p>天主慈悲的全能，<br>罪人的救星，<br>祢是慈悲——怜悯的海洋，<br>祢扶助在谦卑中寻找祢的人。</p><p>永生之父，求祢慈祥地垂顾全人类，尤其是可怜的罪人；他们都躲藏在耶稣至慈悲的圣心里。因祂悲惨的苦难，求祢向我们施行怜悯，好使祢慈悲的全能永受赞美。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -992,22 +1040,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1019,6 +1072,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把所有 <strong>司铎和修会会士</strong> 领到我跟前，将他们沉浸在我不可测的慈悲里。他们赐给我力量去忍受悲惨的苦难。藉着他们，如同藉着管道，我的慈悲倾注在人类身上。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，一切美善皆由祢而来。求祢在我们内增加恩宠，使我们能行相称的慈悲善功，好使那些看见我们的人，赞美慈悲的天上之父。</p><p>天主之爱的泉源，寓居在纯洁的心中。<br>在怜悯的海洋里转化的心灵，<br>犹如黑夜里的星辰闪烁。</p><p>永生之父，求祢慈祥地垂顾祢葡萄园中特选的人群——司铎和修会会士的灵魂，并赐给他们祢降福的力量。因祢圣子的圣心之情，求祢赐给他们祢光明的力量，使他们能在救赎的道路上引导他人，并共同歌颂祢不可测的慈悲，直到永远。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1028,22 +1082,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,6 +1114,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把一切 <strong>虔敬和忠信</strong> 的灵魂领到我跟前，将他们沉浸在我慈悲的海洋里。这些灵魂在苦路上安慰了我；他们是苦海中的一滴甘露。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢从祢慈悲的宝库中赐给我们丰盛的恩宠。求祢接纳我们进入祢至慈悲圣心的居所，永远不要让我们离开。我们因祢对天上之父那不可言喻的热爱，向祢祈求。</p><p>怜悯的奥秘，依然深不可测。<br>罪人或义人都无法理解。<br>祢以慈悲的眼光垂顾众人，<br>并愿将爱赐予每一个人。</p><p>永生之父，求祢以慈悲的眼光垂顾忠信的灵魂，视之为祢圣子的产业。因祂悲惨的苦难，求祢赐给他们祢的降福，并不断保护他们，使他们不致失去爱和神圣信仰的宝藏，而能与全体天使和圣人一起，永恒地赞美祢无限的慈悲。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1064,22 +1124,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1091,6 +1156,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>外邦人和还不认识我的人</strong> 领到我跟前。在我的悲惨苦难中我也思念他们。他们未来的热诚安慰了我的心。将他们沉浸在我慈悲的海洋里。」</p><p><strong>祷文：</strong></p><p>至仁慈的耶稣，祢是普世之光。求祢接纳还不认识祢的外邦人的灵魂，进入祢至仁慈圣心的居所。愿祢恩宠的光芒启迪他们，使他们也能与我们一起赞美祢慈悲的奇蹟，并让他们不要再离开祢至慈悲圣心的居所。</p><p>愿祢爱的光辉，照亮灵魂的黑暗。<br>求祢使灵魂认识祢，<br>并以颂扬称名慈悲。</p><p>永生之父，求祢以慈悲的眼光垂顾还不认识祢的外邦人的灵魂，他们正躲藏在耶稣至慈悲的圣心里。求祢引导他们走向福音的光明。这些灵魂不知道爱祢是多么大的幸福。求祢使他们也能永恒地歌颂祢丰盛的慈悲。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1100,22 +1166,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1127,6 +1198,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>异端者</strong>（失去真正信仰者）和 <strong>裂教者</strong>（离开教会者）的灵魂领到我跟前，将他们沉浸在我慈悲的海洋里。在悲惨的苦难中，他们撕裂了我的身体和圣心——即我的教会。当他们回归教会的统一时，我的伤口便痊愈，从而减轻了我的痛苦。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢就是良善本身。祢不拒绝启迪那些向祢祈求的人。求祢接纳异端者和裂教者的灵魂进入祢至慈悲圣心的居所，并在祢的光明中引导他们回归教会的统一。不要让他们离开祢至慈悲圣心的居所，并使他们也能赞美祢慷慨的慈悲。</p><p>即使是那些撕裂祢统一外衣的人，<br>慈悲仍从祢的心中流向他们。<br>天主慈悲的全能，<br>引导这些灵魂脱离错误与困境。</p><p>永生之父，求祢以慈悲的眼光垂顾异端者和裂教者的灵魂，他们顽固地坚持错误，虚耗了祢的恩赐，滥用了祢的恩宠。求祢不要看他们的错误，而看祢圣子的爱和祂为他们所承受的悲惨苦难，因为他们也包含在耶稣至慈悲的圣心里。求祢使他们也能永恒地赞美祢伟大的慈悲。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1136,22 +1208,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1163,6 +1240,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>温良谦逊</strong> 的灵魂和 <strong>孩童</strong> 的灵魂领到我跟前，将他们沉浸在我慈悲的海洋里。这些灵魂与我的圣心最为相似。他们在我悲惨的临终痛苦中坚强了我。我视他们为地上的天使，守卫着我的祭台。我向他们倾注恩宠的洪流。唯有谦逊的灵魂能领受我的恩宠；我将我的信赖赐予谦逊的灵魂。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢亲自说过：「跟我学吧，因为我是良善心谦的。」（玛 11:29）求祢接纳温良谦逊的灵魂和孩童的灵魂进入祢至慈悲圣心的居所。这些灵魂令整个天堂欢欣，并获得天父特别的喜爱。他们是天主宝座前的花束，天主亲自悦纳他们的芬芳。这些灵魂在耶稣圣心里有永久的居所，他们不断地歌颂爱与慈悲的赞歌，直到永远。</p><p>真正谦逊、宁静的灵魂，<br>在地上已呼吸着天堂的气息。<br>她谦逊心灵的芬芳，<br>能令造物主也感到喜悦。</p><p>永生之父，求祢以慈悲的眼光垂顾温良谦逊的灵魂和孩童的灵魂。他们都被接纳在耶稣至慈悲圣心的居所里。这些灵魂与祢的圣子最为相似。这些灵魂的馨香从地上升起，直达祢的宝座。慈悲与一切良善之父，我因祢对这些灵魂的爱与喜悦，恳求祢降福全世界，使所有灵魂能共同歌颂赞美祢的慈悲，直到永远。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1172,22 +1250,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1199,6 +1282,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>特别恭敬和赞颂我慈悲</strong> 的灵魂领到我跟前，将他们沉浸在我慈悲的海洋里。这些灵魂最同情我的苦难，并最深刻地进入了我的精神。他们是耶稣至慈悲圣心的生动反映。这些灵魂在未来的生命中将放射出特别的光辉。他们中没有一个会坠入地狱之火；在临终时，我将亲自保护他们每一个人。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢的心就是慈悲本身。求祢接纳那些特别敬礼并光荣祢伟大慈悲的灵魂，进入祢至慈悲圣心的居所。这些灵魂即使在任何痛苦和逆境中，因天主的力量而强大；他们在对祢慈悲的信赖中前行。这些灵魂与耶稣结合，肩负着全人类。他们不会受严厉的审判，因为在临终时，他们将被祢的慈悲所包围。</p><p>赞美主之良善的灵魂，<br>也体验到祂特别的爱。<br>她紧靠着活水的泉源，<br>并从慈悲中汲取恩宠。</p><p>永生之父，求祢以慈悲的眼光垂顾那些赞美并敬礼祢最伟大属性——不可测之慈悲的灵魂。他们都包含在耶稣至慈悲的圣心里。这些灵魂是活生生的福音。他们的双手充满了慈悲的善行。他们的灵魂洋溢着喜乐，歌颂至高慈悲的赞歌。天主，我恳求祢，照着他们对祢的希望和信赖，向他们施行慈悲。愿耶稣的许诺在他们身上实现：</p><p>「那些敬礼我不可测之慈悲的灵魂，在他们生前，尤其在临终时，我将亲自像保护我自己的光荣一样保护他们。」</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1208,22 +1292,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1235,6 +1324,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>在炼狱中</strong> 的灵魂领到我跟前，将他们沉浸在我慈悲的深渊里。愿我宝血的洪流冷却他们的火焰。这些灵魂深受我的爱。他们正在补偿我的公义。你有能力为他们带来缓解。从我教会的宝库中取出所有的赎罪施舍（大赦），并为他们奉献……噢，如果你知道他们的痛苦，你就会不断地为他们奉献属灵的施舍，并代他们向我的公义偿还债务。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢亲自说过祢要求慈悲。因此，我将祢深爱的、却仍须向祢的公义补偿的炼狱灵魂，领到祢至慈悲圣心的居所。愿从祢圣心流出的宝血和水流，熄灭炼狱之火的酷热，好使在那里也能赞美祢慈悲的力量。</p><p>从炼狱痛苦的火中，<br>向祢的怜悯发出哀号。<br>藉着祢为穷苦人流出的宝血和水，<br>他们获得了缓解与慰藉。</p><p>永生之父，求祢以慈悲的眼光垂顾在炼狱中受苦、却正躲藏在耶稣至慈悲圣心里的灵魂。我因祢圣子耶稣悲惨的苦难，以及祂至圣灵魂所充满的苦涩，恳求祢向那些在祢公义眼下的灵魂施行慈悲。求祢只藉着祢爱子耶稣的伤口垂看他们；因为我们相信，祢的良善和怜悯是无尽的。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1244,22 +1334,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1271,6 +1366,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>「今天把 <strong>冷淡</strong> 的灵魂领到我跟前，将他们沉浸在我慈悲的深渊里。这些灵魂最令我圣心伤痛。在山园祈祷时，我的灵魂对冷淡的灵魂感到最大的厌恶。冷淡的灵魂是我说出这句话的原因：『父啊，如果祢愿意，请免去这杯。』他们最后的救命稻草就是投奔我的慈悲。」</p><p><strong>祷文：</strong></p><p>至慈悲的耶稣，祢是纯洁的怜悯；我将冷淡的灵魂领到祢至慈悲圣心的居所。愿这些犹如死尸、令祢感到如此厌恶的冰冷灵魂，在祢纯洁之爱的火中温暖起来。至慈悲的耶稣，求祢施展祢慈悲的全能，将他们拉进祢爱的热火中，并赐予他们神圣的爱，因为祢无所不能。</p><p>火与冰不能共存，<br>其中之一必会融化或熄灭。<br>但良善的天主，祢的慈悲，<br>为那更大的虚无带来救助。</p><p>永生之父，求祢以慈悲的眼光垂顾冷淡的灵魂，他们正躲藏在耶稣至慈悲的圣心里。慈悲与一切良善之父，我因祢圣子悲惨的苦难，以及祂在十字架上三小时的垂死，恳求祢，使他们也能永恒地赞美祢慈悲的深渊。阿们。</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>天主慈悲串经</strong></a></p>
 
@@ -1280,12 +1376,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1371,6 +1473,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1425,6 +1562,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1460,12 +1608,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

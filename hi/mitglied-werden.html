@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="सदस्य बनें">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="सदस्य बनें">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/mitglied-werden.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../hi/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../hi/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/gs_33030b1d793351c5da8cee3aa6b0e0f8b7760b4224c509112d1694621004c71c.jpg" 
-                 alt="" 
+            <img src="../static/img/gs_33030b1d793351c5da8cee3aa6b0e0f8b7760b4224c509112d1694621004c71c.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -949,11 +990,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>निष्कलंक की मिलिशिया (Militia Immaculatae)</strong><strong><br></strong> <em>वह तुम्हारा (सांप का) सिर कुचल देगी।</em> (उत्पत्ति 3, 15)<br> <em>आपने अकेले ही पूरे विश्व में सभी पाखंडों पर विजय प्राप्त की है।</em> (धन्य कुँवारी मरियम का कार्यालय)</p><p>MI पूरी तरह से "ईश्वर की माता के समाज" की भावना से अनुप्राणित है, जैसा कि ग्रिग्नियन ने वर्णन किया है। इसमें लोकधर्मी और ईश्वर को समर्पित लोग शामिल हैं। नियम इतने संक्षिप्त और सरल हैं कि उन्हें हर परिवार, हर समुदाय, हर धार्मिक समुदाय में जीया जा सकता है! 1918 में रोम में एक भाई को लिखे पत्र में फादर मैक्सिमिलियन लिखते हैं:</p><p><em>प्रिय भाई! मैं यह कार्ड चमत्कारी पदक की निष्कलंक कुँवारी मरियम के प्रकटीकरण के दिन लिख रहा हूँ […] हमारी सर्वोच्च निष्कलंक स्वामिनी ने हमारी ओर से एक वर्ष की प्रतीक्षा, संदेह और अनिश्चितता के बाद अपनी "मिलिशिया" के लिए नियम निम्नानुसार निर्धारित करने की कृपा की है:</em></p><p><strong>I. लक्ष्य</strong><strong><br></strong> पापियों, पाखंडियों, मतभेदियों आदि का हृदय परिवर्तन, विशेष रूप से फ्रीमेसन का; और निष्कलंक के शासन और मध्यस्थता के माध्यम से सभी का पवित्रीकरण।</p><p><strong>II. शर्तें</strong></p><ol><li><p>निष्कलंक को पूर्ण समर्पण, स्वयं को उनके हाथों में एक उपकरण के रूप में देना।</p></li><li><p>“चमत्कारी पदक” पहनना।</p></li></ol><p><strong>III. साधन</strong></p><ol><li><p>संभव हो तो हर दिन निष्कलंक का इस छोटी प्रार्थना के साथ आह्वान करें: <em>हे मरियम, जो बिना पाप के गर्भ में आईं, हमारे लिए प्रार्थना करें जो आपकी शरण लेते हैं और उन सभी के लिए जो आपकी शरण नहीं लेते हैं, विशेष रूप से फ्रीमेसन के लिए।</em></p></li><li><p>विभिन्न जीवन स्थितियों और परिस्थितियों में, मिलने वाले अवसरों में, यथासंभव सभी वैध साधनों का उपयोग करें: यह प्रत्येक के उत्साह और विवेक पर छोड़ दिया गया है; लेकिन विशेष साधन चमत्कारी पदक का प्रसार है।¹</p></li></ol><p>¹ नियम फादर कोल्बे द्वारा लैटिन भाषा में लिखे गए थे, जो पवित्र कलीसिया की भाषा है, यानी शाश्वत रूप से मान्य भाषा। (देखें पृष्ठ 12)</p><br><p><strong>मैं MPL का सदस्य कैसे बनूँ?</strong><strong><br></strong> MPL का सदस्य बनने के लिए, सबसे पहले हमारे प्रेरिताई आंदोलन की आध्यात्मिकता के बारे में जानकारी प्राप्त करना महत्वपूर्ण है।<br> जो कोई भी प्रेरित महसूस करता है और MPL के लक्ष्यों में ठोस रूप से सहयोग करने के लिए तैयार है, उसका हमारे यहाँ हार्दिक स्वागत है।</p><p><strong>मुझे और क्या जानने की जरूरत है?</strong></p><ul><li><p>कोई प्रवेश शुल्क नहीं</p></li><li><p>कोई सदस्यता शुल्क नहीं</p></li><li><p>कोई नियमित क्लब पत्रिका या परिपत्र नहीं</p></li><li><p>MPL के जीवित और मृत सदस्यों और दानदाताओं के लिए मासिक रूप से एक पवित्र मिस्सा मनाया जाता है।</p></li></ul><p>इसके अलावा, वे विशेष रूप से MPL के आध्यात्मिक फलों में हिस्सा प्राप्त करते हैं।</p><p><strong>लिखित पंजीकरण:</strong><strong><br></strong> <strong>Marianische Priester- und Laienbewegung zum Triumph der Vereinten Herzen Jesu und Mariens e. V.</strong><strong><br></strong> Postfach 1118, 77732 Zell a. H.</p><p><strong>ईमेल द्वारा पंजीकरण:</strong><strong><br></strong> <a href="mailto:contact@mpl-apostolate.com">contact@mpl-apostolate.com</a></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -963,6 +1010,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1048,6 +1096,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1102,6 +1185,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1137,12 +1231,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

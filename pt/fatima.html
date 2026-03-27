@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Fátima">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Fátima">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/fatima.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../pt/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../pt/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,19 +969,18 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section section-with-image section-with-two-images">
+    <section class="content-section section-with-image section-with-two-images" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg" 
-                 alt="" 
+            <img src="../static/img/4b3345cdd8bdcece38165156503466eb.jpg"
+                 alt=""
                  class="section-image">
             
         </div>
@@ -949,6 +990,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Nos dias 12 e 13 de cada mês Nossa Senhora usa esta coroa</p><h1>A Mensagem de Reconciliação de Fátima</h1><p>«Quem me dera lançar em cada coração o fogo que arde no meu peito e me faz amar tanto os Corações de Jesus e de Maria!» (Santa Jacinta Marto)</p><p>«Quero consolar o Salvador e depois converter os pecadores, para que não O ofendam mais!» (São Francisco Marto)</p><p>Sacrificai-vos pelos pecadores e dizei frequentemente a Jesus, especialmente quando fizerdes um sacrifício: <br>Ó meu Jesus, é por amor a Vós, pela conversão dos pecadores, pelo Santo Padre e em reparação dos pecados cometidos contra o Coração Imaculado de Maria. <br>(Maria em Fátima a 13 de Julho de 1917)</p><p>Memórias da Irmã Lúcia do original português</p>
             </div>
@@ -957,13 +999,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         <div class="section-media">
             
-            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg" 
-                 alt="" 
+            <img src="../static/img/8938625cb1343008c9d0a8e971f387e8.jpg"
+                 alt=""
                  class="section-image">
             
             
@@ -973,16 +1020,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -994,11 +1041,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Quando Deus, impelido pelo Seu amor misericordioso, envia Maria com uma mensagem aos filhos da terra, está por detrás o desejo de Deus que quer que todas as pessoas sejam salvas. (1 Tim 2,4)</p><p>Maria vem, por assim dizer, como Mãe do Bom Pastor, para recordar às ovelhas do Seu Filho as verdades salvíficas do Evangelho.</p><p>Qual de vós, tendo cem ovelhas e perdendo uma, não deixa as noventa e nove no deserto e vai atrás da que se perdeu até a encontrar? E quando a encontrou, toma-a aos ombros com alegria … <br>Digo-vos: Assim haverá também alegria no céu por um pecador que se arrepende. (Lc 15,4)</p><p>«A luz que flui à volta da Sua nobre figura em todos os lugares de aparição é uma frente de ataque contra a escuridão em que o mundo pecador ameaça mergulhar. […] Ela pede, suplica e chora. Chora na Rue du Bac em Paris a 18 de Julho de 1830. Chora em La Salette em 1846, e León Bloy escreve das Suas lágrimas que foram o suspiro mais dilacerante jamais ouvido no mundo desde o Consummatum est – Está consumado na Cruz. Chora a 21 de Fevereiro de 1858 em Lourdes, e quem não seria comovido ao ouvir a inocente criança Bernadette dizer que chora porque a Senhora chora. Estas lágrimas são certamente sinais de tristeza celestial pela obstinação dos pecadores. Mas são também a última tentativa que só um coração de mãe pode conceber e empreender para mover os filhos a lágrimas de compaixão e arrependimento.» [A. J. Fuhs – Fátima e Paz, p. 46.]</p><p>E em Fátima, um pequeno lugar em Portugal completamente desconhecido até 13 de Maio de 1917, Maria continua a Sua gigantesca obra de salvação. Pede urgentemente aos Seus filhos terrenos que se reconciliem com Deus e «não O ofendam mais». A segunda coisa que tão ardentemente pede aos filhos é ajuda na Sua grande obra de salvação através da oração e do sacrifício: «Rezai, rezai muito e oferecei sacrifícios pelos pecadores.» E apressa-se com as orações de reparação e sacrifícios das Suas ovelhas ao Seu divino Filho e implora misericórdia e paciência.</p><p>No livro «A Irmã Lúcia Fala de Fátima – Memórias da Irmã Lúcia I» são descritas, além das aparições do Anjo e da Mãe de Deus, também as vidas dos três pastorinhos, que cumpriram os pedidos de Nossa Senhora de forma exemplar. O seu incansável rezar e sacrificar pela salvação das almas confere à mensagem de Fátima uma atracção muito especial. A 13 de Maio de 2000 Francisco e Jacinta Marto foram beatificados pelo Papa João Paulo II. E a 13 de Maio de 2017 foram canonizados pelo Papa Francisco.</p><p>Deus escolheu estas puras almas infantis para conduzir as Suas ovelhas à pastagem verdejante e à nascente borbulhante do Evangelho. Assim os pequenos pastores, sob a guia de Nossa Senhora, tornaram-se pastores de almas segundo o Coração de Jesus. Brilham perante todos os fiéis, especialmente as crianças, no caminho da santidade. São mensageiros de paz, dessa paz inefável pela qual a humanidade tanto suspira. As boas novas de Belém ecoam em Fátima:</p><p>Não tenhais medo; sou o Anjo da Paz!</p><p>Entre os Papas recentes, todos grandes devotos de Fátima, destaca-se de forma especial São Papa João Paulo II. O atentado à sua vida a 13 de Maio de 1981 tornou-o ainda mais desperto para a mensagem de Fátima. O Papa enfatizou uma e outra vez que a Mãe de Deus lhe salvou a vida e dirigiu a bala contra ele de tal forma que sobreviveu ao atentado. Por isso deu a bala que trespassou o seu corpo a Nossa Senhora de Fátima. A 13 de Maio de 1982 rezou em Fátima: <br>Ó Coração Imaculado! Ajudai-nos a vencer o perigo do mal… Que o poder infinito da redenção se mostre mais uma vez na história do mundo: o poder do amor misericordioso! Que ponha fim ao mal e transforme as consciências! No Vosso Coração Imaculado que a luz da esperança seja revelada a todos!</p><p>Uma vez dois padres vieram interrogar-nos. Recomendaram que rezássemos pelo Santo Padre. Jacinta perguntou quem era o Santo Padre, e os padres explicaram-nos quem é e quanto precisa das nossas orações. Jacinta conservou tão grande amor pelo Santo Padre que sempre acrescentava «e pelo Santo Padre» quando oferecia os seus sacrifícios a Jesus. No fim do Rosário rezava sempre três Ave Maria pelo Santo Padre. [1 E I. 11]</p><p>Eu sou o Bom Pastor! (Jo 10,14)</p><p>Jacinta gostava também de apanhar os cordeiros brancos, abraçá-los e beijá-los, e carregá-los para casa nos braços à noite para não se cansarem. Um dia colocou-se no meio do rebanho no caminho para casa.<br>– Jacinta – perguntei, por que vais ali no meio das ovelhas?<br>– Para fazer como o Nosso Salvador, que numa imagem que me deram também está assim no meio de muitas ovelhas e segura uma nos braços. [1 E I. 6]</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1008,16 +1061,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1029,11 +1082,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>A Primeira Aparição 1916</h3><p>Estávamos a brincar há um bocado quando de repente, embora fosse de resto um dia calmo, um forte vento abalou as árvores. Olhámos para cima e vimos […] um jovem de 14 a 15 anos, mais branco do que a neve. […], era de grande beleza. Quando se colocou diante de nós, disse: <br>– Não tenhais medo! Sou o Anjo da Paz! Rezai comigo! De joelhos no chão inclinou a testa para a terra e fez-nos repetir estas palavras três vezes:<br>– Meu Deus, creio em Vós, adoro-Vos, espero em Vós, amo-Vos. Peço-Vos perdão por aqueles que não creem, não adoram, não esperam e não Vos amam.</p><p>Depois disse, levantando-se:<br>– Assim rezais. Os Corações de Jesus e Maria esperam as vossas súplicas.</p><p>As Suas palavras imprimiram-se tão profundamente na nossa memória que nunca mais as esquecemos. A partir daí passámos muito tempo a repeti-las assim profundamente curvados, até por vezes cairmos de fadiga. [2 E II. 2]</p><h3>A Segunda Aparição 1916</h3><p>Muito tempo depois estávamos a brincar num dia de Verão […] num poço. […] De repente vimos diante de nós a mesma figura, o Anjo, como me pareceu. Ele disse:<br>– O que estais a fazer? Rezai, rezai muito! Os Corações de Jesus e Maria têm planos de misericórdia convosco. Oferecei ao Altíssimo orações e sacrifícios sem cessar.<br>– Como devemos oferecer sacrifícios? – perguntei.<br>– Fazei de tudo o que puderdes uma oferta, para reparar os pecados pelos quais Ele é ofendido e implorar a conversão dos pecadores. […] Sobretudo aceitai o sofrimento e suportai em submissão o que o Senhor vos enviar. [2 E II. 2]</p><p>Estas palavras do Anjo imprimiram-se nas nossas mentes como uma luz que nos fez reconhecer quem é Deus, quanto nos ama e quer ser amado em troca. Reconhecemos o valor do sacrifício e quanto Lhe é agradável; e como Ele converte os pecadores por causa do sacrifício. A partir dessa altura começámos a oferecer ao Senhor tudo o que nos afligia, mas não procurámos outras mortificações ou penitências senão repetir a oração do Anjo durante horas prostrados no chão. [4 E II. 1]</p><h3>A Terceira Aparição 1916</h3><p>Passou assim algum tempo e estávamos a caminho com os nossos rebanhos para um terreno dos meus pais. […] Quando lá chegámos, começámos de joelhos, rostos voltados para o chão, a repetir a oração do Anjo:<br>– Meu Deus, creio em Vós …</p><p>Não sei quantas vezes tínhamos repetido esta oração quando vimos uma luz desconhecida a brilhar sobre nós. Levantámo-nos para ver o que se passava e vimos o Anjo. Na mão esquerda segurava um cálice; sobre ele flutuava uma Hóstia, da qual caíam gotas de sangue para o cálice. O Anjo deixou o cálice flutuar no ar, ajoelhou-se ao nosso lado e fez-nos repetir três vezes:</p><p>Santíssima Trindade, Pai, Filho e Espírito Santo, na mais profunda reverência Vos adoro e ofereço-Vos o precioso Corpo, Sangue, Alma e Divindade de Jesus Cristo, presente em todos os tabernáculos do mundo, em reparação de todas as blasfémias, sacrilégios e indiferenças pelas quais Ele próprio é ofendido. Pelos infinitos méritos do Seu Sacratíssimo Coração e do Coração Imaculado de Maria, peço-Vos a conversão dos pobres pecadores.</p><p>Depois ergueu-se, pegou no cálice e na Hóstia, deu-me a sagrada Hóstia e repartiu o Sangue do cálice entre Jacinta e Francisco, dizendo:<br>– Recebei o Corpo e bebei o Sangue de Jesus Cristo, tão terrivelmente ofendido pelos homens ingratos. Reparai os seus pecados e consolai o vosso Deus! Ajoelhou-se de novo no chão, repetiu connosco mais três vezes a mesma oração: <br>Santíssima Trindade … <br>e desapareceu. Permanecemos nesta postura e continuámos a repetir as mesmas palavras. [2 E II. 2]</p><p>Permaneçamos longamente de joelhos perante o Senhor presente na Eucaristia, reparando com a nossa fé e o nosso amor pela negligência, esquecimento e até as ofensas que o nosso Redentor tem de suportar em muitas partes do mundo. (São João Paulo II, Mane nobiscum Domine, 18)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1043,16 +1102,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1064,11 +1123,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>13 de Maio de 1917</h3><p>Estava a brincar com Francisco e Jacinta no cume da encosta da Cova da Iria. […] quando de repente vimos algo como um relâmpago. […] <br>Começámos a descer a encosta e conduzimos as ovelhas para a estrada. Quando estávamos a meio da encosta, […] vimos sobre um carvalho uma Senhora, toda vestida de branco, mais brilhante do que o sol. […] Surpresos com esta aparição ficámos parados. […] Então Nossa Senhora disse:<br>– Não tenhais medo! Não vos farei mal!<br>– Donde vem? – perguntei-lhe.<br>– Venho do céu!<br>– E que quer de mim?<br>– Vim pedir-vos que venhais aqui nos próximos seis meses, no dia treze à mesma hora. Depois dir-vos-ei quem sou e o que quero. […]<br>– Também irei para o céu?<br>– Sim, irás!<br>– E a Jacinta?<br>– Sim!<br>– E o Francisco?<br>– Sim, mas ele tem de rezar muitos mais Rosários. […] <br>– Quereis oferecer-vos a Deus para suportar todos os sofrimentos que Ele vos enviar, em reparação dos pecados pelos quais é ofendido e como petição pela conversão dos pecadores?<br>– Sim, queremos!<br>– Então tereis de sofrer muito, mas a graça de Deus será o vosso conforto!</p><p>Durante as aparições de 13 de Maio a 13 de Outubro de 1917, os «graus de comunicação» de Nossa Senhora com as três crianças diferiam: Jacinta via e ouvia a Virgem; Lúcia via, ouvia e era a única que falava com Ela; Francisco via tudo mas nunca pôde ouvir o que Nossa Senhora disse.</p><p>Quando disse estas últimas palavras, abriu as mãos pela primeira vez e transmitiu-nos uma luz tão forte, como se um reflexo saísse das Suas mãos. Penetrou nos nossos peitos e na mais profunda profundidade das nossas almas e reconhecemo-nos em Deus, que era esta luz, muito mais claramente do que nos podíamos ver no melhor espelho. Por um impulso interior que nos foi igualmente comunicado, caímos de joelhos e repetimos interiormente:</p><p>– Ó Santíssima Trindade, adoro-Vos. Meu Deus, meu Deus, amo-Vos no Santíssimo Sacramento.</p><p>Após uns momentos Nossa Senhora acrescentou:<br>– <strong>Rezai o Rosário todos os dias</strong> para obter a paz para o mundo e o fim da guerra! Em seguida começou lentamente a subir e ascender em direcção ao nascer do sol, até desaparecer na infinidade da distância. [4 E II. 3]</p><p>Aquela Senhora disse-nos que devíamos rezar o Rosário e oferecer sacrifícios pela conversão dos pecadores. Quando rezamos o Rosário agora, devemos rezar a Ave Maria e o Pai Nosso completamente. E os sacrifícios, como devemos oferecê-los?<br>Francisco descobriu rapidamente um bom sacrifício.<br>– Dêmos o nosso almoço às ovelhas – estamos a oferecer o sacrifício de não comer nada. Em poucos minutos a nossa provisão foi distribuída ao rebanho. [1 E I. 8]</p><p>«Tínhamos sido recomendados a rezar o Rosário após as vésperas, mas porque o tempo para brincar nos parecia demasiado curto, encontrámos uma boa forma de terminar depressa: Deixávamos deslizar as contas, dizendo apenas: Ave Maria, Ave Maria, Ave Maria! Quando tínhamos chegado ao fim da dezena, dizíamos com uma longa pausa as simples palavras: Pai Nosso. E assim tínhamos rezado o nosso Rosário num relâmpago.» [1 E I. 6]</p><h3>13 de Junho de 1917</h3><p>Depois de eu, Jacinta, Francisco e alguns outros presentes termos rezado o Rosário, vimos novamente a luz que se aproximava (que chamávamos relâmpago), e depois Nossa Senhora sobre o carvalho, como em Maio.</p><p><strong>– Que deseja de mim?</strong><strong><br></strong>– perguntei.<br><strong>– Desejo que rezes o Rosário todos os dias e aprendas a ler. […]</strong></p><p><strong>– Pedi a cura de um doente.</strong><strong><br></strong><strong>– Se se converter, será curado dentro do ano.</strong></p><p><strong>– Gostaria que nos levasse ao céu.</strong><strong><br></strong><strong>– Sim! Em breve tomarei Jacinta e Francisco. Mas tu permanecerás aqui algum tempo. Jesus deseja fazer uso de ti para que as pessoas Me conheçam e Me amem. Ele deseja estabelecer a devoção ao Meu Coração Imaculado na terra.</strong></p><p><em>(Aqui Lúcia na pressa omite o fim do parágrafo, que noutros documentos diz: «A quem o aceitar prometo a salvação, e estas almas serão amadas por Deus como flores que coloquei para adornar o Seu trono.» [4 E II. 4])</em></p><p><strong>– Ficarei aqui sozinha?</strong><strong><br></strong>– perguntei tristemente.<br><strong>– Não, minha filha! Sofres muito? Não te desanimes. Nunca te deixarei. O Meu Coração Imaculado será o teu refúgio e o caminho que te levará a Deus.</strong></p><p>No momento em que disse estas últimas palavras, abriu as mãos e transmitiu-nos uma segunda vez o reflexo desta luz imensurável. Nela vimo-nos como imersos em Deus. Jacinta e Francisco pareciam estar na parte da luz que subia para o céu, e eu na parte que se derramava sobre a terra. Diante da palma direita de Nossa Senhora estava um coração, rodeado de espinhos que pareciam trespassá-lo. Entendemos que era o Coração Imaculado de Maria, ferido pelos pecados da humanidade, desejando reparação. <em>(Fonte: [4 E II. 4])</em></p><p>A partir desse dia sentimos nos nossos corações um amor ainda mais forte pelo Coração Imaculado de Maria. Jacinta disse-me por vezes:<br><strong>– Aquela Senhora disse que o Seu Coração Imaculado será o teu refúgio e o caminho que te levará a Deus. Amas-na muito? Amo tanto o Seu Coração! É tão bom!</strong> <em>(Fonte: [3 E 5])</em></p><h3>13 de Julho de 1917</h3><p>Pouco após termos chegado à Cova da Iria ao carvalho e rezado o Rosário com uma grande multidão, vimos a luz habitual e logo a seguir Nossa Senhora sobre o carvalho.</p><p><strong>– Que deseja de mim?</strong><strong><br></strong>– perguntei.<br><strong>– Desejo que venhas aqui novamente no dia treze do próximo mês, que continues a rezar o Rosário todos os dias em honra de Nossa Senhora do Rosário, para obter a paz para o mundo e o fim da guerra. […]</strong></p><p><strong>– Gostaria que nos dissesse quem é e que fizesse um milagre para que todos acreditem que nos aparece.</strong><strong><br></strong><strong>– Continuai a vir aqui todos os meses! Em Outubro dir-vos-ei quem sou, o que desejo, e farei um milagre para que todos acreditem.</strong></p><p>Depois continuou:<br><strong>– Sacrificai-vos pelos pecadores e dizei frequentemente a Jesus, especialmente quando fizerdes um sacrifício: Ó meu Jesus, é por amor a Vós, pela conversão dos pecadores, pelo Santo Padre e em reparação dos pecados cometidos contra o Coração Imaculado de Maria.</strong></p><p>Nestas últimas palavras abriu novamente as mãos como nos dois meses anteriores. O raio parecia penetrar a terra, e vimos como que um mar de fogo e imersos neste fogo os demónios e as almas, como se fossem carvões translúcidos, negros e bronzeados incandescentes em forma humana, a flutuar neste fogo. […]</p><p>Assustados e como que a pedir ajuda levantámos os olhos para Nossa Senhora, que nos falou com plena bondade e tristeza:<br><strong>– Vistes o inferno, para onde vão as almas dos pobres pecadores. Para as salvar, Deus deseja estabelecer a devoção ao Meu Coração Imaculado no mundo. Se fizerdes o que vos digo, muitas almas serão salvas e haverá paz. A guerra está a terminar. Mas se as pessoas não deixarem de ofender Deus, sob o pontificado de Pio XI começará outra guerra pior. Quando virdes uma noite iluminada por uma luz desconhecida, sabereis então que este é o grande sinal que Deus vos dá de que está prestes a punir o mundo pelos seus pecados com guerra, fome, perseguição da Igreja e do Santo Padre.</strong></p><p><strong>– Para prevenir isto, virá pedir a consagração da Rússia ao Meu Coração Imaculado e a Comunhão de reparação nos Primeiros Sábados.</strong> <em>(Cumpriu esta promessa alguns anos mais tarde quando apareceu a Lúcia em 1925 e 1926 em Pontevedra, Espanha [ver pág. 39], e em 1929 em Tuy, Espanha [ver pág. 41].)</em></p><p><strong>– Se as pessoas acatarem os Meus desejos, a Rússia converter-se-á e haverá paz. Se não, espalhará os seus erros por todo o mundo, provocará guerras e perseguições da Igreja. Os bons serão martirizados, e o Santo Padre terá muito que sofrer. Várias nações serão aniquiladas. Mas no fim o Meu Coração Imaculado triunfará. O Santo Padre consagrará a Rússia a Mim, converter-se-á, e será concedido um período de paz ao mundo. Em Portugal o dogma da fé será sempre preservado.</strong> […]</p><p><strong>– Quando rezardes o Rosário, dizei após cada dezena: Ó meu Jesus, perdoai-nos os nossos pecados, livrai-nos do fogo do inferno, levai todas as almas ao céu, especialmente aquelas que mais precisam da Vossa misericórdia.</strong> […]</p><p>Na Sua forma habitual ascendeu em direcção ao oriente, até desaparecer na distância infinita do firmamento. <em>(Fonte: [4 E II. 5])</em></p><p>Fizemos então pela primeira vez uma meditação sobre o inferno e a eternidade. O que mais impressionou Jacinta foi a eternidade. Mesmo a brincar perguntava de vez em quando:<br><strong>– Mas olha, após muitos, muitos anos o inferno ainda não acaba?</strong> […]</p><p>Depois acrescentou:<br><strong>– Como aquela Senhora é boa! Já prometeu levar-nos ao céu.</strong> <em>(Fonte: [1 E I. 8])</em></p><p>Jacinta não pôde esquecer a visão do inferno de 13 de Julho de 1917 durante o resto da sua curta vida. Mesmo pouco antes da sua morte exclamou na presença da superiora do hospital em Lisboa, para onde fora levada:</p><p><strong>«Se as pessoas soubessem o que significa a eternidade! Como fariam tudo ao seu alcance para mudar as suas vidas! Querida madrinha (assim chamava à superiora), a penitência e os sacrifícios dão muita alegria ao Nosso Senhor. Fugi do luxo! Fugi das riquezas! Amai a pobreza! Praticai a caridade, mesmo para com as pessoas más! Nunca digais mal de ninguém, e evitai aqueles que desprezam os outros! Praticai sempre a paciência; porque a paciência conduz ao céu! Os sacerdotes devem ocupar-se apenas dos assuntos da Igreja. Devem ser puros, completamente puros! A desobediência dos sacerdotes e religiosos para com os seus superiores e o Santo Padre ofende muito o Nosso Senhor.»</strong> <em>(Fonte: Fátima e Paz, p. 99)</em></p><h3>As Lâmpadas dos Anjos</h3><p>Discutíamos sobre quem conseguia contar as estrelas, que dizíamos serem as lâmpadas dos anjos. A lua era a lanterna de Nossa Senhora e o sol a do nosso Salvador. Por isso Jacinta dizia por vezes:<br><strong>– Prefiro a lâmpada de Nossa Senhora, pois nem queima nem nos ofusca, como a do nosso Salvador.</strong> <em>(Fonte: [1 E I. 4])</em></p><p>Depois íamos à eira, saltávamos um pouco, esperávamos que Nossa Senhora e os anjos acendessem as suas lâmpadas e as colocassem na janela para nos iluminar. Quando não havia lua, pensávamos que a lâmpada de Nossa Senhora não tinha mais óleo. <em>(Fonte: [1 E I. 6])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1078,16 +1143,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1099,11 +1164,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Entretanto amanhecia a manhã de 13 de Agosto. […]<br> Todos queriam ver-nos, interrogar-nos e confiar-nos as suas súplicas, para as apresentarmos à Santíssima Virgem. […]</p><p>No meio de toda esta multidão pediram ao meu pai que me levasse à casa da minha tia, onde o administrador nos esperava. […]</p><p>Quando cheguei, o administrador estava na sala com Jacinta e Francisco. Ali interrogou-nos e tentou de novo arrancar-nos a promessa de que já não iríamos à Cova da Iria. <em>(Fonte: [2 E II. 11])</em></p><p>Quando fomos mais tarde levados prisioneiros, foi a ausência dos nossos pais que mais pesou na Jacinta. […]<br> <strong>– Não chores</strong> – disse Francisco-lhe, – <strong>ofereçamo-lo a Jesus pelos pecadores.</strong></p><p>E erguendo os olhos e as mãos ao céu, rezou a oração de oferta:<br> <strong>– Ó meu Jesus, é por amor a Vós e pela conversão dos pecadores.</strong> […]</p><p>Quando após sermos separados fomos reunidos novamente numa cela de prisão, disseram que nos viriam buscar em breve para nos queimar. Então Jacinta retirou-se para uma janela. A princípio pensei que queria distrair-se com a vista, mas depois notei que estava a chorar.</p><p>Levei-a para junto de mim e perguntei porque chorava:<br> <strong>– Porque vamos morrer sem ter visto novamente os nossos pais e mães,</strong> respondeu.</p><p>E com um rosto banhado em lágrimas:<br> <strong>– Ao menos gostaria de ver a minha mãe!</strong></p><p><strong>– Então não queres fazer este sacrifício pela conversão dos pecadores?</strong></p><p><strong>– Quero, quero.</strong></p><p>E enquanto as lágrimas corriam pelo seu rosto, ergueu as mãos e os olhos ao céu e rezou a oração de oferta:<br> <strong>– Ó meu Jesus! É por amor a Vós, pela conversão dos pecadores, pelo Santo Padre e em reparação dos pecados cometidos contra o Coração Imaculado de Maria.</strong> <em>(Fonte: [1 E I. 12])</em></p><p>Depois decidimos rezar o nosso Rosário. Jacinta tirou uma medalha que trazia ao pescoço e pediu a um prisioneiro que a pendurasse num prego na parede. De joelhos perante esta medalha começámos a rezar.</p><p>Os prisioneiros rezaram connosco o melhor que puderam. […]</p><p>Como a Santíssima Virgem nos dissera que devíamos também oferecer as nossas orações e sacrifícios em reparação dos pecados contra o Coração Imaculado de Maria, quisemos combinar que cada um ofereceria pela sua intenção. Um ofereceria pelos pecadores, outro pelo Santo Padre, e o terceiro em reparação dos pecados contra o Coração Imaculado de Maria.</p><p>Depois de termos feito este acordo, pedi à Jacinta que escolhesse por qual intenção queria oferecer:<br> <strong>– Ofereço por todos, porque amo toda a gente.</strong> <em>(Fonte: [1 E I. 13])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1113,16 +1184,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1134,11 +1205,17 @@
             
 
             
+            
             <div class="section-body">
                 <h3>19 de Agosto de 1917</h3><p>Quando estava a conduzir as ovelhas com Francisco e o seu irmão João para um lugar chamado Valinhos que prometia algo sobrenatural, e senti algo a aproximar-se e a envolver-nos, pressenti que Nossa Senhora nos apareceria. […]</p><p>Após a chegada de Jacinta vimos pouco depois Nossa Senhora sobre um carvalho.</p><p><strong>– Que deseja de mim?</strong><strong><br></strong> <strong>– Desejo que venhas no dia treze à Cova da Iria e que continues a rezar o Rosário todos os dias. […]</strong></p><p><strong>Rezai, rezai muito e oferecei sacrifícios pelos pecadores, pois muitas almas vão para o inferno porque ninguém se sacrifica e reza por elas.</strong></p><p>E novamente ascendeu como habitualmente em direcção ao oriente. <em>(Fonte: [4 E II. 6])</em></p><p><em>Como Nossa Senhora nos ensinara a oferecer a Jesus os nossos sacrifícios, Jacinta perguntava sempre, quando queríamos fazer uma oferta ou tínhamos de suportar alguma provação:</em><em><br></em><em> </em><strong>– Já disseste a Jesus que é por amor a Ele?</strong></p><p>Quando lhe respondia que não:<br> <strong>– Então dir-lho-ei eu.</strong></p><p>E dobrou as suas mãozinhas, ergueu os olhos ao céu e disse:<br> <strong>– Ó Jesus, é por amor a Vós e pela conversão dos pecadores.</strong> <em>(Fonte: [1 E I. 10])</em></p><h3>13 de Setembro de 1917</h3><p>Quando a hora esperada se aproximou, fui com Jacinta e Francisco por inúmeras pessoas. […]</p><p>Finalmente chegámos à Cova da Iria ao carvalho e começámos a rezar o Rosário com as pessoas. Pouco depois vimos a luz e depois Nossa Senhora sobre o carvalho.</p><p><strong>– Continuai a rezar o Rosário para obter o fim da guerra. Em Outubro também virá o Nosso Senhor, Nossa Senhora das Dores e do Monte Carmelo,</strong> <em>(Quis exprimir o Seu desejo de que todos usassem o escapulário […] Rosário e escapulário pertencem inseparavelmente juntos. [Ir. Lúcia em: Fátima e Paz, p. 147])</em> <strong>São José com o Menino Jesus, para abençoar o mundo. Deus está satisfeito com os vossos sacrifícios, mas não quer que durmais com a corda. Usai-a apenas durante o dia.</strong></p><p><strong>– Pediram-me para Vos implorar muitas coisas: a cura de alguns doentes e de um surdo-mudo.</strong><strong><br></strong><strong>– Sim, alguns curarei, outros não. Em Outubro farei um milagre para que todos acreditem.</strong></p><p>E começou a ascender e desapareceu como habitualmente. <em>(Fonte: [4 E II. 7])</em></p><p><em>Por vezes Francisco e Jacinta encontravam-me triste. Como não conseguia falar por estar a soluçar, sofriam comigo e choravam também. Então Jacinta rezava em voz alta a nossa oração de oferta:</em><em><br></em><strong>– Meu Deus, oferecemos-Vos todos estes sofrimentos e sacrifícios em acto de reparação e pela conversão dos pecadores.</strong> <em>(Fonte: [2 E II. 3])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1148,20 +1225,20 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section section-with-image section-with-image--left">
+    <section class="content-section section-with-image section-with-image--left" style="--section-nesting-depth: 0;">
         
         <div class="section-media">
-            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg" 
-                 alt="13 de Outubro de 1917" 
+            <img src="../static/img/a492dc8ab4241ea28b32168ebad266a8.jpg"
+                 alt="13 de Outubro de 1917"
                  class="section-image">
             
         </div>
@@ -1176,11 +1253,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Saímos de casa bastante cedo, pois esperávamos atrasos no caminho. As pessoas vinham em massa. Chovia intensamente. […] Nem sequer a lama nas estradas pôde impedir estas pessoas de se ajoelharem em postura humilde e suplicante. […]</p><p>Pouco depois vimos a luz e depois Nossa Senhora sobre o carvalho.</p><p><strong>– Que deseja de mim?</strong><strong><br></strong> <strong>– Desejo dizer-vos que aqui será construída uma capela em Minha honra. Sou Nossa Senhora do Rosário. Continuareis a rezar o Rosário todos os dias. […]</strong></p><p><strong>– Pediram-me para Vos implorar muitas coisas: se curaríeis alguns doentes e converteríeis alguns pecadores, e muito mais.</strong></p><p><strong>– Alguns sim, outros não. Devem emendar-se e pedir perdão dos seus pecados.</strong></p><p>E ainda mais tristemente disse:<br> <strong>– Já não se deve ofender Deus, Nosso Senhor, que já foi tão grandemente ofendido.</strong> <em>(Fonte: [8])</em></p><p>Abriu as mãos e deixou-as brilhar à luz do sol. À medida que ascendia, a Sua própria luz reflectia-se no sol. <em>(Fonte: [4 E II. 8])</em></p><p><em>Estas foram as últimas palavras de Maria, o núcleo da mensagem de Fátima. Em seguida ocorreu o milagre do sol perante aproximadamente 60.000 a 70.000 presentes. Este evento natural foi percebido por pessoas individuais num raio de até 40 quilómetros. O sol girou três vezes em sequência. Em seguida caíram raios de luz em cores de arco-íris sobre a cova e todos os presentes.</em></p><p><em>As crianças viram durante isto a Mãe de Deus, depois São José com o Menino Jesus nos braços, o Salvador que abençoava as pessoas, e finalmente Maria como Nossa Senhora das Dores e depois como Nossa Senhora do Monte Carmelo.</em></p><p><em>Após a terceira rotação o sol tornou-se vermelho sangue e pareceu mergulhar em ziguezague em direcção à multidão. Fiéis e infiéis caíram de joelhos com medo, rezaram e confessaram-se pecadores e imploraram misericórdia. Muitos doentes, incluindo aleijados e cegos, foram curados instantaneamente.</em></p><p><em>Quando o evento terminou, as pessoas notaram que as suas roupas completamente encharcadas estavam subitamente secas.</em></p><p>Jacinta levava os sacrifícios pela conversão dos pecadores tão a sério que não deixava passar uma única oportunidade. Havia umas crianças da Moita que iam pedir de porta em porta. Encontrámo-las um dia quando íamos a caminho com as nossas ovelhas. Quando Jacinta as viu, disse-nos:<br> <strong>– Dêmos o nosso almoço àquelas pessoas pobres pela conversão dos pecadores.</strong> <em>(Fonte: [1 E I. 9])</em></p><p>Noutras vezes disse-me:<br> <strong>– Não sei o que é. Sinto o Salvador no meu interior. Entendo o que Ele me diz sem O ver ou ouvir; mas é tão belo estar com Ele.</strong></p><p>Outra vez:<br> <strong>– Ouvem, sabem o quê? O Nosso Salvador está triste. Nossa Senhora disse-nos que já não se deve ofendê-Lo, pois já foi tão grandemente ofendido, mas ninguém presta atenção. Continuam a cometer os mesmos pecados.</strong> <em>(Fonte: [3 E 9])</em></p><p>Quando não queria comer nada por penitência, disse eu:<br> <strong>– Jacinta, anda lá, come!</strong><strong><br></strong> <strong>– Não, quero fazer este sacrifício por aqueles pecadores que comem demais.</strong></p><p>Quando já estava doente, quis ir à Santa Missa um dia. Perguntei-lhe:<br> <strong>– Jacinta, não vás, não consegues. Hoje nem sequer é domingo!</strong><strong><br></strong> <strong>– Isso não importa! Vou pelos pecadores que nem sequer vão ao domingo.</strong> <em>(Fonte: [3 E 3])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1190,16 +1273,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1211,11 +1294,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>A 10 de Dezembro de 1925 a Irmã Lúcia contemplou a Santíssima Virgem em Pontevedra e, ao Seu lado, numa nuvem luminosa, uma criança. A Santíssima Virgem colocou a mão no Seu ombro e mostrou um coração rodeado de espinhos que segurava na outra mão. A criança disse:<br> <strong>– Tende piedade do Coração da vossa Santíssima Mãe, rodeado de espinhos com que os homens ingratos constantemente O trespassam, sem que ninguém faça um acto de reparação para os remover.</strong></p><p>Em seguida a Santíssima Virgem disse:<br> <strong>– Minha filha, vê o Meu Coração rodeado de espinhos com que os homens ingratos constantemente O trespassam pelas suas blasfémias e ingratidão. Pelo menos esforçai-vos por Me consolar e dar a conhecer que prometo assistir à hora da morte com todas as graças necessárias para a salvação destas almas todos aqueles que, durante cinco meses, no primeiro sábado de cada mês, forem à confissão, receberem a Santa Comunhão, rezarem um Rosário e Me fizerem companhia durante 15 minutos meditando os 15 mistérios do Rosário com a intenção de Me fazer reparação.</strong></p><p><strong>A 15 de Fevereiro de 1926 o Menino Jesus apareceu-lhe novamente. Perguntou-Lhe se já tinha difundido a devoção à Sua Mãe. Explicou-Lhe as dificuldades que o confessor tinha, e disse-Lhe que a Madre Superiora estava pronta a difundi-la, mas o confessor tinha dito que ela nada podia fazer sozinha. Jesus respondeu:</strong><strong><br></strong><strong> – É verdade que a vossa Superiora sozinha nada pode fazer, mas com a Minha graça pode tudo.</strong></p><p>Explicou a Jesus as dificuldades que algumas almas tinham em ir à confissão ao sábado, e pediu que a confissão fosse válida para oito dias. Jesus respondeu:<br> <strong>– Sim, pode ser até muito mais tempo, desde que estejam em estado de graça quando Me receberem, e que tenham a intenção de fazer reparação ao Coração Imaculado de Maria.</strong></p><p><strong>– Meu Jesus, e se alguém se esquecer de formar esta intenção?</strong></p><p>Jesus respondeu:<br> <strong>– Podem fazê-lo na próxima confissão, desde que aproveitem a primeira oportunidade que tiverem de ir à confissão.</strong> <em>(Fonte: [A I])</em></p><p><em>(Este texto é uma transcrição da Irmã Lúcia do ano de 1927 por ordem do seu director espiritual Pe. Aparício, S.J. Aqui encontramos as condições necessárias para cumprir a promessa dos Cinco Primeiros Sábados em reparação das blasfémias contra o Coração de Maria. Nunca se deve esquecer a intenção real: fazer reparação ao Coração de Maria.)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1225,16 +1314,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1246,11 +1335,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Tinha pedido e recebido permissão dos meus superiores e do meu confessor para realizar a Hora Santa cada noite de quinta para sexta-feira das onze horas até à meia-noite.</p><p>Uma noite estava sozinha. Ajoelhei-me na grade de comunhão no meio da capela para rezar as orações do Anjo. Como me sentia cansada, levantei-me e continuei a rezar com os braços estendidos. […]</p><p>Subitamente a capela foi iluminada por uma luz sobrenatural, e no altar apareceu uma cruz de luz que chegava ao tecto. Numa luz clara via-se na parte superior da cruz o rosto e a parte superior do corpo de um homem, sobre o peito uma pomba, igualmente de luz, e pregado na cruz o corpo de outro homem.</p><p>Um pouco abaixo da cintura, flutuando no ar, via-se o cálice e uma grande Hóstia, sobre a qual caíam gotas de sangue que fluíam do rosto do Crucificado e de uma ferida no peito. Deslizando da Hóstia, estas gotas caíam no cálice.</p><p>Sob o braço direito da cruz estava Nossa Senhora. Era Nossa Senhora de Fátima com o Seu Coração Imaculado na mão esquerda, sem espada e rosas, mas com uma coroa de espinhos e chamas. Sob o braço esquerdo da cruz formaram-se algumas letras grandes, correndo em direcção ao altar, como se fossem de água cristalina, as palavras: <strong>Graça e Misericórdia.</strong></p><p><strong>(</strong><a href="https://i0.wp.com/catholicism.org/wp-content/blogs.dir/1/files/2008/01/Tuy_Vision.jpg?fit=868%2C1200&amp;ssl=1" target="_blank" rel="noopener noreferrer"><strong>Imagem</strong></a><strong>)</strong></p><p>Entendi que me tinha sido mostrado o mistério da Santíssima Trindade. […] Então Nossa Senhora disse-me:<br> <strong>– Chegou o momento em que Deus pede ao Santo Padre que realize em união com todos os bispos do mundo a consagração da Rússia ao Meu Coração Imaculado. Ele promete salvá-la por este meio. Tantísimas almas são condenadas pela justiça de Deus por causa dos pecados cometidos contra Mim, que peço reparação: Oferecei-vos nesta intenção e rezai.</strong></p><p>Reportei isto ao meu confessor, que me ordenou escrever o que Nossa Senhora desejava. <em>(Fonte: [A II])</em></p><p><em>(Nossa Senhora teve de esperar quase 55 anos pelo cumprimento do Seu pedido. Só a 25 de Março de 1984 o Papa João Paulo II realizou pela primeira vez em comunhão com mais de 2600 bispos católicos do mundo e muitos bispos das Igrejas Ortodoxas Russa e Grega a consagração do mundo e daquelas nações «que mais precisam da misericórdia de Deus». Embora o texto da consagração não listasse nenhum país especificamente, o Papa mencionou os nomes da Rússia e da sua pátria Polónia. Foi a consagração comum pedida por Nossa Senhora para consolo e reparação das ofensas infligidas ao Seu Coração Imaculado. Poucos meses depois Mikhail Gorbachov tornou-se Secretário-Geral do PCUS e conduziu a Rússia para fora da ditadura comunista.)</em> <em>(Fonte: [3 E 2])</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1260,16 +1355,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1281,11 +1376,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>O «segredo» de Fátima refere-se a uma parte da mensagem de 13 de Julho de 1917, que os pastorinhos deviam manter em segredo segundo a instrução de Nossa Senhora.</p><p>A 13 de Agosto de 1917 o administrador do distrito de Fátima mandou lançar os três pastorinhos na prisão. Através de interrogações exaustivas e a ameaça de uma morte torturante, tentou-se forçar as crianças a revelar o segredo. Contudo permaneceram firmes. Após dois dias foram libertadas da custódia.</p><p><a href="https://c8.alamy.com/compde/2wah5m1/das-gemalde-uber-dem-hauptaltar-in-der-basilika-unserer-lieben-frau-vom-rosenkranz-in-fatima-portugal-das-gemalde-erzahlt-die-geschichte-der-fatima-ereignisse-2wah5m1.jpg" target="_blank" rel="noopener noreferrer"><strong>Retábulo principal na Basílica do Rosário</strong></a><strong>:</strong> Cristo vem a nós homens na Santa Eucaristia – simbolizado por três crianças a quem o anjo dá a Santa Comunhão. Mas não é o anjo, mas a Mãe de Deus que está entre Deus e os homens.</p><h3>As Duas Primeiras Partes do Segredo</h3><p>As duas primeiras partes do segredo foram escritas pela Irmã Lúcia em 1941 a pedido de D. José Alves Correia da Silva, Bispo de Leiria:<br> <strong>«O segredo consiste em três partes diferentes, das quais revelarei duas. A primeira parte foi a visão do inferno …»</strong> <em>(Fonte: [A III])</em></p><p>A segunda parte refere-se à veneração do Coração Imaculado de Maria. <em>(Fonte: [3 E 5])</em></p><p>A Irmã Lúcia escreveu também a terceira parte do segredo em Tuy a 3 de Janeiro de 1944 a pedido do bispo. <em>(Fonte: [A III])</em></p><p>O Papa João Paulo II mandou publicar a terceira parte do segredo a 26 de Junho de 2000.</p><p><strong>«Assim como reconhecemos a palavra-chave do primeiro e segundo segredo como salvare le anime (salvar as almas), assim a palavra-chave deste segredo é o triplo apelo: Penitenza, Penitenza, Penitenza (Arrependimento, Arrependimento, Arrependimento)! Somos recordados do princípio do Evangelho: Arrependei-vos e crede no Evangelho (Mc 1,15). Compreender os sinais dos tempos significa: captar a urgência do arrependimento – conversão – fé.»</strong> <em>(Do comentário do Cardeal Joseph Ratzinger sobre o segredo de Fátima)</em> <em>(Fonte: [A III])</em></p><h3>Terceira Parte do Segredo</h3><p><strong>«J. M. J. A terceira parte do segredo revelado a 13 de Julho de 1917 na Cova da Iria, Fátima. Escrevo em obediência a Vós, meu Deus, que me ordenais fazê-lo através de Sua Excelência, o Reverendíssimo Senhor Bispo de Leiria, e através da Vossa e minha Santíssima Mãe.</strong></p><p>Após as duas partes que já expus, vimos à esquerda de Nossa Senhora, um pouco acima, um anjo com uma espada de fogo na mão esquerda; disparava faíscas e chamas saíam dela, como que para incendiar o mundo; mas as chamas extinguiam-se quando entravam em contacto com o esplendor que Nossa Senhora irradiava da Sua mão direita sobre ele: o anjo, apontando com a mão direita para a terra e clamando em voz alta: <strong>«Arrependimento, Arrependimento, Arrependimento!»</strong></p><p>E vimos numa luz imensa, que é Deus: «algo que se parece com pessoas num espelho quando passam diante dele» um bispo vestido de branco – tivemos a impressão de que era o Santo Padre. Vimos vários outros bispos, sacerdotes, religiosos e religiosas a subir uma montanha íngreme, no cume da qual havia uma grande cruz de troncos rudes como de sobreiro com casca.</p><p>Antes de ali chegar, o Santo Padre passou por uma grande cidade que estava meia em ruínas e meia a tremer, com passo vacilante, pressionado pela dor e tristeza, rezou pelas almas dos cadáveres que encontrou no seu caminho. Tendo chegado à montanha, ajoelhou-se aos pés da grande cruz.</p><p>Ali foi morto por um grupo de soldados que dispararam contra ele com armas de fogo e setas. Da mesma forma morreram um após outro os bispos, sacerdotes, religiosos e várias pessoas leigas, homens e mulheres de diferentes classes e posições.</p><p>Sob os dois braços da cruz havia dois anjos, cada um tinha um aspersório de cristal na mão. Neles recolhiam o sangue dos mártires e aspergiam com ele as almas que se aproximavam de Deus.»</p><p><em>Tuy, 3 de Janeiro de 1944</em><em><br></em> <strong>[A III.]</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1295,16 +1396,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1315,6 +1416,7 @@
             <h2 class="section-heading">Os pequenos apóstolos de Nossa Senhora</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>«Eu Te louvo, Pai ..., porque escondeste estas coisas aos sábios e inteligentes e as revelaste aos pequeninos.»</strong> (Mt 11,25)</p>
@@ -1374,22 +1476,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1400,6 +1507,7 @@
             <h2 class="section-heading">A Mensagem em Resumo</h2>
             
 
+            
             
             <div class="section-body">
                 <p>A mensagem de Fátima é também chamada o resumo do Evangelho formulado por Nossa Senhora e inclui as seguintes ênfases:</p>
@@ -1426,22 +1534,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1452,6 +1565,7 @@
             <h2 class="section-heading">As orações de reparação do Anjo</h2>
             
 
+            
             
             <div class="section-body">
                 <p>A seguir, encontram-se as orações de reparação do Anjo:</p>
@@ -1465,22 +1579,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1492,11 +1611,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>«Divino Coração de Jesus, através do Coração Imaculado de Maria ofereço-Vos tudo quanto rezo, trabalho, sacrifico e sofro hoje em nome de todos e por todas as almas da Igreja santa trina, com aquela intenção com que Vós próprios rezais e Vos ofereceis incessantemente nos nossos altares pela salvação das almas. Ámen.»</strong></p><br><p><strong>«O homem nunca é maior do que quando se ajoelha.»</strong> <em>(São Papa João XXIII)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1506,16 +1631,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1527,6 +1652,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>«O reino dos céus é como um mercador que procura pérolas finas. Quando encontrou uma pérola de grande valor, foi e vendeu tudo quanto tinha e comprou-a.»</strong><strong><br></strong> <em>(Mt 13,45-46)</em></p><p>Quando Maria nos exorta uma e outra vez: <strong>«Reza o Rosário todos os dias!»</strong>, entrega-nos, por assim dizer, a Pérola Preciosa do Evangelho, que está oculta nos mistérios do Rosário.</p><p>E quem entre nós não procura o que há de mais precioso na vida? Todavia, tantas vezes agarramos pérolas que brilham só por fora mas são inúteis para a eternidade. Por isso Maria nos suplica com tanto empenho que «vendamos» todas as pérolas vãs e enganadoras desta vida para adquirir a única Pérola Preciosa.</p><p>Contemplando meditativamente os mistérios do Rosário e unindo-os firmemente ao fio da nossa vida quotidiana, o reino dos céus – e com ele o próprio Deus – abre-se cada vez mais perante nós.</p><h3>As Promessas da Rainha do Rosário</h3><p>O Beato Alan de la Roche (1428–1475), pregador dominicano do Rosário, relata uma aparição da Mãe de Deus. Ela encarregou-o de promover e propagar a oração do Rosário. Maria prometeu graças sem conta a quem a invocar através desta oração com plena confiança.</p><p>De todas as quinze promessas, cinco são aqui apresentadas:</p><ul><li><p><strong>«Prometo a Minha especial protecção e grandes graças a todos os que rezarem piedosamente o saltério do Meu Rosário.»</strong><strong><br></strong> <em>(Cf. o milagre da oração de Hiroxima: Na terrível queda da bomba atómica em Hiroxima a 6 de Agosto de 1945, quatro padres jesuítas foram protegidos de forma inexplicável dos efeitos horríveis da radiação atómica. Num raio de 1,5 quilómetros foram os únicos sobreviventes entre centenas de milhares. Até a sua reitoria, a apenas oito quarteirões do centro da explosão, permaneceu de pé, embora todos os edifícios à volta tenham sido completamente destruídos. Os cerca de 200 médicos e cientistas ouviram repetidamente a mesma resposta às suas muitas perguntas: «Como missionários queríamos simplesmente viver a mensagem da Mãe de Deus de Fátima na nossa vida e por isso rezávamos o Rosário todos os dias.» Esta é a mensagem portadora de esperança de Hiroxima: A oração do Rosário é mais poderosa do que a bomba atómica. Hoje no centro da cidade reconstruída existe uma igreja mariana memorial onde o Rosário é rezado dia e noite. [Fonte:</em><a href="http://www.gnadenquelle.de/hiroshima.htm" target="_blank" rel="noopener noreferrer"><em>http://www.gnadenquelle.de/hiroshima.htm</em></a><em>])</em></p></li><li><p><strong>«O Rosário faz florescer de novo a virtude e as obras de piedade. Através dele as almas recebem a plenitude da misericórdia divina.»</strong><strong><br></strong> Converterá os corações, e eles começarão a desprezar as coisas terrenas, a amar as celestes e a fazer rápidos progressos. Muitas almas serão salvas pelo Rosário.</p></li><li><p><strong>«Todos os que rezarem piedosamente o Rosário e contemplarem os mistérios não serão abatidos pela desgraça e serão preservados de uma morte imprevista. Se estiverem em pecado, obterão a graça da conversão; se forem justos, a graça da perseverança, e tornar-se-ão participantes da vida eterna.»</strong></p></li><li><p><strong>«Muito em breve libertarei do purgatório as almas que em vida amaram o Meu Rosário.»</strong></p></li><li><p><strong>«Os filhos fiéis do Meu Rosário gozarão grande glória no céu.»</strong></p></li></ul><p><em>(De: Pérolas e Rosas)</em></p>
 
@@ -1536,22 +1662,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1563,6 +1694,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>Abertura:</strong></h3><ul><li><p><strong>Em nome do Pai …</strong> <em>(Sinal da Cruz)</em></p></li><li><p><strong>Creio em Deus …</strong> <em>(Credo dos Apóstolos)</em></p></li></ul><p>Seguidamente:</p><ul><li><p>1 Pai Nosso</p></li><li><p>3 Ave Maria <em>(Ave Maria)</em>, em cada uma das quais, após o nome «Jesus», se inserem as três virtudes teologais:</p><ul><li><p><strong>… aumentai a nossa fé</strong></p></li><li><p><strong>… fortalecei a nossa esperança</strong></p></li><li><p><strong>… acendei o nosso amor</strong></p></li></ul></li></ul><p>Esta abertura termina com um <strong>Glória ao Pai</strong>.</p><h3><strong>Estrutura dos Mistérios do Rosário:</strong></h3><p>Para cada mistério do Rosário, primeiro:</p><ul><li><p><strong>1 Pai Nosso</strong> é rezado.<br> Seguidamente:</p></li><li><p><strong>10 Ave Maria</strong> com o respectivo texto de meditação*, inserido após o nome «Jesus».<br> No fim de cada mistério:</p></li><li><p><strong>Glória ao Pai</strong></p></li><li><p><strong>A chamada oração de Fátima:</strong><strong><br></strong> <strong>«Ó meu Jesus, perdoai-nos os nossos pecados, livrai-nos do fogo do inferno, e levai todas as almas ao céu, especialmente aquelas que mais precisam da Vossa misericórdia.»</strong></p></li></ul><p><em>(«As palavras que pronunciamos na oração são palavras do Anjo, palavras do Espírito Santo … O que há de novo no Rosário é na verdade apenas que nos demoramos sobre estas palavras; que as repetimos, porque as coisas grandes não se tornam aborrecidas pela repetição. Só o trivial precisa de variedade … O grande torna-se maior à medida que o repetimos, e nós mesmos tornamo-nos mais ricos com isso …»)</em><em><br></em> <em>(Cardeal Joseph Ratzinger, no Katholikentag alemão de 1984)</em></p><h3><strong>Os Mistérios do Rosário:</strong></h3><p><strong><em>Mistérios Gozosos</em></strong></p><ol><li><p><strong>… a quem Vós, ó Virgem, concebestes do Espírito Santo.</strong></p></li><li><p><strong>… a quem Vós, ó Virgem, levaste a Isabel.</strong></p></li><li><p><strong>… a quem Vós, ó Virgem, destes à luz em Belém.</strong></p></li><li><p><strong>… a quem Vós, ó Virgem, apresentastes no Templo.</strong></p></li><li><p><strong>… a quem Vós, ó Virgem, encontrastes no Templo.</strong></p></li></ol><p><strong><em>Mistérios Luminosos</em></strong></p><ol><li><p><strong>… que foi baptizado por João.</strong></p></li><li><p><strong>… que Se revelou nas bodas de Caná.</strong></p></li><li><p><strong>… que nos proclamou o reino de Deus.</strong></p></li><li><p><strong>… que foi transfigurado na montanha.</strong></p></li><li><p><strong>… que nos deu a Eucaristia.</strong></p></li></ol><p><strong><em>Mistérios Dolorosos</em></strong></p><ol><li><p><strong>… que suou sangue por nós.</strong></p></li><li><p><strong>… que foi flagelado por nós.</strong></p></li><li><p><strong>… que foi coroado de espinhos por nós.</strong></p></li><li><p><strong>… que carregou a pesada Cruz por nós.</strong></p></li><li><p><strong>… que foi crucificado por nós.</strong></p></li></ol><p><strong><em>Mistérios Gloriosos</em></strong></p><ol><li><p><strong>… que ressuscitou dos mortos.</strong></p></li><li><p><strong>… que ascendeu ao céu.</strong></p></li><li><p><strong>… que nos enviou o Espírito Santo.</strong></p></li><li><p><strong>… que Vos assumiu, ó Virgem, ao céu.</strong></p></li><li><p><strong>… que Vos coroou, ó Virgem, no céu.</strong></p></li></ol><br><p><strong>«A Santíssima Virgem deu ao Rosário tal eficácia que não há problema na nossa vida que não possa ser resolvido através desta oração.»</strong> <em>(Lúcia dos Santos)</em></p><p><strong>«Quando rezamos, tornamo-nos um raio do amor de Deus: em casa, onde vivemos, e enfim para todo o mundo.»</strong> <em>(Santa Madre Teresa)</em></p><p><strong>«O Rosário é a minha oração preferida. É uma oração maravilhosa, maravilhosa na sua simplicidade e profundidade.»</strong> <em>(São Papa João Paulo II)</em></p><p>A pequena <strong>Josefinchen</strong> também descobriu a «Pérola Preciosa»:<br> <strong>«Ave, Maria …»</strong></p>
 
@@ -1572,22 +1704,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1599,6 +1736,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Santíssima Virgem Maria! Mãe de Deus e minha Mãe! Consagro-me ao Vosso Imaculado Coração com tudo o que sou e tenho. Tomai-me sob a vossa proteção maternal! Preservai-me de todos os perigos. Ajudai-me a vencer as tentações que me levam ao mal, para que possa preservar a pureza do meu corpo e da minha alma. O Vosso Imaculado Coração seja o meu refúgio e o caminho que me conduz a Deus.</p><p>Alcançai-me a graça de orar e sacrificar-me frequentemente por amor a Jesus, pela conversão dos pecadores e em reparação pelos pecados cometidos contra o Vosso Imaculado Coração. Em união convosco e com o Coração do Vosso divino Filho, desejo viver em plena consagração à Santíssima Trindade, em quem creio, a quem adoro, em quem espero e a quem amo. Amém.<strong><br></strong> <em>(Ir. M. Lúcia de Fátima)</em></p><p><strong>Imprimatur:</strong> Fátima, 1 de julho de 2006, Antonio, Ep. Leir.-Fatimensis</p><br><p>Quando nos consagramos à Mãe de Deus para fazer tudo com Maria, em Maria, por Maria e para Maria, ela nos conduz seguramente à plena consagração a Jesus. Ao mesmo tempo, através desta consagração colocamos os nossos bens interiores e exteriores, sim mesmo o valor de todas as nossas boas obras, nas mãos de Maria, para que ela os preserve, aumente e embeleze. O que assim confiamos a Maria não pode ser tirado de nós por nenhum ser humano, nem pelo inimigo maligno, nem pela nossa própria fragilidade. Além disso, assim praticamos a caridade cristã em alto grau, pois permitimos que Maria disponha dos nossos bens espirituais em benefício dos vivos e dos mortos.<br> <em>(Cf. São L. M. Grignion de Montfort, O Livro de Ouro, pp. 233–238)</em></p>
 
@@ -1608,22 +1746,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1635,6 +1778,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Jesus Misericordioso, a vossa bondade é infinita e os tesouros das vossas graças são inexauríveis.</p><p>Coloco confiança ilimitada na vossa misericórdia, que supera todas as vossas obras.<br> Consagro-me inteiramente a Vós, para viver nos raios da vossa graça e do vosso amor que emanaram do Vosso Coração na Cruz.</p><p>Desejo difundir a vossa misericórdia e especialmente rezar o Vosso Terço da Misericórdia, para implorar a vossa misericórdia por nós, pela conversão dos pecadores, pelo mundo inteiro e pelas Almas do Purgatório.</p><p>Mas Vós me protegereis como propriedade e honra vossas, pois temo tudo da minha fraqueza e espero tudo da vossa misericórdia.</p><p>Que toda a humanidade reconheça a profundidade insondável da vossa misericórdia, deposite nela toda a sua esperança e a louve por toda a eternidade. Amém.</p><p><strong>Jesus, confio em Vós,</strong><strong><br></strong><strong> pois Vós sois a minha confiança!</strong></p>
 
@@ -1644,22 +1788,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1671,6 +1820,7 @@
             
 
             
+            
             <div class="section-body">
                 <h3><strong>Troca de Corações com Maria</strong></h3><p>Ponde, Ó Mãe admirável, em lugar do meu coração pecador o Vosso Imaculado Coração, para que o Espírito Santo possa trabalhar em mim e o Vosso divino Filho cresça em mim.<br> Atendei ao meu pedido, Ó grande, Ó fiel Medianeira de todas as graças. Amém.</p><h3><strong>Troca de Corações com Jesus</strong></h3><p>Ponde, Ó bom Jesus, em lugar do meu coração pecador o Vosso divino Coração ferido, para que o Espírito Santo possa trabalhar em mim e Vós, Jesus Misericordioso, crescais em mim.<br> Atendei ao meu pedido, Ó bom, Ó fiel e amoroso Jesus, para que em breve reineis como Rei da Paz sobre este mundo. Amém.</p><p><strong>Nota:</strong></p><ul><li><p><em>A troca de corações com Jesus é preparada pela troca de corações com Maria. Maria, a grande Medianeira das graças, derrama todas as graças sobre o nosso coração e prepara o nosso coração para a troca de corações com Jesus.</em></p></li><li><p><em>A troca de corações com Jesus transforma o nosso coração e dá à graça livre curso, para que possamos reconhecer e cumprir a vontade de Deus. É a consagração total pessoal a Deus com o objetivo de que Cristo reine em nós e sobre o mundo como Rei da Paz.</em></p></li></ul><p><strong>"Nem a mais pequena oração, nem uma lágrima de necessidade secreta, nem um suspiro de desejo secreto dirigido a Deus será jamais em vão! Porém no tempo de Deus e à sua maneira serão devolvidos em nuvens de bênção e cairão sobre vós e sobre todos por quem orais num fluxo de misericórdia."</strong></p>
 
@@ -1680,22 +1830,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1707,11 +1862,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>«Nunca te deixarei.</strong><strong><br></strong><strong> O Meu Coração Imaculado será o teu refúgio</strong><strong><br></strong><strong> e o caminho que te levará a Deus.»</strong><strong><br></strong> <em>(Maria a Lúcia, 13 de Junho de 1917)</em></p><br>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1721,16 +1882,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1742,6 +1903,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Em nome do Pai, e do Filho, e do Espírito Santo. Ámen.</strong></p>
 
@@ -1751,22 +1913,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1777,6 +1944,7 @@
             <h2 class="section-heading">O Credo dos Apóstolos</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>Creio em Deus, Pai todo-poderoso, Criador do céu e da terra;</strong><br>
@@ -1803,22 +1971,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1829,6 +2002,7 @@
             <h2 class="section-heading">Pai-Nosso</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>Pai nosso que estais nos Céus, santificado seja o Vosso nome; venha a nós o Vosso reino; seja feita a Vossa vontade, assim na terra como no Céu.</strong></p>
@@ -1841,22 +2015,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1867,6 +2046,7 @@
             <h2 class="section-heading">Avé-Maria</h2>
             
 
+            
             
             <div class="section-body">
                 <p><strong>Avé Maria, cheia de graça, o Senhor é convosco; bendita sois Vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus.</strong></p>
@@ -1879,12 +2059,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1970,6 +2156,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -2024,6 +2245,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -2059,12 +2291,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

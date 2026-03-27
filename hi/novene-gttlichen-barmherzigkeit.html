@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="दिव्य दया की नौ दिवसीय प्रार्थना">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="दिव्य दया की नौ दिवसीय प्रार्थना">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/novene-gttlichen-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../hi/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../hi/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“मैं चाहता हूँ कि इन नौ दिनों के दौरान तुम आत्माओं को मेरी दया के स्रोत तक ले आओ, ताकि वे वहां से वह शक्ति, सांत्वना और हर प्रकार का अनुग्रह प्राप्त कर सकें जिसकी उन्हें जीवन की कठिनाइयों के लिए, और विशेष रूप से मृत्यु के क्षण में आवश्यकता है। प्रत्येक दिन तुम मेरे हृदय में आत्माओं के एक अलग समूह को लाओगे और उन्हें मेरी दया के सागर में डुबो दोगे। और मैं इन सभी आत्माओं को अपने पिता के घर में ले जाऊँगा। (…) तुम प्रत्येक दिन मेरे कड़वे दुख के माध्यम से मेरे पिता से इन आत्माओं के लिए अनुग्रह माँगोगे।”</p><p>यीशु ने स्वयं सिस्टर फाउस्टिना को निम्नलिखित नौ दिवसीय प्रार्थना बोलकर लिखवाई, जो महापर्व शुक्रवार (गुड फ्राइडे) से शुरू होती है। [1209–1229] हालांकि, यह किसी भी समय पढ़ी जा सकती है।</p>
 
@@ -956,22 +998,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -983,6 +1030,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास <strong>पूरी मानवता</strong> को, विशेष रूप से <strong>सभी पापियों</strong> को लाओ और उन्हें मेरी दया के सागर में डुबो दो। इससे तुम मुझे मेरे उस कड़वे दुख में सांत्वना दोगे, जिसमें आत्माओं का खोना मुझे डुबो देता है।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आपका स्वभाव हम पर दया करना और हमें क्षमा करना है। हमारे पापों पर नहीं, बल्कि उस भरोसे पर नज़र डालें जो हमें आपकी अनंत भलाई पर है! हमें अपने अत्यंत दयालु हृदय के निवास में स्वीकार करें और हमें उसमें हमेशा के लिए रखें। हम आपसे आपके उस प्रेम के माध्यम से यह विनती करते हैं, जिसमें आप पिता और पवित्र आत्मा के साथ एक हैं।</p><p>हे ईश्वर की दया की सर्वशक्तिमानता,<br>पाप में मनुष्य की मुक्ति,<br>आप दया हैं - करुणा का सागर,<br>और उसकी सहायता करते हैं जो विनम्रता में आपको पाता है।</p><p>शाश्वत पिता, पूरी मानवता पर, विशेष रूप से गरीब पापियों पर अपनी दयालु दृष्टि डालें; वे यीशु के अत्यंत दयालु हृदय में सुरक्षित हैं। उनके कड़वे दुख के कारण, हमें अपनी करुणा दिखाएं, ताकि आपकी दया की सर्वशक्तिमानता की अनंत काल तक स्तुति हो। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -992,22 +1040,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1019,6 +1072,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास <strong>पुरोहितों और धर्मसंघियों</strong> की सभी आत्माओं को लाओ और उन्हें मेरी अगाध दया में डुबो दो। उन्होंने मुझे कड़वे दुख को सहने की शक्ति दी। उनके माध्यम से, जैसे चैनलों के माध्यम से, मेरी दया मानवता पर बरसती है।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आपसे ही वह सब आता है जो अच्छा है। हम में अनुग्रह को कई गुना बढ़ा दें, ताकि हम दया के योग्य कार्य कर सकें, ताकि जो हमें देखें, वे दया के स्वर्गीय पिता की स्तुति करें।</p><p>दिव्य प्रेम का स्रोत शुद्ध हृदयों में निवास करता है।<br>हृदय, जो करुणा के सागर में बदल गए हैं,<br>रात के अंधेरे में सितारों की तरह चमकते हैं।</p><p>शाश्वत पिता, अपनी दाख की बारी में चुनी हुई भीड़ पर, पुरोहितों और धर्मसंघियों की आत्माओं पर अपनी दयालु दृष्टि डालें, और उन्हें अपने आशीर्वाद की शक्ति प्रदान करें। अपने पुत्र के हृदय की भावना के माध्यम से, जिसमें वे सुरक्षित हैं, उन्हें अपने प्रकाश की शक्ति प्रदान करें, ताकि वे मुक्ति के मार्ग पर दूसरों का नेतृत्व करें और मिलकर आपकी अगाध दया का अनंत काल तक गुणगान करें। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1028,22 +1082,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,6 +1114,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज <strong>सभी भक्त और वफादार</strong> आत्माओं को मेरे पास लाओ और उन्हें मेरी दया के सागर में डुबो दो। इन आत्माओं ने क्रूस मार्ग पर मुझे सांत्वना दी; वे कड़वाहट के सागर में ताज़गी की एक बूंद थीं।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आप अपनी दया के खजाने से हम सभी को प्रचुर अनुग्रह प्रदान करते हैं। हमें अपने अत्यंत दयालु हृदय के निवास में स्वीकार करें और हमें उसमें से अनंत काल तक बाहर न जाने दें। हम आपसे आपके उस अकथनीय प्रेम के माध्यम से यह विनती करते हैं, जिससे आपका हृदय स्वर्गीय पिता के लिए जलता है।</p><p>करुणा का रहस्य अनसुलझा रहता है।<br>न पापी न धर्मी इसे समझ सकता है।<br>आप सभी को दयालु दृष्टि से देखते हैं,<br>और सभी को प्रेम से भरना चाहते हैं।</p><p>शाश्वत पिता, अपने पुत्र की विरासत के रूप में वफादार आत्माओं पर अपनी दयालु दृष्टि डालें। उनके कड़वे दुख के कारण, उन्हें अपना आशीर्वाद प्रदान करें और उन्हें अपनी निरंतर देखरेख में रखें, ताकि वे प्रेम और पवित्र विश्वास के खजाने को न खोएं, बल्कि दूतों और संतों की पूरी भीड़ के साथ आपकी अनंत दया की अनंत काल तक स्तुति करें। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1064,22 +1124,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1091,6 +1156,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास <strong>गैर-ईसाइयों और उन लोगों को लाओ जो अभी मुझे नहीं जानते</strong>। उनके बारे में भी मैंने अपने कड़वे दुख के दौरान सोचा था। उनके भविष्य के उत्साह ने मेरे हृदय को सांत्वना दी। उन्हें मेरी दया के सागर में डुबो दो।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत कृपालु यीशु, आप पूरी दुनिया के प्रकाश हैं। अपने अत्यंत कृपालु हृदय के निवास में उन गैर-ईसाइयों की आत्माओं को स्वीकार करें जो अभी आपको नहीं जानते! आपके अनुग्रह की किरणें उन्हें आलोकित करें, ताकि वे भी हमारे साथ मिलकर आपकी दया के चमत्कारों की स्तुति करें, और उन्हें अपने अत्यंत दयालु हृदय के निवास से फिर कभी बाहर न जाने दें।</p><p>आपके प्रेम की चमक आत्माओं के अंधकार को दूर करे।<br>ऐसा करें कि आत्माएं आपको पहचानें,<br>और प्रशंसा के साथ दया का नाम लें।</p><p>शाश्वत पिता, उन गैर-ईसाइयों की आत्माओं पर अपनी दयालु दृष्टि डालें जो अभी आपको नहीं जानते, लेकिन जो यीशु के अत्यंत दयालु हृदय में सुरक्षित हैं। उन्हें सुसमाचार के प्रकाश की ओर ले जाएं। ये आत्माएं नहीं जानतीं कि आपसे प्रेम करना कितना बड़ा सुख है। ऐसा करें कि वे भी अनंत काल तक आपकी दया की प्रचुरता का गुणगान करें। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1100,22 +1166,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1127,6 +1198,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास <strong>विधर्मियों</strong> (जिन्होंने सच्चा विश्वास खो दिया है) और <strong>धर्मत्यागियों</strong> (जिन्होंने कलीसिया छोड़ दी है) की आत्माओं को लाओ और उन्हें मेरी दया के सागर में डुबो दो। कड़वे दुख के दौरान उन्होंने मेरे शरीर और मेरे हृदय को छिन्न-भिन्न कर दिया - वह मेरी कलीसिया है। जब वे कलीसिया की एकता में लौटते हैं, तो मेरे घाव भर जाते हैं और इससे वे मेरी पीड़ा को कम करते हैं।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आप स्वयं भलाई हैं। आप उन लोगों को ज्ञान देने से मना नहीं करते जो आपसे इसके लिए विनती करते हैं। अपने अत्यंत दयालु हृदय के निवास में विधर्मियों और धर्मत्यागियों की आत्माओं को स्वीकार करें और उन्हें अपने प्रकाश में कलीसिया की एकता की ओर ले जाएं। उन्हें अपने अत्यंत दयालु हृदय के निवास से बाहर न जाने दें और ऐसा करें कि वे भी आपकी दया की उदारता की स्तुति करें।</p><p>यहाँ तक कि जिन्होंने आपकी एकता के वस्त्र को फाड़ दिया,<br>उनके लिए भी आपके हृदय से दया बहती है।<br>हे ईश्वर, आपकी दया की सर्वशक्तिमानता,<br>इन आत्माओं को गलती और संकट से बाहर निकालती है।</p><p>शाश्वत पिता, विधर्मियों और धर्मत्यागियों की आत्माओं पर दयालु दृष्टि से देखें, जिन्होंने आपकी भलाई को बर्बाद किया और आपके अनुग्रहों का दुरुपयोग किया, अपनी गलतियों पर अड़े रहे। उनकी गलतियों पर नहीं, बल्कि अपने पुत्र के प्रेम और उनके कड़वे दुख पर नज़र डालें, जो उन्होंने उनके लिए अपने ऊपर लिया, क्योंकि वे भी यीशु के अत्यंत दयालु हृदय में शामिल हैं। ऐसा करें कि वे भी अनंत काल तक आपकी महान दया की स्तुति करें। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1136,22 +1208,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1163,6 +1240,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास <strong>शांत और विनम्र</strong> आत्माओं और <strong>छोटे बच्चों</strong> की आत्माओं को लाओ और उन्हें मेरी दया में डुबो दो। ये आत्माएं मेरे हृदय के सबसे करीब हैं। उन्होंने मुझे मेरी कड़वी मृत्यु की पीड़ा में शक्ति दी। मैं उन्हें पृथ्वी पर अपने दूतों के रूप में देखता हूँ जो मेरी वेदियों की रक्षा करेंगे। उन पर मैं अनुग्रह की पूरी धाराएं बरसाता हूँ। मेरा अनुग्रह केवल एक विनम्र आत्मा ही प्राप्त कर सकती है; विनम्र आत्माओं को मैं अपना भरोसा देता हूँ।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आपने स्वयं कहा है: “मुझसे सीखो, क्योंकि मैं कोमल और हृदय से विनम्र हूँ।” (मत्ती 11,29) अपने अत्यंत दयालु हृदय के निवास में कोमल और विनम्र आत्माओं और छोटे बच्चों की आत्माओं को स्वीकार करें। ये आत्माएं पूरे स्वर्ग को मंत्रमुग्ध कर देती हैं और स्वर्गीय पिता को विशेष रूप से प्रिय लगती हैं। वे ईश्वर के सिंहासन के सामने फूलों का गुलदस्ता हैं और ईश्वर स्वयं उनकी सुगंध का आनंद लेते हैं। इन आत्माओं का यीशु के हृदय में स्थायी निवास है और वे अनंत काल तक प्रेम और दया का स्तुति गीत गाती रहती हैं।</p><p>वह आत्मा जो वास्तव में विनम्र, शांत है,<br>यहाँ पृथ्वी पर ही स्वर्ग का अनुभव करती है।<br>उसके विनम्र हृदय की सुगंध<br>स्वयं सृष्टिकर्ता के लिए भी खुशी का कारण बन सकती है।</p><p>शाश्वत पिता, शांत, विनम्र आत्माओं और छोटे बच्चों की आत्माओं पर अपनी दया की दृष्टि डालें। वे सभी यीशु के अत्यंत दयालु हृदय के निवास में स्वीकार किए गए हैं। ये आत्माएं आपके पुत्र के सबसे अधिक समान हैं। इन आत्माओं की सुगंध पृथ्वी से उठती है और आपके सिंहासन तक पहुँचती है। दया और हर प्रकार की भलाई के पिता, मैं आपसे उस प्रेम और प्रसन्नता के माध्यम से विनती करता हूँ जो आपको इन आत्माओं से मिलती है, पूरी दुनिया को आशीर्वाद दें, ताकि सभी आत्माएं मिलकर अनंत काल तक आपकी दया का गुणगान करें। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1172,22 +1250,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1199,6 +1282,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास उन आत्माओं को लाओ <strong>जो मेरी दया का विशेष रूप से सम्मान और गुणगान करती हैं</strong>, और उन्हें मेरी दया में डुबो दो। इन आत्माओं ने मेरे दुख पर सबसे अधिक विलाप किया है, और वे मेरी आत्मा में सबसे गहराई तक पहुँची हैं। वे मेरे अत्यंत दयालु हृदय का जीवंत प्रतिबिंब हैं। ये आत्माएं भविष्य के जीवन में विशेष चमक के साथ चमकेंगी। उनमें से कोई भी नरक की आग में नहीं गिरेगा; मृत्यु के घंटे में मैं उनमें से प्रत्येक की विशेष रूप से रक्षा करूँगा।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आपका हृदय स्वयं दया है। अपने अत्यंत दयालु हृदय के निवास में उन आत्माओं को स्वीकार करें जो आपकी दया की महानता का विशेष रूप से सम्मान और गुणगान करती हैं। ये आत्माएं ईश्वर की शक्ति के माध्यम से हर पीड़ा और प्रतिकूलता में भी शक्तिशाली हैं; वे आपकी दया पर भरोसे के साथ आगे बढ़ती हैं। ये आत्माएं यीशु के साथ जुड़ी हुई हैं और अपने कंधों पर पूरी मानवता का बोझ उठाती हैं। उनका कठोर न्याय नहीं किया जाएगा, क्योंकि मृत्यु के समय वे आपकी दया से घिरी होंगी।</p><p>वह आत्मा जो प्रभु की भलाई की स्तुति करती है,<br>उसके विशेष प्रेम का भी अनुभव करती है।<br>वह जीवंत स्रोत के बहुत करीब है<br>और दया से अनुग्रह प्राप्त करती है।</p><p>शाश्वत पिता, उन आत्माओं पर दयालु दृष्टि से देखें जो आपके सबसे बड़े गुण, अगाध दया की स्तुति और सम्मान करती हैं। वे यीशु के अत्यंत दयालु हृदय में शामिल हैं। ये आत्माएं जीवंत सुसमाचार हैं। उनके हाथ दयालु कार्यों से भरे हुए हैं। उनकी आत्मा, खुशी से भरी हुई, सर्वोच्च दया का गीत गाती है। मैं आपसे विनती करता हूँ, हे ईश्वर, उन पर उस आशा और भरोसे के अनुसार दया दिखाएं जो उन्हें आप पर है। यीशु का वादा उन पर पूरा हो:</p><p>“जो आत्माएं मेरी अगाध दया का सम्मान करती हैं, उनकी मैं स्वयं अपने सम्मान की तरह रक्षा करूँगा, जीवन में और विशेष रूप से मृत्यु के घंटे में।”</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1208,22 +1292,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1235,6 +1324,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज उन आत्माओं को मेरे पास लाओ <strong>जो शुद्धिकरण (Purgatory) की जेल में हैं</strong>, और उन्हें मेरी दया के रसातल में डुबो दो। मेरे रक्त की धाराएं उनकी जलन को शांत करें। ये आत्माएं मुझे बहुत प्रिय हैं। वे मेरे न्याय को संतुष्ट कर रही हैं। यह तुम्हारी शक्ति में है कि तुम उन्हें राहत पहुँचाओ। मेरी कलीसिया के खजाने से सभी दंड-मोचन (Indulgences) लो और उन्हें उनके लिए अर्पित करो... ओ, यदि तुम उनकी पीड़ाओं को जानती, तो तुम उनके लिए निरंतर आध्यात्मिक दान अर्पित करती और मेरे न्याय के प्रति उनके ऋण को चुकाती।”</p><p><strong>प्रार्थना:</strong></p><p>अत्यंत दयालु यीशु, आपने स्वयं कहा है कि आप दया चाहते हैं। इसलिए मैं आपके अत्यंत दयालु हृदय के निवास में शुद्धिकरण की उन आत्माओं को लाता हूँ जो आपको बहुत प्रिय हैं, लेकिन जिन्हें फिर भी आपके न्याय से खुद को छुड़ाना है। आपके हृदय से निकलने वाली रक्त और पानी की धाराएं शुद्धिकरण की आग की लपटों को बुझा दें, ताकि वहां भी आपकी दया की शक्ति की स्तुति हो।</p><p>शुद्धिकरण के स्थान की कष्टदायक आग से<br>आपकी करुणा के लिए आहें उठती हैं।<br>और वे राहत और सांत्वना पाते हैं,<br>आपके रक्त और पानी के माध्यम से - जो गरीबों के लिए बहाया गया।</p><p>शाश्वत पिता, शुद्धिकरण के स्थान पर पीड़ित आत्माओं पर अपनी दयालु दृष्टि डालें, जो यीशु के अत्यंत दयालु हृदय में सुरक्षित हैं। मैं आपसे आपके पुत्र यीशु के कड़वे दुख और उस कड़वाहट के माध्यम से विनती करता हूँ जिससे उनकी पवित्रतम आत्मा भरी हुई थी, उन आत्माओं पर अपनी दया दिखाएं जो आपके न्याय की दृष्टि में हैं। उन्हें अपने प्रिय पुत्र यीशु के घावों के अलावा किसी और तरह से न देखें; क्योंकि हम विश्वास करते हैं कि आपकी भलाई और आपकी करुणा अनंत है। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1244,22 +1334,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1271,6 +1366,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>“आज मेरे पास <strong>ठंडी</strong> आत्माओं को लाओ और उन्हें मेरी दया के रसातल में डुबो दो। ये आत्माएं मेरे हृदय को सबसे अधिक पीड़ा पहुँचाती हैं। जैतून के बाग (Gethsemane) में मेरी आत्मा ने ठंडी आत्माओं के प्रति सबसे अधिक घृणा महसूस की थी। ठंडी आत्माएं ही मेरे इन शब्दों का कारण थीं: ‘पिता, इस प्याले को हटा ले, (लेकिन केवल) यदि यह तेरी इच्छा हो।’ उनके लिए अंतिम जीवन रेखा मेरी दया की शरण लेना है।”</p><p><strong>प्रार्थना:</strong></p><p>दयालु यीशु, आप शुद्धतम करुणा हैं; मैं ठंडी आत्माओं को आपके अत्यंत दयालु हृदय के निवास में लाता हूँ। ये जमी हुई आत्माएं, जो मृत शरीरों के समान हैं और आपको इतनी घृणा से भर देती हैं, आपके शुद्ध प्रेम की आग में गर्म हो जाएं। ओ अत्यंत दयालु यीशु, अपनी दया की सर्वशक्तिमानता का उपयोग करें और उन्हें अपने प्रेम की ज्वाला में खींच लें और उन्हें पवित्र प्रेम प्रदान करें, क्योंकि आप सब कुछ कर सकते हैं।</p><p>आग और बर्फ एक साथ नहीं रह सकते,<br>उनमें से एक पिघल जाता है या बुझ जाता है।<br>लेकिन आपकी दया, अच्छे ईश्वर,<br>उससे भी बड़ी शून्यता को सहायता पहुँचाती है।</p><p>शाश्वत पिता, ठंडी आत्माओं पर दयालु दृष्टि से देखें, जो यीशु के अत्यंत दयालु हृदय में सुरक्षित हैं। दया और हर प्रकार की भलाई के पिता, मैं आपसे आपके पुत्र के कड़वे दुख और क्रूस पर उनकी तीन घंटे की मृत्यु के माध्यम से विनती करता हूँ, यह प्रदान करें कि वे भी आपकी दया के रसातल की स्तुति करें। आमेन।</p><p><a href="barmherzigkeitsrosenkranz.html"><strong>दिव्य दया की माला</strong></a></p>
 
@@ -1280,12 +1376,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1371,6 +1473,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1425,6 +1562,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1460,12 +1608,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

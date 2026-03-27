@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Le Tre Ave Maria">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Le Tre Ave Maria">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/die-drei-ave-maria.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../it/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../it/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,7 +988,13 @@
             
 
             
+            
 
+            
+
+            
+
+            
             
 
             
@@ -957,16 +1004,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -978,11 +1025,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Quando Santa Mechthild di Hackeborn († 1299) verso la fine della sua vita pensava con ansia all'ora della sua morte, supplicò la Madre di Dio per la sua protezione materna nella sua ultima ora. La Madonna, che le era già apparsa spesso alla sua fedele serva, udì la sua supplica e le disse:<br> <strong>"Sì, certamente esaudirò le tue richieste, figlia mia, ma ti chiedo che preghi tre Ave Maria quotidianamente per amore di me."</strong></p><h3><strong>Per l'immagine di copertina – La Madre dell'Attesa</strong></h3><p>L'origine di questa straordinaria immagine di grazia, che si trova nel monastero delle Suore Cappuccine di Santa Maria Loreto a Salzburg sin dal XIX secolo, resta avvolta nel mistero fino ad oggi. Con l'arrivo della "Madre di Grazia" al monastero di Loreto, sorse presto la speciale consuetudine di portare l'immagine alle celle delle sorelle morenti. Era significativo che le sorelle di Loreto tornassero sempre a casa con calma e pace, anche in "gioiosa attesa." E questa speciale grazia è loro concessa ancora oggi.<br> Peraltro, la devozione alla "Madre di Grazia" e la devozione delle Tre Ave Maria sono inscindibilmente legate per l'intera comunità delle sorelle.</p><h3><strong>La prima Ave Maria</strong></h3><p>In onore di Dio Padre, che nella Sua gloriosa onnipotenza ha tanto onorato la mia anima che dopo di Lui sono onnipotente in cielo e sulla terra.</p><h3><strong>La seconda Ave Maria</strong></h3><p>In onore di Dio Figlio, che nella grandezza della Sua insondabile sapienza mi ha adornato e colmato di doni di conoscenza e comprensione tali che posso contemplare la Santissima Trinità più intimamente di tutti i santi.<br> Mi ha inoltre avvolto in una luce così che come un sole radiante illumino tutto il cielo ...</p><h3><strong>La terza Ave Maria</strong></h3><p>In onore dello Spirito Santo, che ha riversato la dolce pienezza del Suo amore nel mio cuore e mi ha creato così buona e misericordiosa che dopo Dio sono l'essere più mite e gentile ...</p><br><p>A queste Tre Ave Maria la Madre di Dio attaccò la seguente grande promessa:</p><p> <strong>"Sarò al tuo fianco nell'ora della morte, ti consolerò e terrò lontano da te ogni potere del diavolo.</strong><strong><br></strong><strong> Riverserò in te la luce della fede e della conoscenza, affinché la tua fede non sia tentata dall'ignoranza e dall'errore.</strong><strong><br></strong><strong> Sarò vicino a te nell'ora del trapasso e traboccherò la tua anima della dolcezza dell'amore divino, affinché per la sua forza sovrana ogni agonia di morte e amarezza sia trasformata in beatitudine attraverso l'amore."</strong><strong><br></strong> <em>(Liber specialis gratiae, P.I. Ch. 47)</em></p><p>Considerando la meravigliosa diffusione e i molti buoni frutti sorti da questa devozione, la Chiesa non solo dette la sua approvazione ma anche molti privilegi dal grande tesoro dei meriti redentivi di Gesù Cristo a lei affidato.<br> Papa Benedetto XV elevò la Confraternita delle Tre Ave Maria ad Arciconfraternita e le concesse preziose indulgenze.</p><p><strong>Pratica:</strong><strong><br></strong> Mattina e sera pregate le Tre Ave Maria in onore dei tre privilegi di Maria descritti sopra, con la seguente invocazione alla fine:<br> <strong>"O mia Madre, preservami oggi / stanotte dal peccato mortale."</strong><strong><br></strong> (Preghiera per indulgenza)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -992,16 +1045,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1013,11 +1066,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Le Tre Ave Maria sono un potente aiuto per conseguire la salvezza eterna e ogni grazia. Questa pratica di preghiera merita di essere conosciuta, adottata e diffusa ulteriormente da tutti.<br> Grandi santi come Sant'Antonio di Padova, Sant'Alfonso Maria de' Liguori, San Leonardo da Porto Maurizio, San Giovanni Bosco e San Clemente Maria Hofbauer praticarono e diffusero questa devozione con zelo.<br> Sant'Antonio ottenne così la grazia della perfetta purezza nelle tentazioni del mondo. Parimenti, le testimonianze di fede di molte persone del nostro tempo riferiscono favori straordinari attraverso la pratica delle Tre Ave Maria: conversioni significative, speciale protezione nelle tentazioni, specialmente contro la purezza, aiuto nelle intenzioni più varie, fino alla buona scelta di vocazione e stato di vita, nonché la grazia della perseveranza e della buona morte.</p><p><strong>Quanto appropriate sono quindi le parole di San Bonaventura:</strong><strong><br></strong> <strong>"Maria ci saluta con la grazia quando noi la salutiamo con l'Ave Maria.</strong><strong><br></strong><strong> Anche se fossimo malati e incapaci di fare alcun lavoro, pregare l'Ave Maria ci rende preziosi cooperatori nel regno di Dio."</strong></p><p>Si legge con stupore la storia del santuario di Falgoët, la cui fondazione risale a un presunto folle che in ogni occasione ripeteva "Ave Maria."<br> La Madre di Dio ricompensò questa semplice ma preziosa pietà con un miracolo:<br> Dopo la sua morte, crebbe sulla sua tomba un giglio, le cui foglie portavano le parole "Ave Maria" in lettere d'oro. Indagando la radice, si trovò che conduceva nella bocca del morto Solomon: una meravigliosa manifestazione del cielo di quanto sia gradita a Dio e potente l'Ave Maria.</p><p><strong>Ma noi che ancora viviamo e possiamo pregare l'Ave Maria ogni giorno dovremmo ricordare che con ogni Ave Maria adorniamo la nostra anima e diamo alla Madre di Dio inesprimibile gioia.</strong><strong><br></strong> <strong>Rendetevi tutti familiari con questa così bella e devota devozione e praticatela fino alla fine della vostra vita.</strong><strong><br></strong> <strong>Chiedo persino ai confessori di assegnare questa devozione come penitenza, poiché essa sola porta più frutti di qualsiasi altra penitenza.</strong><strong><br></strong> <em>(San Leonardo da Porto Maurizio)</em></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1027,16 +1086,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1048,11 +1107,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>Un giovane di 24 anni che per circa dieci anni aveva frequentato cattiva compagnia era diventato il trastullo di passioni criminali.<br> Sua madre non aveva risparmiato tentativi di conversione: preghiere, digiuni, elemosine, consigli, rimproveri e lacrime – eppure tutto sembrava vano.</p><p>Poi ella lamentò il suo dolore a un sacerdote, e questi, seguendo un'ispirazione felice, le fece il salutare suggerimento:<br> <strong>"Promettimi di pregare Tre Ave Maria mattina e sera in onore della santissima Vergine per tutta la tua vita, e ti prometto nel nome del Consolatore celeste il ritorno del tuo caro figlio a Dio."</strong></p><p>La madre iniziò subito nella sua angoscia con la devozione che il sacerdote aveva consigliato, e la praticò con piena fiducia e perseveranza.<br> Così passarono diverse settimane senza che suo figlio desse alcun segno di miglioramento. La povera donna era vicina alla disperazione e temeva che Dio e la santissima Vergine l'avessero abbandonata.<br> Ma il 15 maggio, che nella sua regione si celebra come festa di "Nostra Signora delle Spighe," venne dal missionario non come al solito con occhi lacrimosi, ma raggiante di gioia, e disse commossa:<br> <strong>"Padre, grazie a Maria!"</strong></p><p>Quando il neo-convertito si confessò da lui, anche il sacerdote non poté trattenere le lacrime di gioia.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1062,16 +1127,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1083,11 +1148,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>La vocazione al sacerdozio o alla vita religiosa rivela una speciale predilezione del Signore per l'anima che Egli ha scelto, che ha chiamato "tra milioni per milioni."<br> Quando ella ascolta la voce di Dio e pronuncia il suo Sì, attira su di sé e su tutti coloro che Dio ha affidato alla sua vocazione un incommensurabile torrente di grazie.</p><p>San Giovanni Bosco affermò ai suoi tempi che un terzo dei giovani è chiamato al sacerdozio o alla vita religiosa, ma solo un decimo è consapevole di questa alta grazia.<br> Chi prega sempre Tre Ave Maria mattina e sera si pone sotto la speciale protezione della Madre di Dio, che al trono di Dio implora grazie del tutto speciali per l'illuminazione dell'intelletto e della volontà per i suoi protetti.</p><p>Un esempio tra molti può essere nominato qui:<br> <strong>"Caro Padre," disse un giovane monaco, "feci mia la pratica di preghiera delle Tre Ave Maria durante una missione ai ripetuti inviti dei missionari Redentoristi, e devo a questa semplice devozione prima la perseveranza sulla via del sacerdozio e poi la mia vocazione religiosa nella famiglia di Sant'Alfonso. Ne sono fermamente convinto."</strong></p><p>Un'Ave Maria pregata bene è<br> – per il diavolo un nemico che lo mette in fuga,<br> – un martello che lo schiaccia,<br> – per l'anima un mezzo di santificazione,<br> – per gli angeli una gioia.</p><p>È<br> – l'inno degli eletti,<br> – il Cantico del Nuovo Patto,<br> – la delizia di Maria<br> – e la glorificazione della Santissima Trinità.<br> <em>(San Luigi Maria Grignion de Montfort)</em></p><br><p><strong>Ave Maria, piena di grazia,</strong><strong><br></strong> <strong>il Signore è con te.</strong><strong><br></strong> <strong>Benedetta tu fra le donne,</strong><strong><br></strong> <strong>e benedetto il frutto del tuo grembo, Gesù.</strong><strong><br></strong> <strong>Santa Maria, Madre di Dio, prega per noi peccatori,</strong><strong><br></strong> <strong>ora e nell'ora della nostra morte. Amen.</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1097,6 +1168,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1182,6 +1254,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1236,6 +1343,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1271,12 +1389,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

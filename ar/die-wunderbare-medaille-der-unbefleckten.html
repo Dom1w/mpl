@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="الميدالية العجيبة للطاهرة">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="الميدالية العجيبة للطاهرة">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/die-wunderbare-medaille-der-unbefleckten.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ar/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ar/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,8 +969,7 @@
 
     <!-- Content Sections -->
     
-    
-    
+        
     
     
     
@@ -942,16 +983,16 @@
 <p><a href="https://en.wikipedia.org/wiki/Miraculous_Medal#/media/File:Miraculous_medal.jpg" target="_blank" rel="noopener noreferrer">المصدر: ويكيبيديا</a></p>
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -963,11 +1004,17 @@
             
 
             
+            
             <div class="section-body">
                 <p>في عام 1830 ظهرت <strong>مريم</strong> للقديسة <strong>كاترين لابوريه</strong> في الكنيسة الصغيرة في شارع دو باك وأظهرت نفسها وسيطاً لجميع النعم. من الخواتم المرصعة بالجواهر التي زُيّنت بها يدي العذراء المباركة، انبعثت أشعة منيرة بحيث كان شكل والدة الإله كله مُلفوفاً بضوء ساطع.</p><p>شرحت العذراء الأقدسة للقديسة كاترين:</p><p><strong><em>الأشعة رمز للنعم التي أُفيضها على الذين يطلبونها مني.</em></strong><em> فأعطتني أن أفهم كم هي رحيمة تجاه جميع من يتوسّلون إليها، كم نعمة تمنح لكل من يطلبها، وكم هو فرح لها عندما تستطيع أن تعطينا هذه النعم. رأيت أيضاً أنه من بعض هذه الجواهر لا تنبعث أشعة. تعجبت كثيراً من هذا. ثم سمعت العذراء المباركة تقول: </em><strong><em>الجواهر التي لا تُرسل أشعة ترمز للنعم التي يُهمل الناس طلبها مني.</em></strong><em> [...]</em></p><p>حول ظهور العذراء المباركة تشكّل إطار بيضاوي، عليه كُتبت هذه الكلمات بحروف ذهبية:</p><p><strong>يا مريم، المحبل بها بلا خطيئة، صلّي لأجلنا الذين نلتجئ إليكِ!</strong></p><p><em>عندئذ سمعت بوضوح وتمايز صوتاً قال لي:</em></p><p><strong><em>اصنعي ميدالية حسب هذا النموذج. جميع الأشخاص الذين يرتدونها سيحصلون على نِعَم عظيمة. ستكون النِعَم وفيرة للذين يرتدونها بثقة حول أعناقهم.</em></strong></p><p>في تلك اللحظة بدا أن الصورة تدور، ورأيت ظهر الميدالية. هناك رأيت الحرف <strong>M</strong> مُتوّجاً بصليب مستقر على شريط. تحت <strong>M</strong> رأيت <strong>القلوب الأقدسة ليسوع ومريم</strong>، الأول مُحيط بإكليل من الشوك، والثاني مُطعون بسيف.</p><p>(القديسة كاترين لابوريه والميدالية العجيبة للطاهرة بقلم الدكتورة ماريا كويلن، الإمبريماتور: أبرشية فريبورغ/سويسرا 29 نوفمبر 1952، ص. 31، 32.)</p><p>بعد فحص دام عامين لجميع هذه الأحداث، أعطى رئيس أساقفة باريس الإذن لضرب الميدالية. عندئذ بدأ نهر من النِعَم ينتشر على العالم بأسره، لأن الميدالية كانت مطلوبة في كل مكان.</p><p>أُظهر انتصار والدة الإله هذا عبر عجائب نِعَم لا تُحصى وتوبات وشفاءات، بحيث سُمّيت قريباً "العجيبة" أو "الرائعة" فقط.</p><p>لكن حتى اليوم نهر النِعَم لا يتوقف، بل يكبر أكثر من أي وقت مضى.</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -977,16 +1024,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -998,11 +1045,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>علامة الصليب</strong>، أيقظ الندم على الخطايا المرتكبة؛ ثم ثلاث مرات الدعوة:</p><p><strong>يا مريم، المحبل بها بلا خطيئة، صلّي لأجلنا الذين نلتجئ إليكِ.</strong><strong><br></strong><em>(يومياً)</em></p><p><strong>اليوم 1: أول ظهور</strong></p><p>لنتأمل العذراء الطاهرة وهي تظهر للمرة الأولى للقديسة <strong>كاترين لابوريه</strong>. المبتدئة التقيّة قادها ملاكها الحارس وقُدّمت للعذراء المقدسة. لنتأمل فرحها الذي لا يُوصف! سنصبح سعداء مثل القديسة كاترين إن عملنا بحماس على تقديسنا. سنفرح بالسعادة السماوية إن تنازلنا عن ملذات الأرض الباطلة.</p><p><strong>أيها العذراء الأقدسة</strong>، أؤمن بحملكِ الطاهر بلا دنس وأعترف به. يا أطهر العذراء <strong>مريم</strong>، عبر حملكِ الطاهر بلا دنس واختياركِ المجيد أن تكوني والدة الإله، احصُلي لي من ابنكِ الحبيب تواضعاً حقيقياً، ومحبة نقية، وطاعة أمينة، وتخلٍ كامل وغير مقسوم لله! احصُلي لي نعمة التعرف على إرادة <strong>الله</strong> وإتمامها في كل مواقف الحياة. لأن هكذا فقط أستطيع أن أُكرم <strong>الله</strong> وأُمجّد اسمه. لكن أنتِ يا أمي الرقيقة، احصُلي لي هذه النِعَم الإلهية للزمن والأبدية. لهذا الحمد والشكر لكِ إلى الأبد. آمين.</p><p>بعد صلاة الختام اليومية للنوفينة تتبع ثلاث <strong>صلوات مريم</strong> مع الإضافة:</p><p><strong>يا مريم، المحبل بها بلا خطيئة، صلّي لأجلنا الذين نلتجئ إليكِ!</strong></p><h3><strong>اليوم 2: دموع مريم</strong></h3><p>لنتأمل <strong>مريم</strong> وهي تبكي على الشدائد التي ستحل بالعالم، على الجرائم الجسيمة ضد قلب <strong>يسوع</strong> ابنها، وبسبب ازدراء الصليب واضطهاد أطفالها الأحباء على الأرض. لنتكنّ بالثقة في القلب الأمومي الشفوق <strong>لمريم</strong>، وسنشارك أيضاً في ثمر دموعها!<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 3: مريم، حمايتنا</strong></h3><p>لنتأمل أمنا الطاهرة وهي تتكلم في ظهورها للأخت كاترين:</p><p><em>سأكون أنا معكم. راقبتكم دائماً. سيُظن أن كل شيء قد خسر؛ لكن ثقوا! ستختبرون زيارتي وحماية الله.</em></p><p>كوني لي أنا أيضاً، أيها العذراء الطاهرة، الدرع والعون في كل احتياج!<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 4: الظهور الثاني</strong></h3><p>عندما كانت الأخت كاترين تصلّي في 27 نوفمبر 1830، ظهرت العذراء <strong>مريم</strong> لها بجمال مشع، واقفة على الكرة الأرضية، تسحق رأس الحية الجهنمية. في هذا الظهور نرى رغبتها في حمايتنا في كل الأوقات من العدو والمضاد الجهنمي. لنستدعِ الأم الطاهرة بثقة ومحبة!<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 5: يدي مريم</strong></h3><p>لنتأمل اليوم كيف تنبعث أشعة منيرة من يدي <strong>مريم</strong>. قالت:</p><p><em>الأشعة رمز للنعم التي أُفيضها على الذين يطلبونها مني.</em></p><p>لا نفوت نِعَم عظيمة كهذه! لنتوسّل بإلحاح وتواضع وثبات، و<strong>مريم</strong>، العذراء الطاهرة، ستحصل عليها لنا!<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 6: الظهور الثالث</strong></h3><p>لنتأمل <strong>مريم</strong> وهي تظهر لكاترين ببهاء مشع، مُحيطة باثنتي عشرة نجمة وتبتسم بصلاح كامل. تعطي الأمر بضرب ميدالية وتعد بنِعَم كثيرة لجميع من يرتدونها بمحبة وتقوى. لنرتدي الميدالية العجيبة (<strong>رمز وصورة مريم</strong>) بثقة كاملة، والعذراء المقدسة ستحمينا كدرع في كل أخطار حياتنا.<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 7: مريم، المحامية والملجأ</strong></h3><p>يا عذراء رائعة، ملكة مرتفعة، سيدة بلا دنس، كوني محاميتي، ملجأي، حصني على هذه الأرض، قلعتي، حمايتي في الحياة والموت! أنتِ فرح قلبي ومجدي في السماء! قفي بجانبي في التجربة والإغراء واجعليني أصل بأمان إلى <strong>يسوع</strong>، ابنكِ الإلهي.<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 8: مريم، وسيطة جميع النعم</strong></h3><p>يا عذراء طاهرة، اجعلي الأشعة المنيرة التي تنبعث من يديكِ العذراويتين تُنير ذهني، لأتعرف على الخير بشكل أفضل، وتُحيي قلبي في الإيمان والرجاء والمحبة.<br><strong>أيها العذراء الأقدسة ...</strong></p><h3><strong>اليوم 9: مريم أمام صليب ابنها</strong></h3><p>يا عذراء طاهرة ووالدة الإله <strong>مريم</strong>، اجعلي الصليب كرمز للنصر ينهض أيضاً في حياتي، فأنا متحد بصفة حميمة معكِ ومع ابنكِ الإلهي. أعطيني نعمة وقوة للوقوف والثبات معكِ أمام صليب ابنكِ حتى يُتمّ عملي على الأرض.<br><strong>أيها العذراء الأقدسة ...</strong></p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1012,6 +1065,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1097,6 +1151,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1151,6 +1240,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1186,12 +1286,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

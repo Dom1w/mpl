@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Заказ">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Заказ">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/bestellen.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ru/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ru/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,20 +969,20 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <p>Пойте Господу, благословляйте имя Его, возвещайте изо дня в день спасение Его. (Пс 96,2)</p><p>От Марии учатся, сколь важно, сколь необходимо, сколь благословенно апостольское служение для спасения человечества. (Бл. Мария Тереза Ледóchowska)</p><p>Царство Божие подобно зерну горчичному. Оно меньше всех семян, которые сеются на земле. Но когда посеяно, вырастает и становится больше всех трав и пускает большие ветви, так что под тенью его могут укрываться птицы небесные. (Мк 4,30-32)</p>
@@ -951,27 +993,33 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <h1>Обзор продуктов</h1>
@@ -989,22 +1037,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1016,11 +1069,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><a href="marianische-priester-und-laienbewegung.html"><strong>Марианское движение священников и мирян за триумф соединённых сердец Иисуса и Марии</strong></a></p><ul><li><p><em>Издания:</em> 2-е немецкое издание</p></li><li><p><em>Формат:</em> 10,5 x 21,0 см, 28 страниц вкл. обложка</p></li></ul><p><a href="gttliche-barmherzigkeit.html"><strong>Почитание Божественного Милосердия</strong></a></p><ul><li><p><em>Издания:</em> 16-е немецкое, 4-е английское, 1-е голландское, 4-е испанское, 1-е арабское, 1-е русское, 1-е португальское</p></li><li><p><em>Формат:</em> 10,5 x 14,8 см, 72 страницы вкл. обложка</p></li></ul><p><a href="fatima.html"><strong>Послание примирения Фатимы</strong></a></p><ul><li><p><em>Издания:</em> 11-е немецкое, 1-е голландское, 4-е английское, 1-е русское, 1-е португальское, 2-е испанское</p></li><li><p><em>Формат:</em> 10,5 x 14,8 см, 72 страницы вкл. обложка</p></li></ul><p><strong>Люблю Тебя сверх всякой меры</strong></p><ul><li><p><em>Издания:</em> 3-е немецкое, 2-е английское, 1-е испанское</p></li><li><p><em>Формат:</em> 10,5 x 14,8 см, 68 страниц вкл. обложка</p></li></ul><p><strong>Имя Его написано на челе их</strong></p><ul><li><p><em>Издания:</em> 2-е немецкое</p></li><li><p><em>Формат:</em> 10,5 x 14,8 см, 76 страниц вкл. обложка</p></li></ul><p><strong>Смотри, как велика любовь Отца!</strong></p><ul><li><p><em>Издания:</em> 1-е немецкое</p></li><li><p><em>Формат:</em> 9,7 x 14,8 см, 64 страницы вкл. обложка</p></li></ul><p><strong>Придите на брачный пир!</strong></p><ul><li><p><em>Издания:</em> 2-е немецкое, 2-е английское, 1-е испанское</p></li><li><p><em>Формат:</em> 10,5 x 14,8 см, 80 страниц вкл. обложка</p></li></ul><p><strong>Не позволяйте украсть ваше божественное сыновство!</strong></p><ul><li><p><em>Издания:</em> 3-е немецкое</p></li><li><p><em>Формат:</em> 10,5 x 14,8 см, 44 страницы вкл. обложка</p></li></ul><p><strong>Благодатный Младенец Иисус</strong></p><ul><li><p><em>Издания:</em> 1-е немецкое</p></li><li><p><em>Формат:</em> 14,8 x 21,0 см, 20 страниц вкл. обложка</p></li></ul><p><strong>Чудеса Святого Розария</strong></p><ul><li><p><em>Издания:</em> 2-е немецкое, 1-е английское, 1-е испанское</p></li><li><p><em>Формат:</em> 8,0 x 12,5 см, 56 страниц вкл. обложка</p></li></ul><p><strong>Скапулярий Божией Матери с горы Кармель</strong></p><ul><li><p><em>Издания:</em> 1-е немецкое</p></li></ul>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1030,16 +1089,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1051,11 +1110,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><a href="der-hirtenrosenkranz.html"><strong>Пастуший Розарий (FB - № 01)</strong></a></p><ul><li><p>Формат: 8 x 12 см, 4 страницы</p></li></ul><p><a href="die-drei-ave-maria.html"><strong>Три Радуйся, Мария (FB - № 02)</strong></a></p><ul><li><p>Формат: 8 x 13,2 см, 10 страниц (также на английском)</p></li></ul><p><a href="mit-jesus-im-lgarten.html"><strong>С Иисусом в Гефсимании (FB - № 03)</strong></a></p><ul><li><p>Формат: 8 x 12,5 см, 10 страниц</p></li></ul><p><a href="geborgen-in-jesu-heiligen-wunden.html"><strong>Под покровом святых ран Иисуса (FB - № 04)</strong></a></p><ul><li><p>Формат: 8 x 12,5 см, 8 страниц</p></li></ul><p><a href="alles-aus-liebe-zu-dir-heiligstes-herz-jesu.html"><strong>Всё из любви к Тебе, Пречистое Сердце Иисуса! (FB - № 05)</strong></a></p><ul><li><p>Формат: 8 x 12,5 см, 8 страниц</p></li></ul><p><a href="lasst-uns-zu-st-josef-gehn.html"><strong>Пойдём к святому Иосифу! (FB - № 06)</strong></a></p><ul><li><p>Формат: 7,9 x 13,2 см, 10 страниц (также на английском)</p></li></ul><p><a href="unser-heiliger-schutzengel.html"><strong>Наш святой Ангел-Хранитель (FB - № 07)</strong></a></p><ul><li><p>Формат: 8,5 x 13,5 см, 10 страниц</p></li></ul><p><strong>Молитвы с Младенцем Иисусом за Младенца Лорето из Зальцбурга (FB - № 08)</strong></p><ul><li><p>Формат: 9 x 14,7 см, 10 страниц</p></li></ul><p><a href="die-wunderbare-medaille-der-unbefleckten.html"><strong>Чудотворная Медаль Непорочной (FB - № 09)</strong></a></p><ul><li><p>Формат: 8 x 13,5 см, 8 страниц</p></li></ul><p><a href="gebete-zum-gnadenreichen-loretokindl-von-salzbug.html"><strong>Молитвы к Младенцу Лорето из Зальцбурга (FB - № 10a)</strong></a></p><ul><li><p>Формат: 8 x 12 см, 10 страниц</p></li></ul><p><a href="gebete-zum-gnadenreichen-loretokindl-von-salzbug.html"><strong>Молитвы к Младенцу Лорето из Зальцбурга (FB - № 10b)</strong></a></p><ul><li><p>Формат: 8 x 12 см, 8 страниц</p></li></ul><p><strong>Розарий и Литания Младенцу Иисусу (FB - № 10c)</strong></p><ul><li><p>Формат: 7 x 11 см, 10 страниц</p></li></ul><p><a href="maria-ruft-uns-zum-gebet.html"><strong>Мария призывает нас к молитве (FB - № 11)</strong></a></p><ul><li><p>Формат: 8 x 13,5 см, 10 страниц</p></li></ul><img src="../static/img/überblick_zitate.png">
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1065,16 +1130,16 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1086,11 +1151,17 @@
             
 
             
+            
             <div class="section-body">
                 <ul><li><p>Скапулярий<br>„Кто умрёт, облечённый в эту одежду благодати, будет сохранён от вечного огня. (Божия Матерь св. Симону Сток)“</p></li><li><p>Розарий<br>„Розарий и Скапулярий неразрывно соединены.“ (с. Лусия из Фатимы)</p></li><li><p>Карточки Милосердного Иисуса<br>в трёх размерах:<br>135 x 218 мм<br>107 x 142 мм<br>70 x 142 мм</p></li></ul>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -1100,21 +1171,22 @@
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
             
 
+            
             
             <div class="section-body">
                 <p>Как славна наша задача: сделать так, чтобы Слово Божие пустило корни, проросло и принесло плод повсюду и во все времена. (св. Хосемария Эскрива)</p><p>Кто дарит медаль, святой образ или книгу и не имел иной заслуги, кроме как зажечь одну мысль о Боге, уже тем самым приобрёл несравненную заслугу пред Богом. Только Бог знает, сколько добра тем творится. Ибо многие души тем спасаются, многие сохраняются от заблуждения и ободряются в добре. (св. Иоанн Боско)</p><p>Кто скупо сеет, тот скупо и пожнёт; кто щедро сеет, тот щедро и пожнёт. (2 Кор 9,6)</p><p>Продукты можно получить бесплатно. За каждое пожертвование на покрытие расходов на печать и на продвижение нашего католического апостолата писания мы говорим сердечное спасибо!</p>
@@ -1124,12 +1196,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1215,6 +1293,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1269,6 +1382,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1304,12 +1428,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="С Иисусом в Гефсиманском саду">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="С Иисусом в Гефсиманском саду">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/mit-jesus-im-lgarten.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ru/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ru/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>«Душа Моя скорбит смертельно.</strong><strong><br></strong><strong> Останьтесь здесь и бодрствуйте со Мною.»</strong><strong><br></strong> (Матфея 26:38)</p><br><h3><strong>Вновь и вновь должен я идти на гору Елеонскую</strong></h3><p>И там искать моего Иисуса.<br> У Него такой великий страх и мука,<br> я должен быть с Ним теперь.</p><p>Нет, я не могу идти спать,<br> я должен искать моего Иисуса.<br> Совсем тихо я скажу Ему:</p><p><strong>«О Спаситель, Тебе не нужно унывать.</strong><strong><br></strong><strong> Ибо хоть я совсем беден и мал,</strong><strong><br></strong><strong> я всё же хочу быть Твоим утешителем.»</strong></p><p>О посмотрите, дрожат все Его члены,<br> и кровавый пот стекает на землю.</p><p><strong>«Боже мой, взгляни же на Твоего Иисуса,</strong><strong><br></strong><strong> Он ведь делал только добро.</strong><strong><br></strong><strong> И теперь лежит воздаяние за наши грехи</strong><strong><br></strong><strong> на Твоем возлюбленном Сыне.»</strong></p><p><strong>«Отче, если это может быть,</strong><strong><br></strong><strong> да минует Меня чаша сия.»</strong></p><p>Так Иисус борется в молитве,<br> пока Ангел не приносит Ему подкрепление.</p><p>Как он утешительно берет Его в свои объятия,<br> сердце мое становится совсем теплым от любви.<br> Тогда и у меня появляется такое сильное желание<br> обнять моего Спасителя.</p><p>Охотно хотел бы я сказать всем людям:<br> никогда нам не нужно унывать.<br> Ибо всякая нужда преодолевается<br> через горькие часы страданий Иисуса.</p><p>Он утешает нас, мы утешаем Его,<br> все тени смерти должны бежать.<br> Однажды пройдут страх и мука,<br> Сам Бог будет тогда нашей наградой.</p><p>Поэтому позвольте мне идти на гору Елеонскую,<br> и там искать моего Иисуса.<br> Ведь у меня в сердце написано:</p><p><strong>«Только утешать Его могу я и любить.»</strong></p><p><em>(Капуцинки Вечного Поклонения)</em></p><p>«Как душа Христа была скорбна до смерти из-за наших грехов, которые произойдут в будущем, но были предвидены, так Он, несомненно, мог черпать утешение и из нашего предвиденного удовлетворения, ибо Ему является Ангел с небес, чтобы утешить Его Сердце, которое было угнетено отвращением и пресыщением … Так, значит, Святейшее Сердце, которое постоянно уязвляется грехами людей, и сейчас еще может быть чудесным образом утешаемо нами» <em>(Из энциклики о Святейшем Сердце Иисуса Папы Пия XI от 8 мая 1928 г.).</em></p><br><h3><strong>Святой час</strong></h3><p>В 1674 году Иисус говорил св. Маргарите Марии Алакок:</p><p><strong>Я презираем людьми, и любовь Моя воздается неблагодарностью. Это падает на Меня тяжелее, чем всё, что Я претерпел в Моих страданиях. […]</strong></p><p><strong>Господи, что мне делать?</strong> — спросила святая.</p><p><strong>В ночь с четверга на пятницу Я дам тебе причаститься той смертельной скорби, которую Я претерпел в Гефсиманском саду. […] Ты должна встать с 23:00 до 24:00 ночи, простереться ниц и провести один час в молитве со Мною, как для того, чтобы умилостивить гнев Божий и испросить милосердия для грешников, так и для того, чтобы утешить Меня в той боли, которую Я чувствовал, видя Себя оставленным Моими апостолами […].</strong> (Здесь Иисус обращается одновременно ко всем Своим апостолам и всем посвященным Богу всех времен с настоятельной просьбой не оставлять Его одного в борьбе за спасение душ.)</p><p>Согласно желанию Спасителя, св. Маргарита бодрствовала теперь каждый четверг в указанный час, и вскоре после этого многие другие начали подражать ей в этом. [3]</p><p>Между тем в этом духе существует братство <strong>Святого часа</strong> и самые разные формы богослужений, которые во многих местах совершаются перед выставленными Пресвятыми Дарами.</p><br><h3><strong>Молитва к Иисусу на Елеонской горе</strong></h3><p>О Иисус, Который в преизбытке Твоей любви и для преодоления нашего жестокосердия изливаешь поток благодати на тех, кто созерцает Твое святейшее страдание в Гефсиманском саду и способствует почитанию оного, я прошу Тебя, помогай моей душе и моему сердцу часто, но хотя бы раз в день, думать о Твоей самой горькой смертной агонии в Гефсиманском саду, чтобы сострадать Тебе и соединиться с Тобой, насколько это возможно.</p><p>О благословенный Иисус, Который в ту ночь взял на Себя огромную тяжесть наших грехов и полностью искупил их, даруй мне величайший дар совершенного сокрушения из любви о моих многочисленных грехах, за которые Ты обливался кровавым потом.</p><p>О благословенный Иисус, ради Твоей самой напряженной борьбы в Гефсиманском саду, даруй мне окончательную победу над искушениями, особенно над тем, которому я более всего подвержен.</p><p>О страдающий Иисус, ради Твоих непостижимых и невыразимых для нас смертных борений в ту ночь предательства и горьких душевных мук, просвети меня, чтобы я познавал и исполнял Твою волю, и дай, чтобы я снова и снова думал о Твоей потрясающей борьбе и созерцал, как Ты победоносно выстоял в ней, чтобы исполнить не Твою, а волю Отца.</p><p>Даруй, о Иисус, чтобы все, кто с любовью созерцает Тебя на Кресте, вспоминали также о Твоих безмерных Гефсиманских страданиях, чтобы они, следуя Твоему примеру, учились хорошо молиться и победоносно сражаться, дабы однажды вечно прославлять Тебя на небесах. Аминь.</p><p>По св. о. Пио.</p><h3><strong>За умирающих</strong></h3><p>Милосерднейший Иисус, Ты так сильно любишь души. Ради смертной агонии Твоего Святейшего Сердца и ради болей Твоей Непорочной Матери, прошу Тебя, очисти в Твоей Крови грешников всего мира, которые сейчас находятся в смертной борьбе и умрут еще сегодня.</p><p>Сердце Иисуса, претерпевшее смертную агонию, помилуй умирающих. Аминь.</p><br><h3><strong>Обетования Иисуса</strong></h3><p>Кто знает закон любви, тот не удивляется тому, что Я не могу перестать стучаться в дверь тех, кто сопротивляется Мне и своим отвержением как бы заставляет Меня повторять Мое любящее приглашение. […]</p><p>Посмотри, какое великое Я предлагаю всем за немного любви:</p><ol><li><p>Прощение всех грехов и уверенность в спасении души в час смерти тем, кто хотя бы раз в день с любовью и почтением вспоминает Мою смертную агонию. (Эту просьбу Иисус высказал в отношении всех, кому невозможно проводить <em>Святой час</em> в его первоначальной форме. В то же время Он хотел тем самым выразить Свою радость по поводу каждого, даже самого короткого мгновения, которое мы дарим Ему, чтобы утешить Его.)</p></li><li><p>Совершенное и постоянное сокрушение всем, кто велит совершить Святую Мессу в честь тех страданий.</p></li><li><p>Успех в духовных делах тем, кто будет запечатлевать в других любовь к Моим Гефсиманским страданиям.</p></li></ol><br><p>Наконец, чтобы доказать вам, что Я хочу прорвать плотину Моего Сердца, чтобы из него потек поток благодати, Я обещаю тем, кто способствует этому почитанию Моих Гефсиманских страданий, эти три дополнительные благодати:</p><ol><li><p>Полную и окончательную победу в самом тяжелом искушении, которому они подвержены,</p></li><li><p>прямую власть освобождать бедные души из чистилища,</p></li><li><p>великое просвещение и силу исполнять Мою волю.</p></li></ol><p>Все эти Мои драгоценные дары Я дарю тем, кто с любовью и состраданием почтительно вспоминает Мою безмерно великую смертную агонию на Елеонской горе. (Частное откровение благодатной душе.)</p>
 
@@ -956,12 +998,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1047,6 +1095,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1101,6 +1184,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1136,12 +1230,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

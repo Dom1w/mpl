@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Мария зовёт нас к молитве">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="Мария зовёт нас к молитве">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/maria-ruft-uns-zum-gebet.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../ru/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../ru/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,6 +988,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>О Мария, без греха зачатая,</strong><strong><br></strong> молись о нас, к Тебе прибегающих,<br> и о всех, к Тебе не прибегающих,<br> особенно о масонах.<br>  <strong>(Св. Максимилиан М. Кольбе)</strong></p>
 
@@ -956,22 +998,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -983,6 +1030,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Предвечный Отче</strong>, через пречистые руки Марии я полагаю в чашу,<br> которую сегодня каждый священник возносит на алтаре,<br> мои мысли, мой труд, мои усилия и страдания,<br> мое настоящее, мое прошлое, мое будущее,<br> все мои грехи, всех моих близких, все души в мире,<br> души в чистилище, саму смерть.<br> Я приношу Тебе<br> каждый удар моего сердца, каждый вздох, каждый шаг,<br> каждый звук с намерением,<br> чтобы каждое из этих моих действий было преображено Тобой<br> в такое же множество актов любви во искупление грехов мира.<br> Даруй, чтобы в единении с Твоим Сыном Иисусом Христом<br> мой день был непрестанной Мессой, постоянной жертвой,<br> вечным причастием,<br> дабы принести удовлетворение Твоему божественному правосудию!<br> <strong>Аминь.</strong><strong><br></strong><strong><br></strong> <em>В единении с Иисусом, Который ежедневно в совершенной жертве хвалы, благодарения, искупления и прошения Святой Мессы возобновляет Свое полное посвящение, мы также можем приносить самих себя и всех вверенных нам Небесному Отцу во время Святого Жертвоприношения Мессы. Каждое славословие, каждое прошение и каждое приношение подобны черпалу, которым мы снова и снова черпаем новые благодати из бесконечных сокровищ Сердца Божия.</em></p><p><strong>Да будет прославлен Бог</strong></p><p><strong>Да будет прославлен Бог!</strong><strong><br></strong> Да будет прославлено Его святейшее Имя!<br> Да будет прославлен Бог Отец, Творец мира!<br> Да будет прославлен Иисус Христос, истинный Бог и истинный Человек!<br> Да будет прославлено имя Иисуса!<br> Да будет прославлено Его святейшее Сердце!<br> Да будет прославлена Его драгоценная Кровь!<br> Да будут прославлены Его спасительные раны!<br> Да будет прославлено Его святейшее Лицо, источник утешения!<br> Да будет прославлен Иисус в Пресвятом Таинстве Алтаря!<br> Да будет прославлен Дух Святой, Утешитель!<br> Да будет прославлена превознесенная Матерь Божия, преблагословенная Дева Мария!<br> Да будет прославлено её святое и непорочное зачатие!<br> Да будет прославлено её дивное взятие на небо!<br> Да будет прославлено пречистое Лицо и Сердце Марии!<br> Да будет прославлено имя Девы и Матери Марии!<br> Да будет прославлен святой Иосиф, её пречистый обручник!<br> Да будет прославлен Бог в Своих страждущих душах в чистилище!<br> Да будет прославлен Бог в Своих Ангелах и Святых!<br> <strong>Аминь.</strong></p>
 
@@ -992,22 +1040,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1019,6 +1072,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Да будет всегда восхваляемо, благословляемо, любимо, почитаемо и прославляемо всевышнее, достойнейшее поклонения и невыразимое Имя Божие на небесах, на земле и под землей, всеми созданиями, вышедшими из руки Божией, и через Святейшее Сердце Иисуса в Пресвятом Таинстве Алтаря. Аминь.</strong> </p><p><em>Божественный Спаситель сказал однажды благочестивой сестре Марии от св. Петра: «Богохульство — это отравленная стрела, которая ранит Мое Сердце. Я хочу дать тебе Золотую стрелу, которая искупает бесчестие и хулу на Святейшее Имя Божие». После того как сестра Мария получила эту молитву, она удостоилась божественного видения, в котором увидела Святейшее Сердце Иисуса нежно раненным этой Золотой стрелой. При этом из Него излились потоки благодати для обращения грешников. Применение молитвы: читается трижды в честь Пресвятой Троицы; частичная индульгенция, 15 апреля 1881 г.</em></p><p><strong>И когда мы видим или слышим, как говорят или делают зло или хулят Бога, тогда мы хотим говорить доброе и делать доброе и хвалить Бога, Который благословен во веки.</strong><strong><br></strong>  <strong>(Св. Франциск)</strong></p>
 
@@ -1028,22 +1082,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1055,6 +1114,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>О Дух Святой</strong>, я смиренно и настойчиво прошу Тебя,<br> даруй мне совершенно особенную благодать,<br> которую я испрашиваю у Твоего бесконечного милосердия.<br> Даруй, чтобы перед смертью я восполнил все потери благодати,<br> которые я имел несчастье понести.<br> Даруй, чтобы я достиг высшей ступени благодати, заслуг и славы,<br> куда Ты по Своему первоначальному замыслу хотел меня вести,<br> но чему я до сих пор препятствовал своей постоянной неверностью.<br> Наконец, прости мне грехи, в которых я был виновен перед другими,<br> и увенчай Твое милосердие ко мне тем,<br> что Ты Сам восполнишь в душах потери благодати,<br> которые они понесли по моей вине.<br> <strong>Аминь.</strong> </p><p><em>Ежедневная молитва о. Беды Людвига OSB. Imprimatur: Friburgi Helv. 4.2.1950.</em></p>
 
@@ -1064,22 +1124,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1091,6 +1156,7 @@
             
 
             
+            
             <div class="section-body">
                 <p>Чрезвычайно большим и болезненным шипом в Непорочном Сердце Марии является жестокая секта масонства, основанная в Лондоне в 1717 году. Где бы она ни ступала, она проникает во все слои общества и во все государственные учреждения, чтобы в конечном итоге подчинить всё своему сатанинскому духу. </p><p>Один из самых изощренных способов её борьбы против своего заклятого врага — Католической Церкви — заключается в инфильтрации в Церковь путем приобретения «друзей» вплоть до круга высших церковных сановников, которые затем становятся слугами Люцифера как волки в овечьей шкуре. </p><p>Папа Пий VIII называет их сатанинской сектой, богом которой является демон. Уже через 20 лет после её основания Церковь осудила это антирелигиозное объединение высшим церковным наказанием — отлучением от Церкви.</p><p>Сущность масонской религии заключается в извращении, в изменении данного Богом порядка творения путем превращения всех богословских и нравственных основ католической веры в их противоположность. С этой позицией она стоит в авангарде борьбы за аборты, однополые «браки» и эвтаназию, что делает её идеальной антицерковью.</p><p><em>Ср. Истинное лицо масонства, вспомогательный епископ Афанасий Шнайдер в докладе для телесериала Папского фонда «Помощь Церкви в нужде», 2017 г.</em></p>
 
@@ -1100,22 +1166,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1127,6 +1198,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Господь Иисус Христос</strong>,<br> Ты проявляешь Свое всемогущество больше всего, когда щадишь и милуешь.<br> Ты сказал:<br>  <strong>«Молитесь за тех, кто преследует и злословит вас».</strong><strong><br></strong> Мы умоляем о кротости Твоего Святейшего Сердца для душ масонов,<br> которые, будучи обмануты коварным лукавством злого врага,<br> находятся на пути вечной погибели.<br> Не позволяй более угнетать ими Церковь, Твою Невесту,<br> но даруй им по ходатайству Преблагословенной Девы Марии и всех святых<br> Твое бесконечное милосердие.<br> Верни их к Себе,<br> чтобы они принесли Церкви утешение через истинное покаяние,<br> совершили искупление за свои злодеяния<br> и таким образом обрели вечное блаженство.<br> <strong>Аминь.</strong></p><p><em>Масон — это самый несвободный человек, чье вечное спасение находится под наибольшей угрозой. Пусть в Церкви возникнет движение за спасение душ наших братьев-масонов, прежде всего через молитву Розария и почитание Непорочного Сердца Марии. Её Непорочное Сердце восторжествует, в том числе над масонством и коммунизмом, и через Марию Бог дарует человечеству и Церкви время мира.</em></p>
 
@@ -1136,22 +1208,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1163,6 +1240,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>О Непорочная</strong>, Царица неба и земли,<br> Прибежище грешников и Матерь наша,<br> любящая нас столь сильно и коей Бог вручил<br> весь домостроительство милосердия!<br> Я, N., неверный грешник,<br> повергаюсь пред стопы Твои и умоляю Тебя из глубины сердца моего:<br> Соблаговоли принять меня всецело и полностью как Твоё достояние и Твою собственность.<br> Делай со мною, что Тебе угодно, со всеми способностями души и тела моей,<br> со всей жизнью, смертью и вечностью моей.<br> Распоряжайся мною вполне по воле Твоей,<br> дабы исполнилось о Тебе сказанное:<br>  <strong>«Она сокрушит главу змея»</strong><strong><br></strong> и равно:<br>  <strong>«Ты одна победила все ереси по всему миру».</strong><strong><br></strong> Сделай меня орудием в руках Твоих, дабы служить Тебе,<br> дабы умножать славу Твою по мере возможности<br> во стольких падших и тёплых душах.<br> Так будет всё более распространяться нежное царство<br> Пресвятого Сердца Иисуса.<br> Ибо куда Ты вступаешь, Ты обретаешь благодать обращения и освящения,<br> ибо все благодати приходят к нам от Пресвятого Сердца Иисуса только через руки Твои.<br> Дай мне восхвалять Тебя, о Пресвятая Дева,<br> и ниспошли мне силу против врагов Твоих.<br> <strong>Аминь.</strong><strong><br></strong>  <strong>(Св. Максимилиан М. Кольбе)</strong></p>
 
@@ -1172,22 +1250,27 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
+    
+        
     
     
     
     
     
     
-    
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -1199,6 +1282,7 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>Преславная Царица небес и верховная Владычица Ангелов</strong>,<br> Ты получила от Бога от начала власть и поручение<br> сокрушать голову сатаны.<br> Поэтому мы смиренно умоляем Тебя,<br> пошли нам на помощь небесные легионы,<br> дабы они под Твоим руководством преследовали демонов,<br> повсюду сражались с ними, отражали их дерзкие нападения<br> и низвергали их обратно в бездну.<br> <strong>«Кто как Бог?»</strong><strong><br></strong> О благая и кроткая Матерь,<br> Ты всегда будешь нашей любовью и нашей надеждой!<br> О Матерь Божия, пошли нам святых Ангелов,<br> дабы они защищали нас и удаляли от нас злого врага.<br> Вы, святые Ангелы и Архангелы, защищайте и охраняйте нас!<br> <strong>Аминь.</strong></p><p><em>13 января 1864 года основатель конгрегации Служительниц Марии о. Сестак (1801–1868) в святилище Нашей Любимой Госпожи Прибежища в Англете (Пиренеи) был внезапно потрясен как бы лучом божественной ясности. Он увидел демонов, распространенных по всему миру и причиняющих повсюду невыразимый вред. В то же время он имел видение Пресвятой Девы Марии, Которая сказала ему, что демоны действительно спущены с цепи по всему миру. Поэтому пришел час призывать Её как Царицу Ангелов и просить Её послать легионы святых Ангелов для борьбы с силами преисподней. «Матерь моя», — сказал священник, — «Вы так добры, не могли бы Вы послать их без того, чтобы Вас об этом просили?» — «Нет», — ответила Пресвятая Дева, — «молитва — это условие, поставленное Богом, даже когда хотят получить благодати». — «Если это так, Матерь моя, не научите ли Вы нас тогда, как нужно молиться?» После этого он получил от Пресвятой Девы молитву «Преславная Царица» и распространил её по всему миру после епископского одобрения. Эта молитва, сопровождаемая необычайными благодатями, была рекомендована Папой Пием IX и обогащена Львом XIII и Пием X предоставлением полной индульгенции.</em></p>
 
@@ -1208,12 +1292,18 @@
             
 
             
+
+            
+            
+
+            
         </div>
 
         
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1299,6 +1389,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1353,6 +1478,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1388,12 +1524,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     

@@ -20,6 +20,7 @@
     
     
     
+    
     <meta name="description" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="With Jesus in the Garden of Olives">
@@ -31,7 +32,13 @@
     <meta name="twitter:title" content="With Jesus in the Garden of Olives">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="https://www.mpl-apostolate.com/static/gs_1ae1dc18223172cd2224b48c758635cc791157392d752db7e2e46395053ccd83.jpg">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=656e88b2e78a">
+    <meta name="theme-color" content="#7a1f1f">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=d5143dc13a47">
+    <link rel="manifest" href="../manifest.webmanifest?v=d5143dc13a47">
     
     <!-- Alternate language links for SEO -->
     
@@ -84,8 +91,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/mit-jesus-im-lgarten.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=656e88b2e78a">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=656e88b2e78a">
+    <link rel="stylesheet" href="../static/css/main.css?v=d5143dc13a47">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=d5143dc13a47">
     
 </head>
 <body>
@@ -104,7 +111,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../en/" class="logo">
-                <img src="../static/img/logo.png?v=656e88b2e78a" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=d5143dc13a47" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -419,6 +426,23 @@
                 </nav>
             </div>
             <div class="header-actions">
+                
+                <div class="site-search">
+                    <button type="button" class="site-search-trigger" aria-expanded="false" aria-controls="siteSearchPanel" aria-label="Open search" title="Search">
+                        <svg class="site-search-trigger__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                            <circle cx="11" cy="11" r="6.5"></circle>
+                            <path d="M16 16L20 20"></path>
+                        </svg>
+                    </button>
+                    <div class="site-search-panel" id="siteSearchPanel">
+                        <form class="site-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                            <label class="sr-only" for="siteSearchInput">Search term</label>
+                            <input id="siteSearchInput" class="site-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                            <button type="submit" class="site-search-submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                
                 
                 <nav class="lang-switch">
                     
@@ -838,6 +862,13 @@
         
     
             
+            
+            <form class="mobile-search-form" data-search-form data-search-scope="www.mpl-apostolate.com">
+                <label class="sr-only" for="mobileSearchInput">Search term</label>
+                <input id="mobileSearchInput" class="mobile-search-input" type="search" name="term" placeholder="Search this site with Google" autocomplete="off">
+                <button type="submit" class="mobile-search-submit">Search</button>
+            </form>
+            
             <a href="../en/sitemap.html" class="mobile-nav-link mobile-nav-link--sitemap" aria-label="Sitemap">
                 <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
                     <path d="M5 7.5H19"></path>
@@ -846,6 +877,14 @@
                 </svg>
                 <span>Sitemap</span>
             </a>
+            <button type="button" class="mobile-nav-link mobile-nav-link--install" id="mobileInstallButton" hidden>
+                <svg class="mobile-nav-link__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3.5V14.5"></path>
+                    <path d="M8 10.5L12 14.5L16 10.5"></path>
+                    <path d="M5 17.5H19"></path>
+                </svg>
+                <span>Install website as app</span>
+            </button>
         </nav>
     </div>
 
@@ -909,6 +948,9 @@
     
     <main class="site-main">
         
+
+
+
 <div class="container">
     <!-- Hero Section -->
     
@@ -927,15 +969,14 @@
 
     <!-- Content Sections -->
     
+        
     
     
     
     
     
     
-    
-    
-    <section class="content-section">
+    <section class="content-section" style="--section-nesting-depth: 0;">
         
 
         <div class="section-inner">
@@ -947,11 +988,17 @@
             
 
             
+            
             <div class="section-body">
                 <p><strong>"My soul is sorrowful even to death.</strong><strong><br></strong><strong> Stay here and watch with Me."</strong><strong><br></strong> (Matthew 26:38)</p><br><h3><strong>Time and again I must go to the Mount of Olives</strong></h3><p>And there look for my Jesus.<br> He has such great fear and anguish,<br> I must be with Him now.</p><p>No, I cannot go to sleep,<br> I must seek my Jesus.<br> Very softly I will say to Him:</p><p><strong>"O Saviour, You need not despair.</strong><strong><br></strong><strong> For though I am poor and small,</strong><strong><br></strong><strong> I will nevertheless be Your comforter."</strong></p><p>O behold, all His limbs tremble<br> And bloody sweat runs down to earth.</p><p><strong>"My God, look upon Your Jesus,</strong><strong><br></strong><strong> He has done nothing but good.</strong><strong><br></strong><strong> And now the wages of our sins</strong><strong><br></strong><strong> Lie upon Your much-beloved Son."</strong></p><p><strong>"Father, if it can be,</strong><strong><br></strong><strong> Let this cup pass from Me."</strong></p><p>So Jesus struggles in prayer,<br> Until an angel brings Him strength.</p><p>As he takes Him comfortingly into his arms<br>My heart grows warm with love.<br> Then I too have such heartfelt longing,<br> To embrace my Saviour.</p><p>Gladly would I tell all people,<br> We need never despair.<br> For every affliction is overcome<br> Through Jesus' bitter hours of suffering.</p><p>He comforts us, we comfort Him,<br> All shadows of death must flee.<br> One day fear and anguish will be past,<br> God Himself will be our reward then.</p><p>So let me go to the Mount of Olives,<br> And there look for my Jesus.<br> It is written in my heart:</p><p><strong>"I can only comfort Him and love Him."</strong></p><p><em>(Sisters of Perpetual Adoration)</em></p><p>"Just as Christ's soul was sorrowful unto death because of our sins that would occur in the future yet were foreseen, so He could undoubtedly also draw comfort from our foreseen reparation, for an angel from heaven appears to Him to comfort His heart, which was oppressed with disgust and weariness … Thus the most sacred Heart, which is constantly wounded by the sins of men, can even now be wonderfully comforted by us" <em>(From Pope Pius XI's Encyclical on the Sacred Heart of May 8, 1928).</em></p><br><h3><strong>The Holy Hour</strong></h3><p>In 1674 Jesus spoke to St. Margaret Mary Alacoque:</p><p><strong>I am despised by men and My love is repaid with ingratitude. This weighs on Me more than everything I endured in My suffering. […]</strong></p><p><strong>Lord, what shall I do?</strong>, asked the saint.</p><p><strong>On the night of Thursday to Friday I will have you share in the deadly sorrow that I endured in the Garden of Olives. […] You shall rise from 11:00 to 12:00 at night, prostrate yourself face down, and spend one hour in prayer with Me, both to appease the wrath of God and beg mercy for sinners, and to comfort Me for the pain I felt when I was abandoned by My apostles […].</strong> (Here Jesus also addresses all His apostles and all those consecrated to God of all times with the urgent request not to leave Him alone in the struggle for the salvation of souls.)</p><p>According to the Saviour's wish, St. Margaret kept vigil every Thursday at the said hour, and soon many others began to imitate her. [3]</p><p>There now exists in this sense a confraternity of the <strong>Holy Hour</strong> and various forms of devotion, practised in many places before the exposed Blessed Sacrament. Cf. <em>The Holy Hour</em> by Josef Negele, Imprimatur: Subotica, January 14, 1933, Ludovicus Budanovic m.p.</p><br><h3><strong>Prayer to Jesus in the Garden of Olives</strong></h3><p>O Jesus, who in the abundance of Your love and to overcome our hardness of heart pour forth a stream of grace upon those who contemplate Your most holy suffering in the Garden of Gethsemane and promote devotion to it, I beg You, help my soul and my heart often, yet at least once a day, to think of Your most bitter anguish in the Garden of Olives, to pity You and unite myself with You as far as possible.</p><p>O blessed Jesus, who in that night took upon Yourself the enormous burden of our sins and made perfect reparation, grant me the surpassing gift of perfect loving contrition for my numerous sins, for which You sweat blood.</p><p>O blessed Jesus, for the sake of Your fiercest struggle in the Garden of Gethsemane, grant me final victory over temptations, especially over those to which I am most subject.</p><p>O suffering Jesus, for the sake of Your inscrutable and ineffable agony for us, in that night of betrayal and bitterest anguish of soul, enlighten me, that I may recognise and fulfill Your will, and grant that I may always think again of Your harrowing struggle, and contemplate how You bore it victoriously, in order to fulfill not Your own but the Father's will.</p><p>Grant, O Jesus, that all who lovingly contemplate You on the Cross may also remember Your immeasurable sufferings in the Garden of Olives, that following Your example they may learn to pray well and fight victoriously, so as to glorify You eternally in heaven one day. Amen.</p><p>After St. Pio. <em>Imprimatur: Fabiano, September 23, 1963 † Macarius, Bishop.</em></p><h3><strong>For the Dying</strong></h3><p>Most merciful Jesus, You love souls so profoundly. For the sake of the anguish of Your most Sacred Heart and the sorrows of Your immaculate Mother, I beg You, purify in Your blood the sinners of the whole world who are now in the throes of death and will die today.</p><p>Heart of Jesus, You suffered anguish, have mercy on the dying. Amen.</p><p><em>Imprimatur: Freiburg, May 30, 1951 † Burger, Vicar General.</em></p><br><h3><strong>Promises of Jesus</strong></h3><p>Whoever knows the law of love is not surprised that I cannot stop knocking at the door of those who resist Me and through their rejection force Me, as it were, to repeat My loving invitation. […]</p><p>See what great things I offer to all for a little love:</p><ol><li><p>Forgiveness of all sins and assurance of the salvation of the soul at the hour of death for those who at least once a day lovingly and reverently remember My anguish. (Jesus expressed this wish with regard to all those who cannot keep the <em>Holy Hour</em> in its original form. At the same time He wanted to manifest His joy at every moment, however short, that we give Him to comfort Him.)</p></li><li><p>Perfect and lasting contrition for all who have a Holy Mass offered in honour of those sufferings.</p></li><li><p>Success in spiritual matters for those who will instil in others love for My sufferings in the Garden of Olives.</p></li></ol><br><p>Finally, to prove to you that I will break a dam of My heart to let a stream of grace flow from it, I promise to those who promote this devotion to My sufferings in Gethsemane these three further graces:</p><ol><li><p>Complete and final victory in the heaviest temptation to which they are subject,</p></li><li><p>direct power to free poor souls from purgatory,</p></li><li><p>great enlightenment and strength to fulfill My will.</p></li></ol><p>All these My precious gifts I give to those who lovingly and compassionately honour My immeasurably great anguish in the Garden of Olives. (Private revelation to a favoured soul.)</p>
             </div>
             
 
+            
+
+            
+
+            
             
 
             
@@ -961,6 +1008,7 @@
         
     </section>
     
+
     
     
     <!-- Contact Info -->
@@ -1046,6 +1094,41 @@
         const mobileLangMenu = document.getElementById('mobileLangMenu');
         const mobileLangMenuClose = document.getElementById('mobileLangMenuClose');
         const desktopDropdownToggles = Array.from(document.querySelectorAll('.dropdown-toggle'));
+        const searchForms = Array.from(document.querySelectorAll('[data-search-form]'));
+        const siteSearch = document.querySelector('.site-search');
+        const siteSearchTrigger = siteSearch ? siteSearch.querySelector('.site-search-trigger') : null;
+        const siteSearchInput = siteSearch ? siteSearch.querySelector('.site-search-input') : null;
+        const mobileInstallButton = document.getElementById('mobileInstallButton');
+        let deferredInstallPrompt = null;
+
+        function buildGoogleSearchUrl(scope, term) {
+            const query = (scope ? `site:${scope} ` : '') + term;
+            return `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        }
+
+        function openSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.add('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'true');
+            if (siteSearchInput) siteSearchInput.focus();
+        }
+
+        function closeSiteSearch() {
+            if (!siteSearch || !siteSearchTrigger) return;
+            siteSearch.classList.remove('is-open');
+            siteSearchTrigger.setAttribute('aria-expanded', 'false');
+        }
+
+        searchForms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const input = form.querySelector('input[name="term"]');
+                const term = input ? input.value.trim() : '';
+                if (!term) return;
+                const scope = form.dataset.searchScope || '';
+                window.location.href = buildGoogleSearchUrl(scope, term);
+            });
+        });
         
         function openMobileMenu() {
             mobileMenu.classList.add('open');
@@ -1100,6 +1183,17 @@
                 if (icon) icon.textContent = isOpen ? '−' : '+';
             });
         }
+        if (siteSearchTrigger) {
+            siteSearchTrigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (siteSearch.classList.contains('is-open')) {
+                    closeSiteSearch();
+                } else {
+                    openSiteSearch();
+                }
+            });
+        }
         function closeDesktopDropdowns(exceptGroup) {
             document.querySelectorAll('.dropdown.is-open, .dropdown-item-has-children.is-open').forEach(function(group) {
                 if (exceptGroup && (group === exceptGroup || group.contains(exceptGroup))) return;
@@ -1135,12 +1229,50 @@
             if (!e.target.closest('.main-nav')) {
                 closeDesktopDropdowns();
             }
+            if (siteSearch && !e.target.closest('.site-search')) {
+                closeSiteSearch();
+            }
         });
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('open')) closeMobileMenu();
             if (e.key === 'Escape' && mobileLangMenu && mobileLangMenu.classList.contains('open')) closeMobileLangMenu();
             if (e.key === 'Escape') closeDesktopDropdowns();
+            if (e.key === 'Escape') closeSiteSearch();
         });
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            e.preventDefault();
+            deferredInstallPrompt = e;
+            if (mobileInstallButton) mobileInstallButton.hidden = false;
+        });
+
+        window.addEventListener('appinstalled', function() {
+            deferredInstallPrompt = null;
+            if (mobileInstallButton) mobileInstallButton.hidden = true;
+        });
+
+        if (mobileInstallButton) {
+            mobileInstallButton.addEventListener('click', async function() {
+                if (!deferredInstallPrompt) return;
+                deferredInstallPrompt.prompt();
+                try {
+                    await deferredInstallPrompt.userChoice;
+                } catch (error) {
+                    console.warn('Install prompt failed:', error);
+                }
+                deferredInstallPrompt = null;
+                mobileInstallButton.hidden = true;
+                closeMobileMenu();
+            });
+        }
+
+        if ('serviceWorker' in navigator && (window.isSecureContext || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('../service-worker.js').catch(function(error) {
+                    console.warn('Service worker registration failed:', error);
+                });
+            });
+        }
     </script>
     
     
