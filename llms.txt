@@ -1,0 +1,32 @@
+# Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.
+
+> MPL Apostolate ist die mehrsprachige Website der Marianischen Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V. mit Vorstellung, Broschueren, Faltbildchen, Gebeten, Mitgliedschaft und Bestellinformationen.
+
+Die deutsche Fassung ist die inhaltliche Quelle. Weitere Sprachfassungen sind Uebersetzungen und enthalten automatische Uebersetzungshinweise. Die Website ist katholisch, marianisch und apostolisch ausgerichtet und stellt Schriften und Gebete zur Verbreitung bereit.
+
+## Zentrale Einstiege
+
+- [Startseite Deutsch](https://www.mpl-apostolate.com/de/): Vorstellung der MPL, Ziele und konkrete Mittel.
+- [About MPL](https://www.mpl-apostolate.com/en/): English overview of the apostolate.
+- [Broschueren](https://www.mpl-apostolate.com/de/gttliche-barmherzigkeit.html): Zentrale Schriften zu Goettlicher Barmherzigkeit, Fatima und Marianischer Priester- und Laienbewegung.
+- [Faltbildchen](https://www.mpl-apostolate.com/de/der-hirtenrosenkranz.html): Gebets- und Andachtsfaltblaetter.
+- [Gebete](https://www.mpl-apostolate.com/de/rosenkranz.html): Mehrsprachige katholische Gebete und Andachten.
+- [Mitglied werden](https://www.mpl-apostolate.com/de/mitglied-werden.html): Informationen zur Mitgliedschaft.
+- [Bestellen](https://www.mpl-apostolate.com/de/bestellen.html): Bestellung, Kontakt und Spendenhinweise.
+- [Sitemap Deutsch](https://www.mpl-apostolate.com/de/sitemap.html): Vollstaendige deutschsprachige Seitenuebersicht.
+
+## Weitere Sprachen
+
+- [Deutsche Sitemap](https://www.mpl-apostolate.com/de/sitemap.html): Vollstaendige deutsche Seitenuebersicht.
+- [English sitemap](https://www.mpl-apostolate.com/en/sitemap.html): English page overview.
+- [Italian sitemap](https://www.mpl-apostolate.com/it/sitemap.html): Italian page overview.
+- [Spanish sitemap](https://www.mpl-apostolate.com/es/sitemap.html): Spanish page overview.
+- [Portuguese sitemap](https://www.mpl-apostolate.com/pt/sitemap.html): Portuguese page overview.
+- [Dutch sitemap](https://www.mpl-apostolate.com/nl/sitemap.html): Dutch page overview.
+- [French sitemap](https://www.mpl-apostolate.com/fr/sitemap.html): French page overview.
+- [Russian sitemap](https://www.mpl-apostolate.com/ru/sitemap.html): Russian page overview.
+- [Arabic sitemap](https://www.mpl-apostolate.com/ar/sitemap.html): Arabic page overview.
+- [Chinese sitemap](https://www.mpl-apostolate.com/zh/sitemap.html): Chinese page overview.
+- [Hindi sitemap](https://www.mpl-apostolate.com/hi/sitemap.html): Hindi page overview.
+- [Korean sitemap](https://www.mpl-apostolate.com/ko/sitemap.html): Korean page overview.
+- [XML-Sitemap](https://www.mpl-apostolate.com/sitemap.xml): Maschinenlesbare Liste aller gebauten Seiten.
