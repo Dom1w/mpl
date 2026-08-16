@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpl-apostolate-pwa-48efa9d98ef0";
+const CACHE_NAME = "mpl-apostolate-pwa-6577261e747e";
 const PRECACHE_URLS = [
   "./",
   "ar/",
@@ -63,6 +63,7 @@ const PRECACHE_URLS = [
   "de/novene-zur-goettlichen-barmherzigkeit.html",
   "de/rosenkranz.html",
   "de/sitemap.html",
+  "de/skapulier-vom-berge-karmel.html",
   "de/sr-faustynas-gebet.html",
   "de/unser-heiliger-schutzengel.html",
   "de/vollkommene-hingabe-an-maria.html",
@@ -380,8 +381,8 @@ const PRECACHE_URLS = [
   "ru/weihe-barmherzigen-jesus.html",
   "ru/weihe-unbefleckte-herz-mariens.html",
   "sitemap.xml",
-  "static/css/main.css?v=48efa9d98ef0",
-  "static/css/mpl-apostolate.css?v=48efa9d98ef0",
+  "static/css/main.css?v=6577261e747e",
+  "static/css/mpl-apostolate.css?v=6577261e747e",
   "static/img/logo.png",
   "zh/",
   "zh/alles-aus-liebe-zu-dir-heiligstes-herz-jesu.html",
