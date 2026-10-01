@@ -39,9 +39,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=6577261e747e">
-    <link rel="apple-touch-icon" href="../static/img/logo.png?v=6577261e747e">
-    <link rel="manifest" href="../manifest.webmanifest?v=6577261e747e">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=92071859c94c">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=92071859c94c">
+    <link rel="manifest" href="../manifest.webmanifest?v=92071859c94c">
     
     <!-- Alternate language links for SEO -->
     
@@ -94,8 +94,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gebete-zum-gnadenreichen-loretokindl-von-salzbug.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=6577261e747e">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=6577261e747e">
+    <link rel="stylesheet" href="../static/css/main.css?v=92071859c94c">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=92071859c94c">
     
 </head>
 <body>
@@ -114,7 +114,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../nl/" class="logo">
-                <img src="../static/img/logo.png?v=6577261e747e" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=92071859c94c" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -153,6 +153,14 @@
     
         
         <a href="../nl/fatima.html" class="dropdown-link">Fatima</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../nl/skapulier-vom-berge-karmel.html" class="dropdown-link">Scapulier van de Berg Karmel</a>
         
     
     
@@ -624,6 +632,14 @@
     
         
         <a href="../nl/fatima.html" class="mobile-nav-link mobile-nav-level-1">Fatima</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../nl/skapulier-vom-berge-karmel.html" class="mobile-nav-link mobile-nav-level-1">Scapulier van de Berg Karmel</a>
         
     
             
@@ -1196,7 +1212,7 @@
 
             
             <div class="section-body">
-                <p>Als alle engelen, alle genieën van de wereld bestudeerd hadden wat in deze of die situatie nuttig zou zijn, bijv. dit offer, die bekoring, dat lijden, zij hadden niets beters kunnen vinden dat voor u passender geweest zou zijn. Zo heeft Gods eeuwige wijsheid van eeuwigheid her bestudeerd om dit kruis uit Zijn Hart aan u te geven als Zijn kostbaarste geschenk.</p><p>Hij heeft dit kruis, voordat Hij het aan u verzond, gemonsterd met Zijn alwetend oog, doordacht met Zijn goddelijk verstand, beproefd met Zijn wijze gerechtigheid en met liefdevol erbarmen doorwarmd en gewogen met Zijn beide handen, of het niet een millimeter te groot en een milligram te zwaar was. Toen heeft Hij het nog gezegend met Zijn heilige Naam, gezalfd met Zijn genade, doorgeurd met Zijn troost, nieuw bezield op u en uw moed geblikt, en zo komt het rechtstreeks uit de hemel als een groet van God, als een aalmoes van de erbarmende liefde van uw God.</p><p>De kruisen die wij onszelf oprichten, of onszelf uitzoeken, zijn altijd wat versierd; want er steekt in dezelfde iets van ons eigen ik en daarom kruisigen zij ons minder. De volmaaktheid, deze glansprestatie in het deugdenleven, zal er derhalve in bestaan dat men vreugdig die kruisen op zich neemt die men zonder eigen toedoen opgeladen krijgt.</p><p>(Hl. Franciscus van Sales)</p><br>
+                <p>Als alle engelen, alle genieën van de wereld bestudeerd hadden wat in deze of die situatie nuttig zou zijn, bijv. dit offer, die bekoring, dat lijden, zij hadden niets beters kunnen vinden dat voor u passender geweest zou zijn. Zo heeft Gods eeuwige wijsheid van eeuwigheid her bestudeerd om dit kruis uit Zijn Hart aan u te geven als Zijn kostbaarste geschenk.</p><p>Hij heeft dit kruis, voordat Hij het aan u verzond, gemonsterd met Zijn alwetend oog, doordacht met Zijn goddelijk verstand, beproefd met Zijn wijze gerechtigheid en met liefdevol erbarmen doorwarmd en gewogen met Zijn beide handen, of het niet een millimeter te groot en een milligram te zwaar was. Toen heeft Hij het nog gezegend met Zijn heilige Naam, gezalfd met Zijn genade, doorgeurd met Zijn troost, nieuw bezield op u en uw moed geblikt, en zo komt het rechtstreeks uit de hemel als een groet van God, als een aalmoes van de erbarmende liefde van uw God.</p><p>De kruisen die wij onszelf oprichten, of onszelf uitzoeken, zijn altijd wat versierd; want er steekt in dezelfde iets van ons eigen ik en daarom kruisigen zij ons minder. De volmaaktheid, deze glansprestatie in het deugdenleven, zal er derhalve in bestaan dat men vreugdig die kruisen op zich neemt die men zonder eigen toedoen opgeladen krijgt.</p><p>(H. Franciscus van Sales)</p><br>
             </div>
             
 
@@ -1427,6 +1443,17 @@
     </button>
     
     <script>
+        // Hide time-limited content past its expiry date (e.g. event announcements).
+        // Add data-hide-after="YYYY-MM-DD" to any element to auto-hide it after that date.
+        // Cutoff is pinned to Central European (Summer) Time, not the visitor's local
+        // timezone, since all sites target an Austrian audience.
+        document.querySelectorAll('[data-hide-after]').forEach(function(el) {
+            const hideAfter = new Date(el.getAttribute('data-hide-after') + 'T23:59:59+02:00');
+            if (!isNaN(hideAfter) && new Date() > hideAfter) {
+                el.style.display = 'none';
+            }
+        });
+
         // Scroll to top functionality
         const scrollBtn = document.getElementById('scrollToTop');
         

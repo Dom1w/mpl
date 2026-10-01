@@ -39,9 +39,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.">
-    <link rel="icon" type="image/png" href="../static/img/logo.png?v=6577261e747e">
-    <link rel="apple-touch-icon" href="../static/img/logo.png?v=6577261e747e">
-    <link rel="manifest" href="../manifest.webmanifest?v=6577261e747e">
+    <link rel="icon" type="image/png" href="../static/img/logo.png?v=92071859c94c">
+    <link rel="apple-touch-icon" href="../static/img/logo.png?v=92071859c94c">
+    <link rel="manifest" href="../manifest.webmanifest?v=92071859c94c">
     
     <!-- Alternate language links for SEO -->
     
@@ -94,8 +94,8 @@
     <link rel="alternate" hreflang="ko" href="https://www.mpl-apostolate.com/ko/gttliche-barmherzigkeit.html">
     
     
-    <link rel="stylesheet" href="../static/css/main.css?v=6577261e747e">
-    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=6577261e747e">
+    <link rel="stylesheet" href="../static/css/main.css?v=92071859c94c">
+    <link rel="stylesheet" href="../static/css/mpl-apostolate.css?v=92071859c94c">
     
 </head>
 <body>
@@ -105,7 +105,7 @@
     <header class="site-header">
         <div class="container">
             <a href="../de/" class="logo">
-                <img src="../static/img/logo.png?v=6577261e747e" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
+                <img src="../static/img/logo.png?v=92071859c94c" alt="Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V." class="logo-image">
                 
                 <span class="logo-text">Marianische Priester- und Laienbewegung zum Triumph der vereinten Herzen Jesu und Mariens e.V.</span>
                 
@@ -160,6 +160,54 @@
     
         
         <a href="../de/marianische-priester-und-laienbewegung.html" class="dropdown-link">Marianische Priester- und Laienbewegung</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../de/wunder-des-heiligen-rosenkranzes.html" class="dropdown-link">Die Wunder des heiligen Rosenkranzes</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../de/ich-liebe-dich-ueber-alle-massen.html" class="dropdown-link">Ich liebe dich über alle Maßen</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../de/seht-wie-gross-die-liebe-des-vaters-ist.html" class="dropdown-link">Seht, wie groß die Liebe des Vaters ist!</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../de/kommt-zur-hochzeit.html" class="dropdown-link">Kommt zur Hochzeit!</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../de/sein-name-ist-auf-ihre-stirn-geschrieben.html" class="dropdown-link">Sein Name ist auf ihre Stirn geschrieben</a>
+        
+    
+    
+    
+    
+    
+        
+        <a href="../de/vergelts-gott.html" class="dropdown-link">Vergelt's Gott</a>
         
     
     
@@ -639,6 +687,54 @@
     
         
         <a href="../de/marianische-priester-und-laienbewegung.html" class="mobile-nav-link mobile-nav-level-1">Marianische Priester- und Laienbewegung</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../de/wunder-des-heiligen-rosenkranzes.html" class="mobile-nav-link mobile-nav-level-1">Die Wunder des heiligen Rosenkranzes</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../de/ich-liebe-dich-ueber-alle-massen.html" class="mobile-nav-link mobile-nav-level-1">Ich liebe dich über alle Maßen</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../de/seht-wie-gross-die-liebe-des-vaters-ist.html" class="mobile-nav-link mobile-nav-level-1">Seht, wie groß die Liebe des Vaters ist!</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../de/kommt-zur-hochzeit.html" class="mobile-nav-link mobile-nav-level-1">Kommt zur Hochzeit!</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../de/sein-name-ist-auf-ihre-stirn-geschrieben.html" class="mobile-nav-link mobile-nav-level-1">Sein Name ist auf ihre Stirn geschrieben</a>
+        
+    
+            
+            
+    
+    
+        
+        <a href="../de/vergelts-gott.html" class="mobile-nav-link mobile-nav-level-1">Vergelt's Gott</a>
         
     
             
@@ -1743,6 +1839,17 @@
     </button>
     
     <script>
+        // Hide time-limited content past its expiry date (e.g. event announcements).
+        // Add data-hide-after="YYYY-MM-DD" to any element to auto-hide it after that date.
+        // Cutoff is pinned to Central European (Summer) Time, not the visitor's local
+        // timezone, since all sites target an Austrian audience.
+        document.querySelectorAll('[data-hide-after]').forEach(function(el) {
+            const hideAfter = new Date(el.getAttribute('data-hide-after') + 'T23:59:59+02:00');
+            if (!isNaN(hideAfter) && new Date() > hideAfter) {
+                el.style.display = 'none';
+            }
+        });
+
         // Scroll to top functionality
         const scrollBtn = document.getElementById('scrollToTop');
         
