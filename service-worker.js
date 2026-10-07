@@ -1,4 +1,4 @@
-const CACHE_NAME = "mpl-apostolate-pwa-92071859c94c";
+const CACHE_NAME = "mpl-apostolate-pwa-f5199457d244";
 const PRECACHE_URLS = [
   "./",
   "ar/",
@@ -1574,8 +1574,8 @@ const PRECACHE_URLS = [
   "ru/weihe-unbefleckte-herz-mariens.html",
   "ru/wundenrosenkranz.html",
   "sitemap.xml",
-  "static/css/main.css?v=92071859c94c",
-  "static/css/mpl-apostolate.css?v=92071859c94c",
+  "static/css/main.css?v=f5199457d244",
+  "static/css/mpl-apostolate.css?v=f5199457d244",
   "static/img/logo.png",
   "zh/",
   "zh/abendgruss-ans-jesulein.html",
