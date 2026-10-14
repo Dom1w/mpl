@@ -1477,34 +1477,50 @@ a:hover {
     align-items: flex-start;
 }
 
-.section-with-image .section-inner {
+/* Kindkombinatoren: Unterabschnitte innerhalb eines Abschnitts mit Bild erben die 70%-Breite nicht. */
+.section-with-image > .section-inner {
     flex: 1 1 70%;
     max-width: 70%;
 }
 
-.section-with-image .section-media {
+.section-with-image > .section-media {
     flex: 0 0 20%;
     max-width: 20%;
 }
 
-.section-with-image-stack-right .section-media {
+/* Hat der Abschnitt nur eine Ueberschrift und Unterabschnitte, stehen diese direkt unter der Ueberschrift neben dem Bild. */
+.section-with-image.section-with-children-beside > .section-inner > .content-section-children {
+    margin-inline-start: 0;
+}
+
+/* Unterabschnitte eines Abschnitts mit Bild und eigenem Inhalt laufen unterhalb von Bild und Text ueber die volle Breite. */
+.section-with-image.section-with-children-below {
+    flex-wrap: wrap;
+}
+
+.section-with-image.section-with-children-below > .content-section-children {
+    flex: 1 1 100%;
+    max-width: none;
+}
+
+.section-with-image-stack-right > .section-media {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
 }
 
-.section-with-image-stack-left .section-media {
+.section-with-image-stack-left > .section-media {
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
 }
 
-.section-with-two-images .section-inner {
+.section-with-two-images > .section-inner {
     flex: 1 1 56%;
     max-width: 56%;
 }
 
-.section-with-two-images .section-media {
+.section-with-two-images > .section-media {
     flex: 0 0 20%;
     max-width: 20%;
 }
@@ -1578,8 +1594,8 @@ a:hover {
         flex-direction: column;
     }
 
-    .section-with-image .section-inner,
-    .section-with-image .section-media {
+    .section-with-image > .section-inner,
+    .section-with-image > .section-media {
         max-width: 100%;
         flex: 1 1 auto;
     }
